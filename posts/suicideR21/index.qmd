@@ -17,7 +17,7 @@ I am very pleased to announce that we have been awarded an R21 Grant from the Na
 
 - Co-PI: [Richard Liu](https://depressionmgh.org/who-we-are/staff/richard-liu-phd), Massachusetts General Hospital
 - Co-PI: [Taylor Burke](https://connects.catalyst.harvard.edu/Profiles/display/Person/200999), Massachusetts General Hospital
-- Co-I: Jeffrey Girard, University of Kansas
+- Co-I: [Jeffrey Girard](https://affcom.ku.edu/people/staff/girard_jeffrey.html), University of Kansas
 - Co-I: [Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/), Carnegie Mellon University
 
 ## Project Summary
