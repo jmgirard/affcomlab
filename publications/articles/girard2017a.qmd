@@ -1,0 +1,26 @@
+---
+title: "Interpersonal problems across levels of the psychopathology hierarchy"
+type: "article"
+author: "Girard, Wright, Beeney, et al."
+year: "2017"
+publication: "Comprehensive Psychiatry"
+preprint: "https://osf.io/6w23e/"
+doi: "https://doi.org/10.1016/j.comppsych.2017.06.014"
+materials: "https://osf.io/2ctzq/"
+toc: false
+categories:
+  - substantive
+  - clinical
+  - interpersonal
+  - personality disorder
+  - circumplex statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Wright, A. G. C., Beeney, J. E., Lazarus, S. A., Scott, L. N., Stepp, S. D., & Pilkonis, P. A. (2017). Interpersonal problems across levels of the psychopathology hierarchy. *Comprehensive Psychiatry, 79*, 53–69.
+
+## Abstract
+
+We examined the relationship between psychopathology and interpersonal problems in a sample of 825 clinical and community participants. Sixteen psychiatric diagnoses and five transdiagnostic dimensions were examined in relation to self-reported interpersonal problems. The structural summary method was used with the Inventory of Interpersonal Problems Circumplex Scales to examine interpersonal problem profiles for each diagnosis and dimension. We built a structural model of mental disorders including factors corresponding to detachment (avoidant personality, social phobia, major depression), internalizing (dependent personality, borderline personality, panic disorder, posttraumatic stress, major depression), disinhibition (antisocial personality, drug dependence, alcohol dependence, borderline personality), dominance (histrionic personality, narcissistic personality, paranoid personality), and compulsivity (obsessive-compulsive personality). All dimensions showed good interpersonal prototypicality (e.g., detachment was defined by a socially avoidant/nonassertive interpersonal profile) except for internalizing, which was diffusely associated with elevated interpersonal distress. The findings for individual disorders were largely consistent with the dimension that each disorder loaded on, with the exception of the internalizing and dominance disorders, which were interpersonally heterogeneous. These results replicate previous findings and provide novel insights into social dysfunction in psychopathology by wedding the power of hierarchical (i.e., dimensional) modeling and interpersonal circumplex assessment.

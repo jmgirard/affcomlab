@@ -1,0 +1,21 @@
+---
+title: "Comparison of comprehensive and abstinence-only sexuality education in young African American adolescents"
+type: "article"
+author: "Shepherd, Sly, & Girard"
+year: "2017"
+publication: "Journal of Adolescence"
+preprint: ""
+doi: "https://doi.org/10.1016/j.adolescence.2017.09.006"
+materials: ""
+toc: false
+categories:
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Shepherd, L. M., Sly, K. F., & Girard, J. M. (2017). Comparison of comprehensive and abstinence-only sexuality education in young African American adolescents. *Journal of Adolescence, 61*, 50–63.
+
+## Abstract
+
+The purpose of this study was to identify predictors of sexual behavior and condom use in African American adolescents, as well as to evaluate the effectiveness of comprehensive sexuality and abstinence-only education to reduce adolescent sexual behavior and increase condom use. Participants included 450 adolescents aged 12-14 years in the southern United States. Regression analyses showed favorable attitudes toward sexual behavior and social norms significantly predicted recent sexual behavior, and favorable attitudes toward condoms significantly predicted condom usage. Self-efficacy was not found to be predictive of adolescents’ sexual behavior or condom use. There were no significant differences in recent sexual behavior based on type of sexuality education. Adolescents who received abstinence-only education had reduced favorable attitudes toward condom use, and were more likely to have unprotected sex than the comparison group. Findings suggest that adolescents who receive abstinence-only education are at greater risk of engaging in unprotected sex.

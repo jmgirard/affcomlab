@@ -1,0 +1,26 @@
+---
+title: "Momentary patterns of covariation between specific affects and interpersonal behavior: Linking relationship science and personality assessment"
+type: "article"
+author: "Ross, Girard, Wright, et al."
+year: "2017"
+publication: "Psychological Assessment"
+preprint: ""
+doi: "https://doi.org/10.1037/pas0000338"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - observational
+  - personality
+  - emotion
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Ross, J. M., Girard, J. M., Wright, A. G. C., Beeney, J. E., Scott, L. N., Hallquist, M. N., Lazarus, S. A., Stepp, S. D., & Pilkonis, P. A. (2017). Momentary patterns of covariation between specific affects and interpersonal behavior: Linking relationship science and personality assessment. *Psychological Assessment, 29*(2), 123–134.
+
+## Abstract
+
+Relationships are among the most salient factors affecting happiness and wellbeing for individuals and families. Relationship science has identified the study of dyadic behavioral patterns between couple members during conflict as an important window in to relational functioning with both short-term and long-term consequences. Several methods have been developed for the momentary assessment of behavior during interpersonal transactions. Among these, the most popular is the Specific Affect Coding System (SPAFF), which organizes social behavior into a set of discrete behavioral constructs. This study examines the interpersonal meaning of the SPAFF codes through the lens of interpersonal theory, which uses the fundamental dimensions of Dominance and Affiliation to organize interpersonal behavior. A sample of 67 couples completed a conflict task, which was video recorded and coded using SPAFF and a method for rating momentary interpersonal behavior, the Continuous Assessment of Interpersonal Dynamics (CAID). Actor partner interdependence models in a multilevel structural equation modeling framework were used to study the covariation of SPAFF codes and CAID ratings. Results showed that a number of SPAFF codes had clear interpersonal signatures, but many did not. Additionally, actor and partner effects for the same codes were strongly consistent with interpersonal theory’s principle of complementarity. Thus, findings reveal points of convergence and divergence in the 2 systems and provide support for central tenets of interpersonal theory. Future directions based on these initial findings are discussed.

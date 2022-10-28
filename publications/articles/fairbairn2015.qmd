@@ -1,0 +1,24 @@
+---
+title: "Speech volume indexes gender differences in the social-emotional effects of alcohol"
+type: "article"
+author: "Fairbairn, Sayette, Amole, et al."
+year: "2015"
+publication: "Experimental & Clinical Psychopharmacology"
+preprint: ""
+doi: "https://psycnet.apa.org/doi/10.1037/pha0000021"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - observational
+  - nonverbal behavior
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Fairbairn, C. E., Sayette, M. A., Amole, M. C., Dimoff, J. D., Cohn, J. F., & Girard, J. M. (2015). Speech volume indexes sex differences in the social-emotional effects of alcohol. *Experimental & Clinical Psychopharmacology, 23*(4), 255–264.
+
+## Abstract
+
+Men and women differ dramatically in their rates of alcohol use disorder (AUD), and researchers have long been interested in identifying mechanisms underlying male vulnerability to problem drinking. Surveys suggest that social processes underlie sex differences in drinking patterns, with men reporting greater social enhancement from alcohol than women, and all-male social drinking contexts being associated with particularly high rates of hazardous drinking. But experimental evidence for sex differences in social-emotional response to alcohol has heretofore been lacking. Research using larger sample sizes, a social context, and more sensitive measures of alcohol’s rewarding effects may be necessary to better understand sex differences in the etiology of AUD. This study explored the acute effects of alcohol during social exchange on speech volume –an objective measure of social-emotional experience that was reliably captured at the group level. Social drinkers (360 male; 360 female) consumed alcohol (.82g/kg males; .74g/kg females), placebo, or a no-alcohol control beverage in groups of three over 36-minutes. Within each of the three beverage conditions, equal numbers of groups consisted of all males, all females, 2 females and 1 male, and 1 female and 2 males. Speech volume was monitored continuously throughout the drink period, and group volume emerged as a robust correlate of self-report and facial indexes of social reward. Notably, alcohol-related increases in group volume were observed selectively in all-male groups but not in groups containing any females. Results point to social enhancement as a promising direction for research exploring factors underlying sex differences in problem drinking.

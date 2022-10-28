@@ -1,0 +1,26 @@
+---
+title: "Narcissistic admiration and rivalry: An interpersonal approach to construct validation"
+type: "article"
+author: "Grove, Smith, Girard, & Wright"
+year: "2019"
+publication: "Journal of Personality Disorders"
+preprint: "https://osf.io/erxy7/"
+doi: "https://doi.org/10.1521/pedi_2019_33_374"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - interpersonal
+  - circumplex statistics
+  - personality disorder
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Grove, J. L., Smith, T. W., Girard, J. M., & Wright, A. G. (2019). Narcissistic admiration and rivalry: An interpersonal approach to construct validation. *Journal of Personality Disorders, 33*(6), 751–775.
+
+## Abstract
+
+The present study applied the interpersonal perspective in testing the narcissistic admiration and rivalry concept (NARC) and examining the construct validity of the corresponding Narcissistic Admiration and Rivalry Questionnaire (NARQ). Two undergraduate samples (Sample 1: N = 290; Sample 2: N = 188) completed self-report measures of interpersonal processes based in the interpersonal circumplex (IPC), as well as measures of related constructs. In examining IPC correlates, we used a novel bootstrapping approach to determine if admiration and rivalry related to differing interpersonal profiles. Consistent with our hypotheses, admiration was distinctly related to generally agentic (i.e., dominant) interpersonal processes, whereas rivalry generally reflected (low) communal (i.e., hostile) interpersonal processes. Furthermore, NARQ-admiration and NARQ-rivalry related to generally adaptive and maladaptive aspects of status-related constructs, emotional, personality, and social adjustment, respectively. This research provides further support for the NARC, as well as construct validation for the NARQ.

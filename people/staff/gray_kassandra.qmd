@@ -1,0 +1,45 @@
+---
+title: "Kassandra Gray"
+sortby: "2"
+subtitle: "PhD Student"
+image: gray_kassandra.jpg
+toc: false
+resources: 
+  - "gray_cv.pdf"
+started: "Fall 2022"
+ended: "Current"
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: file-earmark-text
+      text: vitae
+      href: ./people/staff/gray_cv.pdf
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Research Staff</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+:::
+
+## Biography
+Kassandra Gray's research interests include interpersonal interactions, emotional expression and communication, individual differences, personality, anxiety, and depression. She is interested in how emotional expression and communication manifest in the therapeutic relationship and the influential role of individual differences (e.g., personality, anxiety, and depression).   
+
+She completed her undergraduate Bachelor of Science degree at Southern Nazarene University in May 2022 and is currently a doctoral student in the Clinical Psychological Science program in the Department of Psychology at the University of Kansas. She is a graduate teaching assistant (GTA) for undergraduate psychology courses and is also a member of the Affective Communication and Computing lab. 
+
+## Education
+
+- [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
+  PhD Student (Clinical Psychological Science), 2022–Current
+
+- [Southern Nazarene University]{.fw-bold} | Bethany, OK, USA<br />
+  BS in Psychology | 2018–2022

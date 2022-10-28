@@ -1,0 +1,23 @@
+---
+title: "A primer on observational measurement"
+type: "article"
+author: "Girard & Cohn"
+year: "2016"
+publication: "Assessment"
+preprint: "https://psyarxiv.com/582cy"
+doi: "https://doi.org/10.1177/1073191116635807"
+materials: ""
+toc: false
+categories:
+  - methodological
+  - observational
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., & Cohn, J. F. (2016). A primer on observational measurement. *Assessment, 23*(4), 404–413.
+
+## Abstract
+
+Observational measurement plays an integral role in a variety of scientific endeavors within biology, psychology, sociology, education, medicine, and marketing. The current article provides an interdisciplinary primer on observational measurement; in particular, it highlights recent advances in observational methodology and the challenges that accompany such growth. First, we detail the various types of instrument that can be used to standardize measurements across observers. Second, we argue for the importance of validity in observational measurement and provide several approaches to validation based on contemporary validity theory. Third, we outline the challenges currently faced by observational researchers pertaining to measurement drift, observer reactivity, reliability analysis, and time/expense. Fourth, we describe recent advances in computer-assisted measurement, fully automated measurement, and statistical data analysis. Finally, we identify several key directions for future observational research to explore.

@@ -1,0 +1,53 @@
+---
+title: "Recruitment 2023–2024"
+description: "Information for applicants to the psychology graduate program to start in Fall 2023"
+author: "Jeffrey Girard"
+date: "2022-08-30"
+image: recruit.webp
+draft: false
+categories:
+  - announcement
+  - recruitment
+---
+
+### Are you accepting applications for new graduate students?
+
+**Yes!** I am planning to review applications for graduate students to start in Fall 2023 and may admit one or two Psychology PhD students across the [Clinical Psychological Science](https://psychology.ku.edu/clinical-psychology-program) (CPS) and [Brain, Behavior, and Quantitative Science](https://psychology.ku.edu/bbq) (BBQ) programs. The application deadline for both programs is **December 1, 2022**.
+
+### What does your lab study?
+
+The AffCom lab develops and uses technology to advance scientific understanding of how emotional, social, and mental health-related information is communicated through verbal and nonverbal behavior. Our work is eclectic and spans basic science on emotion and behavior; clinical science on assessment and treatment; and methodological science on the collection, processing, analysis, and visualization of research data.
+
+### What are your research plans for the near future?
+
+In the next few years, I plan to study (1) how therapists and patients with depression communicate during psychotherapy sessions, (2) how individuals with and without a history of trauma communicate their experiences and construct narratives, (3) how psychotic symptoms affect the production of communicative behavior, and (4) how technology can be used to more precisely measure emotional expressiveness in both healthy and clinical populations. I am also planning to work on software related to inter-rater agreement, hierarchical latent variable modeling, and web-based video annotation. See the [research](../../research.qmd) page for more information.
+
+### Should I apply to work with you at KU?
+
+I welcome applications from all qualified students regardless of background. However, admissions are competitive, and applications are not free; thus, I want to give applicants a better idea of what I am looking for so that they can make an informed decision about whether to invest their time and money.
+
+First, note that I currently only advise PhD students in the CPS and BBQ programs. The psychology department does not offer a terminal Masters degree and I am not affiliated with the Child Clinical Psychology program. Second, note that my lab does not specialize in neuroscience or do much brain-focused research (i.e., we skew more towards the behavior and quantitative side of the BBQ program).
+
+The primary criteria I use to evaluate applications are (1) evidence of the applicant’s ability to succeed in a research-focused PhD program, (2) a match between the applicant’s academic interests/experiences and my own areas of interest/expertise, and (3) a match between the applicant’s interpersonal style and my own.
+
+To be competitive for admission, applicants should have (1) a strong academic record with a Bachelor's or Master's degree in psychology or a related field, (2) previous experience working/volunteering in one or more research labs, (3) a high level of maturity and professionalism conducive to collaborative and/or clinical work, and (4) a direct connection to my area of research such as through previous coursework, research experience, or independent study.
+
+### What is the funding situation for graduate students?
+
+I would not take on a graduate student if I did not believe that I could provide them full funding (tuition remission, stipend, and benefits) for four to five years. Funding comes primarily from teaching assistantships, although research assistantships and scholarships are also possibilities. Supplemental summer funding is also often possible depending on our success in securing research grants.
+
+### What is your stance on scientific reform?
+
+I am committed to making my science more transparent, open, reproducible, and accountable though the (1) sharing of research preprints, materials, and data, (2) transparent description of hypotheses and methods, and (3) use and development of free and open-source software.
+
+### Can potential applicants meet with you before applying?
+
+Due to the high number of inquiries I receive each year, it is unfortunately not possible for me to meet with potential applicants. However, I will carefully review every application that lists my name and those applicants who are invited to interview will have the opportunity to speak with me one-on-one.
+
+### Can potential applicants speak to students in the lab?
+
+Similar to the question above, applicants who are invited to interview will have the opportunity to speak to graduate students and research assistants in the lab (as well as various other members of the department).
+
+### How do I apply?
+
+Admission information and links can be found on the [Psychology Graduate Program](https://psychology.ku.edu/psychology-graduate-program) webpage. Scroll down and open the "Admission" accordion or click on one of the "Application Instructions" links. You will need to submit a curriculum vitae, statement of purpose, three letters of recommendations, and transcripts.

@@ -1,0 +1,41 @@
+---
+pagetitle: "Opportunities | AffCom Lab"
+toc: true
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Opportunities</li>
+  </ol>
+</nav>
+```
+
+## For Undergraduate Students
+The lab is frequently home to undergraduate students from the Psychology and Behavioral Neuroscience departments (and occasionally others). 
+
+Undergraduate students work as **research assistants**, learning about the scientific method and assisting in the collection and processing of research data. Many enroll in PSYC 480 and receive **credit hours** for this work. Research assistants attend weekly lab meetings and can expect a **letter of recommendation** from Dr. Girard describing their work in and contributions to the lab (please give one month of advanced notice). Opportunities to earn **co-authorship** on research products (e.g., conference presentations) are also occasionally offered to advanced research assistants.
+
+Honors students will also occasionally design and complete an independent research project (i.e., **honors thesis**) under the supervision of Dr. Girard over the course of their senior year. These students typically apply for (and have often won) **research awards** of $1000 from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and make oral or poster **presentations** about their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium). 
+
+```{=html}
+<a href="mailto:jmgirard@ku.edu" class="btn btn-primary rounded-pill">Apply to be a Research Assistant</a>
+```
+
+## For Prospective Graduate Students
+The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (i.e., **PhD**s) in three tracks: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology; note that the department does not offer a terminal Masters degree. 
+
+Dr. Girard advises graduate students in the **BBQ** and **CPS** tracks and is a particularly good match for students with interests that span both areas (e.g., CPS students interested in advanced methods or BBQ students interested in medical applications).
+
+Graduate students will complete coursework in the department and conduct research in the lab. They will receive a world-class education in the scientific method and have many opportunities to contribute to ongoing research projects.
+
+More information about each admissions cycle can be found on the [News](news.qmd) page.
+
+```{=html}
+<a href="https://psychology.ku.edu/sites/psychology/files/documents/Application%20Instructions/BBQApplicationInstructions.pdf" class="btn btn-primary rounded-pill me-2">Apply to the BBQ Program</a>
+<a href="https://psychology.ku.edu/sites/psychology/files/documents/Application%20Instructions/Clinical%26ClinicalHealthApplicationInstructions.pdf" class="btn btn-primary rounded-pill">Apply to the CPS Program</a>
+```
+
+## For Prospective Postdocs and Staff
+Postdoctoral fellowships and other staff positions in the lab will be made available as funding permits. Please check the [News](news.qmd) page for more information.

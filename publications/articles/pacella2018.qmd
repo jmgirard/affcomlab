@@ -1,0 +1,39 @@
+---
+title: "The association between daily posttraumatic stress symptoms and pain over the first 14-days after injury: An experience sampling study "
+type: "article"
+author: "Pacella, Girard, Wright, et al."
+year: "2018"
+publication: "Academic Emergency Medicine"
+preprint: ""
+doi: "https://doi.org/10.1111/acem.13406"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - trauma
+  - ema methods
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Pacella, M. L., Girard, J. M., Wright, A. G. C., Suffoletto, B., & Callaway, C. W. (2018). The association between daily posttraumatic stress symptoms and pain over the first 14 days after injury: An experience sampling study. *Academic Emergency Medicine, 25*(8), 844–855.
+
+## Abstract
+
+#### Objectives
+
+Psychosocial factors and responses to injury modify the transition from acute to chronic pain. Specifically, posttraumatic stress disorder (PTSD) symptoms (reexperiencing, avoidance, and hyperarousal symptoms) exacerbate and cooccur with chronic pain. Yet no study has prospectively considered the associations among these psychological processes and pain reports using experience sampling methods (ESMs) during the acute aftermath of injury. This study applied ESM via daily text messaging to monitor and detect relationships among psychosocial factors and postinjury pain across the first 14 days after emergency department (ED) discharge.
+
+#### Methods
+
+We recruited 75 adults (59% male; mean ± SD age = 34 ± 11.73 years) who experienced a potentially traumatic injury (i.e., involving life threat or serious injury) in the past 24 hours from the EDs of two Level I trauma centers. Participants received five questions per day via text messaging from Day 1 to Day 14 post–ED discharge; three questions measured PTSD symptoms, one question measured perceived social support, and one question measured physical pain.
+
+#### Results
+
+Sixty-seven participants provided sufficient data for inclusion in the final analyses, and the average response rate per subject was 86%. Pain severity score decreased from a mean ± SD of 7.2 ± 2.0 to 4.4 ± 2.69 over 14 days and 50% of the variance in daily pain scores was within person. In multilevel structural equation models, pain scores decreased over time, and daily fluctuations of hyperarousal (B = 0.22, 95% confidetnce interval = 0.08–0.36) were uniquely associated with daily fluctuations in reported pain level within each person.
+
+#### Conclusions
+
+Daily hyperarousal symptoms predict same-day pain severity over the acute postinjury recovery period. We also demonstrated feasibility to screen and identify patients at risk for pain chronicity in the acute aftermath of injury. Early interventions aimed at addressing hyperarousal (e.g., anxiolytics) could potentially aid in reducing experience of pain.

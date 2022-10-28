@@ -1,0 +1,46 @@
+---
+title: "Computational analysis of spoken language in acute psychosis and mania"
+type: "article"
+author: "Girard, Vail, Liebenthal, et al."
+year: "2022"
+publication: "Schizophrenia Research"
+preprint: "https://psyarxiv.com/zc47p"
+doi: "https://doi.org/10.1016/j.schres.2021.06.040"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - psychosis
+  - bipolar disorder
+  - verbal behavior
+  - machine learning
+  - bayesian statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Vail, A. K., Liebenthal, E., Brown, K., Kilciksiz, C. M., Pennant, L., Liebson, E., Öngür, D., Morency, L.-P., & Baker, J. T. (2022). Computational analysis of spoken language in acute psychosis and mania. *Schizophrenia Research, 245*, 97–115.
+
+## Abstract
+
+#### Objectives
+
+This study aimed to (1) determine the feasibility of collecting behavioral data from participants hospitalized with acute psychosis and (2) begin to evaluate the clinical information that can be computationally derived from such data.
+
+#### Methods
+
+Behavioral data was collected across 99 sessions from 38 participants recruited from an inpatient psychiatric unit. Each session started with a semi-structured interview modeled on a typical “clinical rounds” encounter and included administration of the Positive and Negative Syndrome Scale (PANSS).
+
+#### Analysis
+
+We quantified aspects of participants’ verbal behavior during the interview using lexical, coherence, and disfluency features. We then used two complementary approaches to explore our second objective. The first approach used predictive models to estimate participants’ PANSS scores from their language features. Our second approach used inferential models to quantify the relationships between individual language features and symptom measures.
+
+#### Results
+
+Our predictive models showed promise but lacked sufficient data to achieve clinically useful accuracy. Our inferential models identified statistically significant relationships between numerous language features and symptom domains.
+
+#### Conclusion
+
+Our interview recording procedures were well-tolerated and produced adequate data for transcription and analysis. The results of our inferential modeling suggest that automatic measurements of expressive language contain signals highly relevant to the assessment of psychosis. These findings establish the potential of measuring language during a clinical interview in a naturalistic setting and generate specific hypotheses that can be tested in future studies. This, in turn, will lead to more accurate modeling and better understanding of the relationships between expressive language and psychosis.

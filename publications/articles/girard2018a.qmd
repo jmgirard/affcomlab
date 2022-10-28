@@ -1,0 +1,24 @@
+---
+title: "DARMA: Software for dual axis rating and media annotation"
+type: "article"
+author: "Girard & Wright"
+year: "2018"
+publication: "Behavior Research Methods"
+preprint: "https://osf.io/xhmu6/"
+doi: "https://doi.org/10.3758/s13428-017-0915-5"
+materials: "https://osf.io/jcq5x/"
+toc: false
+categories:
+  - methodological
+  - software
+  - observational
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., & Wright, A. G. C. (2018). DARMA: Software for Dual Axis Rating and Media Annotation. *Behavior Research Methods, 50*(3), 902–909.
+
+## Abstract
+
+Continuous measurement systems provide a means of measuring dynamic behavioral and experiential processes as they play out over time. DARMA is a modernized continuous measurement system that synchronizes media playback and the continuous recording of two-dimensional measurements. These measurements can be observational or self-reported and are provided in real-time through the manipulation of a computer joystick. DARMA also provides tools for reviewing and comparing collected measurements and for customizing various settings. DARMA is a domain-independent software tool that was designed to aid researchers who are interested in gaining a deeper understanding of behavior and experience. It is especially well-suited to the study of affective and interpersonal processes, such as the perception and expression of emotional states and the communication of social signals. DARMA is open-source using the GNU General Public License (GPL) and is available for free download from <http://darma.jmgirard.com>.

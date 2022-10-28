@@ -1,0 +1,30 @@
+---
+pagetitle: "Publications | AffCom Lab"
+toc: false
+listing:
+  - id: articles
+    contents: "publications/*/**.qmd"
+    template: ./ejs/article.ejs
+    categories: true
+    sort:
+      - "year desc"
+      - "title"
+    sort-ui: [title,author,publication,year]
+    filter-ui: [title,author,publication,year]
+    page-size: 10
+    field-display-names: 
+      publication: "Publication"
+      year: "Year"
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Publications</li>
+  </ol>
+</nav>
+```
+
+:::{#articles}
+:::

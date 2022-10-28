@@ -1,0 +1,29 @@
+---
+title: "Large-scale observational evidence of cross-cultural differences in facial behavior"
+type: "article"
+author: "McDuff, Girard, & el Kaliouby"
+year: "2017"
+publication: "Journal of Nonverbal Behavior"
+preprint: "https://psyarxiv.com/rb8pe/"
+doi: "https://doi.org/10.1007/s10919-016-0244-x"
+materials: "https://osf.io/wvj47/"
+toc: false
+categories:
+  - substantive
+  - observational
+  - nonverbal behavior
+  - machine learning
+  - big data
+  - culture
+  - emotion
+  - journal article
+---
+
+## Citation (APA 7)
+
+> McDuff, D., Girard, J. M., & El Kaliouby, R. (2017). Large-scale observational evidence of cross-cultural differences in facial behavior. *Journal of Nonverbal Behavior, 41*(1), 1–19.
+
+
+## Abstract
+
+Self-report studies have found evidence that cultures differ in the display rules they have for facial expressions (i.e., for what is appropriate for different people at different times). However, observational studies of actual patterns of facial behavior have been rare and typically limited to the analysis of dozens of participants from two or three regions. We present the first large-scale evidence of cultural differences in observed facial behavior, including 740,984 participants from 12 countries around the world. We used an Internet-based framework to collect video data of participants in two different settings: in their homes and in market research facilities. Using computer vision algorithms designed for this dataset, we measured smiling and brow furrowing expressions as participants watched television ads. Our results reveal novel findings and provide empirical evidence to support theories about cultural and gender differences in display rules. Participants from more individualist cultures displayed more brow furrowing overall, whereas smiling depended on both culture and setting. Specifically, participants from more individualist countries were more expressive in the facility setting, while participants from more collectivist countries were more expressive in the home setting. Female participants displayed more smiling and less brow furrowing than male participants overall, with the latter difference being more pronounced in more individualist countries. This is the first study to leverage advances in computer science to enable large-scale observational research that would not have been possible using traditional methods.

@@ -1,0 +1,25 @@
+---
+title: "Properties of the Continuous Assessment of Interpersonal Dynamics across sex, level of familiarity, and interpersonal conflict"
+type: "article"
+author: "Hopwood, Harrison, Amole, et al."
+year: "2020"
+publication: "Assessment"
+preprint: "https://psyarxiv.com/hqpt7/"
+doi: "https://doi.org/10.1177/1073191118798916"
+materials: ""
+toc: false
+categories:
+  - methodological
+  - interpersonal
+  - observational
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Hopwood, C. J., Harrison, A. L., Amole, M. C., Girard, J. M., Wright, A. G. C., Thomas, K. M., Sadler, P., Ansell, E. B., Chaplin, T. M., Morey, L. C., Crowley, M. J., Durbin, C. E., & Kashy, D. A. (2020). Properties of the continuous assessment of interpersonal dynamics across sex, level of familiarity, and interpersonal conflict. *Assessment, 27*(1), 40–56.
+
+
+## Abstract
+
+The Continuous Assessment of Interpersonal Dynamics (CAID) is a method in which trained observers code individuals’ dominance and warmth continuously while they interact in dyads. This method has significant promise for assessing dynamic interpersonal processes. The purpose of this study was to examine the impact of individual sex, dyadic familiarity, and situational conflict on patterns of interpersonal warmth, dominance, and complementarity as assessed via CAID. We used six samples with 603 dyads, including 2 samples of unacquainted mixed-sex undergraduates interacting in a collaborative task, 2 samples of couples interacting in both collaborative and conflict tasks, and 2 samples of mothers and children interacting in both collaborative and conflict tasks. Complementarity effects were robust across all samples, and individuals tended to be relatively warm and dominant. Results from multilevel models indicated that women were slightly warmer than men whereas there were no sex differences in dominance. Unfamiliar dyads and dyads interacting in more collaborative tasks were relatively warmer, more submissive, and more complementary on warmth but less complementary on dominance. These findings speak to the utility of the CAID method for assessing interpersonal dynamics and provide norms for researchers who use the method for different types of samples and applications.

@@ -1,0 +1,26 @@
+---
+title: "BP4D-Spontaneous: A high-resolution spontaneous 3D dynamic facial expression database"
+type: "article"
+author: "Zhang, Yin, Cohn, et al."
+year: "2014"
+publication: "Image and Vision Computing"
+preprint: ""
+doi: "https://doi.org/10.1016/j.imavis.2014.06.002"
+materials: ""
+toc: false
+categories:
+  - methodological
+  - shared database
+  - observational
+  - nonverbal behavior
+  - emotion
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Zhang, X., Yin, L., Cohn, J. F., Canavan, S., Reale, M., Horowitz, A., Liu, P., & Girard, J. M. (2014). BP4D-Spontaneous: A high-resolution spontaneous 3D dynamic facial expression database. *Image and Vision Computing, 32*(10), 692–706.
+
+## Abstract
+
+Facial expression is central to human experience. Its efficiency and valid measurement are challenges that automated facial image analysis seeks to address. Most publically available databases are limited to 2D static images or video of posed facial behavior. Because posed and un-posed (aka “spontaneous”) facial expressions differ along several dimensions including complexity and timing, well-annotated video of un-posed facial behavior is needed. Moreover, because the face is a three-dimensional deformable object, 2D video may be insufficient, and therefore 3D video archives are required. We present a newly developed 3D video database of spontaneous facial expressions in a diverse group of young adults. Well-validated emotion inductions were used to elicit expressions of emotion and paralinguistic communication. Frame-level ground-truth for facial actions was obtained using the Facial Action Coding System. Facial features were tracked in both 2D and 3D domains. To the best of our knowledge, this new database is the first of its kind for the public. The work promotes the exploration of 3D spatiotemporal features in subtle facial expression, better understanding of the relation between pose and motion dynamics in facial action units, and deeper understanding of naturally occurring facial action.

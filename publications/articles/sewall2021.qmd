@@ -1,0 +1,41 @@
+---
+title: "A Bayesian multilevel analysis of the longitudinal associations between relationship quality and suicidal ideation and attempts among youth with bipolar disorder"
+type: "article"
+author: "Sewall, Girard, Merranko, et al."
+year: "2021"
+image: jcpp.webp
+publication: "The Journal of Child Psychology and Psychiatry"
+preprint: "https://psyarxiv.com/ntgrx/"
+doi: "https://doi.org/10.1111/jcpp.13343"
+materials: "https://osf.io/rtz7g/"
+toc: false
+categories:
+  - substantive
+  - clinical
+  - interpersonal
+  - bipolar disorder
+  - bayesian statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Sewall, C. J. R., Girard, J. M., Merranko, J., Hafeman, D., Goldstein, B. I., Strober, M., Hower, H., Weinstock, L. M., Yen, S., Ryan, N. D., Keller, M. B., Liao, F., Diler, R. S., Gill, M. K., Axelson, D., Birmaher, B., & Goldstein, T. R. (2021). A Bayesian multilevel analysis of the longitudinal associations between relationship quality and suicidal ideation and attempts among youth with bipolar disorder. *The Journal of Child Psychology and Psychiatry, 62*(7), 905–9115.
+
+## Abstract
+
+#### Background
+
+Youth with bipolar disorder (BD) are at high risk for suicidal thoughts and behaviors and frequently experience interpersonal impairment, which is a risk factor for suicide. Yet, no study to date has examined the longitudinal associations between relationship quality in family/peer domains and suicidal thoughts and behaviors among youth with BD. Thus, we investigated how between-person differences – reflecting the average relationship quality across time – and within-person changes, reflecting recent fluctuations in relationship quality, act as distal and/or proximal risk factors for suicidal ideation (SI) and suicide attempts.
+
+#### Methods
+
+We used longitudinal data from the Course and Outcome of Bipolar Youth Study (N = 413). Relationship quality variables were decomposed into stable (i.e., average) and varying (i.e., recent) components and entered, along with major clinical covariates, into separate Bayesian multilevel models predicting SI and suicide attempt. We also examined how the relationship quality effects interacted with age and sex.
+
+#### Results
+
+Poorer average relationship quality with parents (β = −.33, 95% Bayesian highest density interval (HDI) [−0.54, −0.11]) or friends (β = −.33, 95% HDI [−0.55, −0.11]) was longitudinally associated with increased risk of SI but not suicide attempt. Worsening recent relationship quality with parents (β = −.10, 95% HDI [−0.19, −0.03]) and, to a lesser extent, friends (β = −.06, 95% HDI [−0.15, 0.03]) was longitudinally associated with increased risk of SI, but only worsening recent relationship quality with parents was also associated with increased risk of suicide attempt (β = −.15, 95% HDI [−0.31, 0.01]). The effects of certain relationship quality variables were moderated by gender but not age.
+
+#### Conclusions
+
+Among youth with BD, having poorer average relationship quality with peers and/or parents represents a distal risk factor for SI but not suicide attempts. Additionally, worsening recent relationship quality with parents may be a time-sensitive indicator of increased risk for SI or suicide attempt.

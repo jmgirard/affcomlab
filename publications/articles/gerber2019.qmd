@@ -1,0 +1,40 @@
+---
+title: "Alexithymia – not autism – is associated with frequency of social interactions in adults"
+type: "article"
+author: "Gerber, Girard, Scott, & Lerner"
+year: "2019"
+publication: "Behaviour Research and Therapy"
+preprint: ""
+doi: "https://doi.org/10.1016/j.brat.2019.103477"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - interpersonal
+  - autism
+  - ema methods
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Gerber, A. H., Girard, J. M., Scott, S. B., & Lerner, M. D. (2019). Alexithymia – Not autism – is associated with frequency of social interactions in adults. *Behaviour Research and Therapy, 123*, 103477.
+
+## Abstract
+
+#### Objective
+
+While much is known about the quality of social behavior among neurotypical individuals and those with autism spectrum disorder (ASD), little work has evaluated quantity of social interactions. This study used ecological momentary assessment (EMA) to quantify in vivo daily patterns of social interaction in adults as a function of demographic and clinical factors.
+
+#### Method
+
+Adults with and without ASD ($N_{ASD}=23$, $N_{NT}=52$) were trained in an EMA protocol to report their social interactions via smartphone over one week. Participants completed measures of IQ, ASD symptom severity and alexithymia symptom severity.
+
+#### Results
+
+Cyclical multilevel models were used to account for nesting of observations. Results suggest a daily cyclical pattern of social interaction that was robust to ASD and alexithymia symptoms. Adults with ASD did not have fewer social interactions than neurotypical peers; however, severity of alexithymia symptoms predicted fewer social interactions regardless of ASD status.
+
+#### Conclusions
+
+These findings suggest that alexithymia, not ASD severity, may drive social isolation and highlight the need to reevaluate previously accepted notions regarding differences in social behavior utilizing modern methods.

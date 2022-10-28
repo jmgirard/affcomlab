@@ -1,0 +1,26 @@
+---
+title: "Nonverbal social withdrawal in depression: Evidence from manual and automatic analyses"
+type: "article"
+author: "Girard, Cohn, Mahoor, et al."
+year: "2014"
+publication: "Image and Vision Computing"
+preprint: "https://pubmed.ncbi.nlm.nih.gov/25378765/"
+doi: "https://doi.org/10.1016/j.imavis.2013.12.007"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - depression
+  - nonverbal behavior
+  - machine learning
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Cohn, J. F., Mahoor, M. H., Mavadati, S. M., Hammal, Z., & Rosenwald, D. P. (2014). Nonverbal social withdrawal in depression: Evidence from manual and automatic analyses. *Image and Vision Computing, 32*(10), 641–647.
+
+## Abstract
+
+The relationship between nonverbal behavior and severity of depression was investigated by following depressed participants over the course of treatment and video recording a series of clinical interviews. Facial expressions and head pose were analyzed from video using manual and automatic systems. Both systems were highly consistent for FACS action units (AUs) and showed similar effects for change over time in depression severity. When symptom severity was high, participants made fewer affiliative facial expressions (AUs 12 and 15) and more non-affiliative facial expressions (AU 14). Participants also exhibited diminished head motion (i.e., amplitude and velocity) when symptom severity was high. These results are consistent with the Social Withdrawal hypothesis: that depressed individuals use nonverbal behavior to maintain or increase interpersonal distance. As individuals recover, they send more signals indicating a willingness to affiliate. The finding that automatic facial expression analysis was both consistent with manual coding and revealed the same pattern of findings suggests that automatic facial expression analysis may be ready to relieve the burden of manual coding in behavioral and clinical science.

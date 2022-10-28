@@ -1,0 +1,27 @@
+---
+title: "Weighting schemes and incomplete data: A generalized Bayesian framework for chance-corrected interrater agreement"
+type: "article"
+author: "Van Oest & Girard"
+year: "2021"
+publication: "Psychological Methods"
+preprint: "https://psyarxiv.com/s5n4e/"
+doi: "https://doi.org/10.1037/met0000412"
+materials: ""
+toc: false
+categories:
+  - methodological
+  - bayesian statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Van Oest, R., & Girard, J. M. (2021). Weighting schemes and incomplete data: A generalized Bayesian framework for chance-corrected interrater agreement. *Psychological Methods.* Advance online publication.
+
+## Abstract
+
+Van Oest (2019) developed a framework to assess interrater agreement for nominal categories and complete data. We generalize this framework to all four situations of nominal or ordinal categories and complete or incomplete data. The mathematical solution yields a chance-corrected agreement coefficient that accommodates any weighting scheme for penalizing rater disagreements and any number of raters and categories. By incorporating Bayesian estimates of the category proportions, the generalized coefficient also captures situations in which raters classify only subsets of items; that is, incomplete data. Furthermore, this coefficient encompasses existing chance-corrected agreement coefficients: the S-coefficient, Scott’s pi, Fleiss’ kappa, and Van Oest’s uniform prior coefficient, all augmented with a weighting scheme and the option of incomplete data. We use simulation to compare these nested coefficients. The uniform prior coefficient tends to perform best, in particular, if one category has a much larger proportion than others. The gap with Scott’s pi and Fleiss’ kappa widens if the weighting scheme becomes more lenient to small disagreements and often if more item classifications are missing; missingness biases play a moderating role. The uniform prior coefficient often performs much better than the S-coefficient, but the S-coefficient sometimes performs best for small samples, missing data, and lenient weighting schemes. The generalized framework implies a new interpretation of chance-corrected weighted agreement coefficients: These coefficients estimate the probability that both raters in a pair assign an item to its correct category without guessing. Whereas Van Oest showed this interpretation for unweighted agreement, we generalize to weighted agreement. 
+
+## Translational Abstract
+
+Many studies and assessments require classification of subjective items (e.g., text) into categories (e.g., based on content). To assess whether the results are reproducible, it is good practice to let two or more raters independently classify the items, compute the proportion of pairwise rater agreement, and adjust for agreement expected by chance. Most chance-corrected agreement coefficients assume nominal categories and include only full agreements in which raters choose the same category. However, many situations (e.g., point scales) imply ordinal categories, where raters may receive partial credit for disagreements, based on the distance of their chosen categories and captured by a weighting scheme. Furthermore, raters often classify only subsets of items, where the missing data occur either by accident or by design. The present study develops a framework to estimate chance-corrected agreement for all four combinations of nominal or ordinal categories and complete or incomplete data. The resulting coefficient requires only a few lines of programming code and captures several existing coefficients via different values of its input parameters; it augments all nested coefficients with a weighting scheme and the option of missing item classifications. We use simulation to compare the coefficient performances for different weighting schemes, missing data mechanisms, and category proportions: The so-called uniform prior coefficient often (but not always) performs best. Furthermore, our framework implies that chance-corrected agreement coefficients, both unweighted and weighted, estimate the probability that both raters in a pair assign an item to its correct category without guessing.

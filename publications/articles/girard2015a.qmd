@@ -1,0 +1,25 @@
+---
+title: "Spontaneous facial expression in unscripted social interactions can be measured automatically"
+type: "article"
+author: "Girard, Cohn, Jeni, et al."
+year: "2015"
+publication: "Behavior Research Methods"
+preprint: "https://psyarxiv.com/gqhjr"
+doi: "https://doi.org/10.3758/s13428-014-0536-1"
+materials: "https://osf.io/qu3f6/"
+toc: false
+categories:
+  - methodological
+  - observational
+  - nonverbal behavior
+  - machine learning
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Cohn, J. F., Jeni, L. A., Sayette, M. A., & De la Torre, F. (2015). Spontaneous facial expression in unscripted social interactions can be measured automatically. *Behavior Research Methods, 47*(4), 1136–1147.
+
+## Abstract
+
+Methods to assess individual facial actions have potential to shed light on important behavioral phenomena ranging from emotion and social interaction to psychological disorders and health. However, manual coding of such actions is labor intensive and requires extensive training. To date, establishing reliable automated coding of unscripted facial actions has been a daunting challenge impeding development of psychological theories and applications requiring facial expression assessment. It is therefore essential that automated coding systems be developed with enough precision and robustness to ease the burden of manual coding in challenging data involving variation in participant gender, ethnicity, head pose, speech, and occlusion. We report a major advance in automated coding of spontaneous facial actions during an unscripted social interaction involving three strangers. For each participant (n = 80, 47 % women, 15 % Nonwhite), 25 facial action units (AUs) were manually coded from video using the Facial Action Coding System. Twelve AUs occurred more than 3 % of the time and were processed using automated FACS coding. Automated coding showed very strong reliability for the proportion of time that each AU occurred (mean intraclass correlation = 0.89), and the more stringent criterion of frame-by-frame reliability was moderate to strong (mean Matthew’s correlation = 0.61). With few exceptions, differences in AU detection related to gender, ethnicity, pose, and average pixel intensity were small. Fewer than 6 % of frames could be coded manually but not automatically. These findings suggest automated FACS coding has progressed sufficiently to be applied to observational research in emotion and related areas of study.

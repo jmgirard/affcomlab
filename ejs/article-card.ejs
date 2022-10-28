@@ -1,0 +1,22 @@
+
+```{=html}
+<% for (const item of items) { %>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-2">
+      <img src="<%= item.image %>" class="img-fluid rounded-start" alt="Image of Journal Cover">
+    </div>
+    <div class="col-10">
+      <div class="card-body">
+        <h5 class="card-title listing-title"><%= item.title %></h5>
+        <p class="card-text text-muted">
+          <%= item.authors %><br />
+          <span class="fst-italic"><%= item.publication %></span><br />
+          Publication Year: <%= item.year %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>
+```

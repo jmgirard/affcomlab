@@ -1,0 +1,25 @@
+---
+title: "Automated audiovisual depression analysis"
+type: "article"
+author: "Girard & Cohn"
+year: "2015"
+publication: "Current Opinion in Psychology"
+preprint: "https://psyarxiv.com/zaum3"
+doi: "https://doi.org/10.1016/j.copsyc.2014.12.010"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - clinical
+  - methodological
+  - depression
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., & Cohn, J. F. (2015). Automated audiovisual depression analysis. *Current Opinion in Psychology, 4*, 75–79.
+
+## Abstract
+
+Analysis of observable behavior in depression primarily relies on subjective measures. New computational approaches make possible automated audiovisual measurement of behaviors that humans struggle to quantify (e.g., movement velocity and voice inflection). These tools have the potential to improve screening and diagnosis, identify new behavioral indicators of depression, measure response to clinical intervention, and test clinical theories about underlying mechanisms. Highlights include a study that measured the temporal coordination of vocal tract and facial movements, a study that predicted which adolescents would go on to develop depression based on their voice qualities, and a study that tested the behavioral predictions of clinical theories using automated measures of facial actions and head motion.

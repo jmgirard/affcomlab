@@ -1,0 +1,24 @@
+---
+title: "In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions"
+type: "article"
+author: "Bowdring, Sayette, Girard, & Woods"
+year: "2021"
+publication: "Journal of Nonverbal Behavior"
+preprint: "https://psyarxiv.com/futv2/"
+doi: "https://dx.doi.org/10.1007/s10919-020-00350-2"
+materials: "https://osf.io/gewrp/"
+toc: false
+categories:
+  - substantive
+  - nonverbal behavior
+  - bayesian statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Bowdring, M. A., Sayette, M. A., Girard, J. M., & Woods, W. C. (2021). In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions. *Journal of Nonverbal Behavior, 45*(2), 241–259.
+
+## Abstract
+
+Physical attractiveness plays a central role in psychosocial experiences. One of the top research priorities has been to identify factors affecting perceptions of physical attractiveness (PPA). Recent work suggests PPA derives from different sources (e.g., target, perceiver, stimulus type). Although smiles in particular are believed to enhance PPA, support has been surprisingly limited. This study comprehensively examines the effect of smiles on PPA and, more broadly, evaluates the roles of target, perceiver, and stimulus type in PPA variation. Perceivers (n=181) rated both static images and 5-s videos of targets displaying smiling and neutral-expressions. Smiling images were rated as more attractive than neutral-expression images (regardless of stimulus motion format). Interestingly, perceptions of physical attractiveness were based more on the perceiver than on either the target or format in which the target was presented. Results clarify the effect of smiles, and highlight the significant role of the perceiver, in PPA.

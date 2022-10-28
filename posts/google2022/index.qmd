@@ -1,0 +1,13 @@
+---
+title: "Google Research Grant"
+description: "Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices"
+author: "Jeffrey Girard"
+date: "2022-10-28"
+image: google.webp
+draft: false
+categories:
+  - announcement
+  - funding
+---
+
+I am very pleased to announce that the AffCom Lab has been granted a $30,000 gift from Google LLC to support our work on novel, scalable mental health screening procedures! Specifically, we plan to use these funds to further integrate computer vision, natural language processing, ambulatory assessment, and passive sensing into new screening procedures for affective disorders. This is also an opportunity to deepen the lab's collaborative ties with industry leaders in digital mental health. Stay tuned for more information in the next few months about a new project we plan to launch in this space!

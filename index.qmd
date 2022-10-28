@@ -1,0 +1,19 @@
+---
+pagetitle: "AffCom Lab"
+title: "Affective Communication & Computing Lab"
+# page-layout: full
+toc: false
+---
+
+::: {.lead}
+  We are an [interdisciplinary]{.fw-bolder} research group based within the [Department of Psychology](https://psych.ku.edu){.text-primary .text-decoration-none .fw-semibold} at the [University of Kansas](https://ku.edu){.text-primary .text-decoration-none .fw-semibold}. We develop, validate, and apply [computational methods]{.fw-bolder} to advance the study of [emotion]{.fw-bolder}, [interpersonal communication]{.fw-bolder}, and [mental health]{.fw-bolder}.
+:::
+
+![](./img/showcase.svg){.hero}
+
+::: {.callout-note}
+## We are currently recruiting!
+
+If you are interested in joining the lab as a Psychology PhD student, please consider applying.<br />
+You can find more information about this recruitment cycle at [this blog post](./posts/recruitment2023) (or under News).
+:::

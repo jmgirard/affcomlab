@@ -1,0 +1,25 @@
+---
+title: "Estimating smile intensity: A better way"
+type: "article"
+author: "Girard, Cohn, & De la Torre"
+year: "2015"
+publication: "Pattern Recognition Letters"
+preprint: ""
+doi: "https://doi.org/10.1016/j.patrec.2014.10.004"
+materials: ""
+toc: false
+categories:
+  - methodological
+  - observational
+  - machine learning
+  - nonverbal behavior
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Cohn, J. F., & De la Torre, F. (2015). Estimating smile intensity: A better way. *Pattern Recognition Letters, 66*, 13–21.
+
+## Abstract
+
+Both the occurrence and intensity of facial expressions are critical to what the face reveals. While much progress has been made towards the automatic detection of facial expression occurrence, controversy exists about how to estimate expression intensity. The most straight-forward approach is to train multiclass or regression models using intensity ground truth. However, collecting intensity ground truth is even more time consuming and expensive than collecting binary ground truth. As a shortcut, some researchers have proposed using the decision values of binary-trained maximum margin classifiers as a proxy for expression intensity. We provide empirical evidence that this heuristic is flawed in practice as well as in theory. Unfortunately, there are no shortcuts when it comes to estimating smile intensity: researchers must take the time to collect and train on intensity ground truth. However, if they do so, high reliability with expert human coders can be achieved. Intensity-trained multiclass and regression models outperformed binary-trained classifier decision values on smile intensity estimation across multiple databases and methods for feature extraction and dimensionality reduction. Multiclass models even outperformed binary–trained classifiers on smile occurrence detection.

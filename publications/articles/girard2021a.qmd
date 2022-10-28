@@ -1,0 +1,26 @@
+---
+title: "Reconsidering the Duchenne smile: Formalizing and testing hypotheses about eye constriction and positive emotion"
+type: "article"
+author: "Girard, Cohn, Yin, & Morency"
+year: "2021"
+publication: "Affective Science"
+preprint: "https://psyarxiv.com/397af/"
+doi: "https://doi.org/10.1007/s42761-020-00030-w"
+materials: "https://osf.io/k3g2e/"
+toc: false
+categories:
+  - substantive
+  - nonverbal behavior
+  - emotion
+  - bayesian statistics
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Girard, J. M., Cohn, J. F., Yin, L., & Morency, L.-P. (2021). Reconsidering the Duchenne smile: Formalizing and testing hypotheses about eye constriction and positive emotion. *Affective Science, 2*(1), 32–47.
+
+
+## Abstract
+
+The common view of emotional expressions is that certain configurations of facial-muscle movements reliably reveal certain categories of emotion. The principal exemplar of this view is the Duchenne smile, a configuration of facial-muscle movements (i.e., smiling with eye constriction) that has been argued to reliably reveal genuine positive emotion. In this paper, we formalized a list of hypotheses that have been proposed regarding the Duchenne smile, briefly reviewed the literature weighing on these hypotheses, identified limitations and unanswered questions, and conducted two empirical studies to begin addressing these limitations and answering these questions. Both studies analyzed a database of 751 smiles observed while 136 participants completed experimental tasks designed to elicit amusement, embarrassment, fear, and physical pain. Study 1 focused on participants’ self-reported positive emotion and Study 2 focused on how third-party observers would perceive videos of these smiles. Most of the hypotheses that have been proposed about the Duchenne smile were either contradicted by or only weakly supported by our data. Eye constriction did provide some information about experienced positive emotion, but this information was lacking in specificity, already provided by other smile characteristics, and highly dependent on context. Eye constriction provided more information about perceived positive emotion, including some unique information over other smile characteristics, but context was also important here as well. Overall, our results suggest that accurately inferring positive emotion from a smile requires more sophisticated methods than simply looking for the presence/absence (or even the intensity) of eye constriction.

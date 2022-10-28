@@ -1,0 +1,93 @@
+---
+pagetitle: "Resources | AffCom Lab"
+toc: true
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Resources</li>
+  </ol>
+</nav>
+```
+
+## Datasets
+
+- **GFT: Group Formation Task Spontaneous Facial Expression Database** (2017)<br />
+  A 2D video database of spontaneous behavior during unscripted social interactions<br />
+  Complete with frame-level FACS annotations of facial behavior (n = 96)<br />
+  *Primary Article/Citation:* <https://jmgirard.com/pubs/girard2017d/><br />
+  *Website/Request Access:* <http://osf.io/7wcyz>
+  
+- **MMSE/BP4D+: Multimodal Spontaneous Emotion Database** (2016)<br />
+  An extension of BP4D that includes thermal and physiological data<br />
+  Complete with frame-level FACS annotations of facial behavior (n = 140)<br />
+  *Primary Article/Citation:* <https://jmgirard.com/pubs/zhang2016/><br />
+  *Website/Request Access:* <http://bit.ly/2yg39Cn>
+
+- **BP4D: Binghamton-Pittsburgh 4D Spontaneous Emotion Database** (2014)<br />
+  A 3D video database of spontaneous behavior during emotion elicitation<br />
+  Complete with frame-level FACS annotations of facial behavior (n = 41)<br />
+  *Primary Article/Citation:* <https://jmgirard.com/pubs/zhang2014/><br />
+  *Website/Request Access:* <http://bit.ly/2yg39Cn>
+
+## Software
+
+### Maturing
+- **lordicon** (2022)<br />
+  Extension for adding lordicon.com icons to Quarto HTML documents<br />
+  *Source Code:* <https://github.com/jmgirard/lordicon>
+  
+- **circumplex: Analysis and Visualization of Circumplex Data** (2017–2021)<br />
+  R functions and educational materials about circumplex data analysis/visualization<br />
+  *Documentation:* <https://circumplex.jmgirard.com><br />
+  *Source Code:* <http://github.com/jmgirard/circumplex>
+
+- **mReliability: Inter-rater Reliability in MATLAB** (2015–2018)<br />
+  MATLAB functions and educational materials about inter-rater reliability<br />
+  *Documentation:* <https://mreliability.jmgirard.com><br />
+  *Source Code:* <http://github.com/jmgirard/mreliability>
+
+- **DARMA: Dual Axis Rating and Media Annotation** (2014–2018)<br />
+  Software for collecting and reviewing 2D continuous ratings of media files<br />
+  *Documentation:* <https://darma.jmgirard.com><br />
+  *Source Code:* <http://github.com/jmgirard/darma>
+  
+- **CARMA: Continuous Affect Rating and Media Annotation** (2014–2018)<br />
+  Software for collecting and reviewing 1D continuous ratings of media files<br />
+  *Documentation:* <https://carma.jmgirard.com><br />
+  *Source Code:* <http://github.com/jmgirard/carma>
+  
+### Developing
+- **varde** (2022)<br />
+  R functions for decomposing variance in multilevel models<br />
+  *Source Code:* <https://github.com/jmgirard/varde>
+  
+- **wcc** (2022)<br />
+  R functions for windowed cross-correlation (synchrony) analyses<br />
+  *Source Code:* <https://github.com/jmgirard/wcc>
+
+- **profiles** (2022)<br />
+  R functions and RStudio add-ins for managing RStudio profiles<br />
+  *Source Code:* <https://github.com/jmgirard/profiles>
+
+- **tidymedia** (2021–2022)<br />
+  R functions for working with audio and video files in a tidy format<br />
+  *Source Code:* <https://github.com/jmgirard/tidymedia>
+
+- **agreement** (2018–2022)<br />
+  R functions for inter-rater reliability<br />
+  *Source Code:* <https://github.com/jmgirard/agreement>
+
+## Trainings
+
+- **Applied Machine Learning in R** (2021, 2022)<br />
+  Five-day workshop offered as part of the [Pittsburgh Summer Methodology Series](https://www.pittmethods.com)<br />
+  <https://pittmethods.github.io/appliedml>
+
+- **Introduction to R for Social Scientists** (2020, 2022)<br />
+  Three-day workshop offered as part of the [Pittsburgh Summer Methodology Series](https://www.pittmethods.com)<br />
+  <https://pittmethods.github.io/r4ss>
+
+<!-- ## Videos -->

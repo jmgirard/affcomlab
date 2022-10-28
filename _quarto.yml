@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "AffCom Lab"
+  navbar:
+    right:
+      - href: news.qmd
+        text: News
+      - href: people.qmd
+        text: People
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: resources.qmd
+        text: Resources
+      - href: opportunities.qmd
+        text: Opportunities
+      - href: contact.qmd
+        text: Contact
+  page-footer: "Copyright 2022 &copy; Jeffrey Girard"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
