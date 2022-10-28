@@ -1,0 +1,75 @@
+[
+  {
+    "listing": "/news.html",
+    "items": [
+      "/posts/google2022/index.html",
+      "/posts/recruitment2023/index.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/girard_jeffrey.html",
+      "/people/staff/gray_kassandra.html",
+      "/people/ras/aleesa_abdulhamed.html",
+      "/people/ras/amgalanbaatar_dulguun.html",
+      "/people/ras/folsom_mallory.html",
+      "/people/ras/li_wanheng.html",
+      "/people/ras/patel_heeral.html",
+      "/people/ras/swift_anna.html",
+      "/people/alumni/bachmuth_rebecca.html",
+      "/people/alumni/dankof_kathleen.html",
+      "/people/alumni/dick_aubrey.html",
+      "/people/alumni/iskalis_taylor.html",
+      "/people/alumni/johnson_emma.html",
+      "/people/alumni/liu_yutian.html",
+      "/people/alumni/logan_laura.html",
+      "/people/alumni/niehorster-cook_leo.html",
+      "/people/alumni/oberg_sara.html",
+      "/people/alumni/rivera_miguel.html",
+      "/people/alumni/sall_lauryn.html",
+      "/people/alumni/white_addison.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/articles/girard2022a.html",
+      "/publications/articles/sewall2021.html",
+      "/publications/articles/bowdring2021.html",
+      "/publications/articles/girard2021a.html",
+      "/publications/proceedings/wolfert2021.html",
+      "/publications/articles/vanoest2021.html",
+      "/publications/proceedings/lin2020a.html",
+      "/publications/articles/hopwood2020.html",
+      "/publications/proceedings/lin2020b.html",
+      "/publications/articles/gerber2019.html",
+      "/publications/proceedings/mcduff2019.html",
+      "/publications/articles/grove2019.html",
+      "/publications/proceedings/girard2019a.html",
+      "/publications/articles/girard2018a.html",
+      "/publications/articles/pacella2018.html",
+      "/publications/articles/shepherd2017.html",
+      "/publications/proceedings/valstar2017.html",
+      "/publications/proceedings/girard2017c.html",
+      "/publications/articles/girard2017a.html",
+      "/publications/articles/mcduff2017.html",
+      "/publications/articles/ross2017.html",
+      "/publications/proceedings/girard2017b.html",
+      "/publications/articles/girard2016a.html",
+      "/publications/proceedings/zhang2016.html",
+      "/publications/articles/girard2015c.html",
+      "/publications/articles/girard2015b.html",
+      "/publications/proceedings/valstar2015.html",
+      "/publications/proceedings/girard2015d.html",
+      "/publications/articles/fairbairn2015.html",
+      "/publications/articles/girard2015a.html",
+      "/publications/articles/girard2014c.html",
+      "/publications/articles/girard2014b.html",
+      "/publications/articles/girard2014a.html",
+      "/publications/proceedings/jeni2013.html",
+      "/publications/proceedings/girard2013.html",
+      "/publications/proceedings/girard2011.html"
+    ]
+  }
+]
