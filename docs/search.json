@@ -32,7 +32,7 @@
     "href": "news.html",
     "title": "AffCom Lab",
     "section": "",
-    "text": "Google Research Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nNovel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices\n\n\n\n\n\n\nOct 28, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nRecruitment 2023–2024\n\n\n\n\n\n\n\nannouncement\n\n\nrecruitment\n\n\n\n\nInformation for applicants to the psychology graduate program to start in Fall 2023\n\n\n\n\n\n\nAug 30, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
+    "text": "Google Research Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nNovel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices\n\n\n\n\n\n\nOct 28, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nNew NIH R21 Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\nresearch\n\n\n\n\nMultimodal Dynamics of Parent-Child Interactions and Suicide Risk\n\n\n\n\n\n\nSep 8, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nRecruitment 2023–2024\n\n\n\n\n\n\n\nannouncement\n\n\nrecruitment\n\n\n\n\nInformation for applicants to the psychology graduate program to start in Fall 2023\n\n\n\n\n\n\nAug 30, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "opportunities.html",
@@ -1223,5 +1223,33 @@
     "title": "AffCom Lab",
     "section": "Trainings",
     "text": "Trainings\n\nApplied Machine Learning in R (2021, 2022) Five-day workshop offered as part of the Pittsburgh Summer Methodology Series https://pittmethods.github.io/appliedml\nIntroduction to R for Social Scientists (2020, 2022) Three-day workshop offered as part of the Pittsburgh Summer Methodology Series https://pittmethods.github.io/r4ss"
+  },
+  {
+    "objectID": "posts/suicideR21/index.html",
+    "href": "posts/suicideR21/index.html",
+    "title": "New NIH R21 Grant",
+    "section": "",
+    "text": "I am very pleased to announce that we have been awarded an R21 Grant from the National Institutes of Mental Health to study parent-child communication dynamics and suicide risk. The project period is from 09/2022 through 07/2024."
+  },
+  {
+    "objectID": "posts/suicideR21/index.html#project-team",
+    "href": "posts/suicideR21/index.html#project-team",
+    "title": "New NIH R21 Grant",
+    "section": "Project Team",
+    "text": "Project Team\n\nCo-PI: Richard Liu, Massachusetts General Hospital\nCo-PI: Taylor Burke, Massachusetts General Hospital\nCo-I: Jeffrey Girard, University of Kansas\nCo-I: Louis-Philippe Morency, Carnegie Mellon University"
+  },
+  {
+    "objectID": "posts/suicideR21/index.html#project-summary",
+    "href": "posts/suicideR21/index.html#project-summary",
+    "title": "New NIH R21 Grant",
+    "section": "Project Summary",
+    "text": "Project Summary\nSuicide continues to be a growing public health concern. Indeed, suicide rates have increased 33% since 1999. This concern has been particularly pronounced in the case of adolescents, as the suicide rates in this age group have tripled over the last 10 years. Clarifying potential processes of risk for suicidal behavior in this population therefore remains a pressing priority. Increasing theoretical and empirical focus has been devoted to the conceptualization of acute suicidal risk as being a period of elevated arousal. Stress within parent-child relationship dynamics may hold particular importance for understanding adolescents’ proximal risk for suicidal behavior. However, all past studies examining parent-child relationship stress and suicidal behavior have used self-report methodologies and/or retrospective recall. Although studies employing these methodologies provide important knowledge about the association between life stress and mental health outcomes, they are not designed to characterize the interpersonal dynamics of these stressors as they unfold over time, which may be particularly relevant to short-term suicide risk. Recent advances in computational approaches to automatic sensing of acoustic and visual behaviors hold promise to address the need for clarifying indices of arousal in parent-child dynamics associated with adolescent suicide risk. A novel method to assess familial stress processes is through the automated assessment of synchrony, or the behavioral matching, of arousal between adolescents and their parents. In healthy parent-child dyads, parents and adolescents are responsive to each other’s behavioral and emotional cues. However, during high stress or conflict, behavioral matching may be a marker of a high-risk interaction pattern inasmuch as it may be indicative of high arousal maintenance or escalation. Focusing on the RDoC constructs of arousal and social processes, the current R21 proposal aims to leverage recent developments in automated sensing of acoustic and visual behavior to characterize synchrony within the dynamics of a parent-child conflict task in a sample of psychiatrically hospitalized adolescents (n = 100) and their parents. The current study aims to evaluate whether acoustic and visual behavioral markers of arousal synchrony, respectively, are associated with prospective suicidal ideation three months post-discharge. We also aim to pool acoustic and visual behavioral markers of parent-child arousal synchrony through computational modeling to create a multimodal prediction model for prospective suicidal ideation, thereby to advance beyond unimodal analysis to multimodal analysis in classifying suicide risk. This R21 is intended as an initial step toward automating the assessment of parent-child arousal synchrony within clinical contexts to inform clinical decision-making and interventions. This proposal has both scientific and clinical significance because it is the first study to employ computational automation of acoustic and visual markers of suicide risk at the dyadic level and has the potential directly to inform adolescent suicide risk assessment and intervention."
+  },
+  {
+    "objectID": "posts/suicideR21/index.html#public-health-relevance",
+    "href": "posts/suicideR21/index.html#public-health-relevance",
+    "title": "New NIH R21 Grant",
+    "section": "Public Health Relevance",
+    "text": "Public Health Relevance\nThis application aims to examine the dynamics of parent-child stress using automatic sensing of acoustic and visual behaviors as markers of suicide risk in adolescents. This proposal has both scientific and clinical significance because it is the first study to employ computational automation of acoustic and visual markers of suicide risk at the dyadic level. This research has the potential to improve our identification of stress-related risk in suicidal adolescents in periods of high risk and to directly inform clinical decision-making and intervention in the context of adolescents’ psychiatric hospitalization."
   }
 ]

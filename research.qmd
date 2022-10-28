@@ -12,20 +12,6 @@ toc: true
 </nav>
 ```
 
-## Research Framework
-
-### Affective Communication
-
-The substantive focus of our work is on how humans communicate important affective (e.g., emotional) information to one another. The four pillars of this work are on structure, context, dynamics, and functionality. In studying the **structure** of affective communication, we investigate the production and perception of visual behaviors (e.g., facial expressions, gestures, and body motion), vocal behaviors (e.g., pitch, loudness, and timbre), and verbal behaviors (e.g., syntax, semantics, and discourse). In studying the **context** of affective communication, we investigate the influence of the immediate and distal sociocultural environment. In studying the **dynamics** of affective communication, we investigate the unfolding of emotion, behavior, and the interpersonal field over time. Finally, in studying the **functionality** of affective communication, we investigate its relationships with mental health, pathology, and recovery.
-
-![](./img/framework1.png)
-
-### Affective Computing
-
-Supporting the four pillars of substantive research described above is a methodological foundation of computer and data science. The three main aspects of this methodological work are statistics, computing, and design. The **statistical** aspects largely focus on developing and applying Bayesian, multilevel, and latent variable models to test hypotheses about interpretable parameters or validate the other aspects. The **computational** aspects largely focus on building tools to collect large amounts of data and then using machine learning to process that data and make predictions. Finally, the **design** aspects largely focus on developing software to collect, process, and analyze research data as well as websites to educate researchers on methodological and substantive topics.
-
-![](./img/framework2.png)
-
 ## Research Topics
 
 ### Clinical Topics
@@ -99,3 +85,17 @@ Supporting the four pillars of substantive research described above is a methodo
     - R01, National Institutes of Health (NIMH)
     - **Girard** (PI), Co-Is: Bylsma, Cohn, Ilardi, Morency, Swartz
     - Scored 39th Percentile, Currently in Revision (to submit in March)
+
+## Research Framework
+
+### Affective Communication
+
+The substantive focus of our work is on how humans communicate important affective (e.g., emotional) information to one another. The four pillars of this work are on structure, context, dynamics, and functionality. In studying the **structure** of affective communication, we investigate the production and perception of visual behaviors (e.g., facial expressions, gestures, and body motion), vocal behaviors (e.g., pitch, loudness, and timbre), and verbal behaviors (e.g., syntax, semantics, and discourse). In studying the **context** of affective communication, we investigate the influence of the immediate and distal sociocultural environment. In studying the **dynamics** of affective communication, we investigate the unfolding of emotion, behavior, and the interpersonal field over time. Finally, in studying the **functionality** of affective communication, we investigate its relationships with mental health, pathology, and recovery.
+
+![](./img/framework1.png)
+
+### Affective Computing
+
+Supporting the four pillars of substantive research described above is a methodological foundation of computer and data science. The three main aspects of this methodological work are statistics, computing, and design. The **statistical** aspects largely focus on developing and applying Bayesian, multilevel, and latent variable models to test hypotheses about interpretable parameters or validate the other aspects. The **computational** aspects largely focus on building tools to collect large amounts of data and then using machine learning to process that data and make predictions. Finally, the **design** aspects largely focus on developing software to collect, process, and analyze research data as well as websites to educate researchers on methodological and substantive topics.
+
+![](./img/framework2.png)
