@@ -22,6 +22,8 @@ website:
         text: Contact
   page-footer: "Copyright 2022 &copy; Jeffrey Girard"
   google-analytics: "G-K5TXS64QLN"
+  site-url: https://affcom.ku.edu
+  repo-url: https://github.org/jmgirard/affcomlab
 
 format:
   html:
