@@ -21,6 +21,7 @@ website:
       - href: contact.qmd
         text: Contact
   page-footer: "Copyright 2022 &copy; Jeffrey Girard"
+  google-analytics: "G-K5TXS64QLN"
 
 format:
   html:
