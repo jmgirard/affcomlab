@@ -10,7 +10,7 @@ categories:
   - funding
 ---
 
-I am very pleased to announce that we have been awarded an R01 (Exploratory/Developmental Research) Grant from the National Institute of Mental Health ([R01-MH125740](https://reporter.nih.gov/search/6YabSubeokyomHaXUxlcMA/project-details/10392429)) to study the use of multimodal information and machine learning to estimate the discharge readiness of psychiatric inpatients with severe mental illness. The project period is from 04/2021 through 02/2025 with a total funding of $X.
+I am very pleased to announce that we have been awarded an R01 (Research Project) Grant from the National Institute of Mental Health ([R01-MH125740](https://reporter.nih.gov/search/6YabSubeokyomHaXUxlcMA/project-details/10392429)) to study the use of multimodal information and machine learning to estimate the discharge readiness of psychiatric inpatients with severe mental illness. The project period is from 04/2021 through 02/2025 with a total funding of $1,160,953.
 
 ## Project Team
 
