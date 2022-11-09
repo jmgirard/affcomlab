@@ -1,0 +1,27 @@
+---
+title: "NIMH R01 Grant"
+description: "Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning"
+author: "Jeffrey Girard"
+date: "2021-04-15"
+image: hospital.webp
+draft: false
+categories:
+  - announcement
+  - funding
+---
+
+I am very pleased to announce that we have been awarded an R01 (Exploratory/Developmental Research) Grant from the National Institute of Mental Health ([R01-MH125740](https://reporter.nih.gov/search/6YabSubeokyomHaXUxlcMA/project-details/10392429)) to study the use of multimodal information and machine learning to estimate the discharge readiness of psychiatric inpatients with severe mental illness. The project period is from 04/2021 through 02/2025 with a total funding of $X.
+
+## Project Team
+
+- MPI: [Justin Baker](https://www.mcleanhospital.org/profile/justin-baker), McLean Hospital, Harvard Medical School
+- MPI: [Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/), Carnegie Mellon University
+- Co-I: [Jeffrey Girard](https://affcom.ku.edu/people/staff/girard_jeffrey.html), University of Kansas
+
+## Project Summary
+
+Which psychiatric symptoms and behaviors are the most important to assess and manage during critical points in psychiatric healthcare, such as the time leading up to hospital discharge? At present, psychiatry lacks objective tests that could inform this and other clinically challenging–and potentially costly– decisions. Establishing valid objective markers of psychiatric disease processes is especially challenging compared with the development of biomarkers in other 5elds. One key challenge is lack of available data from psychiatrically ill patients during key periods in their care trajectory, which the present project seeks to address. A second major challenge, also addressed as a core feature in this project, is the complex, context-dependence of human behavioral expression, which greatly complicates efforts to establish robust, objective measures that re6ect underlying mental health disease processes. This project will address both barriers, introducing a new computational framework, named Context-Adaptive Multimodal Informatics, to identify and evaluate behavioral biomarkers related to discharge-readiness and symptoms in severe mental illness. The project aims to address 5ve fundamental research challenges: (1) Acquire a multimodal psychiatric discharge-planning dataset of 400 inpatients with severe mental illness; (2) Create self-aware linear and neural models to identify multimodal behavioral biomarkers; (3) Develop context-sensitive linear and neural models to contextualize behavioral biomarkers and quantify the in6uence of context on behavior; (4) Build a new adaptive assessment planning framework which creates a personalized patient analysis to rank contexts and modalities for the next assessment session; (5) Assess the trustworthiness and generalizability of our measurements, models, and insights. This research will improve basic understanding of social context and behavioral biomarkers, build objective measures for mental health assessment, and more broadly, pave the way for a restructured care-delivery system in which resources are allocated intelligently to ensure assessments are informative with respect to desired clinical objectives.
+
+## Public Health Relevance
+
+Charting mental illness trajectories to determine when, where, and how to intervene is a key objective of the NIMH mission to transform the understanding and treatment of mental illness. This project will: (1) deepen our understanding of the trajectory leading to hospitalization discharge with knowledge about behavioral biomarkers and their relationship to symptoms and discharge-readiness; (2) contribute to the knowledge on how social context impacts patient's behaviors since some symptoms or predictive biomarkers may only be seen in a specific context such as social or solitary interactions; and (3) contribute a credible, objective framework for behavioral measurement by defining interpretable biomarkers and latent factors for symptoms and discharge assessment. The project will also enable a judicious use of remote sensing and non-direct clinical encounters (e.g., telemedicine), which are increasingly viewed as essential capabilities in the medical fields to reduce costs while maintaining or elevating care standards.

@@ -4,7 +4,8 @@
     "items": [
       "/posts/google2022/index.html",
       "/posts/suicideR21/index.html",
-      "/posts/recruitment2023/index.html"
+      "/posts/recruitment2023/index.html",
+      "/posts/dischargeR01/index.html"
     ]
   },
   {
@@ -36,6 +37,7 @@
     "listing": "/publications.html",
     "items": [
       "/publications/articles/girard2022a.html",
+      "/publications/proceedings/vail2022.html",
       "/publications/articles/sewall2021.html",
       "/publications/articles/bowdring2021.html",
       "/publications/articles/girard2021a.html",
