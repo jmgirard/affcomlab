@@ -1,0 +1,21 @@
+---
+title: "ICMI 2022 Paper"
+description: "Toward causal understanding of therapist-client relationships"
+author: "Jeffrey Girard"
+date: "2022-11-07"
+image: therapy.webp
+draft: false
+categories:
+  - announcement
+  - paper
+---
+
+I am very pleased to announce that a new conference paper from our team has been published in the *Proceedings of the 2022 International Conference on Multimodal Interaction*. 
+
+This paper, entitled **"Toward causal understanding of therapist-client relationships: A study of language modality and social entrainment,"** explores the associations between working alliance ratings and linguistic entrainment between therapist and patients with depression during brief psychotherapy. 
+
+This paper was authored by Vail, Girard, Bylsma, Cohn, Fournier, Swartz, and Morency and was supported in part by our "Dyadic Behavior Informatics for Psychotherapy Process and Outcome" grant from the National Science Foundation.
+
+```{=html}
+<a href="https://dl.acm.org/doi/10.1145/3536221.3556616" class="btn btn-primary rounded-pill">Click here to access the paper</a>
+```

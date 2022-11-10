@@ -32,7 +32,7 @@
     "href": "news.html",
     "title": "AffCom Lab",
     "section": "",
-    "text": "Google Research Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nNovel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices\n\n\n\n\n\n\nOct 28, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nNIMH R21 Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nMultimodal Dynamics of Parent-Child Interactions and Suicide Risk\n\n\n\n\n\n\nSep 8, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nRecruitment 2023–2024\n\n\n\n\n\n\n\nannouncement\n\n\nrecruitment\n\n\n\n\nInformation for applicants to the psychology graduate program to start in Fall 2023\n\n\n\n\n\n\nAug 30, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nNIMH R01 Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nContext-Adaptive Multimodal Informatics for Psychiatric Discharge Planning\n\n\n\n\n\n\nApr 15, 2021\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
+    "text": "ICMI 2022 Paper\n\n\n\n\n\n\n\nannouncement\n\n\npaper\n\n\n\n\nToward causal understanding of therapist-client relationships\n\n\n\n\n\n\nNov 7, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nGoogle Research Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nNovel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices\n\n\n\n\n\n\nOct 28, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nNIMH R21 Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nMultimodal Dynamics of Parent-Child Interactions and Suicide Risk\n\n\n\n\n\n\nSep 8, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nRecruitment 2023–2024\n\n\n\n\n\n\n\nannouncement\n\n\nrecruitment\n\n\n\n\nInformation for applicants to the psychology graduate program to start in Fall 2023\n\n\n\n\n\n\nAug 30, 2022\n\n\nJeffrey Girard\n\n\n\n\n\n\n  \n\n\n\n\nNIMH R01 Grant\n\n\n\n\n\n\n\nannouncement\n\n\nfunding\n\n\n\n\nContext-Adaptive Multimodal Informatics for Psychiatric Discharge Planning\n\n\n\n\n\n\nApr 15, 2021\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "opportunities.html",
@@ -1293,5 +1293,12 @@
     "title": "AffCom Lab",
     "section": "Trainings",
     "text": "Trainings\n\nApplied Machine Learning in R (2021, 2022) Five-day workshop offered as part of the Pittsburgh Summer Methodology Series https://pittmethods.github.io/appliedml\nIntroduction to R for Social Scientists (2020, 2022) Three-day workshop offered as part of the Pittsburgh Summer Methodology Series https://pittmethods.github.io/r4ss"
+  },
+  {
+    "objectID": "posts/vail2022/index.html",
+    "href": "posts/vail2022/index.html",
+    "title": "ICMI 2022 Paper",
+    "section": "",
+    "text": "This paper, entitled “Toward causal understanding of therapist-client relationships: A study of language modality and social entrainment,” explores the associations between working alliance ratings and linguistic entrainment between therapist and patients with depression during brief psychotherapy.\nThis paper was authored by Vail, Girard, Bylsma, Cohn, Fournier, Swartz, and Morency and was supported in part by our “Dyadic Behavior Informatics for Psychotherapy Process and Outcome” grant from the National Science Foundation.\nClick here to access the paper"
   }
 ]
