@@ -1,34 +1,34 @@
 /* quarto syntax highlight colors */
 :root {
-  --quarto-hl-ot-color: #003B4F;
-  --quarto-hl-at-color: #657422;
-  --quarto-hl-ss-color: #20794D;
-  --quarto-hl-an-color: #5E5E5E;
-  --quarto-hl-fu-color: #4758AB;
-  --quarto-hl-st-color: #20794D;
-  --quarto-hl-cf-color: #003B4F;
-  --quarto-hl-op-color: #5E5E5E;
-  --quarto-hl-er-color: #AD0000;
-  --quarto-hl-bn-color: #AD0000;
-  --quarto-hl-al-color: #AD0000;
-  --quarto-hl-va-color: #111111;
+  --quarto-hl-ot-color: #efef8f;
+  --quarto-hl-at-color: inherit;
+  --quarto-hl-ss-color: #cc9393;
+  --quarto-hl-an-color: #7f9f7f;
+  --quarto-hl-fu-color: #efef8f;
+  --quarto-hl-st-color: #cc9393;
+  --quarto-hl-cf-color: #f0dfaf;
+  --quarto-hl-op-color: #f0efd0;
+  --quarto-hl-er-color: #c3bf9f;
+  --quarto-hl-bn-color: #dca3a3;
+  --quarto-hl-al-color: #ffcfaf;
+  --quarto-hl-va-color: inherit;
   --quarto-hl-bu-color: inherit;
   --quarto-hl-ex-color: inherit;
-  --quarto-hl-pp-color: #AD0000;
-  --quarto-hl-in-color: #5E5E5E;
-  --quarto-hl-vs-color: #20794D;
-  --quarto-hl-wa-color: #5E5E5E;
-  --quarto-hl-do-color: #5E5E5E;
-  --quarto-hl-im-color: #00769E;
-  --quarto-hl-ch-color: #20794D;
-  --quarto-hl-dt-color: #AD0000;
-  --quarto-hl-fl-color: #AD0000;
-  --quarto-hl-co-color: #5E5E5E;
-  --quarto-hl-cv-color: #5E5E5E;
-  --quarto-hl-cn-color: #8f5902;
-  --quarto-hl-sc-color: #5E5E5E;
-  --quarto-hl-dv-color: #AD0000;
-  --quarto-hl-kw-color: #003B4F;
+  --quarto-hl-pp-color: #ffcfaf;
+  --quarto-hl-in-color: #7f9f7f;
+  --quarto-hl-vs-color: #cc9393;
+  --quarto-hl-wa-color: #7f9f7f;
+  --quarto-hl-do-color: #7f9f7f;
+  --quarto-hl-im-color: inherit;
+  --quarto-hl-ch-color: #dca3a3;
+  --quarto-hl-dt-color: #dfdfbf;
+  --quarto-hl-fl-color: #c0bed1;
+  --quarto-hl-co-color: #7f9f7f;
+  --quarto-hl-cv-color: #7f9f7f;
+  --quarto-hl-cn-color: #dca3a3;
+  --quarto-hl-sc-color: #dca3a3;
+  --quarto-hl-dv-color: #dcdccc;
+  --quarto-hl-kw-color: #f0dfaf;
 }
 
 /* other quarto variables */
@@ -36,132 +36,106 @@
   --quarto-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-pre > code.sourceCode > span {
-  color: #003B4F;
-}
-
-code span {
-  color: #003B4F;
-}
-
-code.sourceCode > span {
-  color: #003B4F;
-}
-
-div.sourceCode,
-div.sourceCode pre.sourceCode {
-  color: #003B4F;
-}
-
 code span.ot {
-  color: #003B4F;
-}
-
-code span.at {
-  color: #657422;
+  color: #efef8f;
 }
 
 code span.ss {
-  color: #20794D;
+  color: #cc9393;
 }
 
 code span.an {
-  color: #5E5E5E;
+  color: #7f9f7f;
+  font-weight: bold;
 }
 
 code span.fu {
-  color: #4758AB;
+  color: #efef8f;
 }
 
 code span.st {
-  color: #20794D;
+  color: #cc9393;
 }
 
 code span.cf {
-  color: #003B4F;
+  color: #f0dfaf;
 }
 
 code span.op {
-  color: #5E5E5E;
+  color: #f0efd0;
 }
 
 code span.er {
-  color: #AD0000;
+  color: #c3bf9f;
 }
 
 code span.bn {
-  color: #AD0000;
+  color: #dca3a3;
 }
 
 code span.al {
-  color: #AD0000;
-}
-
-code span.va {
-  color: #111111;
+  color: #ffcfaf;
 }
 
 code span.pp {
-  color: #AD0000;
+  color: #ffcfaf;
+  font-weight: bold;
 }
 
 code span.in {
-  color: #5E5E5E;
+  color: #7f9f7f;
+  font-weight: bold;
 }
 
 code span.vs {
-  color: #20794D;
+  color: #cc9393;
 }
 
 code span.wa {
-  color: #5E5E5E;
-  font-style: italic;
+  color: #7f9f7f;
+  font-weight: bold;
 }
 
 code span.do {
-  color: #5E5E5E;
-  font-style: italic;
-}
-
-code span.im {
-  color: #00769E;
+  color: #7f9f7f;
 }
 
 code span.ch {
-  color: #20794D;
+  color: #dca3a3;
 }
 
 code span.dt {
-  color: #AD0000;
+  color: #dfdfbf;
 }
 
 code span.fl {
-  color: #AD0000;
+  color: #c0bed1;
 }
 
 code span.co {
-  color: #5E5E5E;
+  color: #7f9f7f;
 }
 
 code span.cv {
-  color: #5E5E5E;
-  font-style: italic;
+  color: #7f9f7f;
+  font-weight: bold;
 }
 
 code span.cn {
-  color: #8f5902;
+  color: #dca3a3;
+  font-weight: bold;
 }
 
 code span.sc {
-  color: #5E5E5E;
+  color: #dca3a3;
 }
 
 code span.dv {
-  color: #AD0000;
+  color: #dcdccc;
 }
 
 code span.kw {
-  color: #003B4F;
+  color: #f0dfaf;
 }
 
 .prevent-inlining {
