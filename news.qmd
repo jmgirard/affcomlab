@@ -2,7 +2,7 @@
 pagetitle: "News | AffCom Lab"
 toc: false
 listing:
-  contents: posts
+  contents: "posts/**/index.qmd"
   sort: "date desc"
   type: default
   categories: true
