@@ -1,0 +1,19 @@
+---
+title: "Adventures in Moderation"
+description: "Probing Interactions in ANOVA and Regression"
+author: "Jeffrey Girard"
+date: "2022-11-18"
+image: undraw_explore.webp
+draft: false
+categories:
+  - teaching
+  - presentation
+---
+
+I was invited to give a 75 minute presentation on testing, visualizing, and probing interactions in ANOVA and regression models at the Social Psychology Professional Seminar at the University of Kansas. Here are my slides:
+
+<iframe class="slide-deck" src="./presentation.html" title="Presentation Slides">
+</iframe>
+
+*Note.* To view the slideshow in full screen mode, click inside it and press the "f" key on your keyboard.<br />
+You can also use the menu by clicking on the icon at the bottom-left of each slide.
