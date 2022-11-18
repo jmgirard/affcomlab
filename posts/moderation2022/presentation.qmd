@@ -84,7 +84,7 @@ library(kableExtra)
 :::
 
 ::: {.pt1 .fragment}
-**Categorical-by-Categorical**
+**Continuous-by-Continuous**
 - Does the effect of hours of exercise on weight loss *depend on* the effort put in?
 :::
 
