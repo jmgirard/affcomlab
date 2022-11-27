@@ -41,6 +41,8 @@ format:
 library(tidyverse)
 library(knitr)
 library(kableExtra)
+library(emmeans)
+library(car)
 ```
 
 ## Overview
