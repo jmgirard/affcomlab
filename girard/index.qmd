@@ -1,0 +1,15 @@
+---
+title: "Girard Redirect"
+---
+
+```{=html}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url='https://affcom.ku.edu/people/staff/girard_jeffrey.html'" />
+  </head>
+  <body>
+    <p>Please follow <a href="https://affcom.ku.edu/people/staff/girard_jeffrey.html">this link</a>.</p>
+  </body>
+</html>
+```
