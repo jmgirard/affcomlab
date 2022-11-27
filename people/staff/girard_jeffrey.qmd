@@ -1,7 +1,5 @@
 ---
 title: "Jeffrey Girard"
-aliases: 
-  - girard.html
 sortby: "1"
 subtitle: "Lab Director"
 image: girard_jeffrey.jpg
