@@ -265,10 +265,10 @@
     },
     "datawizard": {
       "Package": "datawizard",
-      "Version": "0.6.3",
+      "Version": "0.6.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "2970cca4f4b00f5b392d871e18e3194c",
+      "Hash": "23757eb3960a1521d33ff4dd1c399ab3",
       "Requirements": [
         "insight"
       ]
@@ -636,10 +636,10 @@
     },
     "insight": {
       "Package": "insight",
-      "Version": "0.18.7",
+      "Version": "0.18.8",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "891ff28d9d23e5e72f6157a17a357387",
+      "Hash": "63e5c0b19f7a78e13cda42e1c3b03549",
       "Requirements": []
     },
     "isoband": {
@@ -846,10 +846,10 @@
     },
     "parameters": {
       "Package": "parameters",
-      "Version": "0.19.0",
+      "Version": "0.20.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "f541e3b038faeec3e40527cc7ca80557",
+      "Hash": "fabe15d681e86da07c97af51daa0dd17",
       "Requirements": [
         "bayestestR",
         "datawizard",
@@ -858,10 +858,10 @@
     },
     "performance": {
       "Package": "performance",
-      "Version": "0.10.0",
+      "Version": "0.10.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e56d92c33a727d4232409735f9e7dd33",
+      "Hash": "c9a975ae652dee8fd293359defe8abe2",
       "Requirements": [
         "bayestestR",
         "datawizard",
@@ -1101,10 +1101,10 @@
     },
     "sass": {
       "Package": "sass",
-      "Version": "0.4.2",
+      "Version": "0.4.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "1b191143d7d3444d504277843f3a95fe",
+      "Hash": "c76cbac7ca04ce82d8c38e29729987a3",
       "Requirements": [
         "R6",
         "fs",
@@ -1132,17 +1132,20 @@
     },
     "see": {
       "Package": "see",
-      "Version": "0.7.3",
+      "Version": "0.7.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "72a2a47a342baae34711a0cb0873a2fd",
+      "Hash": "581c1986c273338a7161e3bbc533c696",
       "Requirements": [
         "bayestestR",
+        "correlation",
         "datawizard",
         "effectsize",
         "ggplot2",
         "insight",
-        "parameters"
+        "modelbased",
+        "parameters",
+        "performance"
       ]
     },
     "selectr": {

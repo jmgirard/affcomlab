@@ -1,5 +1,7 @@
 ---
 title: "Jeffrey Girard"
+aliases: 
+  - girard.html
 sortby: "1"
 subtitle: "Lab Director"
 image: girard_jeffrey.jpg
@@ -17,6 +19,9 @@ about:
     - icon: file-earmark-text
       text: vitae
       href: ./people/staff/girard_cv.pdf
+    - icon: mortarboard
+      text: scholar
+      href: https://scholar.google.com/citations?user=N2UcZ84AAAAJ
     - icon: github
       text: github
       href: https://www.github.com/jmgirard
@@ -42,7 +47,7 @@ about:
 ## Biography
 Dr. Jeffrey Girard studies how emotions are expressed through verbal and nonverbal behavior, as well as how interpersonal communication is influenced by individual differences (e.g., personality and mental health) and social factors (e.g., culture and context). This work is deeply interdisciplinary and draws insights and tools from various areas of social science, computer science, statistics, and medicine.
 
-He completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (nonverbal behavior, machine learning, depression) and Dr. Aidan Wright (interpersonal functioning, statistics, personality). He then completed his predoctoral clinical internship at the University of Mississippi Medical Center (inpatient psychiatry, trauma treatment, neuropsychology) and a two-year postdoctoral research fellowship under the mentorship of Dr. Louis-Philippe Morency (verbal behavior, machine learning, computer science). 
+He completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (nonverbal behavior, machine learning, depression) and Dr. Aidan Wright (interpersonal functioning, statistics, personality). He then completed his predoctoral clinical internship at the University of Mississippi Medical Center (inpatient psychiatry, trauma treatment, neuropsychology) and a two-year postdoctoral research fellowship at Carnegie Mellon University under the mentorship of Dr. Louis-Philippe Morency (verbal behavior, machine learning, computer science). 
 
 He is now an Assistant Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and offers several summer "bootcamp" courses for graduate students and faculty (on data science and machine learning) through [Pitt Methods](https://www.pittmethods.com). He is also the developer and maintainer of numerous open-source research software packages (see [Resources](../../resources.qmd)).
 
