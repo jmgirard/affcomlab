@@ -2,7 +2,7 @@
 title: "Weighting schemes and incomplete data: A generalized Bayesian framework for chance-corrected interrater agreement"
 type: "article"
 author: "Van Oest & Girard"
-year: "2021"
+year: "2022"
 publication: "Psychological Methods"
 preprint: "https://psyarxiv.com/s5n4e/"
 doi: "https://doi.org/10.1037/met0000412"
@@ -16,7 +16,8 @@ categories:
 
 ## Citation (APA 7)
 
-> Van Oest, R., & Girard, J. M. (2021). Weighting schemes and incomplete data: A generalized Bayesian framework for chance-corrected interrater agreement. *Psychological Methods.* Advance online publication.
+> van Oest, R., & Girard, J. M. (2022). Weighting schemes and incomplete data: A generalized Bayesian framework for chance-corrected interrater agreement. *Psychological Methods, 27*(6), 1069–1088.
+
 
 ## Abstract
 
