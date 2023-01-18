@@ -16,7 +16,7 @@ toc: true
 
 ### Clinical Topics
 
-- **Depression** – We are interested in improving the assessment and treatment of depression. In particular, we are interested in (a) developing computational depression screening tools that can be deployed in under-served (e.g., remote or low resource) communities, (b) studying the connections between mood, depression, and interpersonal functioning, and (c) understanding the psychotherapeutic processes that lead to contribute to recovery from depression.
+- **Depression** – We are interested in improving the assessment and treatment of depression. In particular, we are interested in (a) developing computational depression screening tools that can be deployed in under-served (e.g., remote or low resource) communities, (b) studying the connections between mood, depression, and interpersonal functioning, and (c) understanding the psychotherapeutic processes that contribute to recovery from depression.
 
 - **Posttraumatic Stress Disorder** – We are interested in how individuals who survive traumatic events respond to, make sense of, and communicate about their experiences. Toward this end, we collect and analyze trauma narratives and impact statements from patients seeking treatment for PTSD and from community members who experienced traumatic events but did not develop PTSD. We are using observational methods to measure and analyze the patterns of behaviors, emotions, and cognitions evident in these narratives and statements. Our goals are to improve PTSD assessment and to deepen clinical understanding of the psychological processes that contribute to the development, maintenance, and recovery from PTSD.
 
@@ -28,7 +28,7 @@ toc: true
 
 ### Methodological Topics
 
-- **Inter-rater reliability statistics** – We are interested in developing statistical techniques that quantify the degree of reliability (e.g., agreement or consistency) between raters in observational and judgement studies. As part of this effort, we are working on finalizing the [agreement](https://github.com/jmgirard/agreement) R package for chance-adjusted indexes of categorical agreement and are working on integrating insights and tools from Bayesian statistics, generalizability theory, and contemporary validity theory.
+- **Interrater reliability statistics** – We are interested in developing statistical techniques that quantify the degree of reliability (e.g., agreement or consistency) between raters in observational and judgment studies. As part of this effort, we are working on finalizing the [agreement](https://github.com/jmgirard/agreement) R package for chance-adjusted indexes of categorical agreement and are working on integrating insights and tools from Bayesian statistics and generalizability theory in the [varde](https://github.com/jmgirard/varde) R pacakge.
 
 - **Circumplex statistics** – We are interested in developing statistical techniques that leverage the circular structure of circumplex models of affect and interpersonal functioning. As part of this effort, we are working on expanding the [circumplex](https://circumplex.jmgirard.com) R package with additional functionality and developing new extensions of the Structural Summary Method ([Gurtman, 1992](https://doi.org/10/dz63mw); [Zimmermann & Wright, 2017](https://doi.org/10/f9fz5d)) that accommodate multilevel (e.g., clustered and longitudinal) data and latent variables.
 
@@ -84,7 +84,7 @@ toc: true
 - *"Dyadic Communication Dynamics in Hybrid In-Person/Remote Psychotherapy"*
     - R01, National Institutes of Health (NIMH)
     - **Girard** (PI), Co-Is: Bylsma, Cohn, Ilardi, Morency, Swartz
-    - Scored 39th Percentile, Currently in Revision (to submit in March)
+    - Scored 39th Percentile, Currently in Revision (to resubmit in March)
 
 ## Research Framework
 
