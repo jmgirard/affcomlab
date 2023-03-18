@@ -1,0 +1,281 @@
+---
+title: "Row-wise means in dplyr"
+description: "Guide to calculating mean scores in dplyr"
+author: "Jeffrey Girard"
+date: "2023-03-18"
+image: pexels159519.webp
+draft: false
+categories:
+  - teaching
+  - data science
+---
+
+## TL;DR
+
+For those looking for a quick answer, here is an example of my recommended approach, which calculates a new variable, the mean fuel efficiency (`mfe`) of each car, as the row-wise mean of two existing variables, highway fuel efficiency (`hwy`) and city fuel efficiency (`cty`):
+
+```{r}
+#| eval: false
+
+library(tidyverse) # needs dplyr version 1.1.0+
+
+# Calculate mean fuel efficiency (mfe) from highway (hwy) and city (cty)
+mpg |> mutate(mfe = rowMeans(pick(hwy, cty)))
+```
+
+
+## Introduction
+
+[dplyr](https://dplyr.tidyverse.org/) is an amazing tool for data wrangling and I use it daily. However, there is one type of operation that I frequently do that has historically caused me some confusion and frustration: row-wise means. Once I figured out what was going on, I wanted to share what I learned through this brief blog post. It will focus on how to avoid some common issues I ran into and how to speed up rowwise operations with large data frames. I hope some find it helpful. 
+
+```{r setup}
+#| message: false
+
+# Load packages used in this post
+library(tidyverse)
+library(microbenchmark)
+
+# Set random seed for reproduciblity
+set.seed(2023)
+```
+
+```{r setup-hidden}
+#| echo: false
+#| message: false
+
+library(knitr)
+library(kableExtra)
+```
+
+## Simulated Example Data
+
+Let's say we have a tibble (or data frame) containing 10 observations and 4 numerical variables: `y`, `x1`, `x2`, and `x3`. We can simulate this quickly using `rnorm()` to sample from different normal distributions.
+
+```{r data}
+#| df-print: kable
+
+# Simulate data
+y  <- rnorm(n = 10, mean = 100, sd = 15)
+x1 <- rnorm(n = 10, mean =   0, sd =  1)
+x2 <- rnorm(n = 10, mean =  10, sd = 10)
+x3 <- rnorm(n = 10, mean =  20, sd =  5)
+n10 <- tibble(y, x1, x2, x3)
+```
+
+## Doing it "by-hand"
+
+Now let's say we want to add a new variable `xmean` to the tibble containing each observation's mean of `x1`, `x2`, and `x3`. 
+
+We can use `mutate()` and math to achieve this:
+
+```{r}
+# Example 0 (works but inconvenient)
+n10 |> 
+  mutate(xmean = (x1 + x2 + x3) / 3)
+```
+
+## A Failed Attempt
+
+But this approach will be a hassle if you have any missing values or if you have lots of variables to average. Instead, if you are just learning \{dplyr\}, you would probably try to combine the `mean()` and `mutate()` functions as below.
+
+```{r ex1}
+# Example 1 (doesn't work)
+n10 |> 
+  mutate(xmean = mean(c(x1, x2, x3)))
+```
+
+However, you'll notice in the output above that the new `xmean` variable contains repetitions of a constant value. What is going on here? Basically, what `mutate()` did was take all the numbers in `x1`, `x2`, and `x3`, combine them into one long vector of 30 numbers, and send that vector to the `mean()` function. The `mean()` function then returns a single value---the mean of all 30 numbers---and tries to put that into the new column `xmean`. But because the column needs to be a vector of 10 numbers to fit into the tibble, that single value gets recycled (i.e., repeated 10 times). To verify this is what happened, we can do the operation by hand and see that we get the same number:
+
+```{r ex1b}
+mean(c(x1, x2, x3))
+```
+
+So, clearly `mutate()` is not doing what we intended it to do. 
+
+## The `across()` approach
+
+Luckily, [dplyr 1.0.0](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/) added some great features for doing operations within rows. The simplest version simply adds a call to the `rowwise()` function to our pipeline before the `mutate()`.
+
+```{r ex2}
+# Example 2 (works but slow)
+n10 |> 
+  rowwise() |>  
+  mutate(xmean = mean(c(x1, x2, x3)))
+```
+
+This did what we wanted it to do, despite the actual `mutate()` call being identical to what is was before! Pretty cool. We can even save some time by selecting the variables to include in the `mean()` operation automatically, instead of listing them out in the `c()` function. This isn't such a time-savings in this case with only three variables, but in settings with more variables it can really add up. To do so, we just need to use a [tidy selection](https://dplyr.tidyverse.org/reference/select.html) function; in this case, all the variables we want to include start with the letter "x" so let's use `starts_with()`.
+
+```{r ex3}
+#| error: true
+
+# Example 3 (doesn't work)
+n10 |> 
+  rowwise()|> 
+  mutate(xmean = mean(starts_with("x")))
+```
+
+Shoot, that didn't work. But why not? Basically, the problem is that `mutate()` doesn't know what do to with selection functions like `starts_with()`. The error message basically says that we are in the "wrong context" for a selection function.
+
+## Tidy selection with `c_across()`
+
+Luckily, [dplyr 1.0.0](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/) also added the `c_across()` function, which will allow us to change the context to one that does allow selection functions. The code below now works as intended, first selecting all the variables starting with "x" and then computing their row-wise means.
+
+```{r ex4}
+# Example 4 (works but slow)
+n10 |> 
+  rowwise() |> 
+  mutate(xmean = mean(c_across(starts_with("x"))))
+```
+
+## Remember to `ungroup()`
+
+There are two things to note about `rowwise()`, however. First, it transformed our tibble into an implicitly "grouped" tibble, which is what allowed our `mutate()` function to calculate row-wise means instead of overall means (basically, it is treating each row as a separate group and calculating the means per group/row). However, after that `mutate()` call, the tibble remains grouped. This is handy if we want to continue doing row-wise operations, but how do we tell it to stop once we are done with row-wise operations and want to return to "normal" behavior? Let's see when this could be a problem; one example is if we want to calculate the maximum row-wise mean `xmean_max`.
+
+```{r ex5}
+#| message: false
+
+# Example 5 (doesn't work)
+n10 |> 
+  rowwise() |> 
+  mutate(xmean = mean(c_across(starts_with("x")))) |> 
+  summarize(xmean_max = max(xmean))
+```
+
+Here we wanted to summarize over all values of `xmean` and expected a single maximum value. Instead we got the same 10 values back. What happened? Basically, our tibble was still implicitly grouped by row and the `summarize()` function respected that, calculating the maximum of each group/row. To avoid this behavior, we can add the `ungroup()` function to our pipeline (reverting the tibble back to a standard one without implicit grouping).
+
+```{r ex6}
+# Example 6 (works but slow)
+n10 |> 
+  rowwise() |> 
+  mutate(xmean = mean(c_across(starts_with("x")))) |> 
+  ungroup() |>
+  summarize(xmean_max = max(xmean))
+```
+
+Now we get the desired behavior, and so I am usually very careful to add `ungroup()` to my pipeline as soon as I am done with row-wise operations (otherwise you might end up with some unexpected problems). 
+
+## Faster means with `rowMeans()`
+
+The other thing to note about `rowwise()` is that it can be slow. With a small tibble like this, it doesn't matter much, but the difference could be meaningful for larger and more complex data. In these cases, you have some alternatives. This [blog post](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/) describes some of them, but does not address the specific case of means, which is what I want to do the most in practice. A faster alternative in this case is to use the `rowMeans()` function. As you might imagine, this function takes in a numeric matrix or dataframe and returns the mean of each row.
+
+```{r}
+rowMeans(n10)
+```
+
+But we want to exclude the `y` variable and append it to the `n10` tibble. How to do so? We might reasonably try to put it into `mutate()` like we did with `mean()`:
+
+```{r ex7}
+#| error: true
+
+# Example 7 (doesn't work)
+n10 |> 
+  mutate(xmean = rowMeans(c(x1, x2, x3)))
+```
+
+But here we run into a problem. `rowMeans()` is expecting a numeric matrix or data frame, but is being provided with a vector of 30 numbers again (as in Example 1). Thus, it doesn't have rows to calculate means within and returns an error. We can solve this by transforming the vector to a matrix:
+
+```{r ex8}
+# Example 8 (works but inconvenient)
+n10 |> 
+  mutate(xmean = rowMeans(matrix(c(x1, x2, x3), ncol = 3)))
+```
+
+But [dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/) added a way to streamline this kind of thing. We can use the new `pick()` function to create this context and avoid the need for the dot operator. Note that we using `pick()` here instead of `c_across()` because the latter is for working within rows (in combination with `rowwise()`) and here we want the row-wise operations to be handled by `rowMeans()`.
+
+```{r ex11}
+# Example 11 (works and convenient and fast)
+n10 |> 
+  mutate(xmean = rowMeans(pick(starts_with("x"))))
+```
+
+To test the speed of each approach, we can use the [microbenchmark](https://github.com/joshuaulrich/microbenchmark/) package, which will precisely time each approach over multiple iterations (in this case, 100). Let's wrap up by testing the speech of each approach with increasingly large data sets.
+
+```{r speedtest}
+#| cache: true
+
+# Create function wrappers so the microbenchmark output is prettier
+A_rowwise <- function(.data) { 
+  .data |> 
+    rowwise() |> 
+    mutate(xmean = mean(c_across(starts_with("x")))) |> 
+    ungroup()
+}
+
+B_rowMeans <- function(.data) { 
+  .data |> 
+    mutate(xmean = rowMeans(pick(starts_with("x"))))
+}
+
+# Simulate larger datasets
+n100 <- n10 |> slice(rep(1:n(), times = 10))
+n1000 <- n100 |> slice(rep(1:n(), times = 10))
+n10000 <- n1000 |> slice(rep(1:n(), times = 10))
+
+# Perform microbenchmarking
+speedtest <- 
+  microbenchmark(
+    A_rowwise(n10),
+    A_rowwise(n100),
+    A_rowwise(n1000),
+    A_rowwise(n10000),
+    B_rowMeans(n10),
+    B_rowMeans(n100), 
+    B_rowMeans(n1000),
+    B_rowMeans(n10000),
+    times = 100L
+  )
+```
+
+```{r}
+#| include: false
+
+stp <- print(speedtest)
+```
+
+```{r}
+#| echo: false
+
+stp |> 
+  summarize(
+    mean_time_ms = mean(time) / 10^6,
+    sd_time_ms = sd(time) / 10^6,
+    min_time_ms = min(time) / 10^6,
+    max_time_ms = max(time) / 10^6,
+    .by = expr
+  ) |> 
+  rename(Approach = expr) |> 
+  arrange(Approach) |> 
+  kable(digits = 3) |> 
+  kable_styling(full_width = FALSE, position = "left")
+```
+
+```{r stplot}
+#| message: false
+#| fig.width: 7
+#| fig.height: 3.5
+#| out.width: "860px"
+
+autoplot(speedtest)
+```
+
+The speed difference between approaches grows with the number of observations and becomes quite noticeable at 1000 observations or more. So, although I think it is worth learning the new `rowwise()` and `c_across()` functions, in settings where observations are many and speed in paramount, it may be worthwhile to learn "parallel" functions such as `rowMeans()`, `rowSums()`, `pmin()`, `pmax()`, and `paste()`.
+
+## Session Info
+
+<p><details><summary>Click here for session info</summary>
+```{r si, message=FALSE}
+sessionInfo()
+```
+</details></p>
+
+## Notes / References
+
+- \[1\] [dplyr vignette: Row-wise operations](https://dplyr.tidyverse.org/dev/articles/rowwise.html)
+
+- \[2\] [dplyr 1.1.0: pick(), reframe(), arrange()](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/)
+
+- \[3\] [dplyr 1.0.0: working within rows](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/)
+
+- \[4\] [dplyr issue \#4544](https://github.com/tidyverse/dplyr/issues/4544)
+
+- *Note:* This is an update of an [older blog post](https://jmgirard.com/rowwise-means/) on my personal website.
