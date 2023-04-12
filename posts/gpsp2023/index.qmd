@@ -1,0 +1,19 @@
+---
+title: "GPSP 2023 Convention"
+description: "Great Plains Student Psychology Convention"
+author: "Jeffrey Girard"
+date: "2023-04-11"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+---
+
+Kassy and I attended the [Great Plains Student Psychology Convention](https://sites.google.com/emporia.edu/great-plains-2023) last weekend, hosted at Emporia State University. I gave an invite keynote address on "Reconsidering the Duchenne Smile" and Kassy presented her first AffCom lab poster on "Adult attachment and the working alliance during brief psychotherapy for depression." She was also awarded an Outstanding Graduate Poster award. Congratulations, Kassy!
+
+![](gpsp2023_gray_poster.webp)
+
+![](gpsp2023_gray_award.webp)
+
+
