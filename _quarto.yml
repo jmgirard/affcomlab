@@ -4,9 +4,13 @@ project:
     - CNAME
   output-dir: docs
 
+execute:
+    freeze: auto
+
 website:
   title: "AffCom Lab"
   navbar:
+    background: primary
     right:
       - href: news.qmd
         text: News
@@ -29,6 +33,6 @@ website:
 
 format:
   html:
-    theme: default
+    theme: cosmo
     css: styles.css
     toc: true
