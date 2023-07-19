@@ -1,0 +1,40 @@
+---
+title: "Yuanyuan Yang"
+sortby: "2"
+subtitle: "PhD Student"
+image: placeholder.png
+toc: false
+started: "Fall 2023"
+ended: "Current"
+about:
+  id: person-profile
+  template: jolla
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Research Staff</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+:::
+
+## Biography
+TBA
+
+## Education
+
+- [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
+  PhD Student (Clinical Psychological Science), 2023–Current
+
+- [SUNY University at Stony Brook]{.fw-bold} | Stony Brook, NY, USA<br />
+  MS in Psychology | 2023
+
+- [SUNY University at Stony Brook]{.fw-bold} | Stony Brook, NY, USA<br />
+  BS in Psychology, Applied Mathematics \& Statistics | 2021
