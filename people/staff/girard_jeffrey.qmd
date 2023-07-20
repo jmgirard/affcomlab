@@ -64,8 +64,10 @@ He is now an Assistant Professor in the department of Psychology at the Universi
 
 ## Journal Editing
 
-- **Journal of Psychopathology and Clinical Science** <a href="https://www.apa.org/pubs/journals/abn" target="_blank" rel="nooperner noreferrer"></a><br />
-  Consulting Editor | Starting 2023
+- **NPP Digital Psychiatry and Neuroscience** <a href="https://www.nature.com/dpn/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Consulting Editor | 2023–Current
+- **Journal of Psychopathology and Clinical Science** <a href="https://www.apa.org/pubs/journals/abn" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Consulting Editor | 2023–Current
 - **IEEE Transactions on Affective Computing** <a href="https://www.computer.org/csdl/journal/ta" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Associate Editor | 2022–Current
 - **Collabra Psychology** <a href="https://online.ucpress.edu/collabra" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
