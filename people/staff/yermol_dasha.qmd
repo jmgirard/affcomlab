@@ -2,13 +2,25 @@
 title: "Dasha Yermol"
 sortby: "2"
 subtitle: "PhD Student"
-image: placeholder.png
+image: yermol_dasha.png
 toc: false
 started: "Fall 2023"
 ended: "Current"
+resources: 
+  - "yermol_cv.pdf"
 about:
   id: person-profile
   template: jolla
+  links:
+    - icon: file-earmark-text
+      text: vitae
+      href: ./people/staff/yermol_cv.pdf
+    - icon: mortarboard
+      text: scholar
+      href: https://scholar.google.com/citations?user=cuD2HvkAAAAJ
+    - icon: github
+      text: github
+      href: https://github.com/dayermol
 ---
 
 ```{=html}
@@ -26,7 +38,11 @@ about:
 :::
 
 ## Biography
-TBA
+Dasha Yermol studies how emotion perception is influenced by individual differences (e.g., mental health and personality), the functions of affective synchrony between interacting dyads, and differences in emotion expression due to social factors (e.g., context, social roles).
+
+Dasha obtained her B.A. in psychology with comprehensive honors from the University of Wisconsin-Madison in 2021. After graduating from UW-Madison, she was a lab manager at a child development research lab for two years, studying how children learn language using eye-tracking methods.
+
+Dasha is currently a PhD Student in the Brain, Behavior, and Quantitative Science (BBQ) program. She is also a graduate teaching assistant for undergraduate psychology courses. Outside of the lab, Dasha enjoys drinking great coffee, being outdoors (biking, swimming, hiking), and tending to her many houseplants.
 
 ## Education
 
