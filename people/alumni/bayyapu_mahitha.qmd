@@ -5,7 +5,7 @@ subtitle: "MS Student"
 image: bayyapu_mahitha.jpg
 toc: false
 started: "Spring 2023"
-ended: "Current"
+ended: "Summer 2023"
 about:
   id: person-profile
   template: jolla

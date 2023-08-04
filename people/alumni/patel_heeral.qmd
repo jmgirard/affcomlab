@@ -4,7 +4,7 @@ sortby: "Patel, Heeral"
 subtitle: "Research Assistant"
 image: patel_heeral.webp
 started: "Fall 2021"
-ended: "Current"
+ended: "Spring 2023"
 toc: false
 about:
   id: person-profile
@@ -32,6 +32,7 @@ Heeral's research interests include how psychology affects interpersonal communi
 - Fall 2021, *Research Assistant*
 - Spring 2022, *Research Assistant*
 - Fall 2022, *Research Assistant*
+- Spring 2023, *Research Assistant*
 
 ## Education
 - **University of Kansas** | Lawrence, KS, USA<br />
