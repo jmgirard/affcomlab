@@ -1,0 +1,33 @@
+---
+title: "Randomized trial of brief interpersonal psychotherapy and cognitive behavioral therapy for depression delivered both in-person and by telehealth"
+type: "article"
+author: "Swartz, Bylsma,Fournier, et al."
+year: "2023"
+publication: "Journal of Affective Disorders"
+doi: "https://doi.org/10.1016/j.jad.2023.04.092"
+materials: ""
+toc: false
+categories:
+  - substantive
+  - depression
+  - clinical
+  - psychotherapy
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Swartz, H. A., Bylsma, L. M., Fournier, J. C., Girard, J. M., Spotts, C., Cohn, J. F., & Morency, L.-P. (2023). Randomized trial of brief interpersonal psychotherapy and cognitive behavioral therapy for depression delivered both in-person and by telehealth. *Journal of Affective Disorders, 333,* 543–552.
+
+
+## Abstract
+
+Background: Expert consensus guidelines recommend Cognitive Behavioral Therapy (CBT) and Interpersonal Psychotherapy (IPT), interventions that were historically delivered face-to-face, as first-line treatments for Major Depressive Disorder (MDD). Despite the ubiquity of telehealth following the COVID-19 pandemic, little is known about differential outcomes with CBT versus IPT delivered in-person (IP) or via telehealth (TH) or whether working alliance is affected. 
+
+Methods: Adults meeting DSM-5 criteria for MDD were randomly assigned to either 8 sessions of IPT or CBT (group). Mid-trial, COVID-19 forced a change of therapy delivery from IP to TH (study phase). We compared changes in Hamilton Rating Scale for Depression (HRSD-17) and Working Alliance Inventory (WAI) scores for individuals by group and phase: CBT-IP (n = 24), CBT-TH (n = 11), IPT-IP (n = 25) and IPT-TH (n = 17). 
+
+Results: HRSD-17 scores declined significantly from pre to post treatment (pre: M = 17.7, SD = 4.4 vs. post: M = 11.7, SD = 5.9; p < .001; d = 1.45) without significant group or phase effects. WAI scores did not differ by group or phase. Number of completed therapy sessions was greater for TH (M = 7.8, SD = 1.2) relative to IP (M = 7.2, SD = 1.6) (Mann-Whitney U = 387.50, z = 2.24, p = .025). 
+
+Limitations: Participants were not randomly assigned to IP versus TH. Sample size is small. 
+
+Conclusions: This study provides preliminary evidence supporting the efficacy of both brief IPT and CBT, delivered by either TH or IP, for depression. It showed that working alliance is preserved in TH, and delivery via TH may improve therapy adherence. Prospective, randomized controlled trials are needed to definitively test efficacy of brief IPT and CBT delivered via TH versus IP.

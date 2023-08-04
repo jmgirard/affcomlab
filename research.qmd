@@ -71,20 +71,20 @@ toc: true
 
 ### Pending Funding
 
-- *"Patient-focused Prediction of Dropout from PTSD Treatment"*
-    - R21, National Institutes of Health (NIMH)
-    - **Girard** (PI), Co-I: Sprunger
-    - Not Scored, Currently in Revision
+<!-- - *"Patient-focused Prediction of Dropout from PTSD Treatment"* -->
+<!--     - R21, National Institutes of Health (NIMH) -->
+<!--     - **Girard** (PI), Co-I: Sprunger -->
+<!--     - Not Scored, Currently in Revision -->
 
-- *"Naturalistic Probe for Dynamic Assessment of Emotional Reactivity"*
-    - R01, National Institutes of Health (NIMH)
-    - Liebenthal (PI), Co-Is: **Girard**, Tie 
-    - Currently in Review
+<!-- - *"Naturalistic Probe for Dynamic Assessment of Emotional Reactivity"* -->
+<!--     - R01, National Institutes of Health (NIMH) -->
+<!--     - Liebenthal (PI), Co-Is: **Girard**, Tie  -->
+<!--     - Not Scored, Currently in Revision -->
     
 - *"Dyadic Communication Dynamics in Hybrid In-Person/Remote Psychotherapy"*
     - R01, National Institutes of Health (NIMH)
     - **Girard** (PI), Co-Is: Bylsma, Cohn, Ilardi, Morency, Swartz
-    - Scored 39th Percentile, Currently in Revision (to resubmit in March)
+    - Scored 14th Percentile, Awaiting Funding Decision
 
 ## Research Framework
 
