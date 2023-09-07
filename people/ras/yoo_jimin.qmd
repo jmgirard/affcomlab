@@ -1,0 +1,38 @@
+---
+title: "Jimin Yoo"
+sortby: "Yoo, Jimin"
+subtitle: "Research Assistant"
+image: yoo_jimin.webp
+started: "Fall 2023"
+ended: "Current"
+toc: false
+about:
+  id: person-profile
+  template: jolla
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Research Assistants</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+## Biography
+Jimin is majoring in psychology and minoring in ABCS and plans to graduate spring of 2024. She plans on attending grad school for clinical psychology.  Jimin in interested in family dynamics and mental health in children and adolescents. She hopes to work as a clinician for children and families. Now, she is gaining experience as a crisis counselor at Head Quarters Counseling, doing suicide intervention and crisis diversion.
+
+
+## Semesters
+
+- Fall 2023, *Research Assistant*
+
+## Education
+
+**University of Kansas** | Lawrence, KS, USA<br />
+Psychology Major, Applied Behavioral Science Minor
+:::
