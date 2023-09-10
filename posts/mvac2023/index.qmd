@@ -1,0 +1,19 @@
+---
+title: "Measurement Validation Tutorial"
+description: "Validation in Affective Computing"
+author: "Jeffrey Girard"
+date: "2023-09-10"
+image: browser_stats.svg
+draft: false
+categories:
+  - teaching
+  - presentation
+---
+
+I gave a three-hour tutorial on Measurement Validation in Affective Computing at the Affective Computing and Intelligent Interaction (ACII 2023) conference in Boston, MA. Here are my slides:
+
+<iframe class="slide-deck" src="./MVAC_Slides.html" title="Presentation Slides">
+</iframe>
+
+*Note.* To view the slideshow in full screen mode, click inside it and press the "f" key on your keyboard.<br />
+You can also use the menu by clicking on the icon at the bottom-left of each slide.

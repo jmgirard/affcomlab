@@ -1,5 +1,50 @@
 [
   {
+    "listing": "/news.html",
+    "items": [
+      "/posts/mvac2023/index.html",
+      "/posts/gpsp2023/index.html",
+      "/posts/rowwise2023/index.html",
+      "/posts/moderation2022/index.html",
+      "/posts/vail2022/index.html",
+      "/posts/google2022/index.html",
+      "/posts/suicideR21/index.html",
+      "/posts/recruitment2023/index.html",
+      "/posts/dischargeR01/index.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/girard_jeffrey.html",
+      "/people/staff/gray_kassandra.html",
+      "/people/staff/simmons_aaron.html",
+      "/people/staff/yang_yuanyuan.html",
+      "/people/staff/yermol_dasha.html",
+      "/people/ras/kang_taegyu.html",
+      "/people/ras/swift_anna.html",
+      "/people/ras/yoo_jimin.html",
+      "/people/alumni/bayyapu_mahitha.html",
+      "/people/alumni/aleesa_abdulhamed.html",
+      "/people/alumni/amgalanbaatar_dulguun.html",
+      "/people/alumni/bachmuth_rebecca.html",
+      "/people/alumni/dankof_kathleen.html",
+      "/people/alumni/dick_aubrey.html",
+      "/people/alumni/folsom_mallory.html",
+      "/people/alumni/iskalis_taylor.html",
+      "/people/alumni/johnson_emma.html",
+      "/people/alumni/li_wanheng.html",
+      "/people/alumni/liu_yutian.html",
+      "/people/alumni/logan_laura.html",
+      "/people/alumni/niehorster-cook_leo.html",
+      "/people/alumni/oberg_sara.html",
+      "/people/alumni/patel_heeral.html",
+      "/people/alumni/rivera_miguel.html",
+      "/people/alumni/sall_lauryn.html",
+      "/people/alumni/white_addison.html"
+    ]
+  },
+  {
     "listing": "/publications.html",
     "items": [
       "/publications/proceedings/girard2023a.html",
@@ -41,50 +86,6 @@
       "/publications/proceedings/jeni2013.html",
       "/publications/proceedings/girard2013.html",
       "/publications/proceedings/girard2011.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/posts/gpsp2023/index.html",
-      "/posts/rowwise2023/index.html",
-      "/posts/moderation2022/index.html",
-      "/posts/vail2022/index.html",
-      "/posts/google2022/index.html",
-      "/posts/suicideR21/index.html",
-      "/posts/recruitment2023/index.html",
-      "/posts/dischargeR01/index.html"
-    ]
-  },
-  {
-    "listing": "/people.html",
-    "items": [
-      "/people/staff/girard_jeffrey.html",
-      "/people/staff/gray_kassandra.html",
-      "/people/staff/simmons_aaron.html",
-      "/people/staff/yang_yuanyuan.html",
-      "/people/staff/yermol_dasha.html",
-      "/people/ras/kang_taegyu.html",
-      "/people/ras/swift_anna.html",
-      "/people/ras/yoo_jimin.html",
-      "/people/alumni/bayyapu_mahitha.html",
-      "/people/alumni/aleesa_abdulhamed.html",
-      "/people/alumni/amgalanbaatar_dulguun.html",
-      "/people/alumni/bachmuth_rebecca.html",
-      "/people/alumni/dankof_kathleen.html",
-      "/people/alumni/dick_aubrey.html",
-      "/people/alumni/folsom_mallory.html",
-      "/people/alumni/iskalis_taylor.html",
-      "/people/alumni/johnson_emma.html",
-      "/people/alumni/li_wanheng.html",
-      "/people/alumni/liu_yutian.html",
-      "/people/alumni/logan_laura.html",
-      "/people/alumni/niehorster-cook_leo.html",
-      "/people/alumni/oberg_sara.html",
-      "/people/alumni/patel_heeral.html",
-      "/people/alumni/rivera_miguel.html",
-      "/people/alumni/sall_lauryn.html",
-      "/people/alumni/white_addison.html"
     ]
   }
 ]

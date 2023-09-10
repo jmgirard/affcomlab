@@ -1,0 +1,15 @@
+---
+title: "MVAC Redirect"
+---
+
+```{=html}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url='https://affcom.ku.edu/posts/mvac2023/'" />
+  </head>
+  <body>
+    <p>Please follow <a href="https://affcom.ku.edu/posts/mvac2023/">this link</a>.</p>
+  </body>
+</html>
+```
