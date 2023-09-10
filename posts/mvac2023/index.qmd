@@ -1,6 +1,6 @@
 ---
-title: "Measurement Validation Tutorial"
-description: "Validation in Affective Computing"
+title: "MVAC Tutorial"
+description: "Measurement Validation in Affective Computing"
 author: "Jeffrey Girard"
 date: "2023-09-10"
 image: browser_stats.svg
