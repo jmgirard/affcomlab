@@ -1,0 +1,20 @@
+---
+title: "DynAMoS Database"
+description: "Dynamic Affective Movie Clip Database for Subjectivity Analysis"
+author: "Jeffrey Girard"
+date: "2023-09-13"
+image: movie.svg
+draft: false
+categories:
+  - conference
+  - presentation
+---
+
+I gave this presentation about our [conference paper](https://affcom.ku.edu/publications/proceedings/girard2023a.html) at the Affective Computing and Intelligent Interaction (ACII 2023) conference in Boston, MA. Here are my slides:
+
+<iframe class="slide-deck" src="./Presentation.html" title="Presentation Slides">
+</iframe>
+
+*Note.* To view the slideshow in full screen mode, click inside it and press the "f" key on your keyboard. You can also use the menu by clicking on the icon at the bottom-left of each slide.
+
+You can learn more about the database at [dynamos.mgb.org](https://dynamos.mgb.org).

@@ -1,0 +1,215 @@
+---
+format: 
+  revealjs:
+    css: styles.css
+    slide-number: "c/t"
+    overview: true
+    progress: true
+    mouse-wheel: true
+    incremental: true
+    lang: "en"
+    pagetitle: "DynAMoS Dataset Slides"
+    author-meta: "Jeffrey Girard"
+    date-meta: "2023-09-13"
+---
+
+::: {.my-title}
+# DynAMoS Database
+[Dynamic Affective Movie Clip<br />Database for Subjectivity Analysis]{.my-subtitle}
+
+::: {.my-details}
+[ACII 2023 | Girard, Tie, & Liebenthal]{}<br />
+{{< fa link size=xs >}} [<https://dynamos.mgb.org>]{.p90}
+:::
+
+![](movie.svg){.absolute bottom=20 right=0 width=360}
+:::
+
+## Emotion Elicitation using Film
+
+- **Researchers often try to [elicit emotions]{.blue} in participants**
+    + To study the effects of emotion on other phenomena
+    + To identify correlates of and group differences in emotion
+    + To detect and quantify affective dysregulation
+
+- **Affective [movie clips]{.blue} are common for elicitation stimuli**
+    + Expertly crafted by actors, directors, etc.
+    + Multimodal, dynamic, and extended in nature
+
+## Types of Emotion Ratings {.p90}
+
+- **Who is providing the measure of emotion?**
+    + [Self]{.b .blue}-reports of participants' own emotional experience
+    + [Observer]{.b}-perceptions of participants' emotional experience
+
+- **What model of emotion is used to report emotion?**
+    + [Discrete]{.b} choices of emotion categories (e.g, happy, angry)
+    + [Continuous]{.b .blue} scores on emotion dimensions (e.g., valence)
+
+- **How often are the emotions reported?**
+    + [Holistic]{.b .blue} ratings collected once after the movie clip
+    + [Dynamic]{.b .blue} ratings collected repeatedly during movie clip
+
+## Inter-rater Variability
+
+- Each movie clip (and moment) has its own affective content
+
+- But participants also vary in their emotional reactivity
+    + And there may be clip-by-participant interactions
+
+- Usually, we consider these differences to be nuisances
+    + We try to average them out across multiple raters
+    + We try to train raters to become standardized
+    
+- **But what if we study these differences instead?!**
+    + We can develop a new field of [subjectivity analysis]{.b .blue}
+    
+## Subjectivity Analysis
+
+- Why do participants experience the same stimuli differently?
+
+- How structured/predictable are these individual differences?
+
+- Are some stimuli (or moments) more subjective than others?
+
+- How well can we predict/explain a stimulus's subjectivity?
+
+- Can subjectivity analysis help us improve **personalization**?
+
+- Can subjectivity analysis help us explain/model **ambiguity**?
+
+## Available Databases
+
+- Affective Movie Clip Databases with Dynamic Self-Reports
+    + [DECAF](https://doi.org/10.1109/TAFFC.2015.2392932): 7 participants watch 36 clips (1--2 min each)
+    + [COGNIMUSE](https://cognimuse.cs.ntua.gr/database): 7 participants watch 7 clips (30 min each)
+
+- Limitations for Subjectivity Analyses
+    + We need more participants to study subjectivity
+    + We need intermediate clip durations (2--10 min)
+    + We would ideally have holistic *and* dynamic ratings
+    
+- **We designed a new database to meet these needs...**
+
+## Movie Clip Selection
+
+- **Selection Criteria**
+    + 2--10 min in duration
+    + Only English language spoken
+    + Live action, mostly camera-facing actors
+    + Whole set spans many emotional contexts
+    + Whole set represents diversity of actors
+    
+- **Final Set**
+    + 22 movie clips (1999--2018, 2.2--7.1 min, many genres)
+
+## Participants
+
+- **Recruited through Rally with MGB online platform**
+    + No sensory, cognitive, emotional impairments
+    + Aged 18--60 years old
+    + Fluent in the English language
+    
+- **Final Sample**
+    + 83 participants (56 female, 26 male)
+    + 43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino
+    + 18--59 years old (M=28.8, SD=9.9)
+
+## Procedure
+
+1. Complete demographic questionnaires
+
+2. Read brief text description of clip's (non-affective) context
+
+3. Watch clip while providing **dynamic ratings**
+    + [CARMA](https://carma.jmgirard.com) used to self-report emotional valence at 1 Hz
+
+4. After clip ends, provide **holistic ratings**
+    + [S-PANAS](10.1016/S0191-8869(98)00251-7) used to self-report positive and negative affect
+
+5. Repeat Steps 2--4 for all clips (across two sessions)
+
+## Validation Approach
+
+- **Inter-rater reliability**
+    + *Single-measures ICC:* How well do the scores of any single rater represent the whole set of raters?
+    + *Average-measures ICC:* How well does the average of all raters' scores represent the whole set of raters?
+    
+    
+- **Inter-item reliability**
+    + *Omega categorical:* How consistent are the five items from each S-PANAS subscale (i.e., positive and negative affect)?
+
+## Validation Take-aways {.p90}
+
+- **Dynamic Ratings**
+    - There was a lot of subjectivity (i.e., rater variance)
+    - But the average of all raters' scores was very reliable
+    - Lots of clip-by-rater (and maybe second-by-rater) effects
+- **Holistic Ratings**
+    - Inter-rater reliability was high across all clips
+    - Were relatively less subjective than dynamic ratings
+    - Inter-item reliability was high for *most* clips
+
+## The Green Mile
+
+![](greenmile.png)
+
+## Little Miss Sunshine
+
+![](littlemiss.png)
+
+## Website Generation
+
+- Rich documentation for the database
+    + <https://dynamos.mgb.org>
+    + Summary tables, figures, explanatory text
+    + Screenshots of clips, subtitles, and features
+
+- Built using [Quarto](https://quarto.org) and hosted using [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+    + Can be easily updated as the database grows
+    + Can showcase the R code used to analyze data
+
+## Database Uses
+
+- **Emotion elicitation** video set with normative data 
+
+- Affective **content analysis** with average ratings
+
+- Subjectivity analysis to predict **rating distributions**
+
+- Subjectivity analysis to explain **degree of subjectivity**
+
+- **Personalized modeling** of affective reactions
+
+## Future Directions
+
+- Add more movie clips and participants
+
+- Add more dynamic and holistic rating dimensions
+
+- Add sensor (e.g., physiological and eye tracking) data
+
+- Collect information about participants' personalities
+
+- Collect similar data in other languages/countries
+
+- Collect similar data in clinical/medical populations
+
+## Acknowledgements
+
+- **Co-authors**
+    + Yanmei Tie (Brigham & Women's Hospital, HMS)
+    + Einat Liebenthal (McLean Hospital, HMS)
+
+- **Funding:**
+    + Alexandra Golby (Brigham & Women's Hospital, HMS)
+
+- **Assistance:**
+    + Colin Gavin, Laura Rigolo, Abby Recko, Ben Phan
+    
+    
+## Questions? {.tc}
+
+![](movie.svg)
+
+<https://dynamos.mgb.org>

@@ -2,6 +2,7 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/dynamos/index.html",
       "/posts/mvac2023/index.html",
       "/posts/gpsp2023/index.html",
       "/posts/rowwise2023/index.html",
