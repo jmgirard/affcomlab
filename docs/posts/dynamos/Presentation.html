@@ -14,7 +14,7 @@
 
   <meta name="author" content="Jeffrey Girard">
   <meta name="dcterms.date" content="2023-09-13">
-  <title>DynAMoS Dataset Slides</title>
+  <title>DynAMoS Database Slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -352,9 +352,9 @@
 <ul>
 <li class="fragment"><strong>Researchers often try to <span class="blue">elicit emotions</span> in participants</strong>
 <ul>
-<li class="fragment">To study the effects of emotion on other phenomena</li>
-<li class="fragment">To identify correlates of and group differences in emotion</li>
-<li class="fragment">To detect and quantify affective dysregulation</li>
+<li class="fragment"><em>To study the effects of emotion on other phenomena</em></li>
+<li class="fragment"><em>To identify correlates of and group differences in emotion</em></li>
+<li class="fragment"><em>To detect and quantify affect and affective dysregulation</em></li>
 </ul></li>
 <li class="fragment"><strong>Affective <span class="blue">movie clips</span> are common for elicitation stimuli</strong>
 <ul>
@@ -369,11 +369,11 @@
 <li class="fragment"><strong>Who is providing the measure of emotion?</strong>
 <ul>
 <li class="fragment"><span class="b blue">Self</span>-reports of participants’ own emotional experience</li>
-<li class="fragment"><span class="b">Observer</span>-perceptions of participants’ emotional experience</li>
+<li class="fragment"><span class="b blue">Observer</span>-perceptions of participants’ emotional experience</li>
 </ul></li>
 <li class="fragment"><strong>What model of emotion is used to report emotion?</strong>
 <ul>
-<li class="fragment"><span class="b">Discrete</span> choices of emotion categories (e.g, happy, angry)</li>
+<li class="fragment"><span class="b blue">Discrete</span> choices of emotion categories (e.g, happy, angry)</li>
 <li class="fragment"><span class="b blue">Continuous</span> scores on emotion dimensions (e.g., valence)</li>
 </ul></li>
 <li class="fragment"><strong>How often are the emotions reported?</strong>
@@ -383,27 +383,29 @@
 </ul></li>
 </ul>
 </section>
-<section id="inter-rater-variability" class="slide level2">
-<h2>Inter-rater Variability</h2>
+<section id="archetypical-study-designs" class="slide level2 p90">
+<h2>Archetypical Study Designs</h2>
 <ul>
-<li class="fragment"><p>Each movie clip (and moment) has its own affective content</p></li>
-<li class="fragment"><p>But participants also vary in their emotional reactivity</p>
+<li class="fragment"><strong>Psychology</strong>
 <ul>
-<li class="fragment">And there may be clip-by-participant interactions</li>
+<li class="fragment">Large samples (&gt;50 participants) of holistic self-reports</li>
+<li class="fragment">Focus on explaining differences between participants</li>
 </ul></li>
-<li class="fragment"><p>Usually, we consider these differences to be nuisances</p>
+<li class="fragment"><strong>Affective Computing</strong>
 <ul>
-<li class="fragment">We try to average them out across multiple raters</li>
-<li class="fragment">We try to train raters to become standardized</li>
+<li class="fragment">Small samples (&lt;10 participants) of dynamic observer-ratings</li>
+<li class="fragment">Focus on predicting the average perception from video features</li>
 </ul></li>
-<li class="fragment"><p><strong>But what if we study these differences instead?!</strong></p>
+<li class="fragment"><strong>A Proposed Hybrid: <span class="blue">Subjectivity Analysis</span></strong>
 <ul>
-<li class="fragment">We can develop a new field of <span class="b blue">subjectivity analysis</span></li>
+<li class="fragment">Large samples (&gt;50 participants) of dynamic self-reports</li>
+<li class="fragment">Focus on explaining differences between participants</li>
 </ul></li>
 </ul>
 </section>
 <section id="subjectivity-analysis" class="slide level2">
 <h2>Subjectivity Analysis</h2>
+<p>Example Research Questions</p>
 <ul>
 <li class="fragment"><p>Why do participants experience the same stimuli differently?</p></li>
 <li class="fragment"><p>How structured/predictable are these individual differences?</p></li>
@@ -421,46 +423,28 @@
 <li class="fragment"><a href="https://doi.org/10.1109/TAFFC.2015.2392932">DECAF</a>: 7 participants watch 36 clips (1–2 min each)</li>
 <li class="fragment"><a href="https://cognimuse.cs.ntua.gr/database">COGNIMUSE</a>: 7 participants watch 7 clips (30 min each)</li>
 </ul></li>
-<li class="fragment">Limitations for Subjectivity Analyses
+<li class="fragment">Limitations for Subjectivity Analysis
 <ul>
 <li class="fragment">We need more participants to study subjectivity</li>
-<li class="fragment">We need intermediate clip durations (2–10 min)</li>
-<li class="fragment">We would ideally have holistic <em>and</em> dynamic ratings</li>
+<li class="fragment">We need <em>intermediate</em> clip durations (2–10 min)</li>
+<li class="fragment">It would be nice to have holistic <em>and</em> dynamic ratings</li>
 </ul></li>
 <li class="fragment"><strong>We designed a new database to meet these needs…</strong></li>
 </ul>
 </section>
-<section id="movie-clip-selection" class="slide level2">
-<h2>Movie Clip Selection</h2>
+<section id="dynamos-database-1" class="slide level2">
+<h2>DynAMoS Database</h2>
 <ul>
-<li class="fragment"><strong>Selection Criteria</strong>
+<li class="fragment"><strong>Movie Clip Selection</strong>
 <ul>
-<li class="fragment">2–10 min in duration</li>
-<li class="fragment">Only English language spoken</li>
-<li class="fragment">Live action, mostly camera-facing actors</li>
-<li class="fragment">Whole set spans many emotional contexts</li>
-<li class="fragment">Whole set represents diversity of actors</li>
+<li class="fragment">22 movie clips (1999–2018, 2.2–7.1 min, diverse content)</li>
 </ul></li>
-<li class="fragment"><strong>Final Set</strong>
+<li class="fragment"><strong>Participant Recruitment</strong>
 <ul>
-<li class="fragment">22 movie clips (1999–2018, 2.2–7.1 min, many genres)</li>
-</ul></li>
-</ul>
-</section>
-<section id="participants" class="slide level2">
-<h2>Participants</h2>
-<ul>
-<li class="fragment"><strong>Recruited through Rally with MGB online platform</strong>
-<ul>
-<li class="fragment">No sensory, cognitive, emotional impairments</li>
-<li class="fragment">Aged 18–60 years old</li>
-<li class="fragment">Fluent in the English language</li>
-</ul></li>
-<li class="fragment"><strong>Final Sample</strong>
-<ul>
+<li class="fragment">Healthy community members from <em>Rally with MGB</em></li>
 <li class="fragment">83 participants (56 female, 26 male)</li>
-<li class="fragment">43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino</li>
 <li class="fragment">18–59 years old (M=28.8, SD=9.9)</li>
+<li class="fragment">43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino</li>
 </ul></li>
 </ul>
 </section>
@@ -469,30 +453,23 @@
 <ol type="1">
 <li class="fragment"><p>Complete demographic questionnaires</p></li>
 <li class="fragment"><p>Read brief text description of clip’s (non-affective) context</p></li>
-<li class="fragment"><p>Watch clip while providing <strong>dynamic ratings</strong></p>
+<li class="fragment"><p>Watch clip while providing <strong>dynamic affect ratings</strong></p>
 <ul>
 <li class="fragment"><a href="https://carma.jmgirard.com">CARMA</a> used to self-report emotional valence at 1 Hz</li>
 </ul></li>
-<li class="fragment"><p>After clip ends, provide <strong>holistic ratings</strong></p>
+<li class="fragment"><p>After clip ends, provide <strong>holistic affect ratings</strong></p>
 <ul>
 <li class="fragment"><a href="10.1016/S0191-8869(98)00251-7">S-PANAS</a> used to self-report positive and negative affect</li>
 </ul></li>
 <li class="fragment"><p>Repeat Steps 2–4 for all clips (across two sessions)</p></li>
 </ol>
 </section>
-<section id="validation-approach" class="slide level2">
-<h2>Validation Approach</h2>
-<ul>
-<li class="fragment"><strong>Inter-rater reliability</strong>
-<ul>
-<li class="fragment"><em>Single-measures ICC:</em> How well do the scores of any single rater represent the whole set of raters?</li>
-<li class="fragment"><em>Average-measures ICC:</em> How well does the average of all raters’ scores represent the whole set of raters?</li>
-</ul></li>
-<li class="fragment"><strong>Inter-item reliability</strong>
-<ul>
-<li class="fragment"><em>Omega categorical:</em> How consistent are the five items from each S-PANAS subscale (i.e., positive and negative affect)?</li>
-</ul></li>
-</ul>
+<section id="quantifying-subjectivity" class="slide level2">
+<h2>Quantifying Subjectivity</h2>
+
+<img data-src="river.png" class="r-stretch"><div class="footer">
+<p>Estimates from a Bayesian G study (<a href="https://github.com/jmgirard/varde">github.com/jmgirard/varde</a>)</p>
+</div>
 </section>
 <section id="validation-take-aways" class="slide level2 p90">
 <h2>Validation Take-aways</h2>
@@ -501,24 +478,37 @@
 <ul>
 <li class="fragment">There was a lot of subjectivity (i.e., rater variance)</li>
 <li class="fragment">But the average of all raters’ scores was very reliable</li>
-<li class="fragment">Lots of clip-by-rater (and maybe second-by-rater) effects</li>
+<li class="fragment">Lots of clip-by-rater and second-by-rater effects</li>
 </ul></li>
 <li class="fragment"><strong>Holistic Ratings</strong>
 <ul>
+<li class="fragment">Relatively less subjective than dynamic ratings</li>
 <li class="fragment">Inter-rater reliability was high across all clips</li>
-<li class="fragment">Were relatively less subjective than dynamic ratings</li>
 <li class="fragment">Inter-item reliability was high for <em>most</em> clips</li>
 </ul></li>
 </ul>
+<div class="footer">
+<p>See the database paper or website for details</p>
+</div>
 </section>
-<section id="the-green-mile" class="slide level2">
-<h2>The Green Mile</h2>
+<section id="visualizing-many-time-series" class="slide level2">
+<h2>Visualizing many time series</h2>
 
-<img data-src="greenmile.png" class="r-stretch"></section>
-<section id="little-miss-sunshine" class="slide level2">
-<h2>Little Miss Sunshine</h2>
+<img data-src="Presentation_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Each blue line is one participant’s time series</p>
+</div>
+</section>
+<section id="chromodoris-quadricolor" class="slide level2">
+<h2><em>Chromodoris quadricolor</em></h2>
 
-<img data-src="littlemiss.png" class="r-stretch"></section>
+<img data-src="chromodoris.png" class="r-stretch"></section>
+<section id="introducing-the-chromodoris-plot" class="slide level2">
+<h2>Introducing the Chromodoris plot</h2>
+
+<img data-src="Presentation_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%</p>
+</div>
+</section>
 <section id="website-generation" class="slide level2">
 <h2>Website Generation</h2>
 <ul>
@@ -794,6 +784,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

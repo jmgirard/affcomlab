@@ -2272,7 +2272,7 @@
     "href": "posts/dynamos/Presentation.html#emotion-elicitation-using-film",
     "title": "AffCom Lab",
     "section": "Emotion Elicitation using Film",
-    "text": "Emotion Elicitation using Film\n\nResearchers often try to elicit emotions in participants\n\nTo study the effects of emotion on other phenomena\nTo identify correlates of and group differences in emotion\nTo detect and quantify affective dysregulation\n\nAffective movie clips are common for elicitation stimuli\n\nExpertly crafted by actors, directors, etc.\nMultimodal, dynamic, and extended in nature"
+    "text": "Emotion Elicitation using Film\n\nResearchers often try to elicit emotions in participants\n\nTo study the effects of emotion on other phenomena\nTo identify correlates of and group differences in emotion\nTo detect and quantify affect and affective dysregulation\n\nAffective movie clips are common for elicitation stimuli\n\nExpertly crafted by actors, directors, etc.\nMultimodal, dynamic, and extended in nature"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#types-of-emotion-ratings",
@@ -2293,14 +2293,14 @@
     "href": "posts/dynamos/Presentation.html#subjectivity-analysis",
     "title": "AffCom Lab",
     "section": "Subjectivity Analysis",
-    "text": "Subjectivity Analysis\n\nWhy do participants experience the same stimuli differently?\nHow structured/predictable are these individual differences?\nAre some stimuli (or moments) more subjective than others?\nHow well can we predict/explain a stimulus’s subjectivity?\nCan subjectivity analysis help us improve personalization?\nCan subjectivity analysis help us explain/model ambiguity?"
+    "text": "Subjectivity Analysis\nExample Research Questions\n\nWhy do participants experience the same stimuli differently?\nHow structured/predictable are these individual differences?\nAre some stimuli (or moments) more subjective than others?\nHow well can we predict/explain a stimulus’s subjectivity?\nCan subjectivity analysis help us improve personalization?\nCan subjectivity analysis help us explain/model ambiguity?"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#available-databases",
     "href": "posts/dynamos/Presentation.html#available-databases",
     "title": "AffCom Lab",
     "section": "Available Databases",
-    "text": "Available Databases\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nLimitations for Subjectivity Analyses\n\nWe need more participants to study subjectivity\nWe need intermediate clip durations (2–10 min)\nWe would ideally have holistic and dynamic ratings\n\nWe designed a new database to meet these needs…"
+    "text": "Available Databases\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nLimitations for Subjectivity Analysis\n\nWe need more participants to study subjectivity\nWe need intermediate clip durations (2–10 min)\nIt would be nice to have holistic and dynamic ratings\n\nWe designed a new database to meet these needs…"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#movie-clip-selection",
@@ -2321,14 +2321,14 @@
     "href": "posts/dynamos/Presentation.html#procedure",
     "title": "AffCom Lab",
     "section": "Procedure",
-    "text": "Procedure\n\nComplete demographic questionnaires\nRead brief text description of clip’s (non-affective) context\nWatch clip while providing dynamic ratings\n\nCARMA used to self-report emotional valence at 1 Hz\n\nAfter clip ends, provide holistic ratings\n\nS-PANAS used to self-report positive and negative affect\n\nRepeat Steps 2–4 for all clips (across two sessions)"
+    "text": "Procedure\n\nComplete demographic questionnaires\nRead brief text description of clip’s (non-affective) context\nWatch clip while providing dynamic affect ratings\n\nCARMA used to self-report emotional valence at 1 Hz\n\nAfter clip ends, provide holistic affect ratings\n\nS-PANAS used to self-report positive and negative affect\n\nRepeat Steps 2–4 for all clips (across two sessions)"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#validation-approach",
     "href": "posts/dynamos/Presentation.html#validation-approach",
     "title": "AffCom Lab",
     "section": "Validation Approach",
-    "text": "Validation Approach\n\nInter-rater reliability\n\nSingle-measures ICC: How well do the scores of any single rater represent the whole set of raters?\nAverage-measures ICC: How well does the average of all raters’ scores represent the whole set of raters?\n\nInter-item reliability\n\nOmega categorical: How consistent are the five items from each S-PANAS subscale (i.e., positive and negative affect)?"
+    "text": "Validation Approach\n\nInter-rater reliability\n\nSingle-measures ICC: How well do the scores of any single rater represent the whole set of raters? (vs. subjectivity)\nAverage-measures ICC: How well does the average of all raters’ scores represent the whole set of raters?\n\nInter-item reliability\n\nOmega categorical: How consistent are the five items from each S-PANAS subscale (i.e., positive and negative affect)?"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#website-generation",
@@ -2342,7 +2342,7 @@
     "href": "posts/dynamos/Presentation.html#validation-take-aways",
     "title": "AffCom Lab",
     "section": "Validation Take-aways",
-    "text": "Validation Take-aways\n\nDynamic Ratings\n\nThere was a lot of subjectivity (i.e., rater variance)\nBut the average of all raters’ scores was very reliable\nLots of clip-by-rater (and maybe second-by-rater) effects\n\nHolistic Ratings\n\nInter-rater reliability was high across all clips\nWere relatively less subjective than dynamic ratings\nInter-item reliability was high for most clips"
+    "text": "Validation Take-aways\n\nDynamic Ratings\n\nThere was a lot of subjectivity (i.e., rater variance)\nBut the average of all raters’ scores was very reliable\nLots of clip-by-rater and second-by-rater effects\n\nHolistic Ratings\n\nRelatively less subjective than dynamic ratings\nInter-rater reliability was high across all clips\nInter-item reliability was high for most clips\n\n\n\nSee the database paper or website for details"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#the-green-mile",
@@ -2399,5 +2399,61 @@
     "title": "DynAMoS Database",
     "section": "",
     "text": "I gave this presentation about our conference paper at the Affective Computing and Intelligent Interaction (ACII 2023) conference in Boston, MA. Here are my slides:\n\n\nNote. To view the slideshow in full screen mode, click inside it and press the “f” key on your keyboard. You can also use the menu by clicking on the icon at the bottom-left of each slide.\nYou can learn more about the database at dynamos.mgb.org."
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#previous-work",
+    "href": "posts/dynamos/Presentation.html#previous-work",
+    "title": "AffCom Lab",
+    "section": "Previous Work",
+    "text": "Previous Work\n\nPsychology\n\nSelf-reports of 50+ participants, mostly holistic\nFocus on explaining differences between participants\n\nAffective Computing\n\nObserver perceptions of 3–7 raters, with some dynamic\nFocus on predicting average perception from video features\n\nSubjectivity Analysis\n\nWe need datasets and studies"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#archetypical-study-designs",
+    "href": "posts/dynamos/Presentation.html#archetypical-study-designs",
+    "title": "AffCom Lab",
+    "section": "Archetypical Study Designs",
+    "text": "Archetypical Study Designs\n\nPsychology\n\nLarge samples (&gt;50 participants) of holistic self-reports\nFocus on explaining differences between participants\n\nAffective Computing\n\nSmall samples (&lt;10 participants) of dynamic observer-ratings\nFocus on predicting the average perception from video features\n\nA Proposed Hybrid: Subjectivity Analysis\n\nLarge samples (&gt;50 participants) of dynamic self-reports\nFocus on explaining differences between participants"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#dynamos-database-1",
+    "href": "posts/dynamos/Presentation.html#dynamos-database-1",
+    "title": "AffCom Lab",
+    "section": "DynAMoS Database",
+    "text": "DynAMoS Database\n\nMovie Clip Selection\n\n22 movie clips (1999–2018, 2.2–7.1 min, diverse content)\n\nParticipant Recruitment\n\nHealthy community members from Rally with MGB\n83 participants (56 female, 26 male)\n18–59 years old (M=28.8, SD=9.9)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#quantifying-subjectivity",
+    "href": "posts/dynamos/Presentation.html#quantifying-subjectivity",
+    "title": "AffCom Lab",
+    "section": "Quantifying Subjectivity",
+    "text": "Quantifying Subjectivity\n\n\nEstimates from a Bayesian G study (github.com/jmgirard/varde)"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#chromodoris",
+    "href": "posts/dynamos/Presentation.html#chromodoris",
+    "title": "AffCom Lab",
+    "section": "Chromodoris",
+    "text": "Chromodoris"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#chromodoris-quadricolor",
+    "href": "posts/dynamos/Presentation.html#chromodoris-quadricolor",
+    "title": "AffCom Lab",
+    "section": "Chromodoris quadricolor",
+    "text": "Chromodoris quadricolor"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#visualizing-many-time-series",
+    "href": "posts/dynamos/Presentation.html#visualizing-many-time-series",
+    "title": "AffCom Lab",
+    "section": "Visualizing many time series",
+    "text": "Visualizing many time series\n\n\nEach blue line is one participant’s time series"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
+    "href": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
+    "title": "AffCom Lab",
+    "section": "Introducing the Chromodoris plot",
+    "text": "Introducing the Chromodoris plot\n\n\nBlack = Mean, Yellow = 50%, Green = 70%, Purple = 90%"
   }
 ]
