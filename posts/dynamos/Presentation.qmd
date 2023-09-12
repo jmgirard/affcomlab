@@ -50,6 +50,7 @@ format:
     + [Holistic]{.b .blue} ratings collected once after the movie clip
     + [Dynamic]{.b .blue} ratings collected repeatedly during movie clip
 
+
 ## Archetypical Study Designs {.p90}
 
 - **Psychology**
@@ -87,14 +88,14 @@ Example Research Questions
     + [COGNIMUSE](https://cognimuse.cs.ntua.gr/database): 7 participants watch 7 clips (30 min each)
 
 - Limitations for Subjectivity Analysis
-    + We need more participants to study subjectivity
+    + We need more participants for studying subjectivity
     + We need *intermediate* clip durations (2--10 min)
-    + It would be nice to have holistic *and* dynamic ratings
     
 - **We designed a new database to meet these needs...**
 
 ## DynAMoS Database
 
+::: {.nonincremental}
 - **Movie Clip Selection**
     + 22 movie clips (1999--2018, 2.2--7.1 min, diverse content)
 
@@ -104,11 +105,13 @@ Example Research Questions
     + 18--59 years old (M=28.8, SD=9.9)
     + 43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino
 
+:::
+
 ## Procedure
 
-1. Complete demographic questionnaires
+1. Complete demographic **questionnaires**
 
-2. Read brief text description of clip's (non-affective) context
+2. Read brief **text description** of clip's (non-affective) context
 
 3. Watch clip while providing **dynamic affect ratings**
     + [CARMA](https://carma.jmgirard.com) used to self-report emotional valence at 1 Hz
@@ -116,7 +119,7 @@ Example Research Questions
 4. After clip ends, provide **holistic affect ratings**
     + [S-PANAS](10.1016/S0191-8869(98)00251-7) used to self-report positive and negative affect
 
-5. Repeat Steps 2--4 for all clips (across two sessions)
+5. **Repeat** Steps 2--4 for all clips (across two sessions)
 
 ## Quantifying Subjectivity
 
@@ -279,6 +282,7 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 
 ## Website Generation
 
+::: {.nonincremental}
 - Rich documentation for the database
     + <https://dynamos.mgb.org>
     + Summary tables, figures, explanatory text
@@ -287,6 +291,8 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 - Built using [Quarto](https://quarto.org) and hosted using [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
     + Can be easily updated as the database grows
     + Can showcase the R code used to analyze data
+
+:::
 
 ## Database Uses
 
@@ -302,19 +308,21 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 
 ## Future Directions
 
-- Add more movie clips and participants
+1. Add more movie **clips** and **participants**
 
-- Add more dynamic and holistic rating dimensions
+1. Add more dynamic and holistic rating **dimensions**
 
-- Add sensor (e.g., physiological and eye tracking) data
+1. Add data from **sensors** (e.g., physiological and eye tracking)
 
-- Collect information about participants' personalities
+1. Collect information about participants' **personality**
 
-- Collect similar data in other languages/countries
+1. Collect similar data in other **languages/countries**
 
-- Collect similar data in clinical/medical populations
+1. Collect similar data in **clinical/medical** populations
 
 ## Acknowledgements
+
+::: {.nonincremental}
 
 - **Co-authors**
     + Yanmei Tie (Brigham & Women's Hospital, HMS)
@@ -326,6 +334,7 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 - **Assistance:**
     + Colin Gavin, Laura Rigolo, Abby Recko, Ben Phan
     
+:::
     
 ## Questions? {.tc}
 

@@ -2300,7 +2300,7 @@
     "href": "posts/dynamos/Presentation.html#available-databases",
     "title": "AffCom Lab",
     "section": "Available Databases",
-    "text": "Available Databases\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nLimitations for Subjectivity Analysis\n\nWe need more participants to study subjectivity\nWe need intermediate clip durations (2–10 min)\nIt would be nice to have holistic and dynamic ratings\n\nWe designed a new database to meet these needs…"
+    "text": "Available Databases\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nLimitations for Subjectivity Analysis\n\nWe need more participants for studying subjectivity\nWe need intermediate clip durations (2–10 min)\n\nWe designed a new database to meet these needs…"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#movie-clip-selection",
@@ -2335,7 +2335,7 @@
     "href": "posts/dynamos/Presentation.html#website-generation",
     "title": "AffCom Lab",
     "section": "Website Generation",
-    "text": "Website Generation\n\nRich documentation for the database\n\nhttps://dynamos.mgb.org\nSummary tables, figures, explanatory text\nScreenshots of clips, subtitles, and features\n\nBuilt using Quarto and hosted using GitLab Pages\n\nCan be easily updated as the database grows\nCan showcase the R code used to analyze data"
+    "text": "Website Generation\n\n\nRich documentation for the database\n\nhttps://dynamos.mgb.org\nSummary tables, figures, explanatory text\nScreenshots of clips, subtitles, and features\n\nBuilt using Quarto and hosted using GitLab Pages\n\nCan be easily updated as the database grows\nCan showcase the R code used to analyze data"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#validation-take-aways",
@@ -2377,14 +2377,14 @@
     "href": "posts/dynamos/Presentation.html#future-directions",
     "title": "AffCom Lab",
     "section": "Future Directions",
-    "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd sensor (e.g., physiological and eye tracking) data\nCollect information about participants’ personalities\nCollect similar data in other languages/countries\nCollect similar data in clinical/medical populations"
+    "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd data from sensors (e.g., physiological and eye tracking)\nCollect information about participants’ personality\nCollect similar data in other languages/countries\nCollect similar data in clinical/medical populations"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#acknowledgements",
     "href": "posts/dynamos/Presentation.html#acknowledgements",
     "title": "AffCom Lab",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\n\nCo-authors\n\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding:\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance:\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
+    "text": "Acknowledgements\n\n\nCo-authors\n\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding:\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance:\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#questions",
@@ -2419,7 +2419,7 @@
     "href": "posts/dynamos/Presentation.html#dynamos-database-1",
     "title": "AffCom Lab",
     "section": "DynAMoS Database",
-    "text": "DynAMoS Database\n\nMovie Clip Selection\n\n22 movie clips (1999–2018, 2.2–7.1 min, diverse content)\n\nParticipant Recruitment\n\nHealthy community members from Rally with MGB\n83 participants (56 female, 26 male)\n18–59 years old (M=28.8, SD=9.9)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino"
+    "text": "DynAMoS Database\n\n\nMovie Clip Selection\n\n22 movie clips (1999–2018, 2.2–7.1 min, diverse content)\n\nParticipant Recruitment\n\nHealthy community members from Rally with MGB\n83 participants (56 female, 26 male)\n18–59 years old (M=28.8, SD=9.9)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#quantifying-subjectivity",
