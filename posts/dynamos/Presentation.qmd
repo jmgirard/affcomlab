@@ -25,20 +25,6 @@ format:
 ![](movie.svg){.absolute bottom=20 right=0 width=360}
 :::
 
-## A Taxonomy of Emotion Ratings {.p90}
-
-- **Who is providing the measure of emotion?**
-    + [Self]{.b .blue}-reports of participants' own emotion
-    + [Observer]{.b .blue}-perceptions of others' emotion
-
-- **What model of emotion is used to report emotion?**
-    + [Discrete]{.b .blue} choices of emotion categories (e.g, happy, angry)
-    + [Continuous]{.b .blue} scores on emotion dimensions (e.g., valence)
-    
-- **How often are the emotions reported?**
-    + [Holistic]{.b .blue} ratings collected once after each stimulus
-    + [Dynamic]{.b .blue} ratings collected repeatedly during each stimulus
-
 ## Ambiguity and Subjectivity
 
 - Emotion ratings will inevitably vary between raters...
@@ -50,21 +36,6 @@ format:
 - [Ambiguity]{.b .blue}: variability across different *observers' perceptions* of the emotion in a given stimulus (see [Sethu et al., 2019](https://arxiv.org/abs/1909.00360))
 
 - [Subjectivity]{.b .red}: variability across different *subjects' self-reports* of the emotion they experienced from a given stimulus
-
-
-## Subjectivity Analysis {.p90}
-
-- **Why do participants experience the same stimuli differently?**
-    + Are such differences structured and predictable?
-    
-- **Are some stimuli more emotionally "subjective" than others?**
-    + Can we predict this characteristic from stimulus features?
-
-- **What can studying and modeling subjectivity help with?**
-    + Identification of emotional dysregulation?
-    + Personalized prediction of emotional reactions?
-    + Personalized recommendations of affective content?
-    + Standardization of affective content?
 
 ## DynAMoS Database
 
@@ -110,21 +81,6 @@ Each rated 0 (*very slightly or not at all*) to 4 (*extremely*):
 
 ::: {.footer}
 Estimates from a Bayesian G study ([github.com/jmgirard/varde](https://github.com/jmgirard/varde))
-:::
-
-## Validation Take-aways {.p90}
-
-- **Dynamic Ratings**
-    - There was a lot of subjectivity (i.e., rater variance)
-    - But the average of all raters' scores was very reliable
-    - Lots of clip-by-rater and second-by-rater effects
-- **Holistic Ratings**
-    - Relatively less subjective than dynamic ratings
-    - Inter-rater reliability was high across all clips
-    - Inter-item reliability was high for *most* clips
-
-::: {.footer}
-See the database paper or website for details
 :::
 
 ## Visualizing many time series is hard...
@@ -272,7 +228,6 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 
 - Built using [Quarto](https://quarto.org) and hosted using [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
     + Can be easily updated as the database grows
-    + Can showcase the R code used to analyze data
 
 :::
 
@@ -298,8 +253,6 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 
 1. Collect information about participants' **personality**
 
-1. Collect similar data in other **languages/countries**
-
 1. Collect similar data in **clinical/medical** populations
 
 ## Acknowledgements
@@ -307,13 +260,14 @@ Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 ::: {.nonincremental}
 
 - **Co-authors**
+    + Jeffrey Girard (University of Kansas)
     + Yanmei Tie (Brigham & Women's Hospital, HMS)
     + Einat Liebenthal (McLean Hospital, HMS)
 
-- **Funding:**
+- **Funding**
     + Alexandra Golby (Brigham & Women's Hospital, HMS)
 
-- **Assistance:**
+- **Assistance**
     + Colin Gavin, Laura Rigolo, Abby Recko, Ben Phan
     
 :::

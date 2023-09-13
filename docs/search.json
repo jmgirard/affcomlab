@@ -2335,7 +2335,7 @@
     "href": "posts/dynamos/Presentation.html#website-generation",
     "title": "AffCom Lab",
     "section": "Website Generation",
-    "text": "Website Generation\n\n\nRich documentation for the database\n\nhttps://dynamos.mgb.org\nSummary tables, figures, explanatory text\nScreenshots of clips, subtitles, and features\n\nBuilt using Quarto and hosted using GitLab Pages\n\nCan be easily updated as the database grows\nCan showcase the R code used to analyze data"
+    "text": "Website Generation\n\n\nRich documentation for the database\n\nhttps://dynamos.mgb.org\nSummary tables, figures, explanatory text\nScreenshots of clips, subtitles, and features\n\nBuilt using Quarto and hosted using GitLab Pages\n\nCan be easily updated as the database grows"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#validation-take-aways",
@@ -2377,14 +2377,14 @@
     "href": "posts/dynamos/Presentation.html#future-directions",
     "title": "AffCom Lab",
     "section": "Future Directions",
-    "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd data from sensors (e.g., physiological and eye tracking)\nCollect information about participants’ personality\nCollect similar data in other languages/countries\nCollect similar data in clinical/medical populations"
+    "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd data from sensors (e.g., physiological and eye tracking)\nCollect information about participants’ personality\nCollect similar data in clinical/medical populations"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#acknowledgements",
     "href": "posts/dynamos/Presentation.html#acknowledgements",
     "title": "AffCom Lab",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\n\n\nCo-authors\n\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding:\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance:\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
+    "text": "Acknowledgements\n\n\nCo-authors\n\nJeffrey Girard (University of Kansas)\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#questions",
