@@ -25,101 +25,84 @@ format:
 ![](movie.svg){.absolute bottom=20 right=0 width=360}
 :::
 
-## Emotion Elicitation using Film
-
-- **Researchers often try to [elicit emotions]{.blue} in participants**
-    + *To study the effects of emotion on other phenomena*
-    + *To identify correlates of and group differences in emotion*
-    + *To detect and quantify affect and affective dysregulation*
-
-- **Affective [movie clips]{.blue} are common for elicitation stimuli**
-    + Expertly crafted by actors, directors, etc.
-    + Multimodal, dynamic, and extended in nature
-
-## Types of Emotion Ratings {.p90}
+## A Taxonomy of Emotion Ratings {.p90}
 
 - **Who is providing the measure of emotion?**
-    + [Self]{.b .blue}-reports of participants' own emotional experience
-    + [Observer]{.b .blue}-perceptions of participants' emotional experience
+    + [Self]{.b .blue}-reports of participants' own emotion
+    + [Observer]{.b .blue}-perceptions of others' emotion
 
 - **What model of emotion is used to report emotion?**
     + [Discrete]{.b .blue} choices of emotion categories (e.g, happy, angry)
     + [Continuous]{.b .blue} scores on emotion dimensions (e.g., valence)
     
 - **How often are the emotions reported?**
-    + [Holistic]{.b .blue} ratings collected once after the movie clip
-    + [Dynamic]{.b .blue} ratings collected repeatedly during movie clip
+    + [Holistic]{.b .blue} ratings collected once after each stimulus
+    + [Dynamic]{.b .blue} ratings collected repeatedly during each stimulus
 
+## Ambiguity and Subjectivity
 
-## Archetypical Study Designs {.p90}
+- Emotion ratings will inevitably vary between raters...
 
-- **Psychology**
-    + Large samples (>50 participants) of holistic self-reports
-    + Focus on explaining differences between participants
-
-- **Affective Computing**
-    + Small samples (<10 participants) of dynamic observer-ratings
-    + Focus on predicting the average perception from video features
+- We usually treat such variability as a ***nuisance*** to "fix"
     
-- **A Proposed Hybrid: [Subjectivity Analysis]{.blue}**
-    + Large samples (>50 participants) of dynamic self-reports
-    + Focus on explaining differences between participants
-
-## Subjectivity Analysis
-
-Example Research Questions
-
-- Why do participants experience the same stimuli differently?
-
-- How structured/predictable are these individual differences?
-
-- Are some stimuli (or moments) more subjective than others?
-
-- How well can we predict/explain a stimulus's subjectivity?
-
-- Can subjectivity analysis help us improve **personalization**?
-
-- Can subjectivity analysis help us explain/model **ambiguity**?
-
-## Available Databases
-
-- Affective Movie Clip Databases with Dynamic Self-Reports
-    + [DECAF](https://doi.org/10.1109/TAFFC.2015.2392932): 7 participants watch 36 clips (1--2 min each)
-    + [COGNIMUSE](https://cognimuse.cs.ntua.gr/database): 7 participants watch 7 clips (30 min each)
-
-- Limitations for Subjectivity Analysis
-    + We need more participants for studying subjectivity
-    + We need *intermediate* clip durations (2--10 min)
+- But we can gain a lot by embracing these differences: studying their sources and building them into our models
     
-- **We designed a new database to meet these needs...**
+- [Ambiguity]{.b .blue}: variability across different *observers' perceptions* of the emotion in a given stimulus (see [Sethu et al., 2019](https://arxiv.org/abs/1909.00360))
+
+- [Subjectivity]{.b .red}: variability across different *subjects' self-reports* of the emotion they experienced from a given stimulus
+
+
+## Subjectivity Analysis {.p90}
+
+- **Why do participants experience the same stimuli differently?**
+    + Are such differences structured and predictable?
+    
+- **Are some stimuli more emotionally "subjective" than others?**
+    + Can we predict this characteristic from stimulus features?
+
+- **What can studying and modeling subjectivity help with?**
+    + Identification of emotional dysregulation?
+    + Personalized prediction of emotional reactions?
+    + Personalized recommendations of affective content?
+    + Standardization of affective content?
 
 ## DynAMoS Database
 
 ::: {.nonincremental}
-- **Movie Clip Selection**
-    + 22 movie clips (1999--2018, 2.2--7.1 min, diverse content)
-
-- **Participant Recruitment**
+- **Participants**
     + Healthy community members from *Rally with MGB*
-    + 83 participants (56 female, 26 male)
-    + 18--59 years old (M=28.8, SD=9.9)
+    + 83 participants (67% female, 18--59 years old)
     + 43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino
 
+- **Procedure**
+    + Watch 22 affective movie clips (2.2--7.1 minutes each)
+    + Dynamic self-reported emotional valence ([CARMA](https://carma.jmgirard.com))
+    + Holistic self-reported positive/negative affect ([S-PANAS](10.1016/S0191-8869(98)00251-7))
 :::
 
-## Procedure
+## Emotional Ratings
 
-1. Complete demographic **questionnaires**
+::: {.columns}
+::: {.column}
+### Dynamic
+--4 (*negative*) to +4 (*positive*)<br>
+Rated at 30 Hz, binned to 1 Hz
+![](fig_carma.png)
+:::
+::: {.column}
+### Holistic 
+Each rated 0 (*very slightly or not at all*) to 4 (*extremely*):
 
-2. Read brief **text description** of clip's (non-affective) context
+[Positive Affect]{.blue}<br>alert, determined, enthusiastic, excited, inspired
 
-3. Watch clip while providing **dynamic affect ratings**
-    + [CARMA](https://carma.jmgirard.com) used to self-report emotional valence at 1 Hz
+[Negative Affect]{.blue}<br>afraid, distressed, nervous, upset, scared
 
-4. After clip ends, provide **holistic affect ratings**
-    + [S-PANAS](10.1016/S0191-8869(98)00251-7) used to self-report positive and negative affect
+:::
+:::
 
-5. **Repeat** Steps 2--4 for all clips (across two sessions)
+::: {.footer}
+<https://carma.jmgirard.com>
+:::
 
 ## Quantifying Subjectivity
 
@@ -144,7 +127,7 @@ Estimates from a Bayesian G study ([github.com/jmgirard/varde](https://github.co
 See the database paper or website for details
 :::
 
-## Visualizing many time series
+## Visualizing many time series is hard...
 
 ```{r}
 #| echo: false
@@ -208,10 +191,6 @@ df2 |>
 ::: {.footer}
 Each blue line is one participant's time series
 :::
-
-## *Chromodoris quadricolor*
-
-![](chromodoris.png)
 
 ## Introducing the Chromodoris plot
 
@@ -279,6 +258,9 @@ Each blue line is one participant's time series
 Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
 :::
 
+## Special thanks to the *Chromodoris*
+
+![](chromodoris.png)
 
 ## Website Generation
 

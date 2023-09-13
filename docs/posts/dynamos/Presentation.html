@@ -347,29 +347,13 @@
 <p><img data-src="movie.svg" class="absolute" style="bottom: 20px; right: 0px; width: 360px; "></p>
 </section>
 
-<section id="emotion-elicitation-using-film" class="slide level2">
-<h2>Emotion Elicitation using Film</h2>
-<ul>
-<li class="fragment"><strong>Researchers often try to <span class="blue">elicit emotions</span> in participants</strong>
-<ul>
-<li class="fragment"><em>To study the effects of emotion on other phenomena</em></li>
-<li class="fragment"><em>To identify correlates of and group differences in emotion</em></li>
-<li class="fragment"><em>To detect and quantify affect and affective dysregulation</em></li>
-</ul></li>
-<li class="fragment"><strong>Affective <span class="blue">movie clips</span> are common for elicitation stimuli</strong>
-<ul>
-<li class="fragment">Expertly crafted by actors, directors, etc.</li>
-<li class="fragment">Multimodal, dynamic, and extended in nature</li>
-</ul></li>
-</ul>
-</section>
-<section id="types-of-emotion-ratings" class="slide level2 p90">
-<h2>Types of Emotion Ratings</h2>
+<section id="a-taxonomy-of-emotion-ratings" class="slide level2 p90">
+<h2>A Taxonomy of Emotion Ratings</h2>
 <ul>
 <li class="fragment"><strong>Who is providing the measure of emotion?</strong>
 <ul>
-<li class="fragment"><span class="b blue">Self</span>-reports of participants’ own emotional experience</li>
-<li class="fragment"><span class="b blue">Observer</span>-perceptions of participants’ emotional experience</li>
+<li class="fragment"><span class="b blue">Self</span>-reports of participants’ own emotion</li>
+<li class="fragment"><span class="b blue">Observer</span>-perceptions of others’ emotion</li>
 </ul></li>
 <li class="fragment"><strong>What model of emotion is used to report emotion?</strong>
 <ul>
@@ -378,92 +362,76 @@
 </ul></li>
 <li class="fragment"><strong>How often are the emotions reported?</strong>
 <ul>
-<li class="fragment"><span class="b blue">Holistic</span> ratings collected once after the movie clip</li>
-<li class="fragment"><span class="b blue">Dynamic</span> ratings collected repeatedly during movie clip</li>
+<li class="fragment"><span class="b blue">Holistic</span> ratings collected once after each stimulus</li>
+<li class="fragment"><span class="b blue">Dynamic</span> ratings collected repeatedly during each stimulus</li>
 </ul></li>
 </ul>
 </section>
-<section id="archetypical-study-designs" class="slide level2 p90">
-<h2>Archetypical Study Designs</h2>
+<section id="ambiguity-and-subjectivity" class="slide level2">
+<h2>Ambiguity and Subjectivity</h2>
 <ul>
-<li class="fragment"><strong>Psychology</strong>
-<ul>
-<li class="fragment">Large samples (&gt;50 participants) of holistic self-reports</li>
-<li class="fragment">Focus on explaining differences between participants</li>
-</ul></li>
-<li class="fragment"><strong>Affective Computing</strong>
-<ul>
-<li class="fragment">Small samples (&lt;10 participants) of dynamic observer-ratings</li>
-<li class="fragment">Focus on predicting the average perception from video features</li>
-</ul></li>
-<li class="fragment"><strong>A Proposed Hybrid: <span class="blue">Subjectivity Analysis</span></strong>
-<ul>
-<li class="fragment">Large samples (&gt;50 participants) of dynamic self-reports</li>
-<li class="fragment">Focus on explaining differences between participants</li>
-</ul></li>
+<li class="fragment"><p>Emotion ratings will inevitably vary between raters…</p></li>
+<li class="fragment"><p>We usually treat such variability as a <strong><em>nuisance</em></strong> to “fix”</p></li>
+<li class="fragment"><p>But we can gain a lot by embracing these differences: studying their sources and building them into our models</p></li>
+<li class="fragment"><p><span class="b blue">Ambiguity</span>: variability across different <em>observers’ perceptions</em> of the emotion in a given stimulus (see <a href="https://arxiv.org/abs/1909.00360">Sethu et al., 2019</a>)</p></li>
+<li class="fragment"><p><span class="b red">Subjectivity</span>: variability across different <em>subjects’ self-reports</em> of the emotion they experienced from a given stimulus</p></li>
 </ul>
 </section>
-<section id="subjectivity-analysis" class="slide level2">
+<section id="subjectivity-analysis" class="slide level2 p90">
 <h2>Subjectivity Analysis</h2>
-<p>Example Research Questions</p>
 <ul>
-<li class="fragment"><p>Why do participants experience the same stimuli differently?</p></li>
-<li class="fragment"><p>How structured/predictable are these individual differences?</p></li>
-<li class="fragment"><p>Are some stimuli (or moments) more subjective than others?</p></li>
-<li class="fragment"><p>How well can we predict/explain a stimulus’s subjectivity?</p></li>
-<li class="fragment"><p>Can subjectivity analysis help us improve <strong>personalization</strong>?</p></li>
-<li class="fragment"><p>Can subjectivity analysis help us explain/model <strong>ambiguity</strong>?</p></li>
-</ul>
-</section>
-<section id="available-databases" class="slide level2">
-<h2>Available Databases</h2>
+<li class="fragment"><strong>Why do participants experience the same stimuli differently?</strong>
 <ul>
-<li class="fragment">Affective Movie Clip Databases with Dynamic Self-Reports
-<ul>
-<li class="fragment"><a href="https://doi.org/10.1109/TAFFC.2015.2392932">DECAF</a>: 7 participants watch 36 clips (1–2 min each)</li>
-<li class="fragment"><a href="https://cognimuse.cs.ntua.gr/database">COGNIMUSE</a>: 7 participants watch 7 clips (30 min each)</li>
+<li class="fragment">Are such differences structured and predictable?</li>
 </ul></li>
-<li class="fragment">Limitations for Subjectivity Analysis
+<li class="fragment"><strong>Are some stimuli more emotionally “subjective” than others?</strong>
 <ul>
-<li class="fragment">We need more participants for studying subjectivity</li>
-<li class="fragment">We need <em>intermediate</em> clip durations (2–10 min)</li>
+<li class="fragment">Can we predict this characteristic from stimulus features?</li>
 </ul></li>
-<li class="fragment"><strong>We designed a new database to meet these needs…</strong></li>
+<li class="fragment"><strong>What can studying and modeling subjectivity help with?</strong>
+<ul>
+<li class="fragment">Identification of emotional dysregulation?</li>
+<li class="fragment">Personalized prediction of emotional reactions?</li>
+<li class="fragment">Personalized recommendations of affective content?</li>
+<li class="fragment">Standardization of affective content?</li>
+</ul></li>
 </ul>
 </section>
 <section id="dynamos-database-1" class="slide level2">
 <h2>DynAMoS Database</h2>
 <div>
 <ul>
-<li><strong>Movie Clip Selection</strong>
-<ul>
-<li>22 movie clips (1999–2018, 2.2–7.1 min, diverse content)</li>
-</ul></li>
-<li><strong>Participant Recruitment</strong>
+<li><strong>Participants</strong>
 <ul>
 <li>Healthy community members from <em>Rally with MGB</em></li>
-<li>83 participants (56 female, 26 male)</li>
-<li>18–59 years old (M=28.8, SD=9.9)</li>
+<li>83 participants (67% female, 18–59 years old)</li>
 <li>43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino</li>
+</ul></li>
+<li><strong>Procedure</strong>
+<ul>
+<li>Watch 22 affective movie clips (2.2–7.1 minutes each)</li>
+<li>Dynamic self-reported emotional valence (<a href="https://carma.jmgirard.com">CARMA</a>)</li>
+<li>Holistic self-reported positive/negative affect (<a href="10.1016/S0191-8869(98)00251-7">S-PANAS</a>)</li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="procedure" class="slide level2">
-<h2>Procedure</h2>
-<ol type="1">
-<li class="fragment"><p>Complete demographic <strong>questionnaires</strong></p></li>
-<li class="fragment"><p>Read brief <strong>text description</strong> of clip’s (non-affective) context</p></li>
-<li class="fragment"><p>Watch clip while providing <strong>dynamic affect ratings</strong></p>
-<ul>
-<li class="fragment"><a href="https://carma.jmgirard.com">CARMA</a> used to self-report emotional valence at 1 Hz</li>
-</ul></li>
-<li class="fragment"><p>After clip ends, provide <strong>holistic affect ratings</strong></p>
-<ul>
-<li class="fragment"><a href="10.1016/S0191-8869(98)00251-7">S-PANAS</a> used to self-report positive and negative affect</li>
-</ul></li>
-<li class="fragment"><p><strong>Repeat</strong> Steps 2–4 for all clips (across two sessions)</p></li>
-</ol>
+<section id="emotional-ratings" class="slide level2">
+<h2>Emotional Ratings</h2>
+<div class="columns">
+<div class="column">
+<h3 id="dynamic">Dynamic</h3>
+<p>–4 (<em>negative</em>) to +4 (<em>positive</em>)<br> Rated at 30 Hz, binned to 1 Hz <img data-src="fig_carma.png"></p>
+</div><div class="column">
+<h3 id="holistic">Holistic</h3>
+<p>Each rated 0 (<em>very slightly or not at all</em>) to 4 (<em>extremely</em>):</p>
+<p><span class="blue">Positive Affect</span><br>alert, determined, enthusiastic, excited, inspired</p>
+<p><span class="blue">Negative Affect</span><br>afraid, distressed, nervous, upset, scared</p>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://carma.jmgirard.com" class="uri">https://carma.jmgirard.com</a></p>
+</div>
 </section>
 <section id="quantifying-subjectivity" class="slide level2">
 <h2>Quantifying Subjectivity</h2>
@@ -492,17 +460,13 @@
 <p>See the database paper or website for details</p>
 </div>
 </section>
-<section id="visualizing-many-time-series" class="slide level2">
-<h2>Visualizing many time series</h2>
+<section id="visualizing-many-time-series-is-hard" class="slide level2">
+<h2>Visualizing many time series is hard…</h2>
 
 <img data-src="Presentation_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
 <p>Each blue line is one participant’s time series</p>
 </div>
 </section>
-<section id="chromodoris-quadricolor" class="slide level2">
-<h2><em>Chromodoris quadricolor</em></h2>
-
-<img data-src="chromodoris.png" class="r-stretch"></section>
 <section id="introducing-the-chromodoris-plot" class="slide level2">
 <h2>Introducing the Chromodoris plot</h2>
 
@@ -510,6 +474,10 @@
 <p>Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%</p>
 </div>
 </section>
+<section id="special-thanks-to-the-chromodoris" class="slide level2">
+<h2>Special thanks to the <em>Chromodoris</em></h2>
+
+<img data-src="chromodoris.png" class="r-stretch"></section>
 <section id="website-generation" class="slide level2">
 <h2>Website Generation</h2>
 <div>

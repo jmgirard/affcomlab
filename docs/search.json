@@ -2293,14 +2293,14 @@
     "href": "posts/dynamos/Presentation.html#subjectivity-analysis",
     "title": "AffCom Lab",
     "section": "Subjectivity Analysis",
-    "text": "Subjectivity Analysis\nExample Research Questions\n\nWhy do participants experience the same stimuli differently?\nHow structured/predictable are these individual differences?\nAre some stimuli (or moments) more subjective than others?\nHow well can we predict/explain a stimulus’s subjectivity?\nCan subjectivity analysis help us improve personalization?\nCan subjectivity analysis help us explain/model ambiguity?"
+    "text": "Subjectivity Analysis\n\nWhy do participants experience the same stimuli differently?\n\nAre such differences structured and predictable?\n\nAre some stimuli more emotionally “subjective” than others?\n\nCan we predict this characteristic from stimulus features?\n\nWhat can studying and modeling subjectivity help with?\n\nIdentification of emotional dysregulation?\nPersonalized prediction of emotional reactions?\nPersonalized recommendations of affective content?\nStandardization of affective content?"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#available-databases",
     "href": "posts/dynamos/Presentation.html#available-databases",
     "title": "AffCom Lab",
     "section": "Available Databases",
-    "text": "Available Databases\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nLimitations for Subjectivity Analysis\n\nWe need more participants for studying subjectivity\nWe need intermediate clip durations (2–10 min)\n\nWe designed a new database to meet these needs…"
+    "text": "Available Databases\n\nAffective Movie Clips\n\nExpertly crafted by actors, directors, etc.\nMultimodal, dynamic, and extended in duration\n\nAffective Movie Clip Databases with Dynamic Self-Reports\n\nDECAF: 7 participants watch 36 clips (1–2 min each)\nCOGNIMUSE: 7 participants watch 7 clips (30 min each)\n\nWe need a database with more participants!"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#movie-clip-selection",
@@ -2419,7 +2419,7 @@
     "href": "posts/dynamos/Presentation.html#dynamos-database-1",
     "title": "AffCom Lab",
     "section": "DynAMoS Database",
-    "text": "DynAMoS Database\n\n\nMovie Clip Selection\n\n22 movie clips (1999–2018, 2.2–7.1 min, diverse content)\n\nParticipant Recruitment\n\nHealthy community members from Rally with MGB\n83 participants (56 female, 26 male)\n18–59 years old (M=28.8, SD=9.9)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino"
+    "text": "DynAMoS Database\n\n\nParticipants\n\nHealthy community members from Rally with MGB\n83 participants (67% female, 18–59 years old)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino\n\nProcedure\n\nWatch 22 affective movie clips (2.2–7.1 minutes each)\nDynamic self-reported emotional valence (CARMA)\nHolistic self-reported positive/negative affect (S-PANAS)"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#quantifying-subjectivity",
@@ -2455,5 +2455,68 @@
     "title": "AffCom Lab",
     "section": "Introducing the Chromodoris plot",
     "text": "Introducing the Chromodoris plot\n\n\nBlack = Mean, Yellow = 50%, Green = 70%, Purple = 90%"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#a-compliment-to-ambiguity",
+    "href": "posts/dynamos/Presentation.html#a-compliment-to-ambiguity",
+    "title": "AffCom Lab",
+    "section": "A Compliment to Ambiguity",
+    "text": "A Compliment to Ambiguity\n\nRatings will inevitably vary between raters…\nWe usually treat such variability as a nuisance to “fix”e.g., via averaging, training, or switching to ranking\nBut Sethu et al. (2019) argued that we should embrace ambiguity in observer perceptions\nWe argue that the same should be done for self-reports\n\nWe should model and study when"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#a-taxonomy-of-emotion-ratings",
+    "href": "posts/dynamos/Presentation.html#a-taxonomy-of-emotion-ratings",
+    "title": "AffCom Lab",
+    "section": "A Taxonomy of Emotion Ratings",
+    "text": "A Taxonomy of Emotion Ratings\n\nWho is providing the measure of emotion?\n\nSelf-reports of participants’ own emotion\nObserver-perceptions of others’ emotion\n\nWhat model of emotion is used to report emotion?\n\nDiscrete choices of emotion categories (e.g, happy, angry)\nContinuous scores on emotion dimensions (e.g., valence)\n\nHow often are the emotions reported?\n\nHolistic ratings collected once after each stimulus\nDynamic ratings collected repeatedly during each stimulus"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
+    "href": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
+    "title": "AffCom Lab",
+    "section": "Ambiguity and Subjectivity",
+    "text": "Ambiguity and Subjectivity\n\nEmotion ratings will inevitably vary between raters…\nWe usually treat such variability as a nuisance to “fix”\nBut we can gain a lot by embracing these differences: studying their sources and building them into our models\nAmbiguity: variability across different observers’ perceptions of the emotion in a given stimulus (see Sethu et al., 2019)\nSubjectivity: variability across different subjects’ self-reports of the emotion they experienced from a given stimulus"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#dynamic-ratings",
+    "href": "posts/dynamos/Presentation.html#dynamic-ratings",
+    "title": "AffCom Lab",
+    "section": "Dynamic Ratings",
+    "text": "Dynamic Ratings\n\n\nhttps://carma.jmgirard.com"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#ratings",
+    "href": "posts/dynamos/Presentation.html#ratings",
+    "title": "AffCom Lab",
+    "section": "Ratings",
+    "text": "Ratings\n\n\nDynamic\n–4 (negative) to +4 (positive) Rated at 30 Hz, binned to 1 Hz \n\nHolistic\nEach rated 0 (very slightly or not at all) to 4 (extremely):\nPositive Affectalert, determined, enthusiastic, excited, inspired\nNegative Affectafraid, distressed, nervous, upset, scared\n\n\n\nhttps://carma.jmgirard.com"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#emotional-ratings",
+    "href": "posts/dynamos/Presentation.html#emotional-ratings",
+    "title": "AffCom Lab",
+    "section": "Emotional Ratings",
+    "text": "Emotional Ratings\n\n\nDynamic\n–4 (negative) to +4 (positive) Rated at 30 Hz, binned to 1 Hz \n\nHolistic\nEach rated 0 (very slightly or not at all) to 4 (extremely):\nPositive Affectalert, determined, enthusiastic, excited, inspired\nNegative Affectafraid, distressed, nervous, upset, scared\n\n\n\nhttps://carma.jmgirard.com"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
+    "href": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
+    "title": "AffCom Lab",
+    "section": "Visualizing many time series is hard…",
+    "text": "Visualizing many time series is hard…\n\n\nEach blue line is one participant’s time series"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#special-thanks-to-the-chromodoris-quadricolor",
+    "href": "posts/dynamos/Presentation.html#special-thanks-to-the-chromodoris-quadricolor",
+    "title": "AffCom Lab",
+    "section": "Special thanks to the Chromodoris quadricolor",
+    "text": "Special thanks to the Chromodoris quadricolor"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#special-thanks-to-the-chromodoris",
+    "href": "posts/dynamos/Presentation.html#special-thanks-to-the-chromodoris",
+    "title": "AffCom Lab",
+    "section": "Special thanks to the Chromodoris",
+    "text": "Special thanks to the Chromodoris"
   }
 ]
