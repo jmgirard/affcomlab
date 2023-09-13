@@ -25,13 +25,13 @@ format:
 ![](movie.svg){.absolute bottom=20 right=0 width=360}
 :::
 
-## A Taxonomy of Emotion Ratings {.p90}
+## Types of Emotion Ratings {.p90}
 
 - **Who is providing the measure of emotion?**
     + [Self]{.b .blue}-reports of participants' own emotion
     + [Observer]{.b .blue}-perceptions of others' emotion
 
-- **What model of emotion is used to report emotion?**
+- **How is emotion being represented?**
     + [Discrete]{.b .blue} choices of emotion categories (e.g, happy, angry)
     + [Continuous]{.b .blue} scores on emotion dimensions (e.g., valence)
     
