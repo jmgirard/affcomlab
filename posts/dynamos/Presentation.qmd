@@ -25,6 +25,20 @@ format:
 ![](movie.svg){.absolute bottom=20 right=0 width=360}
 :::
 
+## A Taxonomy of Emotion Ratings {.p90}
+
+- **Who is providing the measure of emotion?**
+    + [Self]{.b .blue}-reports of participants' own emotion
+    + [Observer]{.b .blue}-perceptions of others' emotion
+
+- **What model of emotion is used to report emotion?**
+    + [Discrete]{.b .blue} choices of emotion categories (e.g, happy, angry)
+    + [Continuous]{.b .blue} scores on emotion dimensions (e.g., valence)
+    
+- **How often are the emotions reported?**
+    + [Holistic]{.b .blue} ratings collected once after each stimulus
+    + [Dynamic]{.b .blue} ratings collected repeatedly during each stimulus
+
 ## Ambiguity and Subjectivity
 
 - Emotion ratings will inevitably vary between raters...
@@ -212,23 +226,6 @@ Each blue line is one participant's time series
 
 ::: {.footer}
 Black = Mean, Yellow = 50%, Green = 70%, Purple = 90%
-:::
-
-## Special thanks to the *Chromodoris*
-
-![](chromodoris.png)
-
-## Website Generation
-
-::: {.nonincremental}
-- Rich documentation for the database
-    + <https://dynamos.mgb.org>
-    + Summary tables, figures, explanatory text
-    + Screenshots of clips, subtitles, and features
-
-- Built using [Quarto](https://quarto.org) and hosted using [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
-    + Can be easily updated as the database grows
-
 :::
 
 ## Database Uses
