@@ -2,7 +2,7 @@
 title: "Yuanyuan Yang"
 sortby: "2"
 subtitle: "PhD Student"
-image: placeholder.png
+image: yang_yuanyuan.webp
 toc: false
 started: "Fall 2023"
 ended: "Current"
@@ -26,7 +26,12 @@ about:
 :::
 
 ## Biography
-TBA
+Yuanyuan is interested in exploring the structure of psychopathology by exploring the connections between symptoms and verbal and non-verbal behaviors (e.g., language processing, vocal, facial recognition). Further, Yuanyuan hopes to leverage these insights to enhance the treatment efficacy and accessibility.
+
+Yuanyuan obtained B.S. in Psychology and Applied Mathematics and Statistics, and M.A. in General Psychology at Stony Brook University. Currently, she is a first year PhD student in the Clinical Psychological Science program in the Department of Psychology at the University of Kansas. She is a graduate teaching assistant (GTA) for undergraduate psychology courses and is also a member of the Affective Communication and Computing lab.
+
+Outside of lab, she takes care of bunch of plants and two cats (Pepper&Ronny). She likes running, cooking, and playing the piano.
+
 
 ## Education
 
