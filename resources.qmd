@@ -14,6 +14,12 @@ toc: true
 
 ## Datasets
 
+- **DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis** (2023)<br />
+  A curated collection of affective movie clips (n = 22), metadata about those clips, and<br />
+  ratings of the emotional content of those movie clips from research participants (n = 83)<br />
+  *Primary Article/Citation:* <https://jmgirard.github.io/dynamos/paper.html><br />
+  *Website/Request Access:* <https://dynamos.mgb.org>
+
 - **GFT: Group Formation Task Spontaneous Facial Expression Database** (2017)<br />
   A 2D video database of spontaneous behavior during unscripted social interactions<br />
   Complete with frame-level FACS annotations of facial behavior (n = 96)<br />
