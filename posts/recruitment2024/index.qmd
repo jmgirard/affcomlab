@@ -1,0 +1,15 @@
+---
+title: "Recruitment 2024"
+description: "Information for applicants to the psychology graduate program to start in Fall 2024"
+author: "Jeffrey Girard"
+date: "2023-09-28"
+image: recruit.webp
+draft: false
+categories:
+  - announcement
+  - recruitment
+---
+
+### Are you planning to accept new graduate students this cycle?
+
+*Probably not.* Because the lab admitted three students last cycle, we will likely not admit any new students this cycle. However, there is a small possibility that we would admit an outstanding applicant who is an exceptionally good fit with the lab, either to the  [Clinical Psychological Science](https://psychology.ku.edu/clinical-psychology-program) (CPS) or [Brain, Behavior, and Quantitative Science](https://psychology.ku.edu/bbq) (BBQ) program. The application deadline for both programs is **December 1, 2023**.

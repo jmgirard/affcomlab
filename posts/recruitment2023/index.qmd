@@ -1,5 +1,5 @@
 ---
-title: "Recruitment 2023–2024"
+title: "Recruitment 2023"
 description: "Information for applicants to the psychology graduate program to start in Fall 2023"
 author: "Jeffrey Girard"
 date: "2022-08-30"

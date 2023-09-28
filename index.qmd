@@ -11,9 +11,9 @@ toc: false
 
 ![](./img/showcase.svg){.hero}
 
-<!-- ::: {.callout-note} -->
-<!-- ## We are currently recruiting! -->
+::: {.callout-note}
+## Recruitment update
 
-<!-- If you are interested in joining the lab as a Psychology PhD student, please consider applying.<br /> -->
-<!-- You can find more information about this recruitment cycle at [this blog post](./posts/recruitment2023) (or under News). -->
-<!-- ::: -->
+The lab is unlikely to admit new graduate students to start in Fall 2024.<br />
+You can find more information at [this blog post](./posts/recruitment2024) (or under News).
+:::
