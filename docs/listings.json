@@ -44,22 +44,6 @@
     ]
   },
   {
-    "listing": "/news.html",
-    "items": [
-      "/posts/recruitment2024/index.html",
-      "/posts/dynamos/index.html",
-      "/posts/mvac2023/index.html",
-      "/posts/gpsp2023/index.html",
-      "/posts/rowwise2023/index.html",
-      "/posts/moderation2022/index.html",
-      "/posts/vail2022/index.html",
-      "/posts/google2022/index.html",
-      "/posts/suicideR21/index.html",
-      "/posts/recruitment2023/index.html",
-      "/posts/dischargeR01/index.html"
-    ]
-  },
-  {
     "listing": "/people.html",
     "items": [
       "/people/staff/girard_jeffrey.html",
@@ -88,6 +72,22 @@
       "/people/alumni/rivera_miguel.html",
       "/people/alumni/sall_lauryn.html",
       "/people/alumni/white_addison.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/posts/recruitment2024/index.html",
+      "/posts/dynamos/index.html",
+      "/posts/mvac2023/index.html",
+      "/posts/gpsp2023/index.html",
+      "/posts/rowwise2023/index.html",
+      "/posts/moderation2022/index.html",
+      "/posts/vail2022/index.html",
+      "/posts/google2022/index.html",
+      "/posts/suicideR21/index.html",
+      "/posts/recruitment2023/index.html",
+      "/posts/dischargeR01/index.html"
     ]
   }
 ]

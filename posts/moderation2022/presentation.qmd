@@ -16,6 +16,7 @@ format:
     code-link: false
     code-copy: hover
     code-line-numbers: false
+    controls: true
     pagetitle: "Adventures in Moderation"
     author-meta: "Jeffrey Girard"
     date-meta: "2022-11-18"
@@ -136,7 +137,11 @@ data_2x2 <-
   ) |> 
   select(score, condition, gender) |> 
   mutate(subject = row_number(), .before = 1)
-kable(data_2x2) |> kable_styling() |> scroll_box(height = "360px")
+data_2x2 |> 
+  head(100) |> 
+  kable() |> 
+  kable_styling() |> 
+  scroll_box(height = "360px")
 ```
 :::
 
@@ -334,7 +339,11 @@ data_3x2 <-
   ) |> 
   select(symptoms, group, gender) |> 
   mutate(patient = row_number(), .before = 1)
-kable(data_3x2) |> kable_styling() |> scroll_box(height = "340px")
+data_3x2 |> 
+  head(100) |> 
+  kable() |> 
+  kable_styling() |> 
+  scroll_box(height = "340px")
 ```
 :::
 
@@ -613,7 +622,11 @@ data_2xC <-
   ) |> 
   select(calories, duration, exercise) |> 
   mutate(participant = row_number(), .before = 1)
-kable(data_2xC) |> kable_styling() |> scroll_box(height = "340px")
+data_2xC |> 
+  head(100) |> 
+  kable() |> 
+  kable_styling() |> 
+  scroll_box(height = "340px")
 ```
 :::
 
@@ -779,7 +792,11 @@ data_CxC <-
   ) |> 
   select(satisfaction, aa_anxiety, aa_avoidance) |> 
   mutate(participant = row_number(), .before = 1)
-kable(data_CxC) |> kable_styling() |> scroll_box(height = "340px")
+data_CxC |> 
+  head(100) |> 
+  kable() |> 
+  kable_styling() |> 
+  scroll_box(height = "340px")
 ```
 :::
 
