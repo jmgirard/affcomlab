@@ -933,77 +933,77 @@
   {
     "objectID": "posts/dynamos/Presentation.html#types-of-emotion-ratings",
     "href": "posts/dynamos/Presentation.html#types-of-emotion-ratings",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Types of Emotion Ratings",
     "text": "Types of Emotion Ratings\n\nWho is providing the measure of emotion?\n\nSelf-reports of participants’ own emotion\nObserver-perceptions of others’ emotion\n\nHow is emotion being represented?\n\nDiscrete choices of emotion categories (e.g, happy, angry)\nContinuous scores on emotion dimensions (e.g., valence)\n\nHow often are the emotions reported?\n\nHolistic ratings collected once after each stimulus\nDynamic ratings collected repeatedly during each stimulus"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
     "href": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Ambiguity and Subjectivity",
     "text": "Ambiguity and Subjectivity\n\nEmotion ratings will inevitably vary between raters…\nWe usually treat such variability as a nuisance to “fix”\nBut we can gain a lot by embracing these differences: studying their sources and building them into our models\nAmbiguity: variability across different observers’ perceptions of the emotion in a given stimulus (see Sethu et al., 2019)\nSubjectivity: variability across different subjects’ self-reports of the emotion they experienced from a given stimulus"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#dynamos-database-1",
     "href": "posts/dynamos/Presentation.html#dynamos-database-1",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "DynAMoS Database",
     "text": "DynAMoS Database\n\n\nParticipants\n\nHealthy community members from Rally with MGB\n83 participants (67% female, 18–59 years old)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino\n\nProcedure\n\nWatch 22 affective movie clips (2.2–7.1 minutes each)\nDynamic self-reported emotional valence (CARMA)\nHolistic self-reported positive/negative affect (S-PANAS)"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#emotional-ratings",
     "href": "posts/dynamos/Presentation.html#emotional-ratings",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Emotional Ratings",
-    "text": "Emotional Ratings\n\n\n\nDynamic\n–4 (negative) to +4 (positive) Rated at 30 Hz, binned to 1 Hz \n\n\n\nHolistic\nEach rated 0 (very slightly or not at all) to 4 (extremely):\nPositive Affectalert, determined, enthusiastic, excited, inspired\nNegative Affectafraid, distressed, nervous, upset, scared\n\n\n\n\nhttps://carma.jmgirard.com"
+    "text": "Emotional Ratings\n\n\nDynamic\n–4 (negative) to +4 (positive) Rated at 30 Hz, binned to 1 Hz \n\nHolistic\nEach rated 0 (very slightly or not at all) to 4 (extremely):\nPositive Affectalert, determined, enthusiastic, excited, inspired\nNegative Affectafraid, distressed, nervous, upset, scared\n\n\n\nhttps://carma.jmgirard.com"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#quantifying-subjectivity",
     "href": "posts/dynamos/Presentation.html#quantifying-subjectivity",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Quantifying Subjectivity",
     "text": "Quantifying Subjectivity\n\n\nEstimates from a Bayesian G study (github.com/jmgirard/varde)"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
     "href": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Visualizing many time series is hard…",
-    "text": "Visualizing many time series is hard…\n\n\n\n\n\n\nEach blue line is one participant’s time series"
+    "text": "Visualizing many time series is hard…\n\n\nEach blue line is one participant’s time series"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
     "href": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Introducing the Chromodoris plot",
-    "text": "Introducing the Chromodoris plot\n\n\n\n\n\n\nBlack = Mean, Yellow = 50%, Green = 70%, Purple = 90%"
+    "text": "Introducing the Chromodoris plot\n\n\nBlack = Mean, Yellow = 50%, Green = 70%, Purple = 90%"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#database-uses",
     "href": "posts/dynamos/Presentation.html#database-uses",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Database Uses",
     "text": "Database Uses\n\nEmotion elicitation video set with normative data\nAffective content analysis with average ratings\nSubjectivity analysis to predict rating distributions\nSubjectivity analysis to explain degree of subjectivity\nPersonalized modeling of affective reactions"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#future-directions",
     "href": "posts/dynamos/Presentation.html#future-directions",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Future Directions",
     "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd data from sensors (e.g., physiological and eye tracking)\nCollect information about participants’ personality\nCollect similar data in clinical/medical populations"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#acknowledgements",
     "href": "posts/dynamos/Presentation.html#acknowledgements",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Acknowledgements",
     "text": "Acknowledgements\n\n\nCo-authors\n\nJeffrey Girard (University of Kansas)\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
   },
   {
     "objectID": "posts/dynamos/Presentation.html#questions",
     "href": "posts/dynamos/Presentation.html#questions",
-    "title": "DynAMoS Database",
+    "title": "AffCom Lab",
     "section": "Questions?",
     "text": "Questions?\n\nhttps://dynamos.mgb.org"
   },
@@ -2651,5 +2651,390 @@
     "title": "Recruitment 2024",
     "section": "",
     "text": "Are you planning to accept new graduate students this cycle?\nProbably not. Because the lab admitted three students last cycle, we will likely not admit any new students this cycle. However, there is a small possibility that we would admit an outstanding applicant who is an exceptionally good fit with the lab, either to the Clinical Psychological Science (CPS) or Brain, Behavior, and Quantitative Science (BBQ) program. The application deadline for both programs is December 1, 2023."
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#explanatory-latent-variables",
+    "href": "posts/mvac2023/Presentation.html#explanatory-latent-variables",
+    "title": "AffCom Lab",
+    "section": "Explanatory Latent Variables",
+    "text": "Explanatory Latent Variables\n\nTo understand and predict events in the world, it often helps to hypothesize explanatory latent variables\nThese explanatory variables aren’t directly observable but rather are inferred from observations they explain\nExamples of explanatory latent variables:\n\nMotivation explains people acting in pursuit of goals\nEngagement explains students paying close attention\nIrritability explains people being quick to anger"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#constructs-and-indicators",
+    "href": "posts/mvac2023/Presentation.html#constructs-and-indicators",
+    "title": "AffCom Lab",
+    "section": "Constructs and Indicators",
+    "text": "Constructs and Indicators\n\nHypothesized latent variables are called constructs\nThe observations that they explain are called indicators\nMost constructs are estimated using “effect” indicators"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#psychological-constructs",
+    "href": "posts/mvac2023/Presentation.html#psychological-constructs",
+    "title": "AffCom Lab",
+    "section": "Psychological Constructs",
+    "text": "Psychological Constructs\n\nPsychological constructs explain…\n\nInternally experienced thoughts and feelings\nExternally observable abilities and behaviors"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#hierarchies-of-constructs",
+    "href": "posts/mvac2023/Presentation.html#hierarchies-of-constructs",
+    "title": "AffCom Lab",
+    "section": "Hierarchies of Constructs",
+    "text": "Hierarchies of Constructs\n\nConstructs are often correlated with other constructs\n\nThey may share similar mechanisms and indicators\n\nThese relationships often from a construct hierarchy\n\nHigher-level constructs are more broad, general, abstract\nLower-level constructs are more narrow, specific, concrete\n\nConstruct hierarchies are very common and useful\n\nCan improve annotation, modeling, and prediction"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#hierarchies-of-constructs-1",
+    "href": "posts/mvac2023/Presentation.html#hierarchies-of-constructs-1",
+    "title": "AffCom Lab",
+    "section": "Hierarchies of Constructs",
+    "text": "Hierarchies of Constructs"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#levels-of-abstraction",
+    "href": "posts/mvac2023/Presentation.html#levels-of-abstraction",
+    "title": "AffCom Lab",
+    "section": "Levels of Abstraction",
+    "text": "Levels of Abstraction"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#what-is-measurement",
+    "href": "posts/mvac2023/Presentation.html#what-is-measurement",
+    "title": "AffCom Lab",
+    "section": "What is measurement?",
+    "text": "What is measurement?\n\nWe often want to know an individual, group, or object’s “standing” or score on a psychological construct\n\nHow neurotic is a person in their day-to-day life?\nHow engaged was the audience during the movie?\nHow persuasive is this argument (to most people)?\nIs the person in the photograph smiling or not?\n\nThis means assigning a numerical score to it\nWe call this construct estimation or measurement"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#what-is-the-measurement-process",
+    "href": "posts/mvac2023/Presentation.html#what-is-the-measurement-process",
+    "title": "AffCom Lab",
+    "section": "What is the measurement process?",
+    "text": "What is the measurement process?\n\nBy definition, constructs cannot be directly measured\nSo we must infer their scores from measured indicators\nEstimating construct scores thus proceeds as follows:\n\nSelect a set of indicators to represent the construct\nMeasure each selected indicator for objects of interest\nAggregate measures into estimated construct scores"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#common-measurement-strategies",
+    "href": "posts/mvac2023/Presentation.html#common-measurement-strategies",
+    "title": "AffCom Lab",
+    "section": "Common measurement strategies",
+    "text": "Common measurement strategies\n\nItems-as-Indicators\n\nOne rater completes many items of the same construct\nCommonly used in self-report questionnaires\n\nRaters-as-Indicators\n\nMany raters complete a single item of a construct\nCommonly used in observer rating scales\n\nHybrid Approaches (Advanced)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#self-report-questionnaires",
+    "href": "posts/mvac2023/Presentation.html#self-report-questionnaires",
+    "title": "AffCom Lab",
+    "section": "Self-report questionnaires",
+    "text": "Self-report questionnaires\n\nSelf-report questionnaires ask participants to indicate their own standing on one or more constructs\nQuestionnaires are composed of multiple items, each of which is responded to using a numerical rating scale\nEach item is meant to measure a single indicator\nConstruct scores are often estimated by summing or averaging all items that correspond to that construct (though sophisticated methods include PCA, SEM, and IRT)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#self-report-questionnaires-1",
+    "href": "posts/mvac2023/Presentation.html#self-report-questionnaires-1",
+    "title": "AffCom Lab",
+    "section": "Self-report questionnaires",
+    "text": "Self-report questionnaires"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#self-report-questionnaires-2",
+    "href": "posts/mvac2023/Presentation.html#self-report-questionnaires-2",
+    "title": "AffCom Lab",
+    "section": "Self-report questionnaires",
+    "text": "Self-report questionnaires\n\n\nAssumptions of numerical questionnaires\n\nAll items are measuring the same construct*\nAll items are equally important/central to the construct*\nAll items were correctly understood by the participants\n\nPros and cons of self-report questionnaires\n\nCommon, efficient, and good for internal phenomena\nCan be subjective and influenced by self-report biases\n\n\n\n*These assumptions can be tested and even relaxed with advanced methods."
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#observer-rating-scales",
+    "href": "posts/mvac2023/Presentation.html#observer-rating-scales",
+    "title": "AffCom Lab",
+    "section": "Observer rating scales",
+    "text": "Observer rating scales\n\nObservers or raters are individuals who view stimuli (e.g., multimedia) and provide scores on various constructs\nThese measurements are standardized using an instrument (e.g., coding scheme or rating scale)\nSuch instruments tell observers what to focus on and help them to make consistent measurements\nThe goal is to take out any unwanted subjectivity"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#example-coding-scheme",
+    "href": "posts/mvac2023/Presentation.html#example-coding-scheme",
+    "title": "AffCom Lab",
+    "section": "Example Coding Scheme",
+    "text": "Example Coding Scheme\nA smile is a facial movement that pulls the mouth corners upwards and toward the ears (see examples below). You will view several images; please examine each image carefully and determine whether the image would be best described as either Smiling or Not Smiling."
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#example-rating-scale",
+    "href": "posts/mvac2023/Presentation.html#example-rating-scale",
+    "title": "AffCom Lab",
+    "section": "Example Rating Scale",
+    "text": "Example Rating Scale\nPersuasiveness is the capability of a person or argument to convince or persuade someone to accept a desired way of thinking. You will read several brief movie reviews in which a reviewer will argue that a movie is either worth watching or not worth watching. Use the following scale to indicate how persuasive you found each movie review to be overall."
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#observer-ratings",
+    "href": "posts/mvac2023/Presentation.html#observer-ratings",
+    "title": "AffCom Lab",
+    "section": "Observer Ratings",
+    "text": "Observer Ratings\n\nAssumptions of observer ratings\n\nThe stimulus is rich enough to inform measurement\nThe instructions are sufficient to standardize\nObservers can generalize to new examples\n\nPros and cons of observer ratings\n\nAvoids many biases introduced by self-report methods\nCan be very inefficient and subjective (when done poorly)\nCan’t access internal states of the stimulus participants"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#what-are-measurement-errors",
+    "href": "posts/mvac2023/Presentation.html#what-are-measurement-errors",
+    "title": "AffCom Lab",
+    "section": "What are measurement errors?",
+    "text": "What are measurement errors?\n\nMeasurement errors are differences between an object’s estimated score and its “true” standing on the construct\nMeasurement errors come from two main sources:\n\nConstruct under-representation\n\nFailing to represent all aspects of the construct\n\nConstruct-irrelevant variance\n\nFailing to be influenced by only the construct"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#construct-under-representation",
+    "href": "posts/mvac2023/Presentation.html#construct-under-representation",
+    "title": "AffCom Lab",
+    "section": "Construct under-representation",
+    "text": "Construct under-representation\n\nThe depression construct has many aspects\n\nAffective symptoms (e.g., low mood, anhedonia, irritability)\nCognitive symptoms (e.g., problems in attention and concentration)\nSomatic symptoms (e.g., changes in sleep, appetite, energy, activity)\nSymptom duration (at least 2 weeks)\n\nExamples of under-representation\n\nA depression questionnaire omits items about cognitive symptoms\nAn observer rates someone’s depression without symptom information\nA depression diagnosis algorithm only measures body motion/activity\nA depression diagnosis algorithm omits symptom duration information"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#construct-irrelevant-variance",
+    "href": "posts/mvac2023/Presentation.html#construct-irrelevant-variance",
+    "title": "AffCom Lab",
+    "section": "Construct-irrelevant variance",
+    "text": "Construct-irrelevant variance\n\nExamples from Psychology\n\nA patient’s sleep problems (from a newborn) are attributed to depression\nOne doctor thinks a patient is depressed but another doctor doesn’t\nA participant reports feeling “frustrated” but not “angry”\nParticipants report higher life satisfaction on Fridays than on Mondays\nParticipants behave differently in the research lab than they do at home\n\nExamples from Affective Computing\n\nA facial recognition algorithm confuses two men with beards\nAn emotion recognition algorithm mistakes a shouting athlete as angry\nA “drowsy driver” algorithm under-predicts drowsiness during the day\nA depression diagnosis algorithm confuses an accent with slurred speech"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#what-are-validity-and-validation",
+    "href": "posts/mvac2023/Presentation.html#what-are-validity-and-validation",
+    "title": "AffCom Lab",
+    "section": "What are validity and validation?",
+    "text": "What are validity and validation?\n\nValidity is the degree to which scores on an appropriately administered instrument support inferences about variation in the characteristic it was designed to measure.\nValidation is the ongoing process of gathering, summarizing, and evaluating relevant evidence concerning the degree to which that evidence supports the intended meaning of scores yielded by an instrument and inferences about standing on the characteristic it was designed to measure."
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#contemporary-validity-theory",
+    "href": "posts/mvac2023/Presentation.html#contemporary-validity-theory",
+    "title": "AffCom Lab",
+    "section": "Contemporary Validity Theory",
+    "text": "Contemporary Validity Theory\n\nValidity applies to inferences, not instruments\nValidity varies across populations and contexts\nValidity is integrative and singular\nValidity exists on a continuum\nValidation is an ongoing process\nValidation has three main phases:(substantive, structural, and external)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#why-does-validation-matter",
+    "href": "posts/mvac2023/Presentation.html#why-does-validation-matter",
+    "title": "AffCom Lab",
+    "section": "Why does validation matter?",
+    "text": "Why does validation matter?\n\nGinsberg et al. (2009) used ML to predict flu pandemics from Google searches faster than traditional CDC methods, but Lazer et al. (2014) later found that it was merely predicting seasonality and the model completely missed nonseasonal influenza\nLiu et al. (2015) found that positive emotional expressions online were not related to self-reported life satisfaction, but it is difficult to argue against past theories because the inconsistency could be due to measurement errors\nRibeiro et al. (2016) found that an ML model learned to distinguish between images of Huskies and Wolves by merely looking for the presence of snow yet many participants trusted the model before learning about this relationship\nBleidorn & Hopwood (2019) and Tay et al. (2020) find that validity issues may be holding back ML approaches to personality assessment\nJacobucci & Grimm (2020) found that predictors/features with low reliability (an aspect of validity) attenuate predictive performance, especially for ML algorithms"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#substantive-phase-1",
+    "href": "posts/mvac2023/Presentation.html#substantive-phase-1",
+    "title": "AffCom Lab",
+    "section": "Substantive Phase",
+    "text": "Substantive Phase\n\nDoes the construct definition make sense?\nDo the selected indicators represent the construct well?\n\nShow that there is not construct under-representation\nShow that there is not construct-irrelevant variance\n\nAre the items/scales being understood/used as intended?\nIs the instrument being administered properly?"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#literature-review",
+    "href": "posts/mvac2023/Presentation.html#literature-review",
+    "title": "AffCom Lab",
+    "section": "Literature Review",
+    "text": "Literature Review\n\nHow has this construct been defined before?\nWhat are the main aspects of this construct?\nWhat are the main indicators of this construct?\nHow is it related to and distinct from other constructs?\nHow has it been measured in previous work?\nWhat theories are relevant to this construct?\nWhat support is there for these theories?"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#construct-conceptualization",
+    "href": "posts/mvac2023/Presentation.html#construct-conceptualization",
+    "title": "AffCom Lab",
+    "section": "Construct Conceptualization",
+    "text": "Construct Conceptualization\n\nProvide a precise definition of the construct\nCreate a list of indicators for the construct\nCreate a list of related constructs / hierarchies\nCreate a Venn Diagram of related constructs\n\nDraw partially overlapping circles for each construct\nIn the overlap, describe what makes them similar\nIn the non-overlap, describe what makes them distinct"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#examples-of-related-constructs",
+    "href": "posts/mvac2023/Presentation.html#examples-of-related-constructs",
+    "title": "AffCom Lab",
+    "section": "Examples of related constructs",
+    "text": "Examples of related constructs\n\nMain Construct: Depression\n\nRelated Constructs: stress, anxiety, sadness\n\nMain Construct: Engagement\n\nRelated Constructs: attention, participation, understanding\n\nMain Construct: Emotional Support\n\nRelated Constructs: empathy, advice, financial support"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#item-development-and-mapping",
+    "href": "posts/mvac2023/Presentation.html#item-development-and-mapping",
+    "title": "AffCom Lab",
+    "section": "Item development and mapping",
+    "text": "Item development and mapping\n\nFor each aspect of the construct, generate a list of indicators\nCreate multiple “candidate” items/scales for each indicator\nHave experts review the list of aspects, indicators, and items\nPilot test the items/scales and refine based on feedback\nSelect the best items/scales based on pilot testing\nEnsure representation of all aspects in final selection"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#response-processess",
+    "href": "posts/mvac2023/Presentation.html#response-processess",
+    "title": "AffCom Lab",
+    "section": "Response Processess",
+    "text": "Response Processess\nConsider how participants will respond to items/scales\n\nAre participants understanding the questions?\nAre participants understanding the response options?\nAre participants choosing responses as you intended?\nCognitive interviewing and think-aloud techniques\n\nAsk participants to rephrase each question\nAsk participants why they chose each answer\nAsk participants to think out loud during test"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#test-administration",
+    "href": "posts/mvac2023/Presentation.html#test-administration",
+    "title": "AffCom Lab",
+    "section": "Test Administration",
+    "text": "Test Administration\nConsider where/how the instrument will be completed\n\nAre there any distractions in the environment?\nAre there any biasing factors in the environment?\nAre there any sources of error in the procedure?\nAre there any test security issues (e.g., cheating)?"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#inter-item-reliability",
+    "href": "posts/mvac2023/Presentation.html#inter-item-reliability",
+    "title": "AffCom Lab",
+    "section": "Inter-Item Reliability",
+    "text": "Inter-Item Reliability\nAre scores consistent across items?\n\nAverage inter-item correlation (simplistic)\nCongeneric CFA (confirmatory factor analysis)\n\nEach item \\(x_j\\) is influenced by one construct \\(f\\)\nThe strength of this influence \\(\\lambda_j\\) varies per item\nEach item also has unique/error variance \\(e_j\\)\n\n\n\n\\[x_j = \\lambda_jf + e_j\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#inter-item-reliability-1",
+    "href": "posts/mvac2023/Presentation.html#inter-item-reliability-1",
+    "title": "AffCom Lab",
+    "section": "Inter-Item Reliability",
+    "text": "Inter-Item Reliability"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#inter-item-reliability-2",
+    "href": "posts/mvac2023/Presentation.html#inter-item-reliability-2",
+    "title": "AffCom Lab",
+    "section": "Inter-Item Reliability",
+    "text": "Inter-Item Reliability\nMcDonald’s omega\n\nReliability of the factor scores \\(f\\) is captured by \\(\\omega_u\\)\nHow much of the score \\((x)\\) variance is explained by \\(f\\)?\n\n\n\\[\\omega_u = \\frac{(\\Sigma_j\\lambda_j)^2}{\\sigma_x^2}\\]\n\n\n\\(\\omega_u \\in (0, 1)\\), higher is better"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#inter-rater-and-test-retest-reliability",
+    "href": "posts/mvac2023/Presentation.html#inter-rater-and-test-retest-reliability",
+    "title": "AffCom Lab",
+    "section": "Inter-rater and test-retest reliability",
+    "text": "Inter-rater and test-retest reliability\nAre scores consistent across raters or time?\n\nCategorical Ratings:\n\nChance-adjusted agreement (kappas)\n\nContinuous Ratings:\n\nIntraclass correlations (ICCs)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#overview-of-kappas",
+    "href": "posts/mvac2023/Presentation.html#overview-of-kappas",
+    "title": "AffCom Lab",
+    "section": "Overview of kappas",
+    "text": "Overview of kappas\n\nHow much agreement was observed?\n\nDid raters assign the same items to the same categories?\n\nCan be generalized (Gwet, 2021, Vol. I)\n\nAny number of categories and raters\nOrdered categories (via weights)\nMissing/unbalanced rating data"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#generalized-observed-agreement",
+    "href": "posts/mvac2023/Presentation.html#generalized-observed-agreement",
+    "title": "AffCom Lab",
+    "section": "Generalized observed agreement",
+    "text": "Generalized observed agreement\nWeighting scheme (partial credit for close errors)\n\\[r_{ik}^\\star = \\sum_{l=1}^{q}w_{kl}r_{il}\\]\n\nObserved agreement\n\\[p_o = \\frac{1}{n'}\\sum_{i=1}^{n'}\\sum_{k=1}^{q}\\frac{r_{ik}(r_{ik}^\\star-1)}{r_i(r_i-1)}\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#generalized-chance-agreement",
+    "href": "posts/mvac2023/Presentation.html#generalized-chance-agreement",
+    "title": "AffCom Lab",
+    "section": "Generalized chance agreement",
+    "text": "Generalized chance agreement\n\nHow much agreement would we expect from chance?\n\nCategory-based (e.g., Bennett et al.’s \\(S\\)) \\[p_c^S=\\frac{1}{q}\\sum_{k,l}w_{kl}\\]\nDistribution-based (e.g., Cohen’s \\(\\kappa\\), Scott’s \\(\\pi\\), Kripp.’s \\(\\alpha\\)) \\[p_c^\\pi=\\sum_{k,l}^qw_{kl}\\left(\\frac{1}{n}\\sum_{i=1}^n\\frac{r_{ik}}{r_i}\\right)\\left(\\frac{1}{n}\\sum_{i=1}^n\\frac{r_{il}}{r_i}\\right)\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#overview-of-kappas-1",
+    "href": "posts/mvac2023/Presentation.html#overview-of-kappas-1",
+    "title": "AffCom Lab",
+    "section": "Overview of kappas",
+    "text": "Overview of kappas\n\nHow much possible non-chance agreement was achieved? \\[\\kappa = \\frac{p_o-p_c}{1-p_c}=\\frac{\\text{Observed Non-Chance Agreement}}{\\text{Possible Non-Chance Agreement}}\\]\n\n\\(\\kappa\\in(-1,+1)\\), higher is better\n\\(\\kappa\\ge.60\\) is acceptable, \\(\\kappa\\ge.80\\) is good\nInterval estimates are recommended\nHypothesis testing \\(\\kappa\\) vs. zero is not"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#overview-of-iccs",
+    "href": "posts/mvac2023/Presentation.html#overview-of-iccs",
+    "title": "AffCom Lab",
+    "section": "Overview of ICCs",
+    "text": "Overview of ICCs\n\nHow much score variance is due to items vs. raters?\n\nIf the raters are consistent, that variance should be low\nThus, most of the variance should be due to items\n\nVariance components can be estimated many ways\n\ne.g., from ANOVA, MLM, or SEM\nten Hove et al. (2022) extended to missing data\n\n\\(ICC\\in(-1,+1)\\) where higher is better\n\\(ICC\\ge0.75\\) is acceptable, \\(ICC\\ge0.90\\) is good"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#important-icc-questions",
+    "href": "posts/mvac2023/Presentation.html#important-icc-questions",
+    "title": "AffCom Lab",
+    "section": "Important ICC Questions",
+    "text": "Important ICC Questions\n\nOne-way or two-way?\n\nOne-way: different raters each time\nTwo-way: same raters multiple times\n\nSingle-measures or Average-measures?\n\nSingle: a single rater’s scores will be used\nAverage: the average of \\(k\\) raters’ scores will be used\n\nAgreement or consistency? (two-way only)\n\nAgreement: raters must agree exactly (absolute error)\nConsistency: raters can have different means (relative error)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#one-way-iccs",
+    "href": "posts/mvac2023/Presentation.html#one-way-iccs",
+    "title": "AffCom Lab",
+    "section": "One-way ICCs",
+    "text": "One-way ICCs\n\nOne-way Single-Measures ICC \\[ICC(1)=\\frac{\\sigma_i^2}{\\sigma_i^2+\\sigma_{r:i}^2}\\]\nOne-way Average-Measures ICC \\[ICC(k)=\\frac{\\sigma_i^2}{\\sigma_i^2 + \\sigma_{r:i}^2/k}\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#two-way-agreement-iccs",
+    "href": "posts/mvac2023/Presentation.html#two-way-agreement-iccs",
+    "title": "AffCom Lab",
+    "section": "Two-way Agreement ICCs",
+    "text": "Two-way Agreement ICCs\n\nTwo-way Single-Measures Agreement ICC \\[ICC(A,1) = \\frac{\\sigma_i^2}{\\sigma_i^2 + \\sigma_r^2 + \\sigma_{ir}^2}\\]\nTwo-way Average-Measures Agreement ICC \\[ICC(A,k) = \\frac{\\sigma_i^2}{\\sigma_i^2 + (\\sigma_r^2 + \\sigma_{ir}^2)/k}\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#two-way-consistency-iccs",
+    "href": "posts/mvac2023/Presentation.html#two-way-consistency-iccs",
+    "title": "AffCom Lab",
+    "section": "Two-way Consistency ICCs",
+    "text": "Two-way Consistency ICCs\n\nTwo-way Single-Measures Consistency ICC \\[ICC(C,1) = \\frac{\\sigma_i^2}{\\sigma_i^2 + \\sigma_{ir}^2}\\]\nTwo-way Average-Measures Consistency ICC \\[ICC(C,k) = \\frac{\\sigma_i^2}{\\sigma_i^2 + \\sigma_{ir}^2/k}\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#criterion-variables",
+    "href": "posts/mvac2023/Presentation.html#criterion-variables",
+    "title": "AffCom Lab",
+    "section": "Criterion Variables",
+    "text": "Criterion Variables\n\nA good score of X should be highly correlated with other, trusted measures of X (called criterion variables)\nDo our scores correlate with criterion variables?\n\nExample: Depression scores\n\nSelf-report scales (PHQ-9, BDI-2, QIDS-SR)\nClinical interviews (SCID-5, HRDS-17, MADRS)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#nomological-network",
+    "href": "posts/mvac2023/Presentation.html#nomological-network",
+    "title": "AffCom Lab",
+    "section": "Nomological Network",
+    "text": "Nomological Network\n\nA good score of X should correlate positively with A…\nA good score of X should correlate negatively with B…\nA good score of X should be uncorrelated with C…\nDo our scores correlate with others as expected?\n\nExample: Depression scores (Kotov et al., 2010)\n\nPositive with neuroticism\nNegative with extraversion\nUnrelated to agreeableness"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#related-groups",
+    "href": "posts/mvac2023/Presentation.html#related-groups",
+    "title": "AffCom Lab",
+    "section": "Related Groups",
+    "text": "Related Groups\n\nA good score of X should differ between groups A and B…\nDo our scores differ between known groups?\n\nExample: Depression scores\n\nBetween patient and community groups\n\nExample: Content Mastery scores\n\nBetween trainee and instructor groups"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#smiling-around-the-world",
+    "href": "posts/mvac2023/Presentation.html#smiling-around-the-world",
+    "title": "AffCom Lab",
+    "section": "Smiling Around the World",
+    "text": "Smiling Around the World\n\nGathered ~290,000 facial images of celebrities\nUsed OpenFace 2.0 to measure smiling\n\nSmiling defined as activation of FACS AU12\n\nCompared smiling between genders and countries\nHow should we go about validating our measure?\n\n\nMcDuff & Girard (ACII 2019)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#smiling-around-the-world-1",
+    "href": "posts/mvac2023/Presentation.html#smiling-around-the-world-1",
+    "title": "AffCom Lab",
+    "section": "Smiling Around the World",
+    "text": "Smiling Around the World\n\nSelected ~300 images (balanced gender, country, smile)\nEach coded by 1 of 3 certified FACS coders for AU12 intensity\nEach coded by 5 untrained crowdworkers\n\nRated on positive emotion in image (0 to 5)\nRated on smile intensity in image (0 to 5)\n\nCorrelations between openface, FACS coding, and ratings\n\n\nMcDuff & Girard (ACII 2019)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#smiling-around-the-world-2",
+    "href": "posts/mvac2023/Presentation.html#smiling-around-the-world-2",
+    "title": "AffCom Lab",
+    "section": "Smiling Around the World",
+    "text": "Smiling Around the World\n\n\nMcDuff & Girard (ACII 2019)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#perceived-emotional-expressivity",
+    "href": "posts/mvac2023/Presentation.html#perceived-emotional-expressivity",
+    "title": "AffCom Lab",
+    "section": "Perceived Emotional Expressivity",
+    "text": "Perceived Emotional Expressivity\n\nRecorded 96 participants interacting in 3-person groups\nWant to predict “perceived emotional expressivity”\nDeveloped a four-item rating scale for our construct\nCollected ratings of each video from 8 crowdworkers\nHow to validate these measures?\n\n\nLin, Girard, et al. (ICMI 2020)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#substantive-phase-2",
+    "href": "posts/mvac2023/Presentation.html#substantive-phase-2",
+    "title": "AffCom Lab",
+    "section": "Substantive Phase",
+    "text": "Substantive Phase\n\nHow expressive was the person in this video (use your own understanding of what it means to be expressive)?\nHow much did the person in this video show their emotions (through their words and nonverbal behavior)?\nHow animated (lively, energetic, or active) was the person in this video?\nHow much did the person in this video react to the other people (through their words and nonverbal behavior)?\n\n\nLin, Girard, et al. (ICMI 2020)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#structural-phase-1",
+    "href": "posts/mvac2023/Presentation.html#structural-phase-1",
+    "title": "AffCom Lab",
+    "section": "Structural Phase",
+    "text": "Structural Phase\nInter-Rater Reliability: \\(ICC(C,8)\\)\n\n\nLin, Girard, et al. (ICMI 2020)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#structural-phase-2",
+    "href": "posts/mvac2023/Presentation.html#structural-phase-2",
+    "title": "AffCom Lab",
+    "section": "Structural Phase",
+    "text": "Structural Phase\nInter-Item Reliability\n\n\n\n\n \\[\\omega_u=0.966\\]"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#perceived-emotional-expressivity-1",
+    "href": "posts/mvac2023/Presentation.html#perceived-emotional-expressivity-1",
+    "title": "AffCom Lab",
+    "section": "Perceived Emotional Expressivity",
+    "text": "Perceived Emotional Expressivity\nExternal Phase: Nomological Network\n\nExpect positive correlation with extraversion (0.2 to 0.4)\n\n\\(r=0.26\\) (great!)\n\nExpect positive correlation with agreeableness (0.0 to 0.2)\n\n\\(r=0.28\\) (good but a little high)\n\nExpect weak correlation with neuroticism (–0.1 to 0.1)\n\n\\(r=-0.07\\) (great)\n\n\n\nLin, Girard, et al. (ICMI 2020)"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#activities-round-1",
+    "href": "posts/mvac2023/Presentation.html#activities-round-1",
+    "title": "AffCom Lab",
+    "section": "Activities Round 1",
+    "text": "Activities Round 1\n\nAssess an applied paper in your area\n\nIs their construct conceptualization clear?\nIs their measurement well justified?\n\nAssess a measurement instrument in your area\n\nHow much validity evidence did they provide?\nHow could their validation be improved?"
+  },
+  {
+    "objectID": "posts/mvac2023/Presentation.html#activities-round-2",
+    "href": "posts/mvac2023/Presentation.html#activities-round-2",
+    "title": "AffCom Lab",
+    "section": "Activities Round 2",
+    "text": "Activities Round 2\n\nWork on a construct conceptualization\n\nWrite a definition and list indicators\nCompare and contrast related constructs\n\nPlan a measurement validation study\n\nPlan your validation sample and design\nPlan the three phases of validation"
   }
 ]

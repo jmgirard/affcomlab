@@ -12,7 +12,7 @@ categories:
 
 I gave a three-hour tutorial on Measurement Validation in Affective Computing at the Affective Computing and Intelligent Interaction (ACII 2023) conference in Boston, MA. Here are my slides:
 
-<iframe class="slide-deck" src="./_Slides.html" title="Presentation Slides">
+<iframe class="slide-deck" src="./Presentation.html" title="Presentation Slides">
 </iframe>
 
 *Note.* To view the slideshow in full screen mode, click inside it and press the "f" key on your keyboard.<br />
