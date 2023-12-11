@@ -1,0 +1,61 @@
+---
+title: "Postdoctoral Position 2024"
+description: "Information for applicants to the psychology graduate program to start in Fall 2024"
+author: "Jeffrey Girard"
+date: "2023-12-11"
+image: recruit.webp
+draft: false
+categories:
+  - announcement
+  - recruitment
+---
+
+### Position Overview
+
+We are seeking a highly motivated and innovative postdoctoral researcher to join the interdisciplinary Affective Communication and Computing research laboratory (https://affcom.ku.edu), which is housed within the University of Kansas Department of Psychology. The successful candidate will work closely with the lab’s director, Dr. Jeffrey Girard, to contribute to cutting-edge research projects that apply advanced quantitative and computational techniques to the study of affective and interpersonal communication, mental and social health, and clinical assessment. This position provides an excellent opportunity for professional development and collaboration within a vibrant research community.
+
+The postdoctoral researcher will be involved in all parts of the research process including project planning, project management, data collection, data analysis, and dissemination of findings through publications and conference presentations. Additionally, the successful candidate will collaborate with interdisciplinary teams, mentor graduate and undergraduate students, and engage in ongoing professional development opportunities.
+
+This position is limited to 1 year, with additional years being contingent on funding.
+
+The successful candidate must have appropriate authorization to work in the U.S. before employment begins.
+
+### Where can I apply?
+
+<https://employment.ku.edu/staff/26753BR>
+
+### Job Duties
+
+70% Independent and Collaborative Research
+
+- Develop and implement research projects related to personal and lab interests.
+- Conduct literature reviews to inform study design and hypothesis generation.
+- Collect and analyze research data using a variety of methodologies.
+- Contribute to the preparation and submission of manuscripts for publication.
+
+30% Participation in Lab Activities
+
+- Aid in the preparation of IRB proposals and grant proposals (both internal and external).
+- Mentor graduate and undergraduate students involved in lab research activities.
+- Communicate regularly with lab director and members in formal and informal meetings.
+- Stay up to date on relevant theoretical and methodological advancements.
+
+### Required Qualifications
+
+1. Ph.D. in Psychology, Computer Science, or a related field.
+2. Demonstrated ability to conduct independent research.
+3. Excellent written and oral communication skills as evidenced by application materials.
+4. Record of scholarly publications in peer-reviewed journals/proceedings.
+5. Ability to work collaboratively in a team-oriented research environment.
+
+To be appointed at the Postdoctoral Researcher title, it is necessary to have the PhD conferred at the time of hire.  Appointments made without a diploma or certified transcript indicating an earned doctorate are conditional hires and are appointed on an interim basis not to exceed 6 months.  Upon verification of degree the appointment will be extended to its full duration.
+
+### Preferred Qualifications
+
+1. Expertise in advanced quantitative and/or computational techniques.
+2. Experience with grant writing and securing external research funding.
+3. Track record of conference presentations at national or international meetings.
+4. Strong interpersonal skills and the ability to mentor and guide junior researchers.
+5. Demonstrated interest in affective communication and/or affective computing.
+6. Familiarity with open science and/or team science techniques and initiatives.
+7. Proficiency in analysis and/or software development using the R environment.

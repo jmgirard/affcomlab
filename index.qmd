@@ -12,8 +12,8 @@ toc: false
 ![](./img/showcase.svg){.hero}
 
 ::: {.callout-note}
-## Recruitment update
+## Job opportunity!
 
-The lab is unlikely to admit new graduate students to start in Fall 2024.<br />
-You can find more information at [this blog post](./posts/recruitment2024) (or under News).
+The lab is actively recruiting a new postdoctoral research associate to begin August 2024.<br />
+You can find more information at [this blog post](./posts/postdoc2024) (or under News).
 :::
