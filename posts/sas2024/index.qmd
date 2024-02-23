@@ -1,0 +1,15 @@
+---
+title: "SAS 2024 Conference"
+description: "Society for Affective Science"
+author: "Dasha Yermol"
+date: "2024-02-23"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+---
+
+Placeholder for information about poster presentation.
+
+

@@ -77,6 +77,7 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/sas2024/index.html",
       "/posts/postdoc2024/index.html",
       "/posts/recruitment2024/index.html",
       "/posts/dynamos/index.html",

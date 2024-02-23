@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -103,6 +110,33 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -110,9 +144,9 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">AffCom Lab</span>
     </a>
@@ -124,37 +158,37 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./news.html" rel="" target="" aria-current="page">
- <span class="menu-text">News</span></a>
+    <a class="nav-link active" href="./news.html" aria-current="page"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html" rel="" target="">
- <span class="menu-text">People</span></a>
+    <a class="nav-link" href="./people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opportunities.html" rel="" target="">
- <span class="menu-text">Opportunities</span></a>
+    <a class="nav-link" href="./opportunities.html"> 
+<span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html" rel="" target="">
- <span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -163,9 +197,10 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="announcement">announcement <span class="quarto-category-count">(8)</span></div><div class="category" data-category="conference">conference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="funding">funding <span class="quarto-category-count">(3)</span></div><div class="category" data-category="paper">paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="presentation">presentation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="recruitment">recruitment <span class="quarto-category-count">(3)</span></div><div class="category" data-category="teaching">teaching <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="announcement">announcement <span class="quarto-category-count">(9)</span></div><div class="category" data-category="conference">conference <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="funding">funding <span class="quarto-category-count">(3)</span></div><div class="category" data-category="paper">paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="presentation">presentation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="recruitment">recruitment <span class="quarto-category-count">(3)</span></div><div class="category" data-category="teaching">teaching <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 
 
@@ -181,19 +216,55 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="announcement,recruitment" data-listing-date-sort="1702274400000" data-listing-file-modified-sort="1702334111699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="announcement,conference" data-listing-date-sort="1708668000000" data-listing-file-modified-sort="1708699337833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/postdoc2024/index.html"> <img src="./posts/postdoc2024/recruit.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/sas2024/index.html" class="no-external"></a></p><a href="./posts/sas2024/index.html" class="no-external">
+<p><img src="./posts/sas2024/conference.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/sas2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/postdoc2024/index.html">
 <h3 class="no-anchor listing-title">
-Postdoctoral Position 2024
+<a href="./posts/sas2024/index.html" class="no-external">SAS 2024 Conference</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/sas2024/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
+announcement
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('conference'); return false;">
+conference
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/sas2024/index.html" class="no-external">Society for Affective Science</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/sas2024/index.html" class="no-external">
+<div class="listing-date">
+Feb 23, 2024
+</div>
+<div class="listing-author">
+Dasha Yermol
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="announcement,recruitment" data-listing-date-sort="1702274400000" data-listing-file-modified-sort="1702320804713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="442">
+<div class="thumbnail">
+<p><a href="./posts/postdoc2024/index.html" class="no-external"></a></p><a href="./posts/postdoc2024/index.html" class="no-external">
+<p><img src="./posts/postdoc2024/recruit.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/postdoc2024/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/postdoc2024/index.html" class="no-external">Postdoctoral Position 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/postdoc2024/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -202,14 +273,12 @@ announcement
 recruitment
 </div>
 </div>
-<a href="./posts/postdoc2024/index.html">
 <div class="listing-description">
-<p>Information for applicants to the psychology graduate program to start in Fall 2024</p>
+<a href="./posts/postdoc2024/index.html" class="no-external">Information for applicants to the psychology graduate program to start in Fall 2024</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/postdoc2024/index.html">
+<a href="./posts/postdoc2024/index.html" class="no-external">
 <div class="listing-date">
 Dec 11, 2023
 </div>
@@ -219,19 +288,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="announcement,recruitment" data-listing-date-sort="1695877200000" data-listing-file-modified-sort="1695937165714" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="announcement,recruitment" data-listing-date-sort="1695877200000" data-listing-file-modified-sort="1695994577403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
 <div class="thumbnail">
-<p><a href="./posts/recruitment2024/index.html"> <img src="./posts/recruitment2024/recruit.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/recruitment2024/index.html" class="no-external"></a></p><a href="./posts/recruitment2024/index.html" class="no-external">
+<p><img src="./posts/recruitment2024/recruit.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/recruitment2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/recruitment2024/index.html">
 <h3 class="no-anchor listing-title">
-Recruitment 2024
+<a href="./posts/recruitment2024/index.html" class="no-external">Recruitment 2024</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/recruitment2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -240,14 +309,12 @@ announcement
 recruitment
 </div>
 </div>
-<a href="./posts/recruitment2024/index.html">
 <div class="listing-description">
-<p>Information for applicants to the psychology graduate program to start in Fall 2024</p>
+<a href="./posts/recruitment2024/index.html" class="no-external">Information for applicants to the psychology graduate program to start in Fall 2024</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/recruitment2024/index.html">
+<a href="./posts/recruitment2024/index.html" class="no-external">
 <div class="listing-date">
 Sep 28, 2023
 </div>
@@ -257,19 +324,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="conference,presentation" data-listing-date-sort="1694581200000" data-listing-file-modified-sort="1702334206677" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="conference,presentation" data-listing-date-sort="1694581200000" data-listing-file-modified-sort="1708699229074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <div class="thumbnail">
-<p><a href="./posts/dynamos/index.html"> <img src="./posts/dynamos/movie.svg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/dynamos/index.html" class="no-external"></a></p><a href="./posts/dynamos/index.html" class="no-external">
+<p><img src="./posts/dynamos/movie.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/dynamos/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/dynamos/index.html">
 <h3 class="no-anchor listing-title">
-DynAMoS Database
+<a href="./posts/dynamos/index.html" class="no-external">DynAMoS Database</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/dynamos/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('conference'); return false;">
 conference
@@ -278,14 +345,12 @@ conference
 presentation
 </div>
 </div>
-<a href="./posts/dynamos/index.html">
 <div class="listing-description">
-<p>Dynamic Affective Movie Clip Database for Subjectivity Analysis</p>
+<a href="./posts/dynamos/index.html" class="no-external">Dynamic Affective Movie Clip Database for Subjectivity Analysis</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/dynamos/index.html">
+<a href="./posts/dynamos/index.html" class="no-external">
 <div class="listing-date">
 Sep 13, 2023
 </div>
@@ -295,19 +360,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="teaching,presentation" data-listing-date-sort="1694322000000" data-listing-file-modified-sort="1696004794681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="4" data-categories="teaching,presentation" data-listing-date-sort="1694322000000" data-listing-file-modified-sort="1698414791737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="479">
 <div class="thumbnail">
-<p><a href="./posts/mvac2023/index.html"> <img src="./posts/mvac2023/browser_stats.svg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/mvac2023/index.html" class="no-external"></a></p><a href="./posts/mvac2023/index.html" class="no-external">
+<p><img src="./posts/mvac2023/browser_stats.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/mvac2023/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/mvac2023/index.html">
 <h3 class="no-anchor listing-title">
-MVAC Tutorial
+<a href="./posts/mvac2023/index.html" class="no-external">MVAC Tutorial</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/mvac2023/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('teaching'); return false;">
 teaching
@@ -316,14 +381,12 @@ teaching
 presentation
 </div>
 </div>
-<a href="./posts/mvac2023/index.html">
 <div class="listing-description">
-<p>Measurement Validation in Affective Computing</p>
+<a href="./posts/mvac2023/index.html" class="no-external">Measurement Validation in Affective Computing</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/mvac2023/index.html">
+<a href="./posts/mvac2023/index.html" class="no-external">
 <div class="listing-date">
 Sep 10, 2023
 </div>
@@ -333,19 +396,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="announcement,conference" data-listing-date-sort="1681189200000" data-listing-file-modified-sort="1695936058108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="5" data-categories="announcement,conference" data-listing-date-sort="1681189200000" data-listing-file-modified-sort="1695913516486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <div class="thumbnail">
-<p><a href="./posts/gpsp2023/index.html"> <img src="./posts/gpsp2023/conference.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/gpsp2023/index.html" class="no-external"></a></p><a href="./posts/gpsp2023/index.html" class="no-external">
+<p><img src="./posts/gpsp2023/conference.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/gpsp2023/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/gpsp2023/index.html">
 <h3 class="no-anchor listing-title">
-GPSP 2023 Convention
+<a href="./posts/gpsp2023/index.html" class="no-external">GPSP 2023 Convention</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/gpsp2023/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -354,14 +417,12 @@ announcement
 conference
 </div>
 </div>
-<a href="./posts/gpsp2023/index.html">
 <div class="listing-description">
-<p>Great Plains Student Psychology Convention</p>
+<a href="./posts/gpsp2023/index.html" class="no-external">Great Plains Student Psychology Convention</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/gpsp2023/index.html">
+<a href="./posts/gpsp2023/index.html" class="no-external">
 <div class="listing-date">
 Apr 11, 2023
 </div>
@@ -371,19 +432,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="teaching,data science" data-listing-date-sort="1679115600000" data-listing-file-modified-sort="1695936058125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="quarto-post image-right" data-index="6" data-categories="teaching,data science" data-listing-date-sort="1679115600000" data-listing-file-modified-sort="1695913516507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1700">
 <div class="thumbnail">
-<p><a href="./posts/rowwise2023/index.html"> <img src="./posts/rowwise2023/pexels159519.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/rowwise2023/index.html" class="no-external"></a></p><a href="./posts/rowwise2023/index.html" class="no-external">
+<p><img src="./posts/rowwise2023/pexels159519.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/rowwise2023/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/rowwise2023/index.html">
 <h3 class="no-anchor listing-title">
-Row-wise means in dplyr
+<a href="./posts/rowwise2023/index.html" class="no-external">Row-wise means in dplyr</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/rowwise2023/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('teaching'); return false;">
 teaching
@@ -392,14 +453,12 @@ teaching
 data science
 </div>
 </div>
-<a href="./posts/rowwise2023/index.html">
 <div class="listing-description">
-<p>Guide to calculating mean scores in dplyr</p>
+<a href="./posts/rowwise2023/index.html" class="no-external">Guide to calculating mean scores in dplyr</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/rowwise2023/index.html">
+<a href="./posts/rowwise2023/index.html" class="no-external">
 <div class="listing-date">
 Mar 18, 2023
 </div>
@@ -409,19 +468,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="teaching,presentation" data-listing-date-sort="1668751200000" data-listing-file-modified-sort="1695936058109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="7" data-categories="teaching,presentation" data-listing-date-sort="1668751200000" data-listing-file-modified-sort="1695913516486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
 <div class="thumbnail">
-<p><a href="./posts/moderation2022/index.html"> <img src="./posts/moderation2022/undraw_explore.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/moderation2022/index.html" class="no-external"></a></p><a href="./posts/moderation2022/index.html" class="no-external">
+<p><img src="./posts/moderation2022/undraw_explore.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/moderation2022/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/moderation2022/index.html">
 <h3 class="no-anchor listing-title">
-Adventures in Moderation
+<a href="./posts/moderation2022/index.html" class="no-external">Adventures in Moderation</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/moderation2022/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('teaching'); return false;">
 teaching
@@ -430,14 +489,12 @@ teaching
 presentation
 </div>
 </div>
-<a href="./posts/moderation2022/index.html">
 <div class="listing-description">
-<p>Probing Interactions in ANOVA and Regression</p>
+<a href="./posts/moderation2022/index.html" class="no-external">Probing Interactions in ANOVA and Regression</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/moderation2022/index.html">
+<a href="./posts/moderation2022/index.html" class="no-external">
 <div class="listing-date">
 Nov 18, 2022
 </div>
@@ -447,19 +504,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="announcement,paper" data-listing-date-sort="1667800800000" data-listing-file-modified-sort="1695936058129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="8" data-categories="announcement,paper" data-listing-date-sort="1667800800000" data-listing-file-modified-sort="1695913516511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
 <div class="thumbnail">
-<p><a href="./posts/vail2022/index.html"> <img src="./posts/vail2022/therapy.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/vail2022/index.html" class="no-external"></a></p><a href="./posts/vail2022/index.html" class="no-external">
+<p><img src="./posts/vail2022/therapy.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/vail2022/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/vail2022/index.html">
 <h3 class="no-anchor listing-title">
-ICMI 2022 Paper
+<a href="./posts/vail2022/index.html" class="no-external">ICMI 2022 Paper</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/vail2022/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -468,14 +525,12 @@ announcement
 paper
 </div>
 </div>
-<a href="./posts/vail2022/index.html">
 <div class="listing-description">
-<p>Toward causal understanding of therapist-client relationships</p>
+<a href="./posts/vail2022/index.html" class="no-external">Toward causal understanding of therapist-client relationships</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/vail2022/index.html">
+<a href="./posts/vail2022/index.html" class="no-external">
 <div class="listing-date">
 Nov 7, 2022
 </div>
@@ -485,19 +540,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="announcement,funding" data-listing-date-sort="1666933200000" data-listing-file-modified-sort="1695936058104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="9" data-categories="announcement,funding" data-listing-date-sort="1666933200000" data-listing-file-modified-sort="1695913516486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
 <div class="thumbnail">
-<p><a href="./posts/google2022/index.html"> <img src="./posts/google2022/google.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/google2022/index.html" class="no-external"></a></p><a href="./posts/google2022/index.html" class="no-external">
+<p><img src="./posts/google2022/google.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/google2022/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/google2022/index.html">
 <h3 class="no-anchor listing-title">
-Google Research Grant
+<a href="./posts/google2022/index.html" class="no-external">Google Research Grant</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/google2022/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -506,14 +561,12 @@ announcement
 funding
 </div>
 </div>
-<a href="./posts/google2022/index.html">
 <div class="listing-description">
-<p>Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices</p>
+<a href="./posts/google2022/index.html" class="no-external">Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/google2022/index.html">
+<a href="./posts/google2022/index.html" class="no-external">
 <div class="listing-date">
 Oct 28, 2022
 </div>
@@ -523,19 +576,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="announcement,funding" data-listing-date-sort="1662613200000" data-listing-file-modified-sort="1695936058128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="10" data-categories="announcement,funding" data-listing-date-sort="1662613200000" data-listing-file-modified-sort="1695913516510" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
 <div class="thumbnail">
-<p><a href="./posts/suicideR21/index.html"> <img src="./posts/suicideR21/parentchild.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/suicideR21/index.html" class="no-external"></a></p><a href="./posts/suicideR21/index.html" class="no-external">
+<p><img src="./posts/suicideR21/parentchild.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/suicideR21/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/suicideR21/index.html">
 <h3 class="no-anchor listing-title">
-NIMH R21 Grant
+<a href="./posts/suicideR21/index.html" class="no-external">NIMH R21 Grant</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/suicideR21/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -544,14 +597,12 @@ announcement
 funding
 </div>
 </div>
-<a href="./posts/suicideR21/index.html">
 <div class="listing-description">
-<p>Multimodal Dynamics of Parent-Child Interactions and Suicide Risk</p>
+<a href="./posts/suicideR21/index.html" class="no-external">Multimodal Dynamics of Parent-Child Interactions and Suicide Risk</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/suicideR21/index.html">
+<a href="./posts/suicideR21/index.html" class="no-external">
 <div class="listing-date">
 Sep 8, 2022
 </div>
@@ -561,19 +612,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="announcement,recruitment" data-listing-date-sort="1661835600000" data-listing-file-modified-sort="1695937105162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="11" data-categories="announcement,recruitment" data-listing-date-sort="1661835600000" data-listing-file-modified-sort="1695994577403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="708">
 <div class="thumbnail">
-<p><a href="./posts/recruitment2023/index.html"> <img src="./posts/recruitment2023/recruit.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/recruitment2023/index.html" class="no-external"></a></p><a href="./posts/recruitment2023/index.html" class="no-external">
+<p><img src="./posts/recruitment2023/recruit.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/recruitment2023/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/recruitment2023/index.html">
 <h3 class="no-anchor listing-title">
-Recruitment 2023
+<a href="./posts/recruitment2023/index.html" class="no-external">Recruitment 2023</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/recruitment2023/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -582,14 +633,12 @@ announcement
 recruitment
 </div>
 </div>
-<a href="./posts/recruitment2023/index.html">
 <div class="listing-description">
-<p>Information for applicants to the psychology graduate program to start in Fall 2023</p>
+<a href="./posts/recruitment2023/index.html" class="no-external">Information for applicants to the psychology graduate program to start in Fall 2023</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/recruitment2023/index.html">
+<a href="./posts/recruitment2023/index.html" class="no-external">
 <div class="listing-date">
 Aug 30, 2022
 </div>
@@ -599,19 +648,19 @@ Jeffrey Girard
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="announcement,funding" data-listing-date-sort="1618462800000" data-listing-file-modified-sort="1695936058075" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="12" data-categories="announcement,funding" data-listing-date-sort="1618462800000" data-listing-file-modified-sort="1695913516454" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
 <div class="thumbnail">
-<p><a href="./posts/dischargeR01/index.html"> <img src="./posts/dischargeR01/hospital.webp" class="thumbnail-image"> </a></p>
+<p><a href="./posts/dischargeR01/index.html" class="no-external"></a></p><a href="./posts/dischargeR01/index.html" class="no-external">
+<p><img src="./posts/dischargeR01/hospital.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/dischargeR01/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/dischargeR01/index.html">
 <h3 class="no-anchor listing-title">
-NIMH R01 Grant
+<a href="./posts/dischargeR01/index.html" class="no-external">NIMH R01 Grant</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/dischargeR01/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('announcement'); return false;">
 announcement
@@ -620,14 +669,12 @@ announcement
 funding
 </div>
 </div>
-<a href="./posts/dischargeR01/index.html">
 <div class="listing-description">
-<p>Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning</p>
+<a href="./posts/dischargeR01/index.html" class="no-external">Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/dischargeR01/index.html">
+<a href="./posts/dischargeR01/index.html" class="no-external">
 <div class="listing-date">
 Apr 15, 2021
 </div>
@@ -721,10 +768,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -734,8 +780,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -748,6 +803,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -791,6 +965,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -816,6 +991,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -881,12 +1082,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023 © Jeffrey Girard</div>
+    <div class="nav-footer-center">
+<p>Copyright 2023 © Jeffrey Girard</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 
