@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -25,7 +25,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -82,7 +82,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -91,6 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,7 +112,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </script>
-
 <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
@@ -117,9 +123,9 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AffCom Lab</span>
     </a>
@@ -131,37 +137,37 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../news.html" rel="" target="">
- <span class="menu-text">News</span></a>
+    <a class="nav-link" href="../../news.html"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../people.html" rel="" target="">
- <span class="menu-text">People</span></a>
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../opportunities.html" rel="" target="">
- <span class="menu-text">Opportunities</span></a>
+    <a class="nav-link" href="../../opportunities.html"> 
+<span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html" rel="" target="">
- <span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -227,7 +233,9 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <section id="tldr" class="level2">
 <h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
@@ -496,7 +504,7 @@ Caused by error in `rowMeans()`:
 </div>
 </div>
 <p>To test the speed of each approach, we can use the <a href="https://github.com/joshuaulrich/microbenchmark/">microbenchmark</a> package, which will precisely time each approach over multiple iterations (in this case, 100). Let’s wrap up by testing the speech of each approach with increasingly large data sets.</p>
-<div class="cell" data-hash="index_cache/html/speedtest_9d26231672f36fe92d233f90c9197b45">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create function wrappers so the microbenchmark output is prettier</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>A_rowwise <span class="ot">&lt;-</span> <span class="cf">function</span>(.data) { </span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  .data <span class="sc">|&gt;</span> </span>
@@ -526,11 +534,12 @@ Caused by error in `rowMeans()`:
 <span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">B_rowMeans</span>(n100), </span>
 <span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">B_rowMeans</span>(n1000),</span>
 <span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">B_rowMeans</span>(n10000),</span>
-<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">times =</span> 100L</span>
+<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">times =</span> <span class="dv">100</span>L</span>
 <span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
@@ -544,59 +553,59 @@ Caused by error in `rowMeans()`:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">A_rowwise(n10)</td>
-<td style="text-align: right;">12.025</td>
-<td style="text-align: right;">1.279</td>
-<td style="text-align: right;">10.999</td>
-<td style="text-align: right;">18.844</td>
+<td style="text-align: right;">7.502</td>
+<td style="text-align: right;">0.880</td>
+<td style="text-align: right;">6.765</td>
+<td style="text-align: right;">10.523</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">A_rowwise(n100)</td>
-<td style="text-align: right;">90.208</td>
-<td style="text-align: right;">4.903</td>
-<td style="text-align: right;">84.182</td>
-<td style="text-align: right;">126.810</td>
+<td style="text-align: right;">53.755</td>
+<td style="text-align: right;">9.072</td>
+<td style="text-align: right;">49.137</td>
+<td style="text-align: right;">115.875</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">A_rowwise(n1000)</td>
-<td style="text-align: right;">878.763</td>
-<td style="text-align: right;">42.149</td>
-<td style="text-align: right;">835.994</td>
-<td style="text-align: right;">1053.001</td>
+<td style="text-align: right;">505.254</td>
+<td style="text-align: right;">15.616</td>
+<td style="text-align: right;">485.415</td>
+<td style="text-align: right;">572.448</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">A_rowwise(n10000)</td>
-<td style="text-align: right;">8767.835</td>
-<td style="text-align: right;">217.319</td>
-<td style="text-align: right;">8500.523</td>
-<td style="text-align: right;">10053.289</td>
+<td style="text-align: right;">5066.136</td>
+<td style="text-align: right;">110.166</td>
+<td style="text-align: right;">4913.116</td>
+<td style="text-align: right;">5758.591</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">B_rowMeans(n10)</td>
-<td style="text-align: right;">2.852</td>
-<td style="text-align: right;">0.530</td>
-<td style="text-align: right;">2.470</td>
-<td style="text-align: right;">7.109</td>
+<td style="text-align: right;">1.471</td>
+<td style="text-align: right;">0.466</td>
+<td style="text-align: right;">1.265</td>
+<td style="text-align: right;">4.153</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">B_rowMeans(n100)</td>
-<td style="text-align: right;">2.875</td>
-<td style="text-align: right;">0.577</td>
-<td style="text-align: right;">2.451</td>
-<td style="text-align: right;">5.720</td>
+<td style="text-align: right;">1.505</td>
+<td style="text-align: right;">0.390</td>
+<td style="text-align: right;">1.274</td>
+<td style="text-align: right;">4.014</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">B_rowMeans(n1000)</td>
-<td style="text-align: right;">2.865</td>
-<td style="text-align: right;">0.501</td>
-<td style="text-align: right;">2.458</td>
-<td style="text-align: right;">5.665</td>
+<td style="text-align: right;">1.511</td>
+<td style="text-align: right;">0.528</td>
+<td style="text-align: right;">1.274</td>
+<td style="text-align: right;">4.815</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">B_rowMeans(n10000)</td>
-<td style="text-align: right;">2.972</td>
-<td style="text-align: right;">0.540</td>
-<td style="text-align: right;">2.575</td>
-<td style="text-align: right;">5.646</td>
+<td style="text-align: right;">1.643</td>
+<td style="text-align: right;">0.614</td>
+<td style="text-align: right;">1.370</td>
+<td style="text-align: right;">5.813</td>
 </tr>
 </tbody>
 </table>
@@ -604,10 +613,15 @@ Caused by error in `rowMeans()`:
 
 </div>
 </div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(speedtest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/stplot-1.png" class="img-fluid" width="860"></p>
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/stplot-1.png" class="img-fluid figure-img" width="860"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The speed difference between approaches grows with the number of observations and becomes quite noticeable at 1000 observations or more. So, although I think it is worth learning the new <code>rowwise()</code> and <code>c_across()</code> functions, in settings where observations are many and speed in paramount, it may be worthwhile to learn “parallel” functions such as <code>rowMeans()</code>, <code>rowSums()</code>, <code>pmin()</code>, <code>pmax()</code>, and <code>paste()</code>.</p>
@@ -622,9 +636,9 @@ Click here for session info
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>R version 4.3.1 (2023-06-16 ucrt)
+<pre><code>R version 4.3.2 (2023-10-31 ucrt)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
-Running under: Windows 10 x64 (build 19044)
+Running under: Windows 10 x64 (build 19045)
 
 Matrix products: default
 
@@ -643,25 +657,24 @@ attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] kableExtra_1.3.4      knitr_1.43            microbenchmark_1.4.10
- [4] lubridate_1.9.2       forcats_1.0.0         stringr_1.5.0        
- [7] dplyr_1.1.2           purrr_1.0.1           readr_2.1.4          
-[10] tidyr_1.3.0           tibble_3.2.1          ggplot2_3.4.2        
+ [1] kableExtra_1.4.0      knitr_1.45            microbenchmark_1.4.10
+ [4] lubridate_1.9.3       forcats_1.0.0         stringr_1.5.1        
+ [7] dplyr_1.1.4           purrr_1.0.2           readr_2.1.5          
+[10] tidyr_1.3.1           tibble_3.2.1          ggplot2_3.5.0        
 [13] tidyverse_2.0.0      
 
 loaded via a namespace (and not attached):
- [1] utf8_1.2.3        generics_0.1.3    renv_1.0.2        xml2_1.3.5       
- [5] stringi_1.7.12    hms_1.1.3         digest_0.6.33     magrittr_2.0.3   
- [9] evaluate_0.21     grid_4.3.1        timechange_0.2.0  fastmap_1.1.1    
-[13] jsonlite_1.8.7    httr_1.4.6        rvest_1.0.3       fansi_1.0.4      
-[17] viridisLite_0.4.2 scales_1.2.1      cli_3.6.1         rlang_1.1.1      
-[21] munsell_0.5.0     withr_2.5.0       yaml_2.3.7        tools_4.3.1      
-[25] tzdb_0.4.0        colorspace_2.1-0  webshot_0.5.5     vctrs_0.6.3      
-[29] R6_2.5.1          lifecycle_1.0.3   htmlwidgets_1.6.2 pkgconfig_2.0.3  
-[33] pillar_1.9.0      gtable_0.3.3      glue_1.6.2        systemfonts_1.0.4
-[37] highr_0.10        xfun_0.39         tidyselect_1.2.0  rstudioapi_0.15.0
-[41] farver_2.1.1      htmltools_0.5.5   rmarkdown_2.23    svglite_2.1.1    
-[45] compiler_4.3.1   </code></pre>
+ [1] utf8_1.2.4        generics_0.1.3    renv_1.0.5        xml2_1.3.6       
+ [5] stringi_1.8.3     hms_1.1.3         digest_0.6.34     magrittr_2.0.3   
+ [9] evaluate_0.23     grid_4.3.2        timechange_0.3.0  fastmap_1.1.1    
+[13] jsonlite_1.8.8    fansi_1.0.6       viridisLite_0.4.2 scales_1.3.0     
+[17] codetools_0.2-19  cli_3.6.2         rlang_1.1.3       munsell_0.5.0    
+[21] withr_3.0.0       yaml_2.3.8        tools_4.3.2       tzdb_0.4.0       
+[25] colorspace_2.1-0  vctrs_0.6.5       R6_2.5.1          lifecycle_1.0.4  
+[29] htmlwidgets_1.6.4 pkgconfig_2.0.3   pillar_1.9.0      gtable_0.3.4     
+[33] glue_1.7.0        systemfonts_1.0.5 xfun_0.42         tidyselect_1.2.0 
+[37] highr_0.10        rstudioapi_0.15.0 farver_2.1.1      htmltools_0.5.7  
+[41] rmarkdown_2.25    svglite_2.1.3     compiler_4.3.2   </code></pre>
 </div>
 </div>
 </details>
@@ -760,10 +773,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -773,8 +785,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -787,6 +808,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -830,6 +970,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -855,6 +996,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -920,12 +1087,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023 © Jeffrey Girard</div>
+    <div class="nav-footer-center">
+<p>Copyright 2024 © Jeffrey Girard</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

@@ -33,16 +33,15 @@ data <- read_csv("data_qr.csv")
 
 <style>
 .pdf {
-  width: 100%;
-  height: 600px;
   border: 4px solid grey;
   margin: 0;
 }
 </style>
 
 
-{{< pdf SAS2024.pdf class=pdf >}}
-
+<div height="600px" width="100%">
+{{< pdf SAS2024.pdf class=pdf width="100%" height="600px" >}}
+</div>
 
 ## Additional Figures Below
 
