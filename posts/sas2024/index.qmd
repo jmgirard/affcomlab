@@ -2,14 +2,147 @@
 title: "SAS 2024 Conference"
 description: "Society for Affective Science"
 author: "Dasha Yermol"
-date: "2024-02-23"
+date: "2024-03-02"
 image: conference.webp
 draft: false
 categories:
   - announcement
   - conference
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+    page-layout: full
+    toc: false
 ---
 
-Placeholder for information about poster presentation.
 
+### Does Smile Synchrony Predict Working Alliance Quality in Psychotherapy?
+
+```{r, message = FALSE, include = FALSE}
+library(tidyverse)
+library(lme4)
+library(easystats)
+library(performance)
+```
+
+```{r, include = FALSE}
+data <- read_csv("data_qr.csv")
+```
+
+
+<style>
+.pdf {
+  width: 100%;
+  height: 600px;
+  border: 4px solid grey;
+  margin: 0;
+}
+</style>
+
+
+{{< pdf SAS2024.pdf class=pdf >}}
+
+
+## Additional Figures Below
+
+### Histograms of Variables:
+```{r, output = TRUE, echo = FALSE}
+
+hist(data$wai, plot = TRUE, xlab = NULL, main = "Working Alliance Scores")
+
+```
+
+![ ](smile_hist.png)
+
+```{r, output = TRUE, echo = FALSE}
+hist(data$fisher_z, plot = TRUE, xlab = NULL, main = "Smile Synchrony Scores")
+```
+
+
+## Figures including all sessions and patients (without clustering):
+```{r, warning = FALSE, message = FALSE}
+data %>% 
+  ggplot(mapping = aes(x = fisher_z, y = wai)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, fullrange = TRUE) +
+  labs(
+    x = "Smile Synchrony",
+    y = "Working Alliance Scores",
+    title = "Working Alliance by Smile Synchrony"
+  )
+```
+###### In this figure, each dot represents the relationship between working alliance scores and smile synchrony (including all sessions from patients)
+##
+```{r, warning = FALSE, message = FALSE}
+data %>% 
+  ggplot(mapping = aes(x = fisher_z, y = wai, colour = factor(patient_id))) +
+  geom_point() +
+  geom_smooth(mapping = aes(group = patient_id), method = "lm", se = FALSE, fullrange = TRUE) +
+  labs(
+    colour = "Patient ID",
+    x = "Smile Synchrony",
+    y = "Working Alliance Scores",
+    title = "Working Alliance by Smile Synchrony"
+    )
+```
+###### In this figure, each line represents the relationship between working alliance scores and smile synchrony for each patient. This figure includes data from all sessions.
+
+##
+
+## Figures split by individual patients:
+```{r, warning = FALSE, message = FALSE, fig.width=10, fig.height=10}
+#| out-width: 100%
+data %>% 
+  group_by(patient_id) %>%
+  ggplot(mapping = aes(x = fisher_z, y = wai)) + 
+  geom_point() +
+  geom_smooth(mapping = aes(group = patient_id), method = "lm", se = FALSE, fullrange = TRUE) +
+  labs(title = "Working Alliance by Smile Synchrony for each Patient",
+       x = "Smile Synchrony",
+       y = "Working Alliance Scores") +
+  scale_x_continuous(breaks=seq(from=0.2,to=0.4,by=0.1)) +
+  coord_cartesian(xlim = c(0.2, 0.4), ylim = c(0, 70)) +
+  theme_gray(base_size = 12) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  facet_wrap(~patient_id, ncol = 8) +
+  theme(panel.spacing = grid::unit(1, "lines"))
+```
+###### Each subfigure represents the relationship between working alliance scores and smile synchrony for each patient. This figure includes data from all sessions, but we have some missing data (e.g., patient #1025, patient #1072).
+
+##
+
+```{r, warning = FALSE, message = FALSE,fig.width=10, fig.height=10}
+#| out-width: 100%
+data %>% 
+  group_by(session) %>%
+  ggplot(mapping = aes(x = session, y = wai)) + 
+  coord_cartesian(ylim = c(20, 65)) +
+  geom_point() +
+  geom_smooth(mapping = aes(group = patient_id), method = "lm", se = FALSE, fullrange = TRUE) +
+  labs(title = "Working Alliance Scores across Sessions",
+       x = "Session",
+       y = "Working Alliance Scores") +
+  theme_gray(base_size = 12) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  facet_wrap(~patient_id)
+```
+
+##
+
+```{r, warning = FALSE, message = FALSE, fig.width=10, fig.height=10}
+#| out-width: 100%
+data %>% 
+  group_by(session) %>%
+  ggplot(mapping = aes(x = session, y = fisher_z)) +
+  geom_point() +
+  geom_smooth(mapping = aes(group = patient_id), method = "lm", se = FALSE, fullrange = TRUE) +
+  labs(title = "Smile Synchrony across Sessions",
+       x = "Session",
+       y = "Smile Synchrony") +
+  scale_y_continuous(breaks=seq(from=0.2,to=0.4,by=0.1)) +
+  theme_gray(base_size = 12) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  facet_wrap(~patient_id)
+```
 
