@@ -1,0 +1,28 @@
+---
+title: "HiTOP 2024 Conference"
+description: "Hierarchical Taxonomy of Psychopathology"
+author: "Jeffrey Girard"
+date: "2024-03-13"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www.personality.org/events/2024-hitop-conference) in San Diego this weekend. Our poster presentations are below and I am presenting at the "Building from the Ground up: Symptom-focused Approaches to Uncover the Hierarchical Structure of Psychopathology and its Association with Risk, Resilience, and Functioning" symposium. See you there!
+
+<table style="width: 100%;">
+<tr>
+<td>
+{{< pdf Yang_Poster.pdf width="100%" height=400 border=1 >}}
+</td>
+<td>
+{{< pdf Gray_Poster.pdf width="100%" height=400 border=1 >}}
+</td>
+</tr>
+</table>
