@@ -33,4 +33,4 @@ Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www
 </tr>
 </table>
 
-{{< pdf Girard_Slides.pdf width="100%" height=700 border=1 >}}
+{{< pdf Girard_Slides.pdf width="100%" height=680 border=1 >}}
