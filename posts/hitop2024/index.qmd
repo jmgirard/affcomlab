@@ -14,7 +14,13 @@ format:
     toc: false
 ---
 
-Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www.personality.org/events/2024-hitop-conference) in San Diego this weekend. Our poster presentations are below and I am presenting at the "Building from the Ground up: Symptom-focused Approaches to Uncover the Hierarchical Structure of Psychopathology and its Association with Risk, Resilience, and Functioning" symposium. See you there!
+Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www.personality.org/events/2024-hitop-conference) in San Diego this weekend. Our presentations are below. See you there!
+
+- Yang, Y., Gray, K., Sprunger, J. G., & Girard, J. M. (2024). *Exploring the structure of personality symptoms in a trauma-exposed community sample.* Poster presented at the Hierarchical Taxonomy of Psychopathology (HiTOP) Conference, San Diego, CA.
+
+- Gray, K. & Girard, J. M. (2024). *Is personality related to social well-being? Associations between social health measures and personality pathology dimensions.* Poster presented at the Hierarchical Taxonomy of Psychopathology (HiTOP) Conference, San Diego, CA.
+
+- Girard, J. M., Chung, Y., Ravichandran, C., Ongur, D., Cohen, B. M., & Baker, J. T. (2024). *Transdiagnostic structure of affective and non-affective psychosis symptoms.* Paper presented at the Hierarchical Taxonomy of Psychopathology (HiTOP) Conference, San Diego, CA.
 
 <table style="width: 100%;">
 <tr>
@@ -26,3 +32,5 @@ Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www
 </td>
 </tr>
 </table>
+
+{{< pdf Girard_Slides.pdf width="100%" height=700 border=1 >}}
