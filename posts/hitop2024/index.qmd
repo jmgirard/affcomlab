@@ -25,10 +25,10 @@ Yuanyuan, Kassy, and I will be attending the [2024 HiTOP Conference](https://www
 <table style="width: 100%;">
 <tr>
 <td>
-{{< pdf Yang_Poster.pdf width="100%" height=680 border=1 >}}
+{{< pdf Yang_Poster.pdf width="100%" height=670 border=1 >}}
 </td>
 <td>
-{{< pdf Gray_Poster.pdf width="100%" height=680 border=1 >}}
+{{< pdf Gray_Poster.pdf width="100%" height=670 border=1 >}}
 </td>
 </tr>
 </table>
