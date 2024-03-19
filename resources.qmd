@@ -41,6 +41,10 @@ toc: true
 ## Software
 
 ### Maturing
+- **embedpdf** (2023)<br />
+  Extension for embedding PDF files in Quarto HTML documents<br />
+  *Source Code:* <https://github.com/jmgirard/embedpdf>
+
 - **lordicon** (2022)<br />
   Extension for adding lordicon.com icons to Quarto HTML documents<br />
   *Source Code:* <https://github.com/jmgirard/lordicon>
