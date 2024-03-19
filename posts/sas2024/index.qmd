@@ -40,7 +40,7 @@ data <- read_csv("data_qr.csv")
 
 
 <div height="600px" width="100%">
-{{< pdf SAS2024.pdf class=pdf width="100%" height="600px" >}}
+{{< pdf SAS2024.pdf class=pdf width="100%" height="600px" image=Yermol_Poster.png image_width="100%" >}}
 </div>
 
 ## Additional Figures Below
