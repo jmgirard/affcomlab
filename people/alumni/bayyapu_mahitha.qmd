@@ -1,6 +1,6 @@
 ---
 title: "Mahitha Reddy Bayyapu"
-sortby: "3"
+sortby: "Bayyapu, Mahitha Reddy"
 subtitle: "MS Student"
 image: bayyapu_mahitha.jpg
 toc: false
