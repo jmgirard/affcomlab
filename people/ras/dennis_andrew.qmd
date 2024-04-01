@@ -1,0 +1,38 @@
+---
+title: "Andrew Dennis"
+sortby: "Dennis, Andrew"
+subtitle: "Research Assistant"
+image: placeholder.png
+started: "Spring 2023"
+ended: "Current"
+toc: false
+about:
+  id: person-profile
+  template: jolla
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Research Assistants</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+## Biography
+Coming soon
+
+
+## Semesters
+
+- Spring 2024, *Research Assistant*
+
+## Education
+
+**University of Kansas** | Lawrence, KS, USA<br />
+Behavioral Neuroscience Major
+:::
