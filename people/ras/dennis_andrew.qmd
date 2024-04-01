@@ -3,7 +3,7 @@ title: "Andrew Dennis"
 sortby: "Dennis, Andrew"
 subtitle: "Research Assistant"
 image: placeholder.png
-started: "Spring 2023"
+started: "Spring 2024"
 ended: "Current"
 toc: false
 about:
