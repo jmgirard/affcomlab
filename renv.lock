@@ -301,13 +301,14 @@
     },
     "bslib": {
       "Package": "bslib",
-      "Version": "0.6.1",
+      "Version": "0.7.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "base64enc",
         "cachem",
+        "fastmap",
         "grDevices",
         "htmltools",
         "jquerylib",
@@ -318,7 +319,7 @@
         "rlang",
         "sass"
       ],
-      "Hash": "c0d8599494bc7fb408cd206bbdd9cab0"
+      "Hash": "8644cc53f43828f19133548195d7e59e"
     },
     "cachem": {
       "Package": "cachem",
@@ -333,7 +334,7 @@
     },
     "callr": {
       "Package": "callr",
-      "Version": "3.7.5",
+      "Version": "3.7.6",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -342,7 +343,7 @@
         "processx",
         "utils"
       ],
-      "Hash": "9f0e4fae4963ba775a5e5c520838c87b"
+      "Hash": "d7e13f49c19103ece9e58ad2d83a7354"
     },
     "car": {
       "Package": "car",
@@ -514,18 +515,18 @@
     },
     "data.table": {
       "Package": "data.table",
-      "Version": "1.15.2",
+      "Version": "1.15.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "methods"
       ],
-      "Hash": "536dfe4ac4093b5d115caed7a1a7223b"
+      "Hash": "8ee9ac56ef633d0c7cab8b2ca87d683e"
     },
     "datawizard": {
       "Package": "datawizard",
-      "Version": "0.9.1",
+      "Version": "0.10.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -534,7 +535,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "51cf8172b52cfa5b4b988c73c37accfa"
+      "Hash": "62d6ec10346d3302a1299e1c54641d83"
     },
     "dbplyr": {
       "Package": "dbplyr",
@@ -647,7 +648,7 @@
     },
     "easystats": {
       "Package": "easystats",
-      "Version": "0.7.0",
+      "Version": "0.7.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -665,11 +666,11 @@
         "tools",
         "utils"
       ],
-      "Hash": "9adf16465f69904f6b150529c62f6790"
+      "Hash": "798daa83a3f9036b4a1c5612416de279"
     },
     "effectsize": {
       "Package": "effectsize",
-      "Version": "0.8.6",
+      "Version": "0.8.7",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -682,7 +683,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "ba2ebc5b29c95b3f99d022333e8aad5f"
+      "Hash": "a6900d0b5bdcbb956dbb843643279e7c"
     },
     "ellipsis": {
       "Package": "ellipsis",
@@ -1029,20 +1030,19 @@
     },
     "htmltools": {
       "Package": "htmltools",
-      "Version": "0.5.7",
+      "Version": "0.5.8",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "base64enc",
         "digest",
-        "ellipsis",
         "fastmap",
         "grDevices",
         "rlang",
         "utils"
       ],
-      "Hash": "2d7b3857980e0e0d0a1fd6f11928ab0f"
+      "Hash": "149431ee39aba5bdc264112c8ff94444"
     },
     "htmlwidgets": {
       "Package": "htmlwidgets",
@@ -1087,7 +1087,7 @@
     },
     "insight": {
       "Package": "insight",
-      "Version": "0.19.9",
+      "Version": "0.19.10",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1096,7 +1096,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "2d21917629766e0a5f002cdf4d40b87b"
+      "Hash": "c15a38c9655cba66f5f5537a14c1bef4"
     },
     "isoband": {
       "Package": "isoband",
@@ -1211,7 +1211,7 @@
     },
     "lme4": {
       "Package": "lme4",
-      "Version": "1.1-35.1",
+      "Version": "1.1-35.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1233,7 +1233,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "07fb0c5b727b15b0ce40feb641498e4e"
+      "Hash": "c255dd80a1771f41321db15041feed11"
     },
     "lubridate": {
       "Package": "lubridate",
@@ -1356,14 +1356,14 @@
     },
     "munsell": {
       "Package": "munsell",
-      "Version": "0.5.0",
+      "Version": "0.5.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "colorspace",
         "methods"
       ],
-      "Hash": "6dfe8bf774944bd5595785e3229d8771"
+      "Hash": "4fd8900853b746af55b81fda99da7695"
     },
     "mvtnorm": {
       "Package": "mvtnorm",
@@ -1469,7 +1469,7 @@
     },
     "performance": {
       "Package": "performance",
-      "Version": "0.10.9",
+      "Version": "0.11.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1477,11 +1477,10 @@
         "bayestestR",
         "datawizard",
         "insight",
-        "methods",
         "stats",
         "utils"
       ],
-      "Hash": "ef9fcec8b9afc2bc3f8d49544681f6fe"
+      "Hash": "eb8ecde248cd610ae3097f5d00718cbd"
     },
     "pillar": {
       "Package": "pillar",
@@ -1820,10 +1819,10 @@
     },
     "rstudioapi": {
       "Package": "rstudioapi",
-      "Version": "0.15.0",
+      "Version": "0.16.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "5564500e25cffad9e22244ced1379887"
+      "Hash": "96710351d642b70e8f02ddeb237c46a7"
     },
     "rvest": {
       "Package": "rvest",
@@ -1880,7 +1879,7 @@
     },
     "see": {
       "Package": "see",
-      "Version": "0.8.2",
+      "Version": "0.8.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1898,7 +1897,7 @@
         "performance",
         "stats"
       ],
-      "Hash": "db586788615810d64a950cc1f2e8bb85"
+      "Hash": "f179bbe569ce4ddba7d47f7c455bcaec"
     },
     "selectr": {
       "Package": "selectr",
@@ -2288,7 +2287,7 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.42",
+      "Version": "0.43",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -2296,7 +2295,7 @@
         "stats",
         "tools"
       ],
-      "Hash": "fd1349170df31f7a10bd98b0189e85af"
+      "Hash": "ab6371d8653ce5f2f9290f4ec7b42a8e"
     },
     "xml2": {
       "Package": "xml2",
