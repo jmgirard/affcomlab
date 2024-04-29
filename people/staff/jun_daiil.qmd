@@ -29,6 +29,7 @@ about:
 ```
 
 :::{#person-profile}
+:::
 
 ## Biography
 Daiil Jun's research interests include heterogeneity of psychopathology, especially addictive behaviors and weight disorders. Specifically, he is interested in leveraging ecological momentary assessment (EMA) to understand mechanisms of craving in real-life environment in which emotional and interpersonal factors interact with craving for addictive behaviors.
@@ -42,5 +43,3 @@ He completed his undergraduate Bachelor of Arts degree at Handong Global Univers
 
 - [Handong Global University]{.fw-bold} | Pohang, South Korea<br />
   BA in Counseling Psychology | 2013–2020
-  
-:::
