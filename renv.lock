@@ -1879,7 +1879,7 @@
     },
     "see": {
       "Package": "see",
-      "Version": "0.8.3",
+      "Version": "0.8.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1897,7 +1897,7 @@
         "performance",
         "stats"
       ],
-      "Hash": "f179bbe569ce4ddba7d47f7c455bcaec"
+      "Hash": "3d2fd0b72314499e6af4fd20d39309dc"
     },
     "selectr": {
       "Package": "selectr",

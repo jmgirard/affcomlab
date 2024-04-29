@@ -10,10 +10,3 @@ toc: false
 :::
 
 ![](./img/showcase.svg){.hero}
-
-::: {.callout-note}
-## Job opportunity!
-
-The lab is actively recruiting a new postdoctoral research associate to begin August 2024.<br />
-You can find more information at [this blog post](./posts/postdoc2024) (or under News).
-:::
