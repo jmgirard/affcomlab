@@ -47,6 +47,7 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/aps2024/index.html",
       "/posts/hitop2024/index.html",
       "/posts/sas2024/index.html",
       "/posts/postdoc2024/index.html",
