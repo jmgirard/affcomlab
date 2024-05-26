@@ -1,0 +1,32 @@
+---
+title: "APS 2024 Conference"
+description: "Association for Psychological Science"
+author: "Jeffrey Girard"
+date: "2024-05-26"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+Kassy and I will be attending the [2024 APS Convention](https://www.psychologicalscience.org/conventions/2024-aps-annual-convention) in San Francisco this weekend. Our presentations are below. See you there!
+
+- Gray, K. & Girard, J. M. (2024). *Is personality related to social well-being? Associations between social health measures and personality pathology dimensions.* Poster presented at the Association for Psychological Science Convention, San Francisco, CA.
+
+- Girard, J. M. (2024). *COVID-19's effect on the rhythms of smiling on social media.* Paper presented at the Association for Psychological Science Convention, San Francisco, CA.
+
+<table style="width: 100%;">
+<tr>
+<td>
+{{< pdf Gray_Poster.pdf width="100%" height=670 border=1 image=Gray_Poster.png image_width="100%" image_border=1 >}}
+</td>
+<td>
+{{< pdf Girard_Slides.pdf width="100%" height=670 border=1 image=Girard_Slides.png image_width="100%" image_border=1 >}}
+</td>
+</tr>
+</table>
