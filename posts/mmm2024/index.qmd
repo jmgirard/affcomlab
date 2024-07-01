@@ -1,0 +1,31 @@
+---
+title: "MMM 2024 Conference"
+description: "Modern Modeling Methods"
+author: "Jeffrey Girard"
+date: "2024-07-01"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+
+Aaron and I attended the [MMM2024 conference](https://modeling.uconn.edu/) in Storrs last week. Our presentations are provided below.
+
+- Girard, J. M. (2024). *A communications-focused approach to building path diagrams for multilevel models.* Paper presented at the Modern Modeling Methods Conference, Storrs, CT.
+
+- Girard, J. M. (2024). *Intensive longitudinal modeling of big social media data.* Paper presented at the Modern Modeling Methods Conference, Storrs, CT.
+
+- Simmons, A. M. & Girard, J. M. (2024). *An illustration of advanced intraclass correlations for inter-rater reliability.* Poster presented at the Modern Modeling Methods Conference, Storrs, CT.
+
+![](girard_slides_path.pdf){width=600 height=400}
+
+![](girard_slides_intensive.pdf){width=600 height=400}
+
+![](simmons_poster.pdf){width=600 height=800}
+
