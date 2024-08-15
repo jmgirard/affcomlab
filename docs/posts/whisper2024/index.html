@@ -361,7 +361,7 @@ Note
 </section>
 <section id="extract-and-format-audio" class="level3">
 <h3 class="anchored" data-anchor-id="extract-and-format-audio">Extract and format audio</h3>
-<p>Download the example <a href="mlk.mp4">mlk.mp4</a> video file, which contains 12 seconds of a speech by Martin Luther King, Jr.&nbsp;This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the <code>av_audio_convert()</code> function from the <code>av</code> package.</p>
+<p>Download the example <a href="mlk.mp4" download="">mlk.mp4</a> video file, which contains 12 seconds of a speech by Martin Luther King, Jr.&nbsp;This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the <code>av_audio_convert()</code> function from the <code>av</code> package.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install av package if you don't have it already</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("av")</span></span>
