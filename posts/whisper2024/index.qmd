@@ -1,6 +1,6 @@
 ---
 title: "AI Transcription from R using Whisper: Part 1"
-description: "Tutorial on Using AI Transcription on Windows"
+description: "Tutorial on Using AI Transcription"
 author: "Jeffrey Girard"
 date: "2024-08-14"
 image: whisper.webp
@@ -15,21 +15,21 @@ categories:
 
 In much of my work, I study how people communicate through verbal and nonverbal behavior. To study verbal behavior, it is often necessary to generate *transcripts*, which are written records of the words that were spoken. Transcriptions can be done manually (i.e., by a person) and assisted through the use of behavioral annotation software like [ELAN](https://archive.mpi.nl/tla/elan) or [ANVIL](https://anvil-software.de) or subtitle generation and editing software like [Aegisub](https://aegisub.org/) or [Subtitld](https://www.subtitld.org/en). However, new tools based on artificial intelligence (AI) can be much more efficient and scalable, albeit at some cost to accuracy.
 
-In this blog post, I will provide a tutorial on how to set up and use OpenAI's free [Whisper](https://openai.com/index/whisper/) algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much better (e.g., 10x faster) if we offload some of the work to a dedicated graphics card, such as an Nvidia card with [CUDA](https://developer.nvidia.com/about-cuda). Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.
+In this blog post, I will provide a tutorial on how to set up and use OpenAI's free [Whisper](https://openai.com/index/whisper/) algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with [CUDA](https://developer.nvidia.com/about-cuda). Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.
 
 ## Quickstart (easy setup, slow processing)
 
 ### Install dependencies
 
-I assume you already have R (and probably an IDE like RStudio) installed. Open this up and install the development version of the \{audio.whisper\} package from github.
+I assume you already have R (and probably an IDE like RStudio) installed. Open this up and install the development version of the [audio.whisper](https://github.com/bnosac/audio.whisper) package from github.
 
 ```{r}
 #| eval: false
 
-# Install remotes to install from github
-install.packages("remotes") 
+# Install remotes if you don't have it already
+# install.packages("remotes") 
 
-# Install audio.whisper to do transcription
+# Install audio.whisper from github
 remotes::install_github("bnosac/audio.whisper")
 ```
 
@@ -57,9 +57,24 @@ Note that the larger models may take a while to download, so if you get an error
 
 ### Transcribe example file
 
-The package comes with an example audio file in the proper format. Let's load it from file using `system.file()` and then transcribe it using `predict()`.
+The package comes with an example audio file in the proper format, which contains 11 seconds of a speech by John F. Kennedy Jr. Let's load it from file using `system.file()` and then transcribe it using `predict()`.
 
 ```{r}
+#| echo: true
+#| eval: false
+
+# Construct file path to example audio file in package data
+jfk <- system.file(package = "audio.whisper", "samples", "jfk.wav")
+
+# Run English transcription using the downloaded whisper model
+out <- predict(model, newdata = jfk, language = "en")
+
+# Print transcript
+out$data
+```
+
+```{r out}
+#| echo: false
 #| collapse: true
 #| cache: true
 
@@ -67,7 +82,10 @@ The package comes with an example audio file in the proper format. Let's load it
 jfk <- system.file(package = "audio.whisper", "samples", "jfk.wav")
 
 # Run English transcription using the downloaded whisper model
-out <- predict(model, newdata = jfk, language = "en")
+out <- predict(model, newdata = jfk, language = "en", trace = FALSE)
+
+# Print transcript
+out$data |> kableExtra::kbl() |> kableExtra::kable_styling()
 ```
 
 The results look good! But we can see how long this took by digging into the output object.
@@ -79,17 +97,17 @@ The results look good! But we can see how long this took by digging into the out
 out$timing
 ```
 
-Yikes, nearly 11 minutes to process just 11 seconds of audio. That's motivation to work on the CUDA version to speed things up. But before we move on to that, I'll first show you how to extract audio from a video file and convert it to the format that Whisper wants.
+Yikes, `r round(as.double(out$timing$transcription_duration))` minutes to process just 11 seconds of audio. That's motivation to work on the CUDA version to speed things up. But before we move on to that, I'll first show you how to extract audio from a video file and convert it to the format that Whisper wants.
 
 ### Extract and format audio
 
-Download the example [mlk.mp4](mlk.mp4) video file, which is 12 seconds of Martin Luther King, Jr.'s famous "I have a dream" speech. This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the `av_audio_convert()` function from the `av` package.
+Download the example [mlk.mp4](mlk.mp4) video file, which contains 12 seconds of a speech by Martin Luther King, Jr. This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the `av_audio_convert()` function from the `av` package.
 
-```{r}
+```{r convert}
 #| collapse: true
 
-# Install package from CRAN
-#install.packages("av")
+# Install av package if you don't have it already
+# install.packages("av")
 
 # Load package from library
 library(av)
@@ -106,11 +124,27 @@ av_audio_convert(
 Note that the process would have been identical if this had been an audio file in a different format rather than a video file - you would just replace the .mp4 file with the audio file (e.g., .mp3). Now let's transcribe this and verify that our conversion worked.
 
 ```{r}
-#| cache: true
+#| echo: true
+#| eval: false
 #| collapse: true
 
 # Run English transcription using the downloaded whisper model
 out2 <- predict(model, newdata = "mlk.wav", language = "en")
+
+# Print transcript
+out2$data
+```
+
+```{r out2}
+#| echo: false
+#| cache: true
+#| collapse: true
+
+# Run English transcription using the downloaded whisper model
+out2 <- predict(model, newdata = "mlk.wav", language = "en", trace = FALSE)
+
+# Print transcript
+out2$data |> kableExtra::kbl() |> kableExtra::kable_styling()
 ```
 
 Not perfect (swapped "that" for "but" and omitted an "and") but pretty good. And this only the base model - it might do better with a larger model, but for time's sake I'll leave that until after we get CUDA working in Part 2.

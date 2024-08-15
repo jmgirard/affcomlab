@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jeffrey Girard">
 <meta name="dcterms.date" content="2024-08-14">
-<meta name="description" content="Tutorial on Using AI Transcription on Windows">
+<meta name="description" content="Tutorial on Using AI Transcription">
 
 <title>AI Transcription from R using Whisper: Part 1 – AffCom Lab</title>
 <style>
@@ -112,6 +112,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </script>
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -204,7 +208,7 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 
 <div>
   <div class="description">
-    Tutorial on Using AI Transcription on Windows
+    Tutorial on Using AI Transcription
   </div>
 </div>
 
@@ -236,18 +240,18 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>In much of my work, I study how people communicate through verbal and nonverbal behavior. To study verbal behavior, it is often necessary to generate <em>transcripts</em>, which are written records of the words that were spoken. Transcriptions can be done manually (i.e., by a person) and assisted through the use of behavioral annotation software like <a href="https://archive.mpi.nl/tla/elan">ELAN</a> or <a href="https://anvil-software.de">ANVIL</a> or subtitle generation and editing software like <a href="https://aegisub.org/">Aegisub</a> or <a href="https://www.subtitld.org/en">Subtitld</a>. However, new tools based on artificial intelligence (AI) can be much more efficient and scalable, albeit at some cost to accuracy.</p>
-<p>In this blog post, I will provide a tutorial on how to set up and use OpenAI’s free <a href="https://openai.com/index/whisper/">Whisper</a> algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much better (e.g., 10x faster) if we offload some of the work to a dedicated graphics card, such as an Nvidia card with <a href="https://developer.nvidia.com/about-cuda">CUDA</a>. Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.</p>
+<p>In this blog post, I will provide a tutorial on how to set up and use OpenAI’s free <a href="https://openai.com/index/whisper/">Whisper</a> algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with <a href="https://developer.nvidia.com/about-cuda">CUDA</a>. Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.</p>
 </section>
 <section id="quickstart-easy-setup-slow-processing" class="level2">
 <h2 class="anchored" data-anchor-id="quickstart-easy-setup-slow-processing">Quickstart (easy setup, slow processing)</h2>
 <section id="install-dependencies" class="level3">
 <h3 class="anchored" data-anchor-id="install-dependencies">Install dependencies</h3>
-<p>I assume you already have R (and probably an IDE like RStudio) installed. Open this up and install the development version of the {audio.whisper} package from github.</p>
+<p>I assume you already have R (and probably an IDE like RStudio) installed. Open this up and install the development version of the <a href="https://github.com/bnosac/audio.whisper">audio.whisper</a> package from github.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install remotes to install from github</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>) </span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install remotes if you don't have it already</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("remotes") </span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install audio.whisper to do transcription</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install audio.whisper from github</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"bnosac/audio.whisper"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -303,38 +307,64 @@ Note
 </section>
 <section id="transcribe-example-file" class="level3">
 <h3 class="anchored" data-anchor-id="transcribe-example-file">Transcribe example file</h3>
-<p>The package comes with an example audio file in the proper format. Let’s load it from file using <code>system.file()</code> and then transcribe it using <code>predict()</code>.</p>
+<p>The package comes with an example audio file in the proper format, which contains 11 seconds of a speech by John F. Kennedy Jr.&nbsp;Let’s load it from file using <code>system.file()</code> and then transcribe it using <code>predict()</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Construct file path to example audio file in package data</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>jfk <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"audio.whisper"</span>, <span class="st">"samples"</span>, <span class="st">"jfk.wav"</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Run English transcription using the downloaded whisper model</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> jfk, <span class="at">language =</span> <span class="st">"en"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="do">## system_info: n_threads = 1 / 16 | AVX = 1 | AVX2 = 1 | AVX512 = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | METAL = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | CUDA = 0 | COREML = 0 | OPENVINO = 0 | </span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Processing C:/GitHub/affcomlab/renv/library/windows/R-4.4/x86_64-w64-mingw32/audio.whisper/samples/jfk.wav (176000 samples, 11 sec), lang = en, translate = 0, timestamps = 0, beam_size = -1, best_of = 5</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="do">## [00:00:00.000 --&gt; 00:00:11.000]   And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print transcript</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>out<span class="sc">$</span>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">segment</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">segment_offset</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">from</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">to</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">00:00:00.000</td>
+<td style="text-align: left;">00:00:11.000</td>
+<td style="text-align: left;">And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
 </div>
 <p>The results look good! But we can see how long this took by digging into the output object.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Examine the time elapsed to process this audio</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>out<span class="sc">$</span>timing</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="do">## $transcription_start</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "2024-08-14 12:47:16 CDT"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "2024-08-15 12:30:48 CDT"</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="do">## $transcription_end</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "2024-08-14 13:08:06 CDT"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "2024-08-15 12:51:48 CDT"</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="do">## $transcription_duration</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Time difference of 20.84114 mins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Time difference of 20.98786 mins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Yikes, nearly 11 minutes to process just 11 seconds of audio. That’s motivation to work on the CUDA version to speed things up. But before we move on to that, I’ll first show you how to extract audio from a video file and convert it to the format that Whisper wants.</p>
+<p>Yikes, 21 minutes to process just 11 seconds of audio. That’s motivation to work on the CUDA version to speed things up. But before we move on to that, I’ll first show you how to extract audio from a video file and convert it to the format that Whisper wants.</p>
 </section>
 <section id="extract-and-format-audio" class="level3">
 <h3 class="anchored" data-anchor-id="extract-and-format-audio">Extract and format audio</h3>
-<p>Download the example <a href="mlk.mp4">mlk.mp4</a> video file, which is 12 seconds of Martin Luther King, Jr.’s famous “I have a dream” speech. This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the <code>av_audio_convert()</code> function from the <code>av</code> package.</p>
+<p>Download the example <a href="mlk.mp4">mlk.mp4</a> video file, which contains 12 seconds of a speech by Martin Luther King, Jr.&nbsp;This video contains an audio stream in AAC format with a sampling rate of 44.1 kHz. However, whisper requires audio files in WAV format with a sampling rate of 16 kHz. We can extract and convert it in one step using the <code>av_audio_convert()</code> function from the <code>av</code> package.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install package from CRAN</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("av")</span></span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install av package if you don't have it already</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("av")</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load package from library</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(av)</span>
@@ -352,10 +382,42 @@ Note
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run English transcription using the downloaded whisper model</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>out2 <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> <span class="st">"mlk.wav"</span>, <span class="at">language =</span> <span class="st">"en"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="do">## system_info: n_threads = 1 / 16 | AVX = 1 | AVX2 = 1 | AVX512 = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | METAL = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | CUDA = 0 | COREML = 0 | OPENVINO = 0 | </span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Processing mlk.wav (192076 samples, 12.0048 sec), lang = en, translate = 0, timestamps = 0, beam_size = -1, best_of = 5</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [00:00:00.000 --&gt; 00:00:02.000]   I have a dream.</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [00:00:02.000 --&gt; 00:00:12.000]   But one day, this nation will rise up, live up the true meaning of its creed.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Print transcript</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>out2<span class="sc">$</span>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">segment</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">segment_offset</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">from</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">to</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">00:00:00.000</td>
+<td style="text-align: left;">00:00:02.000</td>
+<td style="text-align: left;">I have a dream.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">00:00:02.000</td>
+<td style="text-align: left;">00:00:12.000</td>
+<td style="text-align: left;">But one day, this nation will rise up, live up the true meaning of its creed.</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
 </div>
 <p>Not perfect (swapped “that” for “but” and omitted an “and”) but pretty good. And this only the base model - it might do better with a larger model, but for time’s sake I’ll leave that until after we get CUDA working in Part 2.</p>
 <p><em>Part 2 coming soon!</em></p>
