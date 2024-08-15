@@ -2,5 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+*/.DS_Store
 /posts/dynamos/valence_tidy.rds
 /.quarto/
+/posts/whisper2024/ggml-base.bin
