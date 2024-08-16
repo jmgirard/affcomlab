@@ -175,7 +175,7 @@ out <- readRDS("C:/Users/jeffg/malanga.rds")
 out$data |> kableExtra::kbl() |> kableExtra::kable_styling()
 ```
 
-The results look really good despite the background noise. And check out the timing.
+The results look really good despite the background noise. The only errors I noticed were line 11, I think he says "princess shaped" rather than "princessed" (though I could be wrong) and in line 16, I can't hear him say "Thank you." so that may have been hallucinated (or perhaps in the background). Not bad at all. And check out the timing.
 
 ```{r}
 #| collapse: true
