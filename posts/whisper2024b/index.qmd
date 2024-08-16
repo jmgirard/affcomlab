@@ -24,7 +24,7 @@ Before we dive into things, I'll provide a brief overview of all the steps.
 1. Install the CUDA Toolkit for WSL on Ubuntu
 1. Install R and dependency packages on Ubuntu
 1. Install audio.whisper R package with CUDA support on Ubuntu
-1. Test it out
+1. Test and time the model
 
 ## Check for CUDA Support
 
@@ -137,7 +137,7 @@ out$timing
 
 ### Large Model and Long Audio Clip
 
-With such a boost in speed, we can afford to try a larger model (e.g., `"large-v3"`) on a longer audio clip (e.g., a 1.35 min poetry reading by Gerard Malanga that is rather noisy and therefore a good test of the model's accuracy in real-world settings). This is also a chance to show how to process a file downloaded from the internet, in case that is of interest to any readers. We'll use the following commands in the R console in Ubuntu:
+With such a boost in speed, we can afford to try a larger model (e.g., `"large-v3"`) on a longer audio clip (e.g., a 1.35 min [poetry reading](https://ubu.com/media/sound/malanga_gerard/archives/Malanga-Gerard_Archives_01-Gerard-Malanga_To-The-Young-Model-Name-Unknown.mp3) by Gerard Malanga that is rather noisy and therefore a good test of the model's accuracy in real-world settings). This is also a chance to show how to process a file downloaded from the internet, in case that is of interest to any readers. We'll use the following commands in the R console in Ubuntu:
 
 ```r
 # Load package from library (it was installed earlier via apt)

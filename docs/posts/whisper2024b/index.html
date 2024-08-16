@@ -255,7 +255,7 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <li>Install the CUDA Toolkit for WSL on Ubuntu</li>
 <li>Install R and dependency packages on Ubuntu</li>
 <li>Install audio.whisper R package with CUDA support on Ubuntu</li>
-<li>Test it out</li>
+<li>Test and time the model</li>
 </ol>
 </section>
 <section id="check-for-cuda-support" class="level2">
@@ -423,7 +423,7 @@ Note
 </section>
 <section id="large-model-and-long-audio-clip" class="level3">
 <h3 class="anchored" data-anchor-id="large-model-and-long-audio-clip">Large Model and Long Audio Clip</h3>
-<p>With such a boost in speed, we can afford to try a larger model (e.g., <code>"large-v3"</code>) on a longer audio clip (e.g., a 1.35 min poetry reading by Gerard Malanga that is rather noisy and therefore a good test of the model’s accuracy in real-world settings). This is also a chance to show how to process a file downloaded from the internet, in case that is of interest to any readers. We’ll use the following commands in the R console in Ubuntu:</p>
+<p>With such a boost in speed, we can afford to try a larger model (e.g., <code>"large-v3"</code>) on a longer audio clip (e.g., a 1.35 min <a href="https://ubu.com/media/sound/malanga_gerard/archives/Malanga-Gerard_Archives_01-Gerard-Malanga_To-The-Young-Model-Name-Unknown.mp3">poetry reading</a> by Gerard Malanga that is rather noisy and therefore a good test of the model’s accuracy in real-world settings). This is also a chance to show how to process a file downloaded from the internet, in case that is of interest to any readers. We’ll use the following commands in the R console in Ubuntu:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load package from library (it was installed earlier via apt)</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(av)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
