@@ -15,7 +15,11 @@ categories:
 
 In much of my work, I study how people communicate through verbal and nonverbal behavior. To study verbal behavior, it is often necessary to generate *transcripts*, which are written records of the words that were spoken. Transcriptions can be done manually (i.e., by a person) and assisted through the use of behavioral annotation software like [ELAN](https://archive.mpi.nl/tla/elan) or [ANVIL](https://anvil-software.de) or subtitle generation and editing software like [Aegisub](https://aegisub.org/) or [Subtitld](https://www.subtitld.org/en). However, new tools based on artificial intelligence (AI) can be much more efficient and scalable, albeit at some cost to accuracy.
 
-In this blog post, I will provide a tutorial on how to set up and use OpenAI's free [Whisper](https://openai.com/index/whisper/) algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with [CUDA](https://developer.nvidia.com/about-cuda). Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.
+In this blog post, I will provide a tutorial on how to set up and use OpenAI's free [Whisper](https://openai.com/index/whisper/) model to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with [CUDA](https://developer.nvidia.com/about-cuda). Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.
+
+:::{.callout-note}
+Although the Whisper model comes from OpenAI, the approach described here will actually run it locally, which means your audio files will not need to be sent to any third parties. This makes it usable for private and sensitive (e.g., patient) data!
+:::
 
 ## Quickstart (easy setup, slow processing)
 
@@ -35,7 +39,7 @@ remotes::install_github("bnosac/audio.whisper")
 
 ### Download whisper model
 
-Load this new package and download one of the whisper models: `"tiny"`, `"base"`, `"small"`, `"medium"`, or `"large-v3"`. Earlier entries on that list are smaller (to download and hold in RAM), faster, and less accurate whereas later entries are larger, slower, and more accurate. There are also English-only versions of all but the large model, which end in `".en"` as in `"base.en"`, and may these may be more efficient if you know that all speech will be in English. You can learn more about these models via `?whisper_download_model`. For this tutorial, we will go with the `"base"` model.
+Load this new package and download one of the whisper models: `"tiny"`, `"base"`, `"small"`, `"medium"`, or `"large-v3"`. Earlier entries on that list are smaller (to download and hold in RAM), faster, and less accurate whereas later entries are larger, slower, and more accurate. There are also English-only versions of all but the large model, which end in `".en"` as in `"base.en"`, and these may be more efficient if you know that all speech will be in English. You can learn more about these models via `?whisper_download_model`. For this tutorial, we will go with the `"base"` model.
 
 ```{r}
 # Load package from library

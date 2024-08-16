@@ -240,7 +240,20 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>In much of my work, I study how people communicate through verbal and nonverbal behavior. To study verbal behavior, it is often necessary to generate <em>transcripts</em>, which are written records of the words that were spoken. Transcriptions can be done manually (i.e., by a person) and assisted through the use of behavioral annotation software like <a href="https://archive.mpi.nl/tla/elan">ELAN</a> or <a href="https://anvil-software.de">ANVIL</a> or subtitle generation and editing software like <a href="https://aegisub.org/">Aegisub</a> or <a href="https://www.subtitld.org/en">Subtitld</a>. However, new tools based on artificial intelligence (AI) can be much more efficient and scalable, albeit at some cost to accuracy.</p>
-<p>In this blog post, I will provide a tutorial on how to set up and use OpenAI’s free <a href="https://openai.com/index/whisper/">Whisper</a> algorithm to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with <a href="https://developer.nvidia.com/about-cuda">CUDA</a>. Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.</p>
+<p>In this blog post, I will provide a tutorial on how to set up and use OpenAI’s free <a href="https://openai.com/index/whisper/">Whisper</a> model to generate automatic transcriptions of audio files (either recorded originally as audio or extracted from video files). I will first show you how to quickly install the audio.whisper R package and transcribe an example file. However, the processing will be very slow and we can do much, much better if we offload some of the work to a dedicated graphics card, such as an Nvidia card with <a href="https://developer.nvidia.com/about-cuda">CUDA</a>. Enabling this takes some technical work, especially on Windows, but is worth the investment if you plan to process a lot of files. This technical work will be described in Part 2.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although the Whisper model comes from OpenAI, the approach described here will actually run it locally, which means your audio files will not need to be sent to any third parties. This makes it usable for private and sensitive (e.g., patient) data!</p>
+</div>
+</div>
 </section>
 <section id="quickstart-easy-setup-slow-processing" class="level2">
 <h2 class="anchored" data-anchor-id="quickstart-easy-setup-slow-processing">Quickstart (easy setup, slow processing)</h2>
@@ -257,7 +270,7 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </section>
 <section id="download-whisper-model" class="level3">
 <h3 class="anchored" data-anchor-id="download-whisper-model">Download whisper model</h3>
-<p>Load this new package and download one of the whisper models: <code>"tiny"</code>, <code>"base"</code>, <code>"small"</code>, <code>"medium"</code>, or <code>"large-v3"</code>. Earlier entries on that list are smaller (to download and hold in RAM), faster, and less accurate whereas later entries are larger, slower, and more accurate. There are also English-only versions of all but the large model, which end in <code>".en"</code> as in <code>"base.en"</code>, and may these may be more efficient if you know that all speech will be in English. You can learn more about these models via <code>?whisper_download_model</code>. For this tutorial, we will go with the <code>"base"</code> model.</p>
+<p>Load this new package and download one of the whisper models: <code>"tiny"</code>, <code>"base"</code>, <code>"small"</code>, <code>"medium"</code>, or <code>"large-v3"</code>. Earlier entries on that list are smaller (to download and hold in RAM), faster, and less accurate whereas later entries are larger, slower, and more accurate. There are also English-only versions of all but the large model, which end in <code>".en"</code> as in <code>"base.en"</code>, and these may be more efficient if you know that all speech will be in English. You can learn more about these models via <code>?whisper_download_model</code>. For this tutorial, we will go with the <code>"base"</code> model.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load package from library</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(audio.whisper)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
