@@ -153,4 +153,6 @@ out2$data |> kableExtra::kbl() |> kableExtra::kable_styling()
 
 Not perfect (swapped "that" for "but" and omitted an "and") but pretty good. And this only the base model - it might do better with a larger model, but for time's sake I'll leave that until after we get CUDA working in Part 2.
 
-*Part 2 coming soon!*
+::: {.text-center}
+<a href="../whisper2024/index.qmd" class="btn btn-primary mt-5" role="button" >Continue to Part 2&nbsp;&nbsp;&raquo;</a>
+:::

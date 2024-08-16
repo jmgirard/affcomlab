@@ -45,6 +45,29 @@
     ]
   },
   {
+    "listing": "/news.html",
+    "items": [
+      "/posts/whisper2024b/index.html",
+      "/posts/whisper2024/index.html",
+      "/posts/mmm2024/index.html",
+      "/posts/aps2024/index.html",
+      "/posts/hitop2024/index.html",
+      "/posts/sas2024/index.html",
+      "/posts/postdoc2024/index.html",
+      "/posts/recruitment2024/index.html",
+      "/posts/dynamos/index.html",
+      "/posts/mvac2023/index.html",
+      "/posts/gpsp2023/index.html",
+      "/posts/rowwise2023/index.html",
+      "/posts/moderation2022/index.html",
+      "/posts/vail2022/index.html",
+      "/posts/google2022/index.html",
+      "/posts/suicideR21/index.html",
+      "/posts/recruitment2023/index.html",
+      "/posts/dischargeR01/index.html"
+    ]
+  },
+  {
     "listing": "/people.html",
     "items": [
       "/people/staff/girard_jeffrey.html",
@@ -77,28 +100,6 @@
       "/people/alumni/sall_lauryn.html",
       "/people/alumni/swift_anna.html",
       "/people/alumni/white_addison.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/posts/whisper2024/index.html",
-      "/posts/mmm2024/index.html",
-      "/posts/aps2024/index.html",
-      "/posts/hitop2024/index.html",
-      "/posts/sas2024/index.html",
-      "/posts/postdoc2024/index.html",
-      "/posts/recruitment2024/index.html",
-      "/posts/dynamos/index.html",
-      "/posts/mvac2023/index.html",
-      "/posts/gpsp2023/index.html",
-      "/posts/rowwise2023/index.html",
-      "/posts/moderation2022/index.html",
-      "/posts/vail2022/index.html",
-      "/posts/google2022/index.html",
-      "/posts/suicideR21/index.html",
-      "/posts/recruitment2023/index.html",
-      "/posts/dischargeR01/index.html"
     ]
   }
 ]
