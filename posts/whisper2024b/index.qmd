@@ -28,7 +28,7 @@ Before we dive into things, I'll provide a brief overview of all the steps.
 
 ## Check for CUDA Support
 
-This post assumes that you are using the Windows operating system and that your computer's graphics card supports [CUDA](https://developer.nvidia.com/cuda-faq). To check that this is the case, first look up your graphics card's model number. An easy way to do this is on Windows 10/11 is to click on the desktop search bar (bottom-left of the screen next to the windows icon) and type in "Device Manager." Then click the arrow next to "Display adapters" and find your graphics card's model name. On my computer, it says "NVIDIA GeForce RTX 2060." Then go to  [this link](https://developer.nvidia.com/cuda-gpus) and click the "CUDA-Enabled NVIDIA Quadro and NVIDIA RTX" and "CUDA-Enabled GeForce and TITAN Products" blocks to open their accordions. Then search for your graphics card's model number (the left tables are for desktop cards and the right tables are for notebook cards). I found "GeForce RTX 2060" on the list under GeForce and TITAN Products with a compute capability of 7.5. Thus, my card is supported!
+This post assumes that you are using the Windows operating system and that your computer's graphics card supports [CUDA](https://developer.nvidia.com/cuda-faq). To check that this is the case, first look up your graphics card's model number. An easy way to do this on Windows 10/11 is to click on the desktop search bar (bottom-left of the screen next to the windows icon) and type in "Device Manager." Then click the arrow next to "Display adapters" and find your graphics card's model name. On my computer, it says "NVIDIA GeForce RTX 2060." Then go to  [this link](https://developer.nvidia.com/cuda-gpus) and click the "CUDA-Enabled NVIDIA Quadro and NVIDIA RTX" and "CUDA-Enabled GeForce and TITAN Products" blocks to open their accordions. Then search for your graphics card's model number (the left tables are for desktop cards and the right tables are for notebook cards). I found "GeForce RTX 2060" on the list under GeForce and TITAN Products with a compute capability of 7.5. Thus, my card is supported!
 
 ## Install the Newest NVIDIA Graphics Driver
 
@@ -36,11 +36,11 @@ Download and install the newest graphics driver for your card from [NVIDIA](http
 
 ## Install and Update the Windows Subsystem for Linux
 
-Open the Microsoft Store app (e.g., using the desktop search bar) and search for the "Windows Subsystem for Linux." If it doesn't come up in the search results, you may already have it installed - you can check this by clicking the "Library" button on the left sidebar in the app and searching for it there. If it does come up, click on the Install button. It may be a good idea to restart your computer after it finishes installing. Then open the Command Prompt app (e.g., using the desktop search bar) and enter the following command: `wsl --update`. This will ensure that you have the most recent version of WSL2 installed.
+Open the Microsoft Store app (e.g., using the desktop search bar) and search for the "Windows Subsystem for Linux." If it doesn't come up in the search results, you may already have it installed - you can check this by clicking the "Library" button on the left sidebar in the app and searching for it there. If it does come up, click on the Install button. If you can't find it, then open the Command Prompt app (e.g., using the desktop search bar) and type or paste the following command: `wsl --install`. After it install using any method, it will ask you to restart your computer. Once restarted, open the Command Prompt app again and type or paste the following command: `wsl --update`. This will ensure that you have the most recent version of WSL2 installed.
 
 ## Install and Setup Ubuntu
 
-In the Command Prompt app, enter the following command: `wsl --install Ubuntu`. This will install the Ubuntu Linux operating system over the course of several minutes. After installation, it will prompt you to create a UNIX username and password. Use whatever you want but don't lose this information as you will need it again later. 
+In the Command Prompt app, type or paste the following command: `wsl --install Ubuntu`. This will install the Ubuntu Linux operating system over the course of several minutes. After installation, it will prompt you to create a UNIX username and password. Use whatever you want but don't lose this information as you will need it again later. 
 
 ## Install the CUDA Toolkit for WSL
 
@@ -70,7 +70,7 @@ If you get timeout errors when trying to install things on WSL, check to make su
 
 ## Install R on Ubuntu
 
-In the Ubuntu console, enter or paste the following commands to install R and other packages commonly used by R. You may have to hit ENTER and enter `Y` several times when prompted to do so.
+In the Ubuntu console, enter or paste the following commands to install R and other packages commonly used by R. You may have to hit ENTER and type `Y` several times when prompted to do so.
 
 ```default
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
@@ -84,7 +84,7 @@ sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av
 
 ## Install audio.whisper with CUDA Support on Ubuntu
 
-In the Ubuntu console, enter `sudo R` to open the R console. You will then need to set several environmental variables before installing the audio.whisper package from GitHub. Do so by entering or pasting the following commands into the R console:
+In the Ubuntu console, type or paste the following command: `sudo R` to open the R console. You will then need to set several environmental variables before installing the audio.whisper package from GitHub. Do so by entering or pasting the following commands into the R console:
 
 ```r
 Sys.setenv(PATH = sprintf("%s:/usr/local/cuda-12.6/bin", Sys.getenv("PATH")))
