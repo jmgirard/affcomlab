@@ -47,7 +47,6 @@ In the Command Prompt app, type or paste the following command: `wsl --install U
 In the Ubuntu console (which is opened automatically after Ubuntu is installed), enter or paste the following commands to install the CUDA Toolkit for WSL-Ubuntu. It will ask you to enter your password (created in the previous step) and may take several minutes to complete.
 
 ```default
-<<<<<<< HEAD
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
@@ -57,26 +56,6 @@ sudo apt-get -y install cuda-toolkit
 :::{.callout-important}
 Do not install any NVIDIA graphics drivers on Ubuntu directly (i.e., install `cuda-toolkit` and not `cuda` or `cuda-drivers`). Ubuntu will inherit the Windows drivers you installed in a previous step via WSL.
 
-=======
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
-sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda-repo-wsl-ubuntu-12-6-local_12.6.0-1_amd64.deb
-sudo dpkg -i cuda-repo-wsl-ubuntu-12-6-local_12.6.0-1_amd64.deb
-sudo cp /var/cuda-repo-wsl-ubuntu-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-6
-```
-
-:::{.callout-note}
-The command above may become outdated in the future (e.g., installing an older version of the toolkit). To find the most recent command, visit [this page from NVIDIA](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local).
-:::
-
-:::{.callout-important}
-Do not install any NVIDIA graphics drivers on Ubuntu directly. Ubuntu will inherit the Windows drivers you installed in a previous step via WSL.
-:::
-
-:::{.callout-important}
->>>>>>> 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
 If you get timeout errors when trying to install things on WSL, check to make sure that you are not connected to a VPN on Windows as this can mess things up.
 :::
 
@@ -88,17 +67,10 @@ In the Ubuntu console, enter or paste the following commands to install R and ot
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt install -y --no-install-recommends r-base
-<<<<<<< HEAD
-sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev gfortran cmake libavfilter-dev
-sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
-sudo apt upgrade
-sudo apt install -y --no-install-recommends r-cran-devtools r-cran-tidyverse r-cran-av
-=======
 sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev
 sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
 sudo apt upgrade
-sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av
->>>>>>> 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
+sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av r-cran-tidyverse
 ```
 
 ## Install audio.whisper with CUDA Support on Ubuntu
@@ -106,24 +78,12 @@ sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av
 In the Ubuntu console, type or paste the following command: `sudo R` to open the R console. You will then need to set several environmental variables before installing the audio.whisper package from GitHub. Do so by entering or pasting the following commands into the R console:
 
 ```r
-<<<<<<< HEAD
 Sys.setenv(PATH = sprintf("%s:/usr/local/cuda/bin", Sys.getenv("PATH")))
 Sys.setenv(CUDA_PATH = "/usr/local/cuda")
-=======
-Sys.setenv(PATH = sprintf("%s:/usr/local/cuda-12.6/bin", Sys.getenv("PATH")))
-Sys.setenv(CUDA_PATH = "/usr/local/cuda-12.6")
->>>>>>> 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
 Sys.setenv(WHISPER_CUBLAS = "1")
 remotes::install_github("bnosac/audio.whisper")
 ```
 
-<<<<<<< HEAD
-=======
-:::{.callout-note}
-If you followed the instructions in the previous Note callout and installed a version of the CUDA Toolkit newer than 12.6, you will need to put the newer version number into the commands above (e.g., `/usr/local/cuda-12.7`).
-:::
-
->>>>>>> 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
 ## Test and Time the Model
 
 ### Base Model and Short Audio Clip
@@ -212,11 +172,7 @@ out$timing
 
 ## Wrap-up
 
-<<<<<<< HEAD
 If you want to save the transcript, you can enter the following command in the R console: `saveRDS(out, "malanga.rds")` and it will create a serialized R data file containing all the transcript data (e.g., text and time stamps). By default, this file will be saved in the same folder on your Windows file system that you ran the Command Prompt app from (e.g., "C:/Users/jeffg"). However, you can save anywhere using WSL's `/mnt/` system. For example, if you wanted to save it to "C:/Users/jeffg/Desktop", then you would use `"/mnt/c/users/jeffg/Desktop/malanga.rds"` as the second argument to `saveRDS()`. Or if you wanted to save it to a mapped network drive like "Z:/affcomlab/transcription", then you would use `"/mnt/z/affcomlab/transcription/malanga.rds"`.
-=======
-If you want to save the transcript, you can enter the following command in the R console: `saveRDS(out, "malanga.rds")` and it will create a serialized R data file containing all the transcript data (e.g., text and time stamps). By default, this file will be saved in the same folder on your Windows file system that you ran the Command Prompt app from (e.g., "C:/Users/jeffg"). However, you can save anywhere using WSL's `/mnt/` system. For example, if you wanted to save it to "C:/Users/jeffg/Desktop", then you would use `"/mnt/c/jeffg/Desktop/malanga.rds"` as the second argument to `saveRDS()`. Or if you wanted to save it to a mapped network drive like "Z:/affcomlab/transcription", then you would use `"/mnt/z/affcomlab/transcription/malanga.rds"`.
->>>>>>> 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
 
 That wraps up this blog post. In the next part, I will discuss more practical aspects of using this technology. For example, I'll talk about how to generate a list of audio/videos files on your hard drive (or elsewhere) and then iterate over them to create transcripts from many files all at once.
 

@@ -188,6 +188,14 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
   <li><a href="#install-and-update-the-windows-subsystem-for-linux" id="toc-install-and-update-the-windows-subsystem-for-linux" class="nav-link" data-scroll-target="#install-and-update-the-windows-subsystem-for-linux">Install and Update the Windows Subsystem for Linux</a></li>
   <li><a href="#install-and-setup-ubuntu" id="toc-install-and-setup-ubuntu" class="nav-link" data-scroll-target="#install-and-setup-ubuntu">Install and Setup Ubuntu</a></li>
   <li><a href="#install-the-cuda-toolkit-for-wsl" id="toc-install-the-cuda-toolkit-for-wsl" class="nav-link" data-scroll-target="#install-the-cuda-toolkit-for-wsl">Install the CUDA Toolkit for WSL</a></li>
+  <li><a href="#install-r-on-ubuntu" id="toc-install-r-on-ubuntu" class="nav-link" data-scroll-target="#install-r-on-ubuntu">Install R on Ubuntu</a></li>
+  <li><a href="#install-audio.whisper-with-cuda-support-on-ubuntu" id="toc-install-audio.whisper-with-cuda-support-on-ubuntu" class="nav-link" data-scroll-target="#install-audio.whisper-with-cuda-support-on-ubuntu">Install audio.whisper with CUDA Support on Ubuntu</a></li>
+  <li><a href="#test-and-time-the-model" id="toc-test-and-time-the-model" class="nav-link" data-scroll-target="#test-and-time-the-model">Test and Time the Model</a>
+  <ul class="collapse">
+  <li><a href="#base-model-and-short-audio-clip" id="toc-base-model-and-short-audio-clip" class="nav-link" data-scroll-target="#base-model-and-short-audio-clip">Base Model and Short Audio Clip</a></li>
+  <li><a href="#large-model-and-long-audio-clip" id="toc-large-model-and-long-audio-clip" class="nav-link" data-scroll-target="#large-model-and-long-audio-clip">Large Model and Long Audio Clip</a></li>
+  </ul></li>
+  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up">Wrap-up</a></li>
   </ul>
 </nav>
     </div>
@@ -269,11 +277,10 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <section id="install-the-cuda-toolkit-for-wsl" class="level2">
 <h2 class="anchored" data-anchor-id="install-the-cuda-toolkit-for-wsl">Install the CUDA Toolkit for WSL</h2>
 <p>In the Ubuntu console (which is opened automatically after Ubuntu is installed), enter or paste the following commands to install the CUDA Toolkit for WSL-Ubuntu. It will ask you to enter your password (created in the previous step) and may take several minutes to complete.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sudo dpkg -i cuda-keyring_1.1-1_all.deb</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sudo apt-get update</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>sudo apt-get -y install cuda-toolkit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sudo dpkg -i cuda-keyring_1.1-1_all.deb</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sudo apt-get update</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sudo apt-get -y install cuda-toolkit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -285,83 +292,31 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>Do not install any NVIDIA graphics drivers on Ubuntu directly (i.e., install <code>cuda-toolkit</code> and not <code>cuda</code> or <code>cuda-drivers</code>). Ubuntu will inherit the Windows drivers you installed in a previous step via WSL.</p>
-<p>======= wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda-repo-wsl-ubuntu-12-6-local_12.6.0-1_amd64.deb sudo dpkg -i cuda-repo-wsl-ubuntu-12-6-local_12.6.0-1_amd64.deb sudo cp /var/cuda-repo-wsl-ubuntu-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/ sudo apt-get update sudo apt-get -y install cuda-toolkit-12-6</p>
-<pre><code>
-:::{.callout-note}
-The command above may become outdated in the future (e.g., installing an older version of the toolkit). To find the most recent command, visit [this page from NVIDIA](https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=WSL-Ubuntu&amp;target_version=2.0&amp;target_type=deb_local).
-:::
-
-:::{.callout-important}
-Do not install any NVIDIA graphics drivers on Ubuntu directly. Ubuntu will inherit the Windows drivers you installed in a previous step via WSL.
-:::
-
-:::{.callout-important}
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fe7002ed72d91ec89a57e444ef5ac63e80727ed
-If you get timeout errors when trying to install things on WSL, check to make sure that you are not connected to a VPN on Windows as this can mess things up.
-:::
-
-## Install R on Ubuntu
-
-In the Ubuntu console, enter or paste the following commands to install R and other packages commonly used by R. You may have to hit ENTER and type `Y` several times when prompted to do so.
-
-```default
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-sudo apt install -y --no-install-recommends r-base
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev gfortran cmake libavfilter-dev
-sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
-sudo apt upgrade
-sudo apt install -y --no-install-recommends r-cran-devtools r-cran-tidyverse r-cran-av
-=======
-sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev
-sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
-sudo apt upgrade
-sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fe7002ed72d91ec89a57e444ef5ac63e80727ed</code></pre>
+<p>If you get timeout errors when trying to install things on WSL, check to make sure that you are not connected to a VPN on Windows as this can mess things up.</p>
+</div>
+</div>
+</section>
+<section id="install-r-on-ubuntu" class="level2">
+<h2 class="anchored" data-anchor-id="install-r-on-ubuntu">Install R on Ubuntu</h2>
+<p>In the Ubuntu console, enter or paste the following commands to install R and other packages commonly used by R. You may have to hit ENTER and type <code>Y</code> several times when prompted to do so.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>sudo apt install -y --no-install-recommends r-base</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>sudo apt upgrade</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>sudo apt install -y --no-install-recommends r-cran-devtools r-cran-av r-cran-tidyverse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 <section id="install-audio.whisper-with-cuda-support-on-ubuntu" class="level2">
 <h2 class="anchored" data-anchor-id="install-audio.whisper-with-cuda-support-on-ubuntu">Install audio.whisper with CUDA Support on Ubuntu</h2>
 <p>In the Ubuntu console, type or paste the following command: <code>sudo R</code> to open the R console. You will then need to set several environmental variables before installing the audio.whisper package from GitHub. Do so by entering or pasting the following commands into the R console:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;</span><span class="er">&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">PATH =</span> <span class="fu">sprintf</span>(<span class="st">"%s:/usr/local/cuda/bin"</span>, <span class="fu">Sys.getenv</span>(<span class="st">"PATH"</span>)))</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">CUDA_PATH =</span> <span class="st">"/usr/local/cuda"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="sc">==</span><span class="er">=====</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">PATH =</span> <span class="fu">sprintf</span>(<span class="st">"%s:/usr/local/cuda-12.6/bin"</span>, <span class="fu">Sys.getenv</span>(<span class="st">"PATH"</span>)))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">CUDA_PATH =</span> <span class="st">"/usr/local/cuda-12.6"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span><span class="er">&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="dv">2</span>fe7002ed72d91ec89a57e444ef5ac63e80727ed</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">WHISPER_CUBLAS =</span> <span class="st">"1"</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"bnosac/audio.whisper"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">PATH =</span> <span class="fu">sprintf</span>(<span class="st">"%s:/usr/local/cuda/bin"</span>, <span class="fu">Sys.getenv</span>(<span class="st">"PATH"</span>)))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">CUDA_PATH =</span> <span class="st">"/usr/local/cuda"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">WHISPER_CUBLAS =</span> <span class="st">"1"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"bnosac/audio.whisper"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="head" class="level1">
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</h1>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you followed the instructions in the previous Note callout and installed a version of the CUDA Toolkit newer than 12.6, you will need to put the newer version number into the commands above (e.g., <code>/usr/local/cuda-12.7</code>).</p>
-</div>
-</div>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<p>2fe7002ed72d91ec89a57e444ef5ac63e80727ed ## Test and Time the Model</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<section id="test-and-time-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="test-and-time-the-model">Test and Time the Model</h2>
 <section id="base-model-and-short-audio-clip" class="level3">
 <h3 class="anchored" data-anchor-id="base-model-and-short-audio-clip">Base Model and Short Audio Clip</h3>
 <p>In the R console, load the audio.whisper package and try it out on the JFK clip that took so long to process in the previous blog post. Note that there will be one important change to the commands from before. This time, when we load the model using the <code>whisper()</code> function, we will add the <code>use_gpu = TRUE</code> argument.</p>
@@ -598,17 +553,14 @@ Note
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="do">## Time difference of 0.1988164 mins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
+</section>
 <section id="wrap-up" class="level2">
 <h2 class="anchored" data-anchor-id="wrap-up">Wrap-up</h2>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD If you want to save the transcript, you can enter the following command in the R console: <code>saveRDS(out, "malanga.rds")</code> and it will create a serialized R data file containing all the transcript data (e.g., text and time stamps). By default, this file will be saved in the same folder on your Windows file system that you ran the Command Prompt app from (e.g., “C:/Users/jeffg”). However, you can save anywhere using WSL’s <code>/mnt/</code> system. For example, if you wanted to save it to “C:/Users/jeffg/Desktop”, then you would use <code>"/mnt/c/users/jeffg/Desktop/malanga.rds"</code> as the second argument to <code>saveRDS()</code>. Or if you wanted to save it to a mapped network drive like “Z:/affcomlab/transcription”, then you would use <code>"/mnt/z/affcomlab/transcription/malanga.rds"</code>. ======= If you want to save the transcript, you can enter the following command in the R console: <code>saveRDS(out, "malanga.rds")</code> and it will create a serialized R data file containing all the transcript data (e.g., text and time stamps). By default, this file will be saved in the same folder on your Windows file system that you ran the Command Prompt app from (e.g., “C:/Users/jeffg”). However, you can save anywhere using WSL’s <code>/mnt/</code> system. For example, if you wanted to save it to “C:/Users/jeffg/Desktop”, then you would use <code>"/mnt/c/jeffg/Desktop/malanga.rds"</code> as the second argument to <code>saveRDS()</code>. Or if you wanted to save it to a mapped network drive like “Z:/affcomlab/transcription”, then you would use <code>"/mnt/z/affcomlab/transcription/malanga.rds"</code>. &gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fe7002ed72d91ec89a57e444ef5ac63e80727ed</p>
+<p>If you want to save the transcript, you can enter the following command in the R console: <code>saveRDS(out, "malanga.rds")</code> and it will create a serialized R data file containing all the transcript data (e.g., text and time stamps). By default, this file will be saved in the same folder on your Windows file system that you ran the Command Prompt app from (e.g., “C:/Users/jeffg”). However, you can save anywhere using WSL’s <code>/mnt/</code> system. For example, if you wanted to save it to “C:/Users/jeffg/Desktop”, then you would use <code>"/mnt/c/users/jeffg/Desktop/malanga.rds"</code> as the second argument to <code>saveRDS()</code>. Or if you wanted to save it to a mapped network drive like “Z:/affcomlab/transcription”, then you would use <code>"/mnt/z/affcomlab/transcription/malanga.rds"</code>.</p>
 <p>That wraps up this blog post. In the next part, I will discuss more practical aspects of using this technology. For example, I’ll talk about how to generate a list of audio/videos files on your hard drive (or elsewhere) and then iterate over them to create transcripts from many files all at once.</p>
 <p><em>Part 3 coming soon…</em></p>
 
 
-</section>
-</section>
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
