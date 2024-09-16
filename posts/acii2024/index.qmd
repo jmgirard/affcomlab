@@ -20,7 +20,7 @@ I co-organized a full-day workshop at [ACII 2024](https://acii-conf.net/2024/) o
 
 ### Slides
 
-![](Girard_Slides.pdf){width=100%}
+![](Girard_Slides.pdf){width=600 height=374}
 
 ### Recording
 
