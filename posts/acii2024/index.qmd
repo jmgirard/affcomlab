@@ -1,0 +1,29 @@
+---
+title: "ACII 2024 Conference"
+description: "Affective Computing and Intelligent Interaction"
+author: "Jeffrey Girard"
+date: "2024-09-15"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+I co-organized a full-day workshop at [ACII 2024](https://acii-conf.net/2024/) on "Embracing Ambiguity and Subjectivity in Emotion Research" (EASE). Please visit the [workshop website](https://ease.ewi.tudelft.nl/) for more information. I also gave an invited talk, described below.
+
+- Girard, J. M. (2024). *Theoretical foundations of ambiguity and subjectivity.* Invited talk presented at the Embracing Ambiguity and Subjectivity in Emotion Research Workshop, AAAC International Conference on Affective Computing and Intelligent Interaction (ACII), Glasgow, UK.
+
+### Slides
+
+![](Girard_Slides.pdf){width=100%}
+
+### Recording
+
+```{=html}
+<iframe id="kmsembed-1_3oqnkc0v" width="600" height="374" src="https://mediahub.ku.edu/embed/secure/iframe/entryId/1_3oqnkc0v/uiConfId/45147491/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Jeffrey Girard&#039;s Zoom Meeting"></iframe>
+```
