@@ -1,0 +1,45 @@
+---
+title: "Daiil Jun"
+sortby: "2"
+subtitle: "PhD Student"
+image: jun_daiil.webp
+toc: false
+resources: 
+  - "jun_cv.pdf"
+started: "Spring 2024"
+ended: "Current"
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: file-earmark-text
+      text: vitae
+      href: ./people/staff/jun_cv.pdf
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Graduate Students</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+:::
+
+## Biography
+Daiil Jun's research interests include heterogeneity of psychopathology, especially addictive behaviors and weight disorders. Specifically, he is interested in leveraging ecological momentary assessment (EMA) to understand mechanisms of craving in real-life environment in which emotional and interpersonal factors interact with craving for addictive behaviors.
+
+He completed his undergraduate Bachelor of Arts degree at Handong Global University in May 2020 and is currently a doctoral student in the Clinical Psychological Science program in the department of Psychology at the University of Kansas. He is a graduate research assistant (GRA) for the Kansas Data Science Consortium. He is also a member of the Affective Communication and Computing lab under Dr. Girard's mentorship with co-joining the Health Behavior and Technology lab under Dr. Fazzino's mentorship. 
+
+## Education
+
+- [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
+  PhD Student (Clinical Psychological Science), 2021–Current
+
+- [Handong Global University]{.fw-bold} | Pohang, South Korea<br />
+  BA in Counseling Psychology | 2013–2020
