@@ -1,0 +1,29 @@
+---
+title: "Are within- and between-session changes in distress associated with treatment outcomes? Findings from two clinical trials of exposure for eating disorders"
+type: "article"
+author: "Butler, Christian, et al."
+year: "2024"
+publication: "Behavior Research and Therapy"
+doi: "https://doi.org/10.1016/j.brat.2024.104577"
+toc: false
+categories:
+  - substantive
+  - clinical
+  - eating disorders
+  - longitudinal modeling
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Butler, R. M., Christian, C., Girard, J. M., Vanzhula, I. A., & Levinson, C. A. (2024). Are within- and between-session changes in distress associated with treatment outcomes? Findings from two clinical trials of imaginal exposure for eating disorders. *Behavior Research and Therapy, 180*, 104577.
+
+## Abstract
+
+Objective: Imaginal exposure is a novel intervention for eating disorders (EDs) that has been investigated as a method for targeting ED symptoms and fears. Research is needed to understand mechanisms of change during imaginal exposure for EDs, including whether within- and between-session distress reduction is related to treatment outcomes.
+
+Method: Study 1 tested four sessions of online imaginal exposure (N = 143). Study 2 examined combined imaginal and in vivo exposure, comprising six imaginal exposure sessions (N = 26). ED symptoms and fears were assessed pre- and posttreatment, and subjective distress and state anxiety were collected during sessions.
+
+Results: Subjective distress tended to increase within-session in both studies, and within-session reduction was not associated with change in ED symptoms or fears. In Study 1, between-session reduction of distress and state anxiety was associated with greater decreases in ED symptoms and fears pre-to posttreatment. In Study 2, between-session distress reduction occurred but was not related to outcomes.
+
+Conclusions: Within-session distress reduction may not promote change during exposure for EDs, whereas between-session distress reduction may be associated with better treatment outcomes. These findings corroborate research on distress reduction during exposure for anxiety disorders. Clinicians might consider approaches to exposure-based treatment that focus on distress tolerance and promote between-session distress reduction.

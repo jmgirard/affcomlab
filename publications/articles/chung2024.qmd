@@ -1,0 +1,24 @@
+---
+title: "Transdiagnostic modeling of clinician-rated symptoms in affective and non-affective psychotic disorders"
+type: "article"
+author: "Chung, Girard, et al."
+year: "2024"
+publication: "Journal of Psychopathology and Clinical Science"
+doi: "https://doi.org/10.31234/osf.io/uygte"
+materials: "https://osf.io/arvsf/"
+toc: false
+categories:
+  - substantive
+  - clinical
+  - psychosis
+  - transdiagnostic
+  - journal article
+---
+
+## Citation (APA 7)
+
+> Chung, Y., Girard, J. M., Ravichandran, C., Ongur, D., Cohen, B. M., Baker, J. T. (in press). Transdiagnostic modeling of clinician-rated symptoms in affective and non-affective psychotic disorders. *Journal of Psychopathology and Clinical Science.*
+
+## Abstract
+
+Prevailing factor models of psychosis are centered on schizophrenia-related disorders defined by the DSM and ICD, restricting generalizability to other clinical presentations featuring psychosis, even though affective psychoses are more common. This study aims to bridge this gap by conducting exploratory and confirmatory factor analyses, utilizing clinical ratings collected from patients with either affective or non-affective psychoses (n = 1042). Drawing from established clinical instruments, such as the Positive and Negative Syndrome Scale, Young Mania Rating Scale, and Montgomery-Åsberg Depression Rating Scale, a broad spectrum of core psychotic symptoms was considered for the model development. Among the candidate models considered, including correlated factors and multifactor models, a model with seven correlated factors encompassing positive symptoms, negative symptoms, depression, mania, disorganization, hostility, and anxiety was most interpretable with acceptable fit. The seven factors exhibited expected associations with external validators, were replicable through cross- validation, and were generalizable across affective and non-affective psychoses.
