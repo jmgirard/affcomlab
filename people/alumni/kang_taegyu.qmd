@@ -4,7 +4,7 @@ sortby: "Kang, Tae Gyu"
 subtitle: "Research Assistant"
 image: kang_taegyu.webp
 started: "Spring 2023"
-ended: "Current"
+ended: "Spring 2024"
 toc: false
 about:
   id: person-profile
@@ -16,7 +16,7 @@ about:
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
     <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
-    <li class="breadcrumb-item active">Research Assistants</li>
+    <li class="breadcrumb-item active">Alumni</li>
     <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
   </ol>
 </nav>
@@ -30,6 +30,7 @@ Tae Gyu (Lucas) Kang is an international student from South Korea and a senior o
 ## Semesters
 - Spring 2023, *Research Assistant*
 - Fall 2023, *Research Assistant*
+- Spring 2024, *Research Assistant*
 
 ## Education
 - **University of Kansas** | Lawrence, KS, USA<br />
