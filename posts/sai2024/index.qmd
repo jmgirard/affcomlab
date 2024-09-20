@@ -1,0 +1,23 @@
+---
+title: "SAI 2024 Workshop"
+description: "Social Artificial Intelligence Workshop"
+author: "Jeffrey Girard"
+date: "2024-09-20"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+I was invited to speak at the 2nd [Social Artificial Intelligence Workshop](https://www.socialaiglasgow.co.uk/events/2024-social-ai-workshop). It was a lot of fun and I am very grateful to the Social AI Group at University of Glasgow! Please find my slides below.
+
+- Girard, J. M. (2024). *Contextualizing social artificial intelligence for gender, culture, and more.* Invited talk presented at the 2nd Social Artificial Intelligence Workshop, University of Glasgow, Glasgow, UK.
+
+### Slides
+
+![](Girard_Slides.pdf){width=600 height=374}

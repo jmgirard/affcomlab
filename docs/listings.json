@@ -47,6 +47,7 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/sai2024/index.html",
       "/posts/acii2024/index.html",
       "/posts/whisper2024b/index.html",
       "/posts/whisper2024/index.html",
