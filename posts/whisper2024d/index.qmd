@@ -1,0 +1,96 @@
+---
+title: "AI Transcription from R using Whisper: Part 3"
+description: "Practical Matters"
+author: "Jeffrey Girard"
+date: "2024-08-26"
+image: whisper.webp
+draft: true
+categories:
+  - teaching
+  - audio
+  - AI
+---
+
+## Introduction
+
+In the [previous blog post](../whisper2024b/index.qmd), I discussed how to achieve considerable speed improvements by using CUDA and WSL2. In this blog post, I will discuss more practical matters like iterating over multiple audio files and combining their output into more human-readable formats like CSV or XLSX.
+
+## Startup
+
+Let's say you followed the instructions in Part 2 and have CUDA and WSL2 installed and working on your Windows machine. However, you have since closed the command prompt, restarted Windows, and forgotten half of the commands used before. So let's begin with a little refresher focused on returning to a previously installed setup.
+
+Open the Command Prompt (or Terminal) app on Windows as before and type or paste the command `wsl` to start Ubuntu back up. It's a good idea to occasionally update the software on your Ubuntu subsytem and you can do so by typing or pasting the following commands in the Ubuntu console: `sudo apt update` and `sudo apt -y upgrade`. You will need to type in the password you set up in Part 2. This is also a good time to install the *tidyverse* package since we will be using it later on in the blog post. You could open up R and use `install.packages()` but doing so will be slow as it will build the package from source; luckily, we already gained access to the c2d4u4.0+ repository in Part 2. So we can install our package much faster outside of R without needing to build it like so: `sudo apt install -y r-cran-tidyverse`. You can use this approach for any package on CRAN and they will be upgraded alongside your other apps when using `sudo apt upgrade`.
+
+Now you can launch back into R by typing or pasting the following command in the Ubuntu console: `sudo R`. (If you're ever in R but want to exit out to Ubuntu console again, just type the following command into the R console: `quit()`.)
+
+## Iteration
+
+During research, it is rare to have only a single audio file to transcribe; instead, we typically have many files that we want to process as a batch. This is called *iteration* and R is going to make it quite easy. First, we need to create a character vector that contains the filepath of each file we want to transcribe. Second, we need to create a function that will take in a single filepath and do all the processing we need, returning a data frame (or tibble) with the transcription results. Finally, we can iterate this function over each filepath in the vector from the first step and bind them all together to create one omnibus data frame that contains all the data (which can optionally be written to RDS, CSV, XLSX, etc.).
+
+### Find the files to process
+
+As an example, I have 22 video files from my [DynAMoS dataset](https://dynamos.mgb.org) in a folder located at `D:\DynAMoS`. Thus, to access these files from Ubuntu through WSL2, I need to refer to this path as `/mnt/d/dynamos`. Since these are all video files ending in .mp4, I can include that in my use of `list.files()` to avoid picking up other, irrelevant files in the folder.
+
+```{r}
+#| collapse: true
+
+# Step 1 - find the files
+files <- list.files(
+  path = "/mnt/d/dynamos",
+  pattern = ".mp4$",
+  full.names = TRUE
+)
+files
+names(files) <- files
+```
+
+### Create a function to process one file
+
+I'll now create a function to extract and convert an input file to 16 kHZ WAV, transcribe it, and format the output.
+
+```{r}
+#| eval: false
+#| message: false
+
+library(tidyverse)
+library(av)
+library(audio.whisper)
+model <- whisper("large-v3", use_gpu = TRUE)
+```
+
+```{r}
+process_audio <- function(infile, model) {
+  
+  wavfile <- str_replace(infile, ".mp4", ".wav")
+  
+  if (!file.exists(wavfile)) {
+    # Extract and format audio for whisper
+    wavfile <- 
+      av_audio_convert(
+        infile, 
+        output = wavfile, 
+        format = "wav", 
+        sample_rate = 16000,
+        channels = 2,
+        verbose = FALSE
+      )
+  }
+
+  # Transcribe audio
+  out <- predict(model, newdata = wavfile, language = "en", trace = FALSE)
+  
+  # Return transcription data frame
+  as.data.frame(out$data)
+}
+```
+
+```{r}
+# (x <- process_audio(files[[1]], model))
+```
+
+```{r}
+# alldf <- 
+#   map(files, \(x) process_audio(x, model), .progress = TRUE) |> 
+#   bind_rows(.id = "file")
+```
+
