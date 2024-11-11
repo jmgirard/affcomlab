@@ -14,28 +14,28 @@ toc: true
 
 ## Datasets
 
-- **DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis** (2023)<br />
+- **DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis**<br />
   A curated collection of affective movie clips (n = 22), metadata about those clips, and<br />
   ratings of the emotional content of those movie clips from research participants (n = 83)<br />
-  *Primary Article/Citation:* <https://jmgirard.github.io/dynamos/paper.html><br />
+  *Primary Article/Citation:* [Girard, Tie, & Liebenthal (2023)](https://affcom.ku.edu/publications/proceedings/girard2023a.html)<br />
   *Website/Request Access:* <https://dynamos.mgb.org>
 
-- **GFT: Group Formation Task Spontaneous Facial Expression Database** (2017)<br />
+- **GFT: Group Formation Task Spontaneous Facial Expression Database**<br />
   A 2D video database of spontaneous behavior during unscripted social interactions<br />
   Complete with frame-level FACS annotations of facial behavior (n = 96)<br />
-  *Primary Article/Citation:* <https://jmgirard.com/pubs/girard2017d/><br />
+  *Primary Article/Citation:* [Girard et al. (2017)](https://affcom.ku.edu/publications/proceedings/girard2017b.html)<br />
   *Website/Request Access:* <http://osf.io/7wcyz>
   
-- **MMSE/BP4D+: Multimodal Spontaneous Emotion Database** (2016)<br />
+- **MMSE/BP4D+: Multimodal Spontaneous Emotion Database**<br />
   An extension of BP4D that includes thermal and physiological data<br />
   Complete with frame-level FACS annotations of facial behavior (n = 140)<br />
-  *Primary Article/Citation:* <https://jmgirard.com/pubs/zhang2016/><br />
+  *Primary Article/Citation:* [Zhang et al. (2016)](https://affcom.ku.edu/publications/proceedings/zhang2016.html)<br />
   *Website/Request Access:* <http://bit.ly/2yg39Cn>
 
-- **BP4D: Binghamton-Pittsburgh 4D Spontaneous Emotion Database** (2014)<br />
+- **BP4D: Binghamton-Pittsburgh 4D Spontaneous Emotion Database**<br />
   A 3D video database of spontaneous behavior during emotion elicitation<br />
   Complete with frame-level FACS annotations of facial behavior (n = 41)<br />
-  *Primary Article/Citation:* <https://jmgirard.com/pubs/zhang2014/><br />
+  *Primary Article/Citation:* [Zhang et al. (2014)](https://affcom.ku.edu/publications/articles/girard2014c.html)<br />
   *Website/Request Access:* <http://bit.ly/2yg39Cn>
 
 ## Software
@@ -72,7 +72,7 @@ toc: true
 ### Developing
 - **varde** (2022)<br />
   R functions for decomposing variance in multilevel models<br />
-  *Source Code:* <https://github.com/jmgirard/varde>
+  *Source Code:* <https://github.com/affcomlab/varde>
   
 - **wcc** (2022)<br />
   R functions for windowed cross-correlation (synchrony) analyses<br />
@@ -89,15 +89,3 @@ toc: true
 - **agreement** (2018–2022)<br />
   R functions for inter-rater reliability<br />
   *Source Code:* <https://github.com/jmgirard/agreement>
-
-## Trainings
-
-- **Applied Machine Learning in R** (2021, 2022)<br />
-  Five-day workshop offered as part of the [Pittsburgh Summer Methodology Series](https://www.pittmethods.com)<br />
-  <https://pittmethods.github.io/appliedml>
-
-- **Introduction to R for Social Scientists** (2020, 2022)<br />
-  Three-day workshop offered as part of the [Pittsburgh Summer Methodology Series](https://www.pittmethods.com)<br />
-  <https://pittmethods.github.io/r4ss>
-
-<!-- ## Videos -->
