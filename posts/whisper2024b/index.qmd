@@ -9,10 +9,17 @@ categories:
   - teaching
   - audio
   - AI
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: whisper2024b
 ---
 
-## Introduction
+:::{.callout-warning}
+This post has been replaced by [a new one](../whisper2024c/index.qmd), which makes things considerably easier. I am keeping this one up mostly for posterity.
+:::
 
+## Introduction
 In a [previous blog post](../whisper2024/index.qmd), I discussed using the audio.whisper R package to do local, AI-based audio transcription. It worked well but was prohibitively slow (e.g., ~1 minute to process each second of audio). In this blog post, I will discuss how to achieve considerable speed improvements on Windows through a combination of hardware and software. Parts will be more technical but hang in there and I'll do my best to make it achievable. 
 
 Before we dive into things, I'll provide a brief overview of all the steps. 

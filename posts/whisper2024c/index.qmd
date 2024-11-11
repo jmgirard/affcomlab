@@ -9,6 +9,10 @@ categories:
   - teaching
   - audio
   - AI
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: whisper2024c
 ---
 
 ## Introduction
