@@ -19,6 +19,7 @@ listing:
     grid-columns: 3
     fields: [image, title, subtitle]
     grid-item-align: center
+    sort: sortby
     field-display-names: 
       started: "Started"
   - id: research-assistants

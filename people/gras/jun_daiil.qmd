@@ -1,6 +1,6 @@
 ---
 title: "Daiil Jun"
-sortby: "2"
+sortby: "Jun, Daiil"
 subtitle: "PhD Student"
 image: jun_daiil.webp
 toc: false

@@ -1,6 +1,6 @@
 ---
 title: "Aaron Simmons"
-sortby: "2"
+sortby: "Simmons, Aaron"
 subtitle: "PhD Student"
 image: simmons_aaron.webp
 toc: false

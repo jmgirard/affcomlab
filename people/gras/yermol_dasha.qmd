@@ -1,6 +1,6 @@
 ---
 title: "Dasha Yermol"
-sortby: "2"
+sortby: "Yermol, Dasha"
 subtitle: "PhD Student"
 image: yermol_dasha.png
 toc: false

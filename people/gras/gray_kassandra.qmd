@@ -1,6 +1,6 @@
 ---
 title: "Kassandra Gray"
-sortby: "2"
+sortby: "Gray, Kassandra"
 subtitle: "PhD Student"
 image: gray_kassandra.jpg
 toc: false

@@ -1,6 +1,6 @@
 ---
 title: "Yuanyuan Yang"
-sortby: "2"
+sortby: "Yang, Yuanyuan"
 subtitle: "PhD Student"
 image: yang_yuanyuan.webp
 toc: false
