@@ -15,6 +15,10 @@ comments:
     label: whisper2024c
 ---
 
+::: {.callout-note}
+You can view this blog post as a replacement for [the previous one](../whisper2024b/index.qmd) (unless you are interested in all the nitty-gritty details).
+:::
+
 ## Introduction
 
 In a [previous blog post](../whisper2024b/index.qmd) on AI Transcription, I discussed the performance benefits of moving to WSL2 for CUDA support on Windows. However, the process of setting up and using the virtual machine was very technical, which may be a barrier for many users. In this blog post, I will discuss the use of a technology called Docker to ease the setup and use of WSL2.
@@ -24,10 +28,6 @@ Docker is a tool that makes it easy to package and run applications in a "contai
 There are three main components to Docker: a Dockerfile, a Docker image, and a Docker container. To explain these, I will use a pizza analogy. Just like a chef might create a recipe that contains step-by-step instructions for preparing a pizza, a power user might create a **Dockerfile** that contains detailed and reproducible instructions for building and configuring a software environment. This recipe might then be followed in a food processing plant to produce many identical pizzas, which are then frozen for re-sale. Similarly, the Dockerfile instructions might be followed to "build" a **Docker image,** which contains all the resulting files and settings. Finally, a customer might purchase a frozen pizza, bring it home, and reheat it in their own oven for consumption. In much the same way, a user might download or "pull" a Docker image from the internet and "run" it as a **Docker container** on their own computer to use the desired application. The benefit of this approach is that the customer/user doesn't need to understand or even know about the recipe/Dockerfile instructions to enjoy the pizza/container! 
 
 I have played the role of chef or power user here and condensed the instructions from my previous blog post into a Dockerfile and built it into a Docker image that you can easily pull and run.
-
-::: {.callout-note}
-You can view this blog post as a replacement for the previous one (unless you are interested in all the nitty-gritty details).
-:::
 
 Before we dive into things, I'll provide a brief overview of all the steps. 
 
