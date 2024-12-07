@@ -1,0 +1,26 @@
+---
+title: "TIPS 2024 Conference"
+description: "Technology in Psychiatry Summit"
+author: "Jeffrey Girard"
+date: "2024-12-07"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: tips2024
+---
+
+Daiil and I are attending the [2024 TIPS Conference](https://mclean.org/tips) in Phoenix this weekend. His presentation is below. See you there!
+
+- Jun, D., Girard, J. M., Chung, Y., Liebenthal, E., & Baker, J. T. (2024). *Longitudinal analysis of speaking rate in patients with serious mental illness using daily diaries and dynamic structural equation modeling.* In J. M. Girard & E. Liebenthal (Chairs), Computational analysis and modeling of transdiagnostic psychiatric speech samples [Symposium]. Technology in Psychiatry Summit (TIPS), Phoenix, AZ.
+
+![](Jun_Slides.pdf){width=100% height=500px}
+

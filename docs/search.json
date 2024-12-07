@@ -3078,5 +3078,12 @@
     "title": "AI Transcription from R using Whisper: Part 3",
     "section": "Wrap-up",
     "text": "Wrap-up\nThat wraps up this blog post. In the next part, I will discuss more practical aspects of using this technology. For example, I’ll talk about how to generate a list of audio/videos files on your hard drive (or elsewhere) and then iterate over them to create transcripts from many files all at once.\nPart 4 coming soon…"
+  },
+  {
+    "objectID": "posts/tips2024/index.html",
+    "href": "posts/tips2024/index.html",
+    "title": "TIPS 2024 Conference",
+    "section": "",
+    "text": "Daiil and I are attending the 2024 TIPS Conference in Phoenix this weekend. His presentation is below. See you there!\n\nJun, D., Girard, J. M., Chung, Y., Liebenthal, E., & Baker, J. T. (2024). Longitudinal analysis of speaking rate in patients with serious mental illness using daily diaries and dynamic structural equation modeling. In J. M. Girard & E. Liebenthal (Chairs), Computational analysis and modeling of transdiagnostic psychiatric speech samples [Symposium]. Technology in Psychiatry Summit (TIPS), Phoenix, AZ."
   }
 ]
