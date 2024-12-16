@@ -42,22 +42,32 @@ toc: true
 
 ### Current Funding
 
-- *"Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices"*
-    - Gift, Google LLC
+- *"COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stress"*
+    - National Institutes of Health (COBRE)
     - **Girard** (PI)
-    - 11/2022
+    - 01/2025 – 12/2025
 
 - *"Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning"*
     - R01, National Institutes of Health (NIMH)
     - Baker (PI), Co-Is: **Girard**, Morency
     - 04/2021 – 02/2025
-    
+
+### Completed Funding
+
+- *"Kansas Data Science Training Pathways | An Integrated Model"*
+  - National Science Foundation (EPSCoR REI)
+  - **Girard** (PI)
+  - 01/2024 – 12/2024
+
+- *"Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices"*
+    - Googler-Initiated Grant, Google LLC
+    - **Girard** (PI)
+    - 11/2022
+
 - *"Multimodal Dynamics of Parent-Child Interactions and Suicide Risk"*
     - R21, National Institutes of Health (NIMH)
     - Burke (PI), Co-Is: **Girard**, Li, Morency
     - 09/2022 – 07/2023
-
-### Completed Funding
 
 - *"Towards Automated Multimodal Behavioral Screening for Depression"*
     - Pittsburgh Health Data Alliance (CMLH)
@@ -68,23 +78,6 @@ toc: true
     - National Science Foundation (IIS, SCH)
     - Cohn, Morency, Swartz (PIs), Co-Is: Bylsma, Fournier, **Girard**
     - 09/2020 – 08/2022
-
-### Pending Funding
-
-<!-- - *"Patient-focused Prediction of Dropout from PTSD Treatment"* -->
-<!--     - R21, National Institutes of Health (NIMH) -->
-<!--     - **Girard** (PI), Co-I: Sprunger -->
-<!--     - Not Scored, Currently in Revision -->
-
-<!-- - *"Naturalistic Probe for Dynamic Assessment of Emotional Reactivity"* -->
-<!--     - R01, National Institutes of Health (NIMH) -->
-<!--     - Liebenthal (PI), Co-Is: **Girard**, Tie  -->
-<!--     - Not Scored, Currently in Revision -->
-    
-- *"Dyadic Communication Dynamics in Hybrid In-Person/Remote Psychotherapy"*
-    - R01, National Institutes of Health (NIMH)
-    - **Girard** (PI), Co-Is: Bylsma, Cohn, Ilardi, Morency, Swartz
-    - Scored 14th Percentile, Awaiting Funding Decision
 
 ## Research Framework
 
