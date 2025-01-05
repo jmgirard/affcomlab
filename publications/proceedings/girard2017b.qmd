@@ -9,11 +9,8 @@ doi: "https://doi.org/10.1109/FG.2017.144"
 materials: "https://osf.io/7wcyz/"
 toc: false
 categories:
-  - methodological
-  - observational
-  - shared database
-  - nonverbal behavior
-  - emotion
+  - database
+  - nonverbal
   - proceeding
 ---
 

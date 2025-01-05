@@ -9,12 +9,9 @@ doi: "https://doi.org/10.1521/pedi_2019_33_374"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
   - interpersonal
-  - circumplex statistics
-  - personality disorder
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

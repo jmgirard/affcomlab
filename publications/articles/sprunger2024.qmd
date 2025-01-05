@@ -8,11 +8,8 @@ doi: "https://doi.org/10.1002/jts.23023"
 materials: "https://osf.io/xn4w9/"
 toc: false
 categories:
-  - substantive
   - clinical
-  - trauma
-  - bayesian statistics
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

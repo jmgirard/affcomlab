@@ -9,12 +9,9 @@ doi: "https://doi.org/10.1145/3382507.3418887"
 materials: "https://osf.io/umzar/"
 toc: false
 categories:
-  - substantive
-  - observational
-  - machine learning
-  - verbal behavior
-  - nonverbal behavior
-  - emotion
+  - verbal
+  - nonverbal
+  - affective
   - proceeding
 ---
 

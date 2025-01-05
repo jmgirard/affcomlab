@@ -9,7 +9,7 @@ doi: "https://doi.org/10.1016/j.adolescence.2017.09.006"
 materials: ""
 toc: false
 categories:
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

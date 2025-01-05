@@ -9,12 +9,10 @@ doi: "https://doi.org/10.1037/pas0000338"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
-  - observational
-  - personality
-  - emotion
-  - journal article
+  - affective
+  - interpersonal
+  - article
 ---
 
 ## Citation (APA 7)

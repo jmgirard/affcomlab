@@ -9,10 +9,8 @@ doi: "https://doi.org/10.3758/s13428-017-0915-5"
 materials: "https://osf.io/jcq5x/"
 toc: false
 categories:
-  - methodological
   - software
-  - observational
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

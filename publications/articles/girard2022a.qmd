@@ -9,14 +9,9 @@ doi: "https://doi.org/10.1016/j.schres.2021.06.040"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
-  - psychosis
-  - bipolar disorder
-  - verbal behavior
-  - machine learning
-  - bayesian statistics
-  - journal article
+  - verbal
+  - article
 ---
 
 ## Citation (APA 7)

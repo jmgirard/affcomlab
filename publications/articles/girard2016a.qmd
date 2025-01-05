@@ -9,9 +9,8 @@ doi: "https://doi.org/10.1177/1073191116635807"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - observational
-  - journal article
+  - tutorial
+  - article
 ---
 
 ## Citation (APA 7)

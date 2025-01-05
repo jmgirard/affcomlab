@@ -9,11 +9,8 @@ doi: "https://doi.org/10.1109/FG.2013.6553748"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
-  - nonverbal behavior
-  - machine learning
-  - depression
+  - nonverbal
   - proceeding
 ---
 

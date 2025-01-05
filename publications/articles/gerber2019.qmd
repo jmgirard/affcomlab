@@ -9,12 +9,9 @@ doi: "https://doi.org/10.1016/j.brat.2019.103477"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
   - interpersonal
-  - autism
-  - ema methods
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

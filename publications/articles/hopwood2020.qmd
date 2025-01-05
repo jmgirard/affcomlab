@@ -9,10 +9,8 @@ doi: "https://doi.org/10.1177/1073191118798916"
 materials: ""
 toc: false
 categories:
-  - methodological
   - interpersonal
-  - observational
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

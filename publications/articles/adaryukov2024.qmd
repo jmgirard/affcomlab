@@ -8,11 +8,8 @@ doi: "https://doi.org/10.31234/osf.io/j9yeq"
 materials: "https://osf.io/sfhm2/"
 toc: false
 categories:
-  - methodological
-  - language
-  - sentiment
-  - dreams
-  - journal article
+  - verbal
+  - article
 ---
 
 ## Citation (APA 7)

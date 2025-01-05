@@ -8,10 +8,8 @@ preprint: "https://jmgirard.github.io/dynamos/paper.html"
 materials: "https://dynamos.mgb.org"
 toc: false
 categories:
-  - methodological
-  - perception
-  - shared database
-  - emotion
+  - database
+  - affective
   - proceeding
 ---
 

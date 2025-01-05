@@ -9,12 +9,9 @@ doi: "https://doi.org/10.1016/j.comppsych.2017.06.014"
 materials: "https://osf.io/2ctzq/"
 toc: false
 categories:
-  - substantive
   - clinical
   - interpersonal
-  - personality disorder
-  - circumplex statistics
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

@@ -9,12 +9,10 @@ doi: "https://doi.org/10.1016/j.imavis.2014.06.002"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - shared database
-  - observational
-  - nonverbal behavior
-  - emotion
-  - journal article
+  - database
+  - nonverbal
+  - affective
+  - article
 ---
 
 ## Citation (APA 7)

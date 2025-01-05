@@ -9,11 +9,9 @@ doi: "https://doi.org/10.1016/j.copsyc.2014.12.010"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
-  - methodological
-  - depression
-  - journal article
+  - review
+  - article
 ---
 
 ## Citation (APA 7)

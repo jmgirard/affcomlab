@@ -9,11 +9,9 @@ doi: "https://doi.org/10.1007/s42761-020-00030-w"
 materials: "https://osf.io/k3g2e/"
 toc: false
 categories:
-  - substantive
-  - nonverbal behavior
-  - emotion
-  - bayesian statistics
-  - journal article
+  - nonverbal
+  - affective
+  - article
 ---
 
 ## Citation (APA 7)

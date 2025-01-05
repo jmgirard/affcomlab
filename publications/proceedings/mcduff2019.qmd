@@ -9,14 +9,7 @@ doi: "https://doi.org/10.1109/ACII.2019.8925503"
 materials: "https://osf.io/n4grd/"
 toc: false
 categories:
-  - substantive
-  - observational
-  - machine learning
-  - nonverbal behavior
-  - culture
-  - big data
-  - bayesian statistics
-  - emotion
+  - nonverbal
   - proceeding
 ---
 

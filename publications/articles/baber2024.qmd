@@ -7,11 +7,9 @@ publication: "Sleep"
 doi: "https://doi.org/10.1093/sleep/zsae210"
 toc: false
 categories:
-  - methodological
-  - language
-  - sentiment
-  - dreams
-  - journal article
+  - verbal
+  - affective
+  - article
 ---
 
 ## Citation (APA 7)

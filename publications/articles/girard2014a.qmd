@@ -9,12 +9,9 @@ doi: "https://doi.org/10.1016/j.imavis.2013.12.007"
 materials: ""
 toc: false
 categories:
-  - substantive
   - clinical
-  - depression
-  - nonverbal behavior
-  - machine learning
-  - journal article
+  - nonverbal
+  - article
 ---
 
 ## Citation (APA 7)

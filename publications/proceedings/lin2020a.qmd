@@ -9,11 +9,7 @@ doi: "http://ceur-ws.org/Vol-2614/"
 materials: "https://osf.io/bp7df/"
 toc: false
 categories:
-  - substantive
-  - observational
-  - machine learning
-  - nonverbal behavior
-  - emotion
+  - nonverbal
   - proceeding
 ---
 

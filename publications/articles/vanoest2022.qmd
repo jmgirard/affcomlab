@@ -9,9 +9,7 @@ doi: "https://doi.org/10.1037/met0000412"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - bayesian statistics
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

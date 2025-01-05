@@ -9,12 +9,7 @@ doi: "https://doi.org/10.1109/FG.2017.135"
 materials: "https://osf.io/4zxms/"
 toc: false
 categories:
-  - substantive
-  - observational
-  - big data
-  - culture
-  - nonverbal behavior
-  - emotion
+  - nonverbal
   - proceeding
 ---
 

@@ -10,12 +10,9 @@ doi: "https://doi.org/10.1111/jcpp.13343"
 materials: "https://osf.io/rtz7g/"
 toc: false
 categories:
-  - substantive
   - clinical
   - interpersonal
-  - bipolar disorder
-  - bayesian statistics
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

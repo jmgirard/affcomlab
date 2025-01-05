@@ -9,11 +9,8 @@ doi: "https://doi.org/10.1016/j.patrec.2014.10.004"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - observational
-  - machine learning
-  - nonverbal behavior
-  - journal article
+  - nonverbal
+  - article
 ---
 
 ## Citation (APA 7)

@@ -9,10 +9,8 @@ doi: "https://psycnet.apa.org/doi/10.1037/pha0000021"
 materials: ""
 toc: false
 categories:
-  - substantive
-  - observational
-  - nonverbal behavior
-  - journal article
+  - nonverbal
+  - article
 ---
 
 ## Citation (APA 7)

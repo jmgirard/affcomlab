@@ -7,11 +7,8 @@ publication: "Behavior Research and Therapy"
 doi: "https://doi.org/10.1016/j.brat.2024.104577"
 toc: false
 categories:
-  - substantive
   - clinical
-  - eating disorders
-  - longitudinal modeling
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

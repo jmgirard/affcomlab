@@ -7,11 +7,8 @@ publication: "Journal of Latinx Psychology"
 doi: "https://doi.org/10.1037/lat0000266"
 toc: false
 categories:
-  - substantive
   - clinical
-  - culture
-  - depression
-  - journal article
+  - article
 ---
 
 ## Citation (APA 7)

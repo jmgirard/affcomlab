@@ -9,10 +9,8 @@ doi: "https://dx.doi.org/10.1007/s10919-020-00350-2"
 materials: "https://osf.io/gewrp/"
 toc: false
 categories:
-  - substantive
-  - nonverbal behavior
-  - bayesian statistics
-  - journal article
+  - nonverbal
+  - article
 ---
 
 ## Citation (APA 7)

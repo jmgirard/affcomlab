@@ -9,14 +9,8 @@ doi: "https://doi.org/10.1007/s10919-016-0244-x"
 materials: "https://osf.io/wvj47/"
 toc: false
 categories:
-  - substantive
-  - observational
-  - nonverbal behavior
-  - machine learning
-  - big data
-  - culture
-  - emotion
-  - journal article
+  - nonverbal
+  - article
 ---
 
 ## Citation (APA 7)

@@ -9,9 +9,7 @@ doi: "https://doi.org/10.1109/FG.2015.7163106"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - nonverbal behavior
-  - machine learning
+  - nonverbal
   - proceeding
 ---
 

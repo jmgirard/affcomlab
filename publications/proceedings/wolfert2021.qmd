@@ -9,8 +9,6 @@ doi: "https://doi.org/10.1145/3462244.3479889"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - observational
   - proceeding
 ---
 

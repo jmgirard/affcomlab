@@ -9,10 +9,9 @@ doi: "https://doi.org/10.1109/CVPR.2016.374"
 materials: ""
 toc: false
 categories:
-  - methodological
-  - shared database
-  - nonverbal behavior
-  - emotion
+  - database
+  - nonverbal
+  - affective
   - proceeding
 ---
 
