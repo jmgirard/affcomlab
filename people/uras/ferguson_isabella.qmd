@@ -2,7 +2,7 @@
 title: "Isabella Ferguson"
 sortby: "Ferguson, Isabella"
 subtitle: "Research Assistant"
-image: placeholder.png
+image: ferguson_isabella.webp
 started: "Spring 2023"
 ended: "Current"
 toc: false
@@ -24,11 +24,13 @@ about:
 
 :::{#person-profile}
 ## Biography
-Coming soon
+I am currently a senior double majoring in behavioral neuroscience and psychology. My research interests include psychiatric medication research and diagnostic material for psychological disorders. My career goal is to pursue a medical doctorate and work as a psychiatrist in a private practice.
 
 
 ## Semesters
 
+- Spring 2025, *Research Assistant*
+- Fall 2024, *Research Assistant*
 - Spring 2024, *Research Assistant*
 
 ## Education
