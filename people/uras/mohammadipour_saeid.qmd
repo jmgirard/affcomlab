@@ -2,7 +2,7 @@
 title: "Saeid Reza Mohammadipour"
 sortby: "Mohammadipour, Saeid"
 subtitle: "Research Assistant"
-image: placeholder.png
+image: mohammadipour_saeid.webp
 started: "Fall 2023"
 ended: "Current"
 toc: false
@@ -24,13 +24,15 @@ about:
 
 :::{#person-profile}
 ## Biography
-Coming soon
+I like cookies!
 
 
 ## Semesters
 
-- Fall 2023, *Research Assistant*
+- Spring 2025, *Research Assistant*
+- Fall 2024, *Research Assistant*
 - Spring 2024, *Research Assistant*
+- Fall 2023, *Research Assistant*
 
 ## Education
 
