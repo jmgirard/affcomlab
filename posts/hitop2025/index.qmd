@@ -12,6 +12,10 @@ format:
   html:
     page-layout: full
     toc: false
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: hitop2025
 ---
 
 Daiil, Kassy, Jimin, and I will be attending the [2025 HiTOP Conference](https://www.hitop-system.org/hitop-2025-conference) in Denver next week. Our presentations are below. See you there!
@@ -22,4 +26,4 @@ Daiil, Kassy, Jimin, and I will be attending the [2025 HiTOP Conference](https:/
 
 - Yoo, J., Yermol, D. A., Burke, T., Liu, R., \& Girard, J. M. (2025). *Exploring internalizing and externalizing symptoms and guardian-adolescent communication in high-risk adolescents.* Poster presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
 
-{{< pdf Jun_HiTOP2025.pdf width=1280px height=720px >}}
+![](Jun_HiTOP2025.pdf){width=100% height=500px}
