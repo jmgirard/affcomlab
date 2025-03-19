@@ -1,0 +1,25 @@
+---
+title: "HiTOP 2025 Conference"
+description: "Hierarchical Taxonomy of Psychopathology"
+author: "Jeffrey Girard"
+date: "2025-03-19"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+Daiil, Kassy, Jimin, and I will be attending the [2025 HiTOP Conference](https://www.hitop-system.org/hitop-2025-conference) in Denver next week. Our presentations are below. See you there!
+
+- Jun, D., Girard, J. M., Chung, Y., Liebenthal, E., \& Baker, J. T. (2025). *Exploring and connecting the within-person factor structures of psychosis-related EMA and clinician-rated symptoms.* Paper presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
+
+- Gray, K., Girard, J. M., \& HiTOP Software and Web Development Workgroup. (2025). *Toward open-source software for collecting and visualizing HiTOP data.* Poster presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
+
+- Yoo, J., Yermol, D. A., Burke, T., Liu, R., \& Girard, J. M. (2025). *Exploring internalizing and externalizing symptoms and guardian-adolescent communication in high-risk adolescents.* Poster presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
+
+{{< pdf Jun_HiTOP2025.pdf width=1280px height=720px >}}
