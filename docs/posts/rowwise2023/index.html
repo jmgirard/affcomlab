@@ -451,7 +451,7 @@ Caused by error:
  [9] 36.23378 37.56994</code></pre>
 </div>
 </div>
-<p>But we want to exclude the <code>y</code> variable and append it to the <code>n10</code> tibble. How to do so? We might reasonably try to put it into <code>mutate()</code> like we did with <code>mean()</code>:</p>
+<p>But we want to exclude the <code>y</code> variable and append it to the <code>n10</code> tibble. How can we do so? We might reasonably try to put it into <code>mutate()</code> like we did with <code>mean()</code>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 7 (doesn't work)</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>n10 <span class="sc">|&gt;</span> </span>
@@ -484,7 +484,7 @@ Caused by error in `rowMeans()`:
 10  93.0  0.572 37.4   19.4 19.1 </code></pre>
 </div>
 </div>
-<p>But <a href="https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/">dplyr 1.1.0</a> added a way to streamline this kind of thing. We can use the new <code>pick()</code> function to create this context and avoid the need for the dot operator. Note that we are using <code>pick()</code> here instead of <code>c_across()</code> because the latter is for working within rows (in combination with <code>rowwise()</code>) and here we want the row-wise operations to be handled by <code>rowMeans()</code>.</p>
+<p>But this is inconvenient and error prone. Luckily, <a href="https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/">dplyr 1.1.0</a> added a way to streamline this kind of thing. We can use the new <code>pick()</code> function to create this context. Note that we are using <code>pick()</code> here instead of <code>c_across()</code> because the latter is for working within rows (in combination with <code>rowwise()</code>) and here we want the row-wise operations to be handled by <code>rowMeans()</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 9 (works and convenient and fast)</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>n10 <span class="sc">|&gt;</span> </span>

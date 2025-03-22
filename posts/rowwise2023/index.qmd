@@ -166,7 +166,7 @@ The other thing to note about `rowwise()` is that it can be slow. With a small t
 rowMeans(n10)
 ```
 
-But we want to exclude the `y` variable and append it to the `n10` tibble. How to do so? We might reasonably try to put it into `mutate()` like we did with `mean()`:
+But we want to exclude the `y` variable and append it to the `n10` tibble. How can we do so? We might reasonably try to put it into `mutate()` like we did with `mean()`:
 
 ```{r ex7}
 #| error: true
@@ -184,7 +184,7 @@ n10 |>
   mutate(xmean = rowMeans(matrix(c(x1, x2, x3), ncol = 3)))
 ```
 
-But [dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/) added a way to streamline this kind of thing. We can use the new `pick()` function to create this context and avoid the need for the dot operator. Note that we are using `pick()` here instead of `c_across()` because the latter is for working within rows (in combination with `rowwise()`) and here we want the row-wise operations to be handled by `rowMeans()`.
+But this is inconvenient and error prone. Luckily, [dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/) added a way to streamline this kind of thing. We can use the new `pick()` function to create this context. Note that we are using `pick()` here instead of `c_across()` because the latter is for working within rows (in combination with `rowwise()`) and here we want the row-wise operations to be handled by `rowMeans()`.
 
 ```{r ex11}
 # Example 9 (works and convenient and fast)
