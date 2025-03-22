@@ -8,6 +8,10 @@ draft: false
 categories:
   - teaching
   - data science
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: rowwise2023
 ---
 
 ## TL;DR
@@ -180,15 +184,15 @@ n10 |>
   mutate(xmean = rowMeans(matrix(c(x1, x2, x3), ncol = 3)))
 ```
 
-But [dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/) added a way to streamline this kind of thing. We can use the new `pick()` function to create this context and avoid the need for the dot operator. Note that we using `pick()` here instead of `c_across()` because the latter is for working within rows (in combination with `rowwise()`) and here we want the row-wise operations to be handled by `rowMeans()`.
+But [dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/) added a way to streamline this kind of thing. We can use the new `pick()` function to create this context and avoid the need for the dot operator. Note that we are using `pick()` here instead of `c_across()` because the latter is for working within rows (in combination with `rowwise()`) and here we want the row-wise operations to be handled by `rowMeans()`.
 
 ```{r ex11}
-# Example 11 (works and convenient and fast)
+# Example 9 (works and convenient and fast)
 n10 |> 
   mutate(xmean = rowMeans(pick(starts_with("x"))))
 ```
 
-To test the speed of each approach, we can use the [microbenchmark](https://github.com/joshuaulrich/microbenchmark/) package, which will precisely time each approach over multiple iterations (in this case, 100). Let's wrap up by testing the speech of each approach with increasingly large data sets.
+To test the speed of each approach, we can use the [microbenchmark](https://github.com/joshuaulrich/microbenchmark/) package, which will precisely time each approach over multiple iterations (in this case, 100). Let's wrap up by testing the speed of each approach with increasingly large data sets.
 
 ```{r speedtest}
 #| cache: true
@@ -277,5 +281,3 @@ sessionInfo()
 - \[3\] [dplyr 1.0.0: working within rows](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/)
 
 - \[4\] [dplyr issue \#4544](https://github.com/tidyverse/dplyr/issues/4544)
-
-- *Note:* This is an update of an [older blog post](https://jmgirard.com/rowwise-means/) on my personal website.

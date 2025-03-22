@@ -22,8 +22,11 @@ Daiil, Kassy, Jimin, and I will be attending the [2025 HiTOP Conference](https:/
 
 - Jun, D., Girard, J. M., Chung, Y., Liebenthal, E., \& Baker, J. T. (2025). *Exploring and connecting the within-person factor structures of psychosis-related EMA and clinician-rated symptoms.* Paper presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
 
+![](Jun_HiTOP2025.pdf){width=100% height=500px}
+
 - Gray, K., Girard, J. M., \& HiTOP Software and Web Development Workgroup. (2025). *Toward open-source software for collecting and visualizing HiTOP data.* Poster presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
+    +   [Click here for the feedback link](https://tinyurl.com/hitop2025)
+    
+![](Gray_HiTOP2025.pdf){width=100% height=500px}
 
 - Yoo, J., Yermol, D. A., Burke, T., Liu, R., \& Girard, J. M. (2025). *Exploring internalizing and externalizing symptoms and guardian-adolescent communication in high-risk adolescents.* Poster presented at the Annual Meeting of the Hierarchical Taxonomy of Psychopathology society.
-
-![](Jun_HiTOP2025.pdf){width=100% height=500px}

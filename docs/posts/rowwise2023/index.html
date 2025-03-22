@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fad5ab29a14bbe0a7a7d29177f3f13bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -484,9 +484,9 @@ Caused by error in `rowMeans()`:
 10  93.0  0.572 37.4   19.4 19.1 </code></pre>
 </div>
 </div>
-<p>But <a href="https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/">dplyr 1.1.0</a> added a way to streamline this kind of thing. We can use the new <code>pick()</code> function to create this context and avoid the need for the dot operator. Note that we using <code>pick()</code> here instead of <code>c_across()</code> because the latter is for working within rows (in combination with <code>rowwise()</code>) and here we want the row-wise operations to be handled by <code>rowMeans()</code>.</p>
+<p>But <a href="https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/">dplyr 1.1.0</a> added a way to streamline this kind of thing. We can use the new <code>pick()</code> function to create this context and avoid the need for the dot operator. Note that we are using <code>pick()</code> here instead of <code>c_across()</code> because the latter is for working within rows (in combination with <code>rowwise()</code>) and here we want the row-wise operations to be handled by <code>rowMeans()</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 11 (works and convenient and fast)</span></span>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 9 (works and convenient and fast)</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>n10 <span class="sc">|&gt;</span> </span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">xmean =</span> <span class="fu">rowMeans</span>(<span class="fu">pick</span>(<span class="fu">starts_with</span>(<span class="st">"x"</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -505,7 +505,7 @@ Caused by error in `rowMeans()`:
 10  93.0  0.572 37.4   19.4 19.1 </code></pre>
 </div>
 </div>
-<p>To test the speed of each approach, we can use the <a href="https://github.com/joshuaulrich/microbenchmark/">microbenchmark</a> package, which will precisely time each approach over multiple iterations (in this case, 100). Let’s wrap up by testing the speech of each approach with increasingly large data sets.</p>
+<p>To test the speed of each approach, we can use the <a href="https://github.com/joshuaulrich/microbenchmark/">microbenchmark</a> package, which will precisely time each approach over multiple iterations (in this case, 100). Let’s wrap up by testing the speed of each approach with increasingly large data sets.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create function wrappers so the microbenchmark output is prettier</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>A_rowwise <span class="ot">&lt;-</span> <span class="cf">function</span>(.data) { </span>
@@ -636,9 +636,9 @@ Click here for session info
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>R version 4.3.2 (2023-10-31 ucrt)
-Platform: x86_64-w64-mingw32/x64 (64-bit)
-Running under: Windows 10 x64 (build 19045)
+<pre><code>R version 4.4.3 (2025-02-28 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26100)
 
 Matrix products: default
 
@@ -657,24 +657,24 @@ attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] kableExtra_1.4.0      knitr_1.45            microbenchmark_1.4.10
- [4] lubridate_1.9.3       forcats_1.0.0         stringr_1.5.1        
- [7] dplyr_1.1.4           purrr_1.0.2           readr_2.1.5          
-[10] tidyr_1.3.1           tibble_3.2.1          ggplot2_3.5.0        
-[13] tidyverse_2.0.0      
+ [1] kableExtra_1.4.0     knitr_1.49           microbenchmark_1.5.0
+ [4] lubridate_1.9.3      forcats_1.0.0        stringr_1.5.1       
+ [7] dplyr_1.1.4          purrr_1.0.2          readr_2.1.5         
+[10] tidyr_1.3.1          tibble_3.2.1         ggplot2_3.5.1       
+[13] tidyverse_2.0.0     
 
 loaded via a namespace (and not attached):
- [1] utf8_1.2.4        generics_0.1.3    renv_1.0.5        xml2_1.3.6       
- [5] stringi_1.8.3     hms_1.1.3         digest_0.6.34     magrittr_2.0.3   
- [9] evaluate_0.23     grid_4.3.2        timechange_0.3.0  fastmap_1.1.1    
-[13] jsonlite_1.8.8    fansi_1.0.6       viridisLite_0.4.2 scales_1.3.0     
-[17] codetools_0.2-19  cli_3.6.2         rlang_1.1.3       munsell_0.5.0    
-[21] withr_3.0.0       yaml_2.3.8        tools_4.3.2       tzdb_0.4.0       
-[25] colorspace_2.1-0  vctrs_0.6.5       R6_2.5.1          lifecycle_1.0.4  
-[29] htmlwidgets_1.6.4 pkgconfig_2.0.3   pillar_1.9.0      gtable_0.3.4     
-[33] glue_1.7.0        systemfonts_1.0.5 xfun_0.42         tidyselect_1.2.0 
-[37] highr_0.10        rstudioapi_0.15.0 farver_2.1.1      htmltools_0.5.7  
-[41] rmarkdown_2.25    svglite_2.1.3     compiler_4.3.2   </code></pre>
+ [1] gtable_0.3.6      jsonlite_1.8.9    compiler_4.4.3    renv_1.0.11      
+ [5] tidyselect_1.2.1  xml2_1.3.6        systemfonts_1.1.0 scales_1.3.0     
+ [9] yaml_2.3.10       fastmap_1.2.0     R6_2.5.1          generics_0.1.3   
+[13] htmlwidgets_1.6.4 munsell_0.5.1     svglite_2.1.3     pillar_1.9.0     
+[17] tzdb_0.4.0        rlang_1.1.4       utf8_1.2.4        stringi_1.8.4    
+[21] xfun_0.49         viridisLite_0.4.2 timechange_0.3.0  cli_3.6.3        
+[25] withr_3.0.2       magrittr_2.0.3    digest_0.6.37     grid_4.4.3       
+[29] rstudioapi_0.17.1 hms_1.1.3         lifecycle_1.0.4   vctrs_0.6.5      
+[33] evaluate_1.0.1    glue_1.8.0        farver_2.1.2      fansi_1.0.6      
+[37] colorspace_2.1-1  rmarkdown_2.29    tools_4.4.3       pkgconfig_2.0.3  
+[41] htmltools_0.5.8.1</code></pre>
 </div>
 </div>
 </details>
@@ -687,7 +687,6 @@ loaded via a namespace (and not attached):
 <li><p>[2] <a href="https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/">dplyr 1.1.0: pick(), reframe(), arrange()</a></p></li>
 <li><p>[3] <a href="https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/">dplyr 1.0.0: working within rows</a></p></li>
 <li><p>[4] <a href="https://github.com/tidyverse/dplyr/issues/4544">dplyr issue #4544</a></p></li>
-<li><p><em>Note:</em> This is an update of an <a href="https://jmgirard.com/rowwise-means/">older blog post</a> on my personal website.</p></li>
 </ul>
 
 
@@ -1110,6 +1109,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="jmgirard/affcomlab" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 <footer class="footer">
