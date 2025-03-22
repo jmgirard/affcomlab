@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-    - CNAME
   output-dir: docs
 
 execute:
@@ -26,7 +24,7 @@ website:
         text: Opportunities
       - href: contact.qmd
         text: Contact
-  page-footer: "Copyright 2024 &copy; Jeffrey Girard"
+  page-footer: "Copyright 2025 &copy; Jeffrey Girard"
   google-analytics: "G-K5TXS64QLN"
   site-url: https://affcom.ku.edu
   repo-url: https://github.com/jmgirard/affcomlab
