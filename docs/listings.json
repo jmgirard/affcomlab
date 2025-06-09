@@ -94,6 +94,7 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/firacode/index.html",
       "/posts/hitop2025/index.html",
       "/posts/tips2024/index.html",
       "/posts/whisper2024c/index.html",
