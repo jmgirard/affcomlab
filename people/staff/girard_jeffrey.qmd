@@ -47,12 +47,13 @@ Dr. Jeffrey Girard studies how emotions are expressed through verbal and nonverb
 
 He completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (nonverbal behavior, machine learning, depression) and Dr. Aidan Wright (interpersonal functioning, statistics, personality). He then completed his predoctoral clinical internship at the University of Mississippi Medical Center (inpatient psychiatry, trauma treatment, neuropsychology) and a two-year postdoctoral research fellowship at Carnegie Mellon University under the mentorship of Dr. Louis-Philippe Morency (verbal behavior, machine learning, computer science). 
 
-He is now an Assistant Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and is a co-founder of [SMaRT Workshops](https://www.smart-workshops.com), which offers numerous methodological training workshops to faculty and students. He is also the developer and maintainer of numerous open-source research software packages (see [Resources](../../resources.qmd)).
+He is now an Associate Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and is a co-founder of [SMaRT Workshops](https://www.smart-workshops.com), which offers numerous methodological training workshops to faculty and students. He is also the developer and maintainer of numerous open-source research software packages (see [Resources](../../resources.qmd)).
 
 ## Experience
 
 - **University of Kansas** | Lawrence, KS, USA<br />
-  Assistant Professor of Psychology | 2020–Current<br />
+  Associate Professor of Psychology | 2025–Current
+  Assistant Professor of Psychology | 2020–2025<br />
   Wright Faculty Scholar | 2020–2025<br />
   Director of the [BBQ Doctoral Program](https://psychology.ku.edu/bbq) | 2022–Current <br />
   Co-Director of the [Kansas Data Science Consortium](https://data.ku.edu) | 2023-Current
