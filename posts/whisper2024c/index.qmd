@@ -54,13 +54,13 @@ Download and install the latest version of [Docker Desktop](https://www.docker.c
 
 Open the Docker Desktop application and click the Terminal button on the bottom. If it asks you to confirm/enable this, click yes. 
 
-In the Docker terminal, enter `docker pull jmgirard/wsl-cuda-whisper`.
+In the Docker terminal, enter `docker pull jmgirard/wsl-whisper`.
 
 This will take some time and disk space to download. If you are concerned at all about security, you can see the Dockerfile instructions [here](https://github.com/jmgirard/wsl-cuda-whisper/blob/main/Dockerfile); it just installs rocker/tidyverse (i.e., Ubuntu, R, RStudio Server, and the tidyverse R packages), and then ffmpeg, CUDA Toolkit, and the audio.* R packages.
 
 ## Run the wsl-cuda-whisper Docker image
 
-Once the download is complete, you can run the image to access RStudio with audio.whisper and CUDA support. To run an image, we can use a command like `docker run [options] image-name`. We will use `jmgirard/wsl-cuda-whisper` as our image name, but we need to learn several options to get the most out of this.
+Once the download is complete, you can run the image to access RStudio with audio.whisper and CUDA support. To run an image, we can use a command like `docker run [options] image-name`. We will use `jmgirard/wsl-whisper` as our image name, but we need to learn several options to get the most out of this.
 
 - `--gpus all` tells Docker to grant the container access to our NVIDIA graphics card, which is necessary for us to make use of CUDA.
 - `-p 8787:8787` tells Docker to host the container's RStudio Server on network port 8787, which will let us access it from a browser on Windows.
@@ -71,7 +71,7 @@ Once the download is complete, you can run the image to access RStudio with audi
 
 Putting this all together, we can enter this into the Docker terminal:
 
-`docker run --gpus all -p 8787:8787 -e PASSWORD=abc -v "C:\Users\jeffg:/win" --rm -it jmgirard/wsl-cuda-whisper`
+`docker run --gpus all -p 8787:8787 -e PASSWORD=abc -v "C:\Users\jeffg:/win" --rm -it jmgirard/wsl-whisper`
 
 The Docker terminal will show the progress of R installing the audio.whisper package (unfortunately this can't be done ahead of time). You will know the server is ready for use when the terminal says "TTY detected."
 
