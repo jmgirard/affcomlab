@@ -5,7 +5,7 @@ author: "Girard & Cohn"
 year: "2016"
 publication: "Assessment"
 preprint: "https://psyarxiv.com/582cy"
-doi: "https://doi.org/10.1177/1073191116635807"
+doi: "10.1177/1073191116635807"
 materials: ""
 toc: false
 categories:

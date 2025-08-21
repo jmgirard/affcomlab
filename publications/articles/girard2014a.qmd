@@ -5,7 +5,7 @@ author: "Girard, Cohn, Mahoor, et al."
 year: "2014"
 publication: "Image and Vision Computing"
 preprint: "https://pubmed.ncbi.nlm.nih.gov/25378765/"
-doi: "https://doi.org/10.1016/j.imavis.2013.12.007"
+doi: "10.1016/j.imavis.2013.12.007"
 materials: ""
 toc: false
 categories:

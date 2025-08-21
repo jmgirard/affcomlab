@@ -5,7 +5,7 @@ author: "Girard"
 year: "2014"
 publication: "Journal of Open Research Software"
 preprint: "https://psyarxiv.com/7csfj"
-doi: "https://doi.org/10.5334/jors.ar"
+doi: "10.5334/jors.ar"
 materials: "https://osf.io/sztpm/"
 toc: false
 categories:

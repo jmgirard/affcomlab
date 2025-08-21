@@ -5,7 +5,7 @@ author: "Bowdring, Sayette, Girard, & Woods"
 year: "2021"
 publication: "Journal of Nonverbal Behavior"
 preprint: "https://psyarxiv.com/futv2/"
-doi: "https://dx.doi.org/10.1007/s10919-020-00350-2"
+doi: "10.1007/s10919-020-00350-2"
 materials: "https://osf.io/gewrp/"
 toc: false
 categories:

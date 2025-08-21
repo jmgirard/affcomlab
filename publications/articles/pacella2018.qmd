@@ -5,7 +5,7 @@ author: "Pacella, Girard, Wright, et al."
 year: "2018"
 publication: "Academic Emergency Medicine"
 preprint: ""
-doi: "https://doi.org/10.1111/acem.13406"
+doi: "10.1111/acem.13406"
 materials: ""
 toc: false
 categories:

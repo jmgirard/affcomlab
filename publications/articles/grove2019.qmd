@@ -5,7 +5,7 @@ author: "Grove, Smith, Girard, & Wright"
 year: "2019"
 publication: "Journal of Personality Disorders"
 preprint: "https://osf.io/erxy7/"
-doi: "https://doi.org/10.1521/pedi_2019_33_374"
+doi: "10.1521/pedi_2019_33_374"
 materials: ""
 toc: false
 categories:

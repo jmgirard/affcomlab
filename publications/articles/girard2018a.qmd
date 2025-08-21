@@ -5,7 +5,7 @@ author: "Girard & Wright"
 year: "2018"
 publication: "Behavior Research Methods"
 preprint: "https://osf.io/xhmu6/"
-doi: "https://doi.org/10.3758/s13428-017-0915-5"
+doi: "10.3758/s13428-017-0915-5"
 materials: "https://osf.io/jcq5x/"
 toc: false
 categories:

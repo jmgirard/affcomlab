@@ -4,7 +4,7 @@ type: "article"
 author: "Butler, Christian, et al."
 year: "2024"
 publication: "Behavior Research and Therapy"
-doi: "https://doi.org/10.1016/j.brat.2024.104577"
+doi: "10.1016/j.brat.2024.104577"
 toc: false
 categories:
   - clinical

@@ -5,7 +5,7 @@ author: "Girard, Wright, Beeney, et al."
 year: "2017"
 publication: "Comprehensive Psychiatry"
 preprint: "https://osf.io/6w23e/"
-doi: "https://doi.org/10.1016/j.comppsych.2017.06.014"
+doi: "10.1016/j.comppsych.2017.06.014"
 materials: "https://osf.io/2ctzq/"
 toc: false
 categories:

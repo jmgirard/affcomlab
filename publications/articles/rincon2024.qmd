@@ -2,9 +2,9 @@
 title: "Depressive symptoms among Hispanic Americans: Investigating the interplay of acculturation and demographics"
 type: "article"
 author: "Rincon Caicedo, Girard, et al."
-year: "2024"
+year: "2025"
 publication: "Journal of Latinx Psychology"
-doi: "https://doi.org/10.1037/lat0000266"
+doi: "10.1037/lat0000266"
 toc: false
 categories:
   - clinical
@@ -13,7 +13,7 @@ categories:
 
 ## Citation (APA 7)
 
-> Rincon Caicedo, M., Girard, J. M., Punt, S. E., Giovanetti, A. K., & Ilardi, S. S. (in press). Depressive symptoms among Hispanic Americans: Investigating the interplay of acculturation and demographics. *Journal of Latinx Psychology.*
+> Rincon Caicedo, M., Girard, J. M., Punt, S. E., Giovanetti, A. K., & Ilardi, S. S. (2025). Depressive symptoms among Hispanic Americans: Investigating the interplay of acculturation and demographics. *Journal of Latinx Psychology, 13*(1), 68--84.
 
 ## Abstract
 

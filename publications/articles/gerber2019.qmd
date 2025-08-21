@@ -4,9 +4,7 @@ type: "article"
 author: "Gerber, Girard, Scott, & Lerner"
 year: "2019"
 publication: "Behaviour Research and Therapy"
-preprint: ""
-doi: "https://doi.org/10.1016/j.brat.2019.103477"
-materials: ""
+doi: "10.1016/j.brat.2019.103477"
 toc: false
 categories:
   - clinical

@@ -6,7 +6,7 @@ year: "2021"
 image: jcpp.webp
 publication: "The Journal of Child Psychology and Psychiatry"
 preprint: "https://psyarxiv.com/ntgrx/"
-doi: "https://doi.org/10.1111/jcpp.13343"
+doi: "10.1111/jcpp.13343"
 materials: "https://osf.io/rtz7g/"
 toc: false
 categories:

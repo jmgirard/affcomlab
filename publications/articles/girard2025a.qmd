@@ -18,7 +18,7 @@ categories:
 
 ## Citation (APA 7)
 
-> Girard, J. M., Yermol, D. A., Salah, A. A., \& Cohn, J. F. (2025). Computational Analysis of Expressive Behavior in Clinical Assessment. *Annual Reviews in Clinical Psychology, AA*, 1--29.
+> Girard, J. M., Yermol, D. A., Salah, A. A., & Cohn, J. F. (2025). Computational Analysis of Expressive Behavior in Clinical Assessment. *Annual Reviews in Clinical Psychology, AA*, 1--29.
 
 ## Abstract
 

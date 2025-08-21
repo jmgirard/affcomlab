@@ -2,9 +2,10 @@
 title: "Worth the weight: An examination of unstructured and structured data in graduate admissions"
 type: "article"
 author: "Adaryukov, Biernat, et al."
-year: "2024"
+year: "2025"
 publication: "Decision"
-doi: "https://doi.org/10.31234/osf.io/j9yeq"
+doi: "10.1037/dec0000251"
+preprint: "https://osf.io/preprints/psyarxiv/j9yeq_v1"
 materials: "https://osf.io/sfhm2/"
 toc: false
 categories:
@@ -14,7 +15,7 @@ categories:
 
 ## Citation (APA 7)
 
-> Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. *Decision.*
+> Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (2025). Worth the weight: An examination of unstructured and structured data in graduate admissions. *Decision, 12*(1), 4--30.
 
 ## Abstract
 

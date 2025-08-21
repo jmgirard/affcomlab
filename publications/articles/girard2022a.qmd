@@ -5,7 +5,7 @@ author: "Girard, Vail, Liebenthal, et al."
 year: "2022"
 publication: "Schizophrenia Research"
 preprint: "https://psyarxiv.com/zc47p"
-doi: "https://doi.org/10.1016/j.schres.2021.06.040"
+doi: "10.1016/j.schres.2021.06.040"
 materials: ""
 toc: false
 categories:

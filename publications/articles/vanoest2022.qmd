@@ -5,7 +5,7 @@ author: "Van Oest & Girard"
 year: "2022"
 publication: "Psychological Methods"
 preprint: "https://psyarxiv.com/s5n4e/"
-doi: "https://doi.org/10.1037/met0000412"
+doi: "10.1037/met0000412"
 materials: ""
 toc: false
 categories:

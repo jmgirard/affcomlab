@@ -5,7 +5,7 @@ author: "Girard, Cohn, Jeni, et al."
 year: "2015"
 publication: "Behavior Research Methods"
 preprint: "https://psyarxiv.com/gqhjr"
-doi: "https://doi.org/10.3758/s13428-014-0536-1"
+doi: "10.3758/s13428-014-0536-1"
 materials: "https://osf.io/qu3f6/"
 toc: false
 categories:

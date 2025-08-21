@@ -5,7 +5,7 @@ author: "Girard, Cohn, & De la Torre"
 year: "2015"
 publication: "Pattern Recognition Letters"
 preprint: ""
-doi: "https://doi.org/10.1016/j.patrec.2014.10.004"
+doi: "10.1016/j.patrec.2014.10.004"
 materials: ""
 toc: false
 categories:

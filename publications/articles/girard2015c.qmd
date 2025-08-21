@@ -5,7 +5,7 @@ author: "Girard & Cohn"
 year: "2015"
 publication: "Current Opinion in Psychology"
 preprint: "https://psyarxiv.com/zaum3"
-doi: "https://doi.org/10.1016/j.copsyc.2014.12.010"
+doi: "10.1016/j.copsyc.2014.12.010"
 materials: ""
 toc: false
 categories:

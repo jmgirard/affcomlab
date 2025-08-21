@@ -5,7 +5,7 @@ author: "Ross, Girard, Wright, et al."
 year: "2017"
 publication: "Psychological Assessment"
 preprint: ""
-doi: "https://doi.org/10.1037/pas0000338"
+doi: "10.1037/pas0000338"
 materials: ""
 toc: false
 categories:

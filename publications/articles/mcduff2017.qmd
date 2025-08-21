@@ -5,7 +5,7 @@ author: "McDuff, Girard, & el Kaliouby"
 year: "2017"
 publication: "Journal of Nonverbal Behavior"
 preprint: "https://psyarxiv.com/rb8pe/"
-doi: "https://doi.org/10.1007/s10919-016-0244-x"
+doi: "10.1007/s10919-016-0244-x"
 materials: "https://osf.io/wvj47/"
 toc: false
 categories:

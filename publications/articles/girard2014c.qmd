@@ -5,7 +5,7 @@ author: "Zhang, Yin, Cohn, et al."
 year: "2014"
 publication: "Image and Vision Computing"
 preprint: ""
-doi: "https://doi.org/10.1016/j.imavis.2014.06.002"
+doi: "10.1016/j.imavis.2014.06.002"
 materials: ""
 toc: false
 categories:

@@ -5,7 +5,7 @@ author: "Hopwood, Harrison, Amole, et al."
 year: "2020"
 publication: "Assessment"
 preprint: "https://psyarxiv.com/hqpt7/"
-doi: "https://doi.org/10.1177/1073191118798916"
+doi: "10.1177/1073191118798916"
 materials: ""
 toc: false
 categories:

@@ -4,9 +4,7 @@ type: "article"
 author: "Fairbairn, Sayette, Amole, et al."
 year: "2015"
 publication: "Experimental & Clinical Psychopharmacology"
-preprint: ""
-doi: "https://psycnet.apa.org/doi/10.1037/pha0000021"
-materials: ""
+doi: "10.1037/pha0000021"
 toc: false
 categories:
   - nonverbal

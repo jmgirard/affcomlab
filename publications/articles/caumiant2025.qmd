@@ -4,7 +4,7 @@ type: "article"
 author: "Caumiant, Kang, Girard, & Fairbairn"
 year: "2025"
 publication: "Psychology of Addictive Behaviors"
-doi: "https://psycnet.apa.org/doi/10.1037/adb0001053"
+doi: "10.1037/adb0001053"
 toc: false
 categories:
   - nonverbal
