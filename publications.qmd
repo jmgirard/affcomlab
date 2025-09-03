@@ -2,6 +2,10 @@
 title: ""
 pagetitle: "Publications | AffCom Lab"
 toc: false
+bibliography: publications.bib
+csl: apa.csl
+nocite: |
+  @*
 execute:
   echo: false
   warning: false
@@ -17,248 +21,397 @@ execute:
 </nav>
 ```
 
-```{css}
-:root { --tl-shift-x: -.25rem; } 
+This page lists all papers published by Dr. Girard, organized by year of publication. Click a paper’s *title* to visit the publisher page and access the official version. Use *Abstract* to reveal the summary, *Citation* for the APA 7th-edition reference, and *BibTeX* to view the BibTeX entry. Clicking the link a second time will close the display again. *Preprint* links to a free author version (not the final typeset copy), and *Materials* leads to an open repository with data, code, and other open-science resources.
 
-.timeline {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.year-group {
-  position: relative;
-  margin-left: 1rem;
-  padding-left: 1.25rem;
-  margin-bottom: 1.25rem; 
-}
-.year-group::before {
-  content: "";
-  position: absolute;
-  left: calc(0.25rem + var(--tl-shift-x));
-  top: 0.25rem;
-  bottom: 0.25rem;
-  width: 2px;
-  background: var(--bs-border-color);
-}
-
-.year-label {
-  font-weight: 700;
-  margin: .8rem 0 .4rem 0;
-}
-
-.tl-item {
-  position: relative;
-  margin-bottom: 1.25rem;   
-  padding-left: .75rem;
-}
-.tl-item::before {
-  content: "";
-  position: absolute;
-  left: calc(var(--tl-shift-x)); 
-  top: .45rem;
-  width: .4rem; 
-  height: .4rem; 
-  border-radius: 50%;
-  background: var(--bs-primary);
-  box-shadow: 0 0 0 3px var(--bs-body-bg);
-}
-
-.tl-title { margin: 0 0 .1rem 0; font-weight: 400; }
-.tl-title a {
-  display: inline-block;
-  color: var(--bs-primary);
-  opacity: .85;
-  text-decoration: none;
-  transition: opacity .15s ease, transform .15s ease;
-}
-.tl-title a:hover {
-  opacity: 1;
-  transform: translateY(-1px);
-}
-
-.tl-meta  { color: var(--bs-secondary-color); font-size: .95rem; }
-.tl-meta em { font-style: italic; } 
-
-.res-links {
-  margin-top: .25rem;
-  font-size: .9rem;
-  color: var(--bs-secondary-color);
-}
-.res-links a {
-  padding: 0 .25rem; border-radius: .4rem;
-  transition: background-color .15s ease, color .15s ease;
-  text-decoration: none;
-}
-.res-links a:hover { background: rgba(0,0,0,.05); color: var(--bs-body-color); }
-.res-links i { margin-right: .25rem; }
-
-```
-
-```{r}
-library(bibtex)
+```{r setup}
+library(tidyverse)
+library(RefManageR)
 library(htmltools)
 
-bib <- bibtex::read.bib("publications.bib")
+`%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
+nz_chr <- function(x) ifelse(is.na(x) | trimws(x) == "", NA_character_, x)
 
-# ---------- Helpers ----------
-chr1 <- function(x) if (is.null(x) || length(x) == 0) "" else as.character(x[[1]])
-
-strip_braces <- function(s) {
-  s <- chr1(s)
-  gsub("[{}]", "", s, perl = TRUE)
+strip_braces <- function(x) {
+  if (is.null(x) || length(x) == 0) return(NA_character_)
+  y <- as.character(x)
+  gsub("[{}]", "", y, perl = TRUE)
 }
 
-fmt_authors_last <- function(pers) {
-  if (length(pers) == 0) return("")
-  last <- vapply(pers, function(x) {
-    fam <- paste(x$family, collapse = " ")
-    if (nzchar(fam)) fam else {
-      giv <- paste(x$given, collapse = " ")
-      if (nzchar(giv)) giv else ""
-    }
-  }, character(1))
-  last <- last[nzchar(last)]
-  n <- length(last)
-  if (n == 0) return("")
-  if (n == 1) return(last)
-  if (n == 2) return(paste(last, collapse = " & "))
-  paste0(paste(last[-n], collapse = ", "), ", & ", last[n])
+fmt_authors_card <- function(entry) {
+  au <- entry$author
+  if (is.null(au) || length(au) == 0) return(NA_character_)
+  fmt_one <- function(a) {
+    fam_vec <- a$family
+    if (length(fam_vec)) paste(as.character(fam_vec), collapse = " ") else ""
+  }
+  pieces <- vapply(au, fmt_one, character(1))
+  pieces <- pieces[nzchar(pieces)]
+  if (!length(pieces)) return(NA_character_)
+  if (length(pieces) == 1) pieces
+  else paste(paste(pieces[-length(pieces)], collapse = ", "), "&", pieces[length(pieces)])
 }
 
-extract_year <- function(x) {
-  y <- chr1(x$year)
-  if (grepl("^\\d{4}$", y)) return(y)
-  d <- chr1(x$date)
-  m <- regexpr("\\d{4}", d)
-  if (m > 0) return(substr(d, m, m + 3))
-  ""  # no valid year found
+get_abstract <- function(entry) {
+  abs <- entry$abstract %||% entry$annotation %||% NA_character_
+  if (isTRUE(is.na(abs)) || !nzchar(abs)) NA_character_ else abs
 }
 
-to_row <- function(x, key = "") {
-  container <- x$journal; if (!nzchar(chr1(container))) container <- x$booktitle
-  if (!nzchar(chr1(container))) container <- x$publisher
-  doi_val  <- chr1(x$doi)
-  doi_link <- if (nzchar(doi_val)) paste0("https://doi.org/", doi_val) else ""
-  list(
-    key         = key,
-    title       = strip_braces(x$title),
-    authors     = fmt_authors_last(x$author),
-    year        = extract_year(x),
-    publication = strip_braces(container),
-    doi         = doi_link,
-    preprint    = chr1(x$preprint),
-    materials   = chr1(x$materials),
-    url         = chr1(x$url)
-  )
+get_bibtex <- function(entry) {
+  out <- tryCatch({
+    e <- entry
+    if (!is.null(e$note)) e$note <- NULL
+    if (!is.null(e$Note)) e$Note <- NULL
+    txt <- paste0(utils::toBibtex(e), collapse = "\n")
+    txt <- sub(",\\s*\\n?\\s*\\}$", "\n}", txt, perl = TRUE)
+    txt <- gsub("\n{3,}", "\n\n", txt)
+    txt
+  }, error = function(err) NA_character_)
+  if (is.na(out) || !nzchar(out)) NA_character_ else out
 }
 
-# Build rows (carry citation keys for error messages)
-rows <- Map(to_row, as.list(bib), names(bib))
+normalize_link <- function(x) {
+  y <- as.character(x)
+  y[is.na(y)] <- NA_character_
+  y <- trimws(y)
+  y[y == "" | tolower(y) == "na"] <- NA_character_
 
-# ---------- Validate years (fail fast) ----------
-yrs_chr <- vapply(rows, `[[`, "", "year")
-bad <- which(!grepl("^\\d{4}$", yrs_chr))
-if (length(bad)) {
-  offenders <- vapply(rows[bad], function(r)
-    sprintf("%s (year='%s')", if (nzchar(r$key)) r$key else substr(r$title, 1, 60), r$year), "")
-  stop(
-    paste0(
-      "Some bibliography entries have missing/invalid years (need YYYY):\n  - ",
-      paste(offenders, collapse = "\n  - "),
-      "\nFix the 'year' (or 'date') field in your .bib and re-render."
-    ),
-    call. = FALSE
-  )
+  ok <- !is.na(y)
+
+  doi_pref <- ok & grepl("^doi:\\s*", y, ignore.case = TRUE)
+  y[doi_pref] <- sub("^doi:\\s*", "", y[doi_pref], ignore.case = TRUE)
+  bare_doi <- ok & grepl("^10\\.", y)
+  y[bare_doi] <- paste0("https://doi.org/", y[bare_doi])
+
+  arxiv_pref <- ok & grepl("^arxiv:\\s*", y, ignore.case = TRUE)
+  if (any(arxiv_pref)) {
+    ids <- sub("^arxiv:\\s*", "", y[arxiv_pref], ignore.case = TRUE)
+    ids <- sub("^([^\\s]+).*", "\\1", ids)
+    y[arxiv_pref] <- paste0("https://arxiv.org/abs/", ids)
+  }
+
+  domain_like <- ok & grepl("^(www\\.|[A-Za-z0-9.-]+\\.[A-Za-z]{2,})(/|$)", y)
+  no_scheme   <- ok & !grepl("^https?://", y, ignore.case = TRUE)
+  needs_scheme <- domain_like & no_scheme
+  y[needs_scheme] <- paste0("https://", y[needs_scheme])
+
+  y
 }
-
-# ---------- Sort rows: year desc, then title asc ----------
-year_num0 <- vapply(rows, \(r) as.numeric(r$year), 0)             # pre-sort
-title_vec <- vapply(rows, \(r) tolower(r$title), "")
-ord <- order(-year_num0, title_vec)
-rows <- rows[ord]
-
-# Recompute year_num AFTER sorting (this was the bug)
-year_num <- vapply(rows, \(r) as.numeric(r$year), 0)
 ```
 
 ```{r}
-#| results: 'asis'
+#| label: build-rows
 
-render_timeline <- function(rows_sub) {
-  if (!length(rows_sub)) {
-    cat('<p class="text-muted">No publications.</p>')
-    return(invisible())
-  }
-  yrs_sub <- vapply(rows_sub, `[[`, "", "year")
-  num_years <- sort(as.numeric(unique(yrs_sub)), decreasing = TRUE)
+bib  <- ReadBib("publications.bib", check = FALSE)
+keys <- names(bib)
 
-  cat('<div class="timeline">')
-  for (yr in as.character(num_years)) {
-    group <- rows_sub[yrs_sub == yr]
-    if (length(group) == 0) next
+extra_links <- tibble(key = character(), preprint = character(), materials = character())
 
-    cat('<section class="year-group">')
-    cat(sprintf('<div class="year-label">%s</div>', htmltools::htmlEscape(yr)))
+rows <- tibble(
+  key   = keys,
+  entry = lapply(keys, function(k) bib[k])
+) |>
+  mutate(
+    title        = map_chr(entry, ~ strip_braces(.x$title %||% "")),
+    authors_card = map_chr(entry, fmt_authors_card),
+    year         = map_chr(entry, ~ {
+      y <- .x$year %||% .x$date %||% ""
+      if (is.list(y)) y$year %||% "" else as.character(y)
+    }),
+    venue        = map_chr(entry, ~ strip_braces(.x$journal %||% .x$booktitle %||% .x$publisher %||% "")),
+    abstract     = map_chr(entry, get_abstract),
+    bibtex       = map_chr(entry, get_bibtex),
 
-    for (r in group) {
-      title_html   <- htmltools::htmlEscape(r$title)
-      authors_html <- htmltools::htmlEscape(r$authors)
-      pub_html     <- htmltools::htmlEscape(r$publication)
+    doi          = map_chr(entry, ~ .x$doi %||% NA_character_),
+    url_fallback = map_chr(entry, ~ .x$url %||% NA_character_),
 
-      cat('<div class="tl-item">')
+    preprint_raw  = map_chr(entry, ~ { v <- .x$preprint;  if (is.null(v) || length(v)==0) NA_character_ else as.character(v[[1]]) }),
+    materials_raw = map_chr(entry, ~ { v <- .x$materials; if (is.null(v) || length(v)==0) NA_character_ else as.character(v[[1]]) }),
 
-      # Title link priority: DOI > Preprint > URL > plain text
-      link_href <- if (nzchar(r$doi)) r$doi else
-                   if (nzchar(r$preprint)) r$preprint else
-                   if (nzchar(r$url)) r$url else
-                   ""
-      if (nzchar(link_href)) {
-        cat(sprintf(
-          '<div class="tl-title"><a href="%s" target="_blank" rel="noopener">%s</a></div>',
-          htmltools::htmlEscape(link_href), title_html
-        ))
-      } else {
-        cat(sprintf('<div class="tl-title">%s</div>', title_html))
-      }
-
-      # Meta line: Authors · <em>Venue</em>
-      if (nzchar(r$publication)) {
-        cat(sprintf('<div class="tl-meta">%s · <em>%s</em></div>', authors_html, pub_html))
-      } else {
-        cat(sprintf('<div class="tl-meta">%s</div>', authors_html))
-      }
-
-      # Compact resource links (inline text)
-      cat('<div class="res-links">')
-      if (nzchar(r$preprint)) {
-        cat(sprintf(
-          '<a href="%s" class="link-secondary" target="_blank" rel="noopener" title="Preprint"><i class="bi bi-file-earmark-text"></i> preprint</a> ',
-          htmltools::htmlEscape(r$preprint)
-        ))
-      }
-      if (nzchar(r$materials)) {
-        cat(sprintf(
-          '<a href="%s" class="link-secondary" target="_blank" rel="noopener" title="Materials"><i class="bi bi-file-earmark-zip"></i> materials</a> ',
-          htmltools::htmlEscape(r$materials)
-        ))
-      }
-      cat('</div>') # res-links
-
-      cat('</div>') # tl-item
-    }
-    cat('</section>')
-  }
-  cat('</div>')
-}
-
-# Split into sections: Since Joining KU (>=2020) vs Before Joining KU (<2020)
-since_idx  <- year_num >= 2020
-before_idx <- year_num < 2020
-
-cat('<h2>Since Joining KU</h2>', 'Click the *title* of any publication to visit the publisher’s page. When shown, the *preprint* link provides a freely accessible version, and the *materials* link points to open-science resources (e.g., data, code, files) for that paper.')
-render_timeline(rows[since_idx])
-
-cat('<h2>Before Joining KU</h2>', 'Click the *title* of any publication to visit the publisher’s page. When shown, the *preprint* link provides a freely accessible version, and the *materials* link points to open-science resources (e.g., data, code, files) for that paper.')
-render_timeline(rows[before_idx])
+    has_preprint_key  = map_lgl(entry, ~ !is.null(.x$preprint)  && length(.x$preprint)  > 0),
+    has_materials_key = map_lgl(entry, ~ !is.null(.x$materials) && length(.x$materials) > 0)
+  ) |>
+  left_join(extra_links, by = "key") |>
+  mutate(
+    preprint_val  = coalesce(preprint,  preprint_raw),
+    materials_val = coalesce(materials, materials_raw)
+  ) |>
+  select(-any_of(c("preprint", "materials"))) |>
+  mutate(
+    preprint_url  = normalize_link(preprint_val),
+    materials_url = normalize_link(materials_val)
+  ) |>
+  mutate(
+    doi_url = normalize_link(
+      if_else(
+        nzchar(doi %||% ""),
+        str_glue("https://doi.org/{doi}"),
+        if_else(nzchar(preprint_url %||% ""), preprint_url, url_fallback)
+      )
+    ),
+    year_num = suppressWarnings(as.integer(str_extract(year, "\\d{4}"))),
+    year_lbl = ifelse(is.na(year_num), "n.d.", as.character(year_num))
+  ) |>
+  arrange(desc(year_num), title)
 ```
 
+```{css}
+/* Hide the bibliography from quarto */
+#quarto-bibliography,
+#quarto-appendix .quarto-appendix-heading,
+#quarto-appendix {
+  display: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Also hide the empty top-level <section id="bibliography"> Quarto emits */
+section#bibliography.level1.unnumbered {
+  display: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Group header */
+.year-group { margin: 28px 0 8px; }
+.year-title { margin: 0; font-size: 1.35rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 2px; }
+
+/* Card + layout */
+.pub-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px 16px 10px 16px;
+  margin: 14px 0;
+  background: #fff;
+}
+.pub-title { font-weight: 600; font-size: 1.05rem; margin-bottom: 4px; }
+.pub-title a { text-decoration: none; }
+.pub-meta  { color: #555; font-size: 0.95rem; margin-bottom: 8px; }
+
+/* Actions row */
+.pub-actions {
+  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
+  margin-top: 8px; margin-bottom: 8px;
+}
+.pub-actions a {
+  text-decoration: none; font-size: 0.92rem;
+  border-bottom: 1px dotted #999; color: #0b66c3; cursor: pointer;
+}
+.pub-actions a.external { border-bottom-style: solid; }
+
+/* Toggle area */
+.toggle-area {
+  display: none; position: relative;
+  border: 1px solid #000; border-radius: 10px;
+  padding: 12px 44px 12px 12px; background: #fafafa;
+  margin-top: 10px; overflow: auto;
+}
+.toggle-area .panel-label {
+  font-size: 0.82rem; color: #333; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  opacity: 0.85; margin-bottom: 6px;
+}
+.toggle-area pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+.toggle-area .content p { margin: 0 0 0.6em 0; }
+
+/* Copy button */
+.copy-btn {
+  position: absolute; top: 6px; right: 6px;
+  border: 1px solid #ddd; background: #fff; font-size: 0.85rem;
+  padding: 4px 8px; border-radius: 6px; cursor: pointer;
+}
+.copy-btn:active { transform: translateY(1px); }
+.copy-toast {
+  position: absolute; top: 6px; right: 70px; font-size: 0.8rem;
+  background: #333; color: #fff; padding: 3px 7px; border-radius: 6px; display: none;
+}
+```
+
+```{=html}
+<script>
+(function() {
+  function getCard(el) {
+    while (el && !el.classList?.contains('pub-card')) el = el.parentNode;
+    return el;
+  }
+  function showPanel(card, label, html, mode) {
+    const area = card.querySelector('.toggle-area');
+    const labelEl = area.querySelector('.panel-label');
+    const contentEl = area.querySelector('.content');
+
+    // Toggle: if clicking same action while open, collapse
+    const current = area.getAttribute('data-current');
+    if (current === mode && area.style.display === 'block') {
+      area.style.display = 'none';
+      area.setAttribute('data-current', '');
+      return;
+    }
+
+    labelEl.textContent = label;
+    if (mode === 'bib') {
+      contentEl.innerHTML = '';
+      const pre = document.createElement('pre');
+      pre.textContent = html;
+      contentEl.appendChild(pre);
+    } else if (mode === 'abstract') {
+      contentEl.textContent = html;
+    } else {
+      contentEl.innerHTML = html; // citation HTML
+    }
+    area.style.display = 'block';
+    area.setAttribute('data-current', mode);
+  }
+
+  // Resource link handler (toggle)
+  document.addEventListener('click', function(evt) {
+    const a = evt.target.closest('a[data-action]');
+    if (!a) return;
+    const action = a.getAttribute('data-action');
+    const card   = getCard(a);
+    if (!card) return;
+    evt.preventDefault();
+
+    if (action === 'abstract' || action === 'citation' || action === 'bib') {
+      const key = card.getAttribute('data-key');  // <-- Pandoc ref id suffix
+
+      // Build label + payload
+      let label = action === 'citation' ? 'Citation' : (action === 'bib' ? 'BibTeX' : 'Abstract');
+      let html  = '';
+
+      if (action === 'abstract') {
+        const payloadEl = card.querySelector('.payload-abstract');
+        const text = (payloadEl?.textContent || 'No abstract available.').trim();
+        showPanel(card, label, text, 'abstract');
+        return;
+      }
+
+      if (action === 'citation') {
+        // Pull APA-formatted HTML from hidden #refs list: <div id="ref-KEY">
+        const ref = document.querySelector('#ref-' + key);
+        html = (ref ? ref.innerHTML : 'Citation unavailable.').trim();
+        showPanel(card, label, html, 'citation');
+        return;
+      }
+
+      if (action === 'bib') {
+        const payloadEl = card.querySelector('.payload-bibtex');
+        const text = (payloadEl?.textContent || 'No BibTeX available.').trim();
+        showPanel(card, label, text, 'bib');
+        return;
+      }
+    }
+  }, false);
+
+  // Copy button
+  document.addEventListener('click', function(evt) {
+    const btn = evt.target.closest('.copy-btn');
+    if (!btn) return;
+    const card = getCard(btn);
+    const area = card.querySelector('.toggle-area');
+    const contentEl = area.querySelector('.content');
+
+    let textToCopy = '';
+    const pre = contentEl.querySelector('pre');
+    if (pre) textToCopy = pre.textContent;
+    else textToCopy = contentEl.innerText;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      const toast = area.querySelector('.copy-toast');
+      toast.style.display = 'inline-block';
+      setTimeout(() => { toast.style.display = 'none'; }, 1200);
+    }).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = textToCopy;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    });
+  }, false);
+})();
+</script>
+```
+
+```{r}
+#| label: render-publications
+
+build_card <- function(
+  key, entry, title, authors_card, year, venue,
+  abstract, bibtex,
+  preprint_url = NA_character_, materials_url = NA_character_,
+  doi_url = NA_character_, ...
+) {
+  has_preprint_key  <- !is.null(entry$preprint)  && length(entry$preprint)  > 0
+  has_materials_key <- !is.null(entry$materials) && length(entry$materials) > 0
+
+  payloads <- tags$div(
+    style = "display:none;",
+    tags$div(class = "payload-abstract", abstract %||% ""),
+    tags$div(class = "payload-bibtex",  bibtex   %||% "")
+  )
+
+  ttl_node <- if (isTRUE(nzchar(doi_url %||% ""))) {
+    tags$div(class = "pub-title", tags$a(title, href = doi_url, target = "_blank", rel = "noopener"))
+  } else {
+    tags$div(class = "pub-title", title)
+  }
+
+  meta <- tags$div(
+    class = "pub-meta",
+    if (nzchar(authors_card %||% "")) {
+      tagList(HTML(authors_card), tags$br())
+    } else {
+      NULL
+    },
+    tagList(if (nzchar(venue %||% "")) tags$em(venue) else NULL)
+  )
+
+  actions <- tags$div(
+    class = "pub-actions",
+    tags$a("Abstract", href = "#", `data-action`="abstract", role="button"),
+    tags$a("Citation", href = "#", `data-action`="citation", role="button"),
+    tags$a("BibTeX",   href = "#", `data-action`="bib",      role="button"),
+    if (isTRUE(has_preprint_key))
+      tags$a("Preprint", class = "external", href = (preprint_url %||% "#"), target = "_blank", rel="noopener"),
+    if (isTRUE(has_materials_key))
+      tags$a("Materials", class = "external", href = (materials_url %||% "#"), target = "_blank", rel="noopener")
+  )
+
+  toggle_panel <- tags$div(
+    class = "toggle-area",
+    `data-current` = "",
+    tags$button(class = "copy-btn", "Copy"),
+    tags$span(class = "copy-toast", "Copied!"),
+    tags$div(class = "panel-label", "—"),
+    tags$div(class = "content")
+  )
+
+  tags$div(class = "pub-card", `data-key` = key, ttl_node, meta, actions, toggle_panel, payloads)
+}
+
+years <- rows |>
+  distinct(year_lbl, year_num) |>
+  arrange(desc(year_num), desc(year_lbl)) |>
+  pull(year_lbl)
+
+groups <- lapply(years, function(y) {
+  subset <- rows |> filter(year_lbl == y)
+
+  subset_min <- subset |>
+    select(
+      key, entry, title, authors_card, year, venue,
+      abstract, bibtex,
+      preprint_url, materials_url, doi_url
+    )
+  cards <- pmap(subset_min, build_card)
+
+  tags$div(
+    class = "year-group",
+    tags$h2(class = "year-title anchored", id = paste0("y-", y), y),
+    tags$div(cards)
+  )
+})
+
+browsable(tags$div(groups))
+```
