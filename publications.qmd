@@ -95,8 +95,8 @@ execute:
 ```
 
 ```{r}
-if (!requireNamespace("bibtex", quietly = TRUE)) stop("Install the 'bibtex' package.")
-if (!requireNamespace("htmltools", quietly = TRUE)) stop("Install the 'htmltools' package.")
+library(bibtex)
+library(htmltools)
 
 bib <- bibtex::read.bib("publications.bib")
 
