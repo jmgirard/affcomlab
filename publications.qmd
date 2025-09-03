@@ -142,7 +142,8 @@ to_row <- function(x, key = "") {
     publication = strip_braces(container),
     doi         = doi_link,
     preprint    = chr1(x$preprint),
-    materials   = chr1(x$materials)
+    materials   = chr1(x$materials),
+    url         = chr1(x$url)
   )
 }
 
@@ -201,8 +202,11 @@ render_timeline <- function(rows_sub) {
 
       cat('<div class="tl-item">')
 
-      # Title link priority: DOI > Preprint > plain text
-      link_href <- if (nzchar(r$doi)) r$doi else if (nzchar(r$preprint)) r$preprint else ""
+      # Title link priority: DOI > Preprint > URL > plain text
+      link_href <- if (nzchar(r$doi)) r$doi else
+                   if (nzchar(r$preprint)) r$preprint else
+                   if (nzchar(r$url)) r$url else
+                   ""
       if (nzchar(link_href)) {
         cat(sprintf(
           '<div class="tl-title"><a href="%s" target="_blank" rel="noopener">%s</a></div>',
