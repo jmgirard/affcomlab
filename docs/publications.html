@@ -152,6 +152,8 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </nav>
 <div class="cell">
 <style type="text/css">
+:root { --tl-shift-x: -.25rem; } 
+
 .timeline {
   margin-left: 0;
   padding-left: 0;
@@ -166,9 +168,9 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 .year-group::before {
   content: "";
   position: absolute;
-  left: 0.25rem;
-  top: 0.3rem;
-  bottom: 0.3rem;
+  left: calc(0.25rem + var(--tl-shift-x));
+  top: 0.25rem;
+  bottom: 0.25rem;
   width: 2px;
   background: var(--bs-border-color);
 }
@@ -186,8 +188,11 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 .tl-item::before {
   content: "";
   position: absolute;
-  left: -0.4rem; top: .45rem;
-  width: .5rem; height: .5rem; border-radius: 50%;
+  left: calc(var(--tl-shift-x)); 
+  top: .45rem;
+  width: .4rem; 
+  height: .4rem; 
+  border-radius: 50%;
   background: var(--bs-primary);
   box-shadow: 0 0 0 3px var(--bs-body-bg);
 }
@@ -273,7 +278,7 @@ Rincon Caicedo, Girard, Punt, Giovanetti, &amp; Ilardi · <em>Journal of Latinx 
 Girard, Yermol, Bylsma, Cohn, Fournier, Morency, &amp; Swartz · <em>Journal of Consulting and Clinical Psychology</em>
 </div>
 <div class="res-links">
-<a href="https://osf.io/preprints/psyarxiv/b2a87\_v1" class="link-secondary" target="_blank" rel="noopener" title="Preprint"><i class="bi bi-file-earmark-text"></i> preprint</a>
+<a href="https://osf.io/preprints/psyarxiv/b2a87\_v1" class="link-secondary" target="_blank" rel="noopener" title="Preprint"><i class="bi bi-file-earmark-text"></i> preprint</a> <a href="https://osf.io/y6f3s/" class="link-secondary" target="_blank" rel="noopener" title="Materials"><i class="bi bi-file-earmark-zip"></i> materials</a>
 </div>
 </div>
 <div class="tl-item">

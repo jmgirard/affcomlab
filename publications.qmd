@@ -18,6 +18,8 @@ execute:
 ```
 
 ```{css}
+:root { --tl-shift-x: -.25rem; } 
+
 .timeline {
   margin-left: 0;
   padding-left: 0;
@@ -32,9 +34,9 @@ execute:
 .year-group::before {
   content: "";
   position: absolute;
-  left: 0.25rem;
-  top: 0.3rem;
-  bottom: 0.3rem;
+  left: calc(0.25rem + var(--tl-shift-x));
+  top: 0.25rem;
+  bottom: 0.25rem;
   width: 2px;
   background: var(--bs-border-color);
 }
@@ -52,8 +54,11 @@ execute:
 .tl-item::before {
   content: "";
   position: absolute;
-  left: -0.4rem; top: .45rem;
-  width: .5rem; height: .5rem; border-radius: 50%;
+  left: calc(var(--tl-shift-x)); 
+  top: .45rem;
+  width: .4rem; 
+  height: .4rem; 
+  border-radius: 50%;
   background: var(--bs-primary);
   box-shadow: 0 0 0 3px var(--bs-body-bg);
 }
