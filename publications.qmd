@@ -52,15 +52,24 @@ execute:
 .tl-item::before {
   content: "";
   position: absolute;
-  left: -0.38rem; top: .4rem;
+  left: -0.4rem; top: .45rem;
   width: .5rem; height: .5rem; border-radius: 50%;
   background: var(--bs-primary);
   box-shadow: 0 0 0 3px var(--bs-body-bg);
 }
 
 .tl-title { margin: 0 0 .1rem 0; font-weight: 400; }
-.tl-title a { font-weight: 400; color: inherit; text-decoration: none; }
-.tl-title a:hover { text-decoration: underline; }
+.tl-title a {
+  display: inline-block;
+  color: var(--bs-primary);
+  opacity: .85;
+  text-decoration: none;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.tl-title a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
 
 .tl-meta  { color: var(--bs-secondary-color); font-size: .95rem; }
 .tl-meta em { font-style: italic; } 
@@ -71,10 +80,11 @@ execute:
   color: var(--bs-secondary-color);
 }
 .res-links a {
+  padding: 0 .25rem; border-radius: .4rem;
+  transition: background-color .15s ease, color .15s ease;
   text-decoration: none;
-  margin-right: .6rem;
 }
-.res-links a:hover { text-decoration: underline; }
+.res-links a:hover { background: rgba(0,0,0,.05); color: var(--bs-body-color); }
 .res-links i { margin-right: .25rem; }
 
 ```

@@ -186,15 +186,24 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 .tl-item::before {
   content: "";
   position: absolute;
-  left: -0.38rem; top: .4rem;
+  left: -0.4rem; top: .45rem;
   width: .5rem; height: .5rem; border-radius: 50%;
   background: var(--bs-primary);
   box-shadow: 0 0 0 3px var(--bs-body-bg);
 }
 
 .tl-title { margin: 0 0 .1rem 0; font-weight: 400; }
-.tl-title a { font-weight: 400; color: inherit; text-decoration: none; }
-.tl-title a:hover { text-decoration: underline; }
+.tl-title a {
+  display: inline-block;
+  color: var(--bs-primary);
+  opacity: .85;
+  text-decoration: none;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.tl-title a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
 
 .tl-meta  { color: var(--bs-secondary-color); font-size: .95rem; }
 .tl-meta em { font-style: italic; } 
@@ -205,10 +214,11 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
   color: var(--bs-secondary-color);
 }
 .res-links a {
+  padding: 0 .25rem; border-radius: .4rem;
+  transition: background-color .15s ease, color .15s ease;
   text-decoration: none;
-  margin-right: .6rem;
 }
-.res-links a:hover { text-decoration: underline; }
+.res-links a:hover { background: rgba(0,0,0,.05); color: var(--bs-body-color); }
 .res-links i { margin-right: .25rem; }
 
 </style>
@@ -324,6 +334,17 @@ Sprunger, Girard, &amp; Chard · <em>Journal of Traumatic Stress</em>
 </div>
 <div class="res-links">
 <a href="https://osf.io/xn4w9/" class="link-secondary" target="_blank" rel="noopener" title="Materials"><i class="bi bi-file-earmark-zip"></i> materials</a>
+</div>
+</div>
+<div class="tl-item">
+<div class="tl-title">
+<a href="https://doi.org/10.1145/3652988.3673917" target="_blank" rel="noopener">GeSTICS: A Multimodal Corpus for Studying Gesture Synthesis in Two-Party Interactions with Contextualized Speech</a>
+</div>
+<div class="tl-meta">
+Kebe, Birlikci, Boudin, Ishii, Girard, &amp; Morency · <em>Proceedings of the 24th ACM International Conference on Intelligent Virtual Agents</em>
+</div>
+<div class="res-links">
+
 </div>
 </div>
 <div class="tl-item">
@@ -453,13 +474,13 @@ Girard, Cohn, Yin, &amp; Morency · <em>Affective Science</em>
 </div>
 <div class="tl-item">
 <div class="tl-title">
-To Rate or Not to Rate: Investigating Evaluation Methods for Generated Co-Speech Gestures
+<a href="https://doi.org/10.1145/3462244.3479889" target="_blank" rel="noopener">To Rate or Not to Rate: Investigating Evaluation Methods for Generated Co-Speech Gestures</a>
 </div>
 <div class="tl-meta">
 Wolfert, Girard, Kucherenko, &amp; Belpaeme · <em>Proceedings of the 23rd International Conference on Multimodal Interaction</em>
 </div>
 <div class="res-links">
-
+<a href="https://arxiv.org/abs/2108.05709" class="link-secondary" target="_blank" rel="noopener" title="Preprint"><i class="bi bi-file-earmark-text"></i> preprint</a>
 </div>
 </div>
 </section>
@@ -524,17 +545,6 @@ Click the <strong>title</strong> of any publication to visit the publisher’s p
 </div>
 <div class="tl-item">
 <div class="tl-title">
-Affective Facial Computing: Generalizability across Domains
-</div>
-<div class="tl-meta">
-Cohn, Ertugrul, Chu, Girard, &amp; Hammal · <em>Multimodal Behavior Analysis in the Wild: Advances and Challenges</em>
-</div>
-<div class="res-links">
-
-</div>
-</div>
-<div class="tl-item">
-<div class="tl-title">
 <a href="https://doi.org/10.1016/j.brat.2019.103477" target="_blank" rel="noopener">Alexithymia – Not Autism – Is Associated with Frequency of Social Interactions in Adults</a>
 </div>
 <div class="tl-meta">
@@ -581,6 +591,17 @@ Girard, Shandar, Liu, Cohn, Yin, &amp; Morency · <em>Proceedings of the 8th Int
 <section class="year-group">
 <div class="year-label">
 2018
+</div>
+<div class="tl-item">
+<div class="tl-title">
+Affective Facial Computing: Generalizability across Domains
+</div>
+<div class="tl-meta">
+Cohn, Ertugrul, Chu, Girard, &amp; Hammal · <em>Multimodal Behavior Analysis in the Wild: Advances and Challenges</em>
+</div>
+<div class="res-links">
+
+</div>
 </div>
 <div class="tl-item">
 <div class="tl-title">
