@@ -33,8 +33,7 @@ Graduate students will complete coursework in the department and conduct researc
 More information about each admissions cycle can be found on the [News](news.qmd) page.
 
 ```{=html}
-<a href="https://psychology.ku.edu/sites/psychology/files/documents/Application%20Instructions/BBQApplicationInstructions.pdf" class="btn btn-primary rounded-pill me-2">Apply to the BBQ Program</a>
-<a href="https://psychology.ku.edu/sites/psychology/files/documents/Application%20Instructions/Clinical%26ClinicalHealthApplicationInstructions.pdf" class="btn btn-primary rounded-pill">Apply to the CPS Program</a>
+<a href="https://psychology.ku.edu/psychology-graduate-program" class="btn btn-primary rounded-pill me-2">Learn About Graduate Admissions</a>
 ```
 
 ## For Prospective Postdocs and Staff
