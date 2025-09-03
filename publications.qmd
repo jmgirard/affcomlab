@@ -1,30 +1,218 @@
 ---
-pagetitle: "Publications | AffCom Lab"
+title: "Publications | AffCom Lab"
 toc: false
-listing:
-  - id: articles
-    contents: "publications/*/**.qmd"
-    template: ./ejs/article.ejs
-    categories: true
-    sort:
-      - "year desc"
-      - "title"
-    sort-ui: [title,author,publication,year]
-    filter-ui: [title,author,publication,year]
-    page-size: 10
-    field-display-names: 
-      publication: "Publication"
-      year: "Year"
+format:
+  html:
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
-```{=html}
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Publications</li>
-  </ol>
-</nav>
+Click the **title** of any publication to visit the publisher’s page. When shown, the **preprint** link provides a freely accessible version, and the **materials** link points to open-science resources (e.g., data, code, or supplementary files) for that paper.
+
+```{css}
+.timeline {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.year-group {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem; 
+}
+.year-group::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 2px;
+  background: var(--bs-border-color);
+}
+
+.year-label {
+  font-weight: 700;
+  margin: .8rem 0 .4rem 0;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 1.25rem;   
+  padding-left: .75rem;
+}
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: -0.38rem; top: .4rem;
+  width: .5rem; height: .5rem; border-radius: 50%;
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 3px var(--bs-body-bg);
+}
+
+.tl-title { margin: 0 0 .1rem 0; font-weight: 400; }
+.tl-title a { font-weight: 400; color: inherit; text-decoration: none; }
+.tl-title a:hover { text-decoration: underline; }
+
+.tl-meta  { color: var(--bs-secondary-color); font-size: .95rem; }
+.tl-meta em { font-style: italic; } 
+
+.tl-actions .btn { margin-right: .4rem; }
+.tl-actions { margin-top: .35rem; }
+
+.res-links {
+  margin-top: .25rem;
+  font-size: .9rem;                 /* smaller than body text */
+  color: var(--bs-secondary-color);
+}
+.res-links a {
+  text-decoration: none;
+  margin-right: .6rem;
+}
+.res-links a:hover { text-decoration: underline; }
+.res-links i { margin-right: .25rem; }
+
 ```
 
-:::{#articles}
-:::
+```{r}
+#| results: 'asis'
+#| echo: false
+#| message: false
+#| warning: false
+
+if (!requireNamespace("bibtex", quietly = TRUE)) stop("Install the 'bibtex' package.")
+if (!requireNamespace("htmltools", quietly = TRUE)) stop("Install the 'htmltools' package.")
+
+bib <- bibtex::read.bib("publications.bib")
+
+strip_braces <- function(s) {
+  s <- if (is.null(s) || length(s) == 0) "" else as.character(s[[1]])
+  gsub("[{}]", "", s, perl = TRUE)
+}
+
+fmt_authors_last <- function(pers) {
+  if (length(pers) == 0) return("")
+  last <- vapply(pers, function(x) {
+    fam <- paste(x$family, collapse = " ")
+    if (nzchar(fam)) fam else {
+      giv <- paste(x$given, collapse = " ")
+      if (nzchar(giv)) giv else ""
+    }
+  }, character(1))
+  last <- last[nzchar(last)]
+  n <- length(last)
+  if (n == 0) return("")
+  if (n == 1) return(last)
+  if (n == 2) return(paste(last, collapse = " & "))
+  paste0(paste(last[-n], collapse = ", "), ", & ", last[n])
+}
+
+chr1 <- function(x) if (is.null(x) || length(x) == 0) "" else as.character(x[[1]])
+
+to_row <- function(x) {
+  # pick container (venue)
+  container <- x$journal; if (!nzchar(chr1(container))) container <- x$booktitle
+  if (!nzchar(chr1(container))) container <- x$publisher
+
+  # doi -> clickable link
+  doi_val  <- chr1(x$doi)
+  doi_link <- if (nzchar(doi_val)) paste0("https://doi.org/", doi_val) else ""
+
+  list(
+    title       = strip_braces(x$title),              # <- remove {}
+    authors     = fmt_authors_last(x$author),         # <- last names only
+    year        = chr1(x$year),
+    publication = strip_braces(container),            # <- remove {}
+    doi         = doi_link,
+    preprint    = chr1(x$preprint),
+    materials   = chr1(x$materials)
+  )
+}
+
+# build rows
+rows <- lapply(as.list(bib), to_row)
+
+# sort: year desc, then title asc
+year_num  <- vapply(rows, \(r) suppressWarnings(as.numeric(r$year)), 0)
+year_num[is.na(year_num)] <- -Inf
+title_vec <- vapply(rows, \(r) tolower(r$title), "")
+rows <- rows[order(-year_num, title_vec)]
+
+#===============================================================================
+
+# Group rows by year; empty -> "Unknown"
+yrs <- vapply(rows, \(r) if (nzchar(r$year)) r$year else "Unknown", "")
+
+# Sort years: numeric years desc, then any non-numeric labels, with "Unknown" last
+uniq <- unique(yrs)
+is_num <- !is.na(suppressWarnings(as.numeric(uniq)))
+num_years   <- sort(as.numeric(uniq[is_num]), decreasing = TRUE)
+other_years <- setdiff(uniq[!is_num], "Unknown")
+years_sorted <- c(as.character(num_years), sort(other_years), if ("Unknown" %in% uniq) "Unknown")
+
+cat('<div class="timeline">')
+for (yr in years_sorted) {
+  group <- rows[yrs == yr]
+  if (length(group) == 0) next
+
+  cat('<section class="year-group">')
+  cat(sprintf('<div class="year-label">%s</div>', htmltools::htmlEscape(yr)))
+
+  # ---------- inner loop (per item) ----------
+  for (r in group) {
+    title_html   <- htmltools::htmlEscape(r$title)
+    authors_html <- htmltools::htmlEscape(r$authors)
+    pub_html     <- htmltools::htmlEscape(r$publication)
+
+    cat('<div class="tl-item">')
+
+    # Title link priority: DOI > Preprint > plain text
+    link_href <- if (nzchar(r$doi)) r$doi else if (nzchar(r$preprint)) r$preprint else ""
+
+    if (nzchar(link_href)) {
+      cat(sprintf(
+        '<div class="tl-title"><a href="%s" target="_blank" rel="noopener">%s</a></div>',
+        htmltools::htmlEscape(link_href), title_html
+      ))
+    } else {
+      cat(sprintf('<div class="tl-title">%s</div>', title_html))
+    }
+
+    # Meta line: Authors · <em>Venue</em>
+    if (nzchar(r$publication)) {
+      cat(sprintf('<div class="tl-meta">%s · <em>%s</em></div>', authors_html, pub_html))
+    } else {
+      cat(sprintf('<div class="tl-meta">%s</div>', authors_html))
+    }
+
+    # Inline resource links: small text, no buttons
+    cat('<div class="res-links">')
+    if (nzchar(r$preprint)) {
+      cat(sprintf(
+        '<a href="%s" class="link-secondary" target="_blank" rel="noopener" title="Preprint">
+           <i class="bi bi-file-earmark-text"></i> preprint
+         </a> ',
+        htmltools::htmlEscape(r$preprint)
+      ))
+    }
+    if (nzchar(r$materials)) {
+      cat(sprintf(
+        '<a href="%s" class="link-secondary" target="_blank" rel="noopener" title="Materials">
+           <i class="bi bi-file-earmark-zip"></i> materials
+         </a> ',
+        htmltools::htmlEscape(r$materials)
+      ))
+    }
+    cat('</div>')
+    cat('</div>') # tl-item
+  }
+  # ---------- end inner loop ----------
+
+  cat('</section>')
+}
+cat('</div>')
+```
+
