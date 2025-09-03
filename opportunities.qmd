@@ -17,20 +17,18 @@ The lab is frequently home to undergraduate students from the Psychology and Beh
 
 Undergraduate students work as **research assistants**, learning about the scientific method and assisting in the collection and processing of research data. Many enroll in PSYC 480 and receive **credit hours** for this work. Research assistants attend weekly lab meetings and can expect a **letter of recommendation** from Dr. Girard describing their work in and contributions to the lab (please give one month of advanced notice). Opportunities to earn **co-authorship** on research products (e.g., conference presentations) are also occasionally offered to advanced research assistants.
 
-Honors students will also occasionally design and complete an independent research project (i.e., **honors thesis**) under the supervision of Dr. Girard over the course of their senior year. These students typically apply for (and have often won) **research awards** of $1000 from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and make oral or poster **presentations** about their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium). 
+Honors students will also occasionally design and complete an independent research project (i.e., **honors thesis**) under the supervision of Dr. Girard over the course of their senior year. These students typically apply for (and have often won) **research awards** from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and make oral or poster **presentations** about their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium). 
 
 ```{=html}
 <a href="mailto:jmgirard@ku.edu" class="btn btn-primary rounded-pill">Apply to be a Research Assistant</a>
 ```
 
 ## For Prospective Graduate Students
-The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (i.e., **PhD**s) in three tracks: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology; note that the department does not offer a terminal Masters degree and that the CPS program is focused on adults rather than children.
+The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (i.e., **PhD**s) in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology; note that the department does not offer a terminal Masters degree and that the CPS concentration is focused on adult psychopathology rather than child psychopathology.
 
-Dr. Girard advises graduate students in the **BBQ** and **CPS** tracks and is a particularly good match for students with interests that span both areas (e.g., CPS students interested in advanced methods or BBQ students interested in medical applications).
+Dr. Girard advises graduate students in the **BBQ** and **CPS** concentration and is a particularly good match for students with interests that span both areas (e.g., CPS students interested in advanced methods or BBQ students interested in medical applications).
 
-Graduate students will complete coursework in the department and conduct research in the lab. They will receive a world-class education in the scientific method and have many opportunities to contribute to ongoing research projects.
-
-More information about each admissions cycle can be found on the [News](news.qmd) page.
+Graduate students will complete coursework in the department and conduct research in the lab. They will receive a world-class education in the scientific method and have many opportunities to contribute to ongoing research projects. More information about each admissions cycle can be found on the [News](news.qmd) page.
 
 ```{=html}
 <a href="https://psychology.ku.edu/psychology-graduate-program" class="btn btn-primary rounded-pill me-2">Learn About Graduate Admissions</a>
