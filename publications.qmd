@@ -255,11 +255,10 @@ render_timeline <- function(rows_sub) {
 since_idx  <- year_num >= 2020
 before_idx <- year_num < 2020
 
-cat('<h2>Since Joining KU</h2>',
-    'Click the **title** of any publication to visit the publisher’s page. When shown, the **preprint** link provides a freely accessible version, and the **materials** link points to open-science resources (e.g., data, code, files) for that paper.')
+cat('<h2>Since Joining KU</h2>', 'Click the *title* of any publication to visit the publisher’s page. When shown, the *preprint* link provides a freely accessible version, and the *materials* link points to open-science resources (e.g., data, code, files) for that paper.')
 render_timeline(rows[since_idx])
 
-cat('<h2>Before Joining KU</h2>', 'Click the **title** of any publication to visit the publisher’s page. When shown, the **preprint** link provides a freely accessible version, and the **materials** link points to open-science resources (e.g., data, code, files) for that paper.')
+cat('<h2>Before Joining KU</h2>', 'Click the *title* of any publication to visit the publisher’s page. When shown, the *preprint* link provides a freely accessible version, and the *materials* link points to open-science resources (e.g., data, code, files) for that paper.')
 render_timeline(rows[before_idx])
 ```
 
