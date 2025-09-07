@@ -100,34 +100,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-graduate-students .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-graduate-students'] = new List('listing-graduate-students', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-research-assistants .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -314,19 +286,11 @@ Lab Director
 </div>
 </div></a>
 </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="graduate-students" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-students">Graduate Students</h2>
-<div id="listing-graduate-students" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1756857696186" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
-<a href="./people/gras/gray_kassandra.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1756857696186" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<a href="./people/staff/gray_kassandra.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./people/gras/gray_kassandra.jpg" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="./people/staff/gray_kassandra.jpg" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -338,11 +302,11 @@ PhD Student
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1756857696187" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-<a href="./people/gras/jun_daiil.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1756857696187" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
+<a href="./people/staff/jun_daiil.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./people/gras/jun_daiil.webp" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="./people/staff/jun_daiil.webp" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -354,11 +318,11 @@ PhD Student
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1756857696190" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
-<a href="./people/gras/simmons_aaron.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1756857696190" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
+<a href="./people/staff/simmons_aaron.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./people/gras/simmons_aaron.webp" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="./people/staff/simmons_aaron.webp" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -370,11 +334,11 @@ PhD Student
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1756857696190" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
-<a href="./people/gras/yang_yuanyuan.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1756857696190" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
+<a href="./people/staff/yang_yuanyuan.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./people/gras/yang_yuanyuan.webp" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="./people/staff/yang_yuanyuan.webp" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -386,11 +350,11 @@ PhD Student
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1756857696193" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
-<a href="./people/gras/yermol_dasha.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1756857696193" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
+<a href="./people/staff/yermol_dasha.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./people/gras/yermol_dasha.png" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="./people/staff/yermol_dasha.png" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -602,7 +566,7 @@ Fall 2023
 
 </tr>
 
-<tr data-index="5" data-listing-file-modified-sort="1756857696164" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="Mattias Brohl" data-listing-filename-sort="brohl_mattias.qmd">
+<tr data-index="5" data-listing-file-modified-sort="1757272173796" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="Mattias Brohl" data-listing-filename-sort="brohl_mattias.qmd">
 <td>
 <a href="./people/alumni/brohl_mattias.html" class="title listing-title">Mattias Brohl</a>
 </td>
@@ -613,7 +577,7 @@ Fall 2023
 <span class="listing-started">Fall 2024</span>
 </td>
 <td>
-<span class="listing-ended">Current</span>
+<span class="listing-ended">Spring 2025</span>
 </td>
 
 </tr>
@@ -634,7 +598,7 @@ Fall 2023
 
 </tr>
 
-<tr data-index="7" data-listing-file-modified-sort="1756857696166" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Andrew Dennis" data-listing-filename-sort="dennis_andrew.qmd">
+<tr data-index="7" data-listing-file-modified-sort="1757272179322" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Andrew Dennis" data-listing-filename-sort="dennis_andrew.qmd">
 <td>
 <a href="./people/alumni/dennis_andrew.html" class="title listing-title">Andrew Dennis</a>
 </td>
@@ -645,7 +609,7 @@ Fall 2023
 <span class="listing-started">Spring 2024</span>
 </td>
 <td>
-<span class="listing-ended">Current</span>
+<span class="listing-ended">Spring 2025</span>
 </td>
 
 </tr>
@@ -698,7 +662,7 @@ Fall 2023
 
 </tr>
 
-<tr data-index="11" data-listing-file-modified-sort="1756857696168" data-listing-reading-time-sort="1" data-listing-word-count-sort="97" data-listing-title-sort="Felix Gabay" data-listing-filename-sort="gabay_felix.qmd">
+<tr data-index="11" data-listing-file-modified-sort="1757272187484" data-listing-reading-time-sort="1" data-listing-word-count-sort="97" data-listing-title-sort="Felix Gabay" data-listing-filename-sort="gabay_felix.qmd">
 <td>
 <a href="./people/alumni/gabay_felix.html" class="title listing-title">Felix Gabay</a>
 </td>
@@ -709,7 +673,7 @@ Fall 2023
 <span class="listing-started">Spring 2025</span>
 </td>
 <td>
-<span class="listing-ended">Current</span>
+<span class="listing-ended">Spring 2025</span>
 </td>
 
 </tr>
@@ -810,7 +774,7 @@ Fall 2023
 
 </tr>
 
-<tr data-index="18" data-listing-file-modified-sort="1756857696172" data-listing-reading-time-sort="1" data-listing-word-count-sort="65" data-listing-title-sort="Saeid Reza Mohammadipour" data-listing-filename-sort="mohammadipour_saeid.qmd">
+<tr data-index="18" data-listing-file-modified-sort="1757272205212" data-listing-reading-time-sort="1" data-listing-word-count-sort="65" data-listing-title-sort="Saeid Reza Mohammadipour" data-listing-filename-sort="mohammadipour_saeid.qmd">
 <td>
 <a href="./people/alumni/mohammadipour_saeid.html" class="title listing-title">Saeid Reza Mohammadipour</a>
 </td>
@@ -821,7 +785,7 @@ Fall 2023
 <span class="listing-started">Fall 2023</span>
 </td>
 <td>
-<span class="listing-ended">Current</span>
+<span class="listing-ended">Spring 2025</span>
 </td>
 
 </tr>
@@ -922,7 +886,7 @@ Fall 2023
 
 </tr>
 
-<tr data-index="25" data-listing-file-modified-sort="1756857696178" data-listing-reading-time-sort="1" data-listing-word-count-sort="120" data-listing-title-sort="Helenna Shcherbinin" data-listing-filename-sort="shcherbinin_helenna.qmd">
+<tr data-index="25" data-listing-file-modified-sort="1757272213021" data-listing-reading-time-sort="1" data-listing-word-count-sort="120" data-listing-title-sort="Helenna Shcherbinin" data-listing-filename-sort="shcherbinin_helenna.qmd">
 <td>
 <a href="./people/alumni/shcherbinin_helenna.html" class="title listing-title">Helenna Shcherbinin</a>
 </td>
@@ -933,7 +897,7 @@ Fall 2023
 <span class="listing-started">Fall 2023</span>
 </td>
 <td>
-<span class="listing-ended">Current</span>
+<span class="listing-ended">Spring 2025</span>
 </td>
 
 </tr>

@@ -4,7 +4,7 @@ sortby: "Mohammadipour, Saeid"
 subtitle: "Research Assistant"
 image: mohammadipour_saeid.webp
 started: "Fall 2023"
-ended: "Current"
+ended: "Spring 2025"
 toc: false
 about:
   id: person-profile
