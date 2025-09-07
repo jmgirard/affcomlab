@@ -6,8 +6,8 @@ toc: false
 ```{=html}
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="people.html">People</a></li>
+    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../people.html">People</a></li>
     <li class="breadcrumb-item active" aria-current="page">Alumni</li>
   </ol>
 </nav>
@@ -21,6 +21,5 @@ toc: false
 
 library(reactable)
 alumni <- read.csv("alumni.csv")
-reactable(alumni)
+reactable(alumni, pagination = FALSE)
 ```
-
