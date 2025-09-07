@@ -1,5 +1,5 @@
 ---
-pagetitle: "Contact | AffCom Lab"
+pagetitle: "Contact"
 toc: false
 email-obfuscation: javascript
 ---

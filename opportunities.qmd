@@ -1,5 +1,5 @@
 ---
-pagetitle: "Opportunities | AffCom Lab"
+pagetitle: "Opportunities"
 toc: true
 ---
 

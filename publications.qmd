@@ -1,6 +1,5 @@
 ---
-title: ""
-pagetitle: "Publications | AffCom Lab"
+pagetitle: "Publications"
 toc: false
 bibliography: publications.bib
 csl: apa.csl

@@ -1,5 +1,5 @@
 ---
-pagetitle: "Alumni | AffCom Lab"
+pagetitle: "Alumni"
 toc: false
 page-layout: full
 ---
