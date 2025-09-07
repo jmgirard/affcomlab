@@ -42,17 +42,22 @@ toc: true
 
 ### Current Funding
 
+- *"Building Healthy Eating and Self-Esteem Together for University Students"*
+    - R34, National Institutes of Health (NIMH)
+    - Forbush, Christensen-Pacella (PIs), Co-I: **Girard**
+    - 01/2025 – 12/2027
+
 - *"COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stress"*
-    - National Institutes of Health (COBRE)
+    - P20, National Institutes of Health (COBRE)
     - **Girard** (PI)
     - 01/2025 – 12/2025
+
+### Completed Funding
 
 - *"Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning"*
     - R01, National Institutes of Health (NIMH)
     - Baker (PI), Co-Is: **Girard**, Morency
     - 04/2021 – 02/2025
-
-### Completed Funding
 
 - *"Kansas Data Science Training Pathways | An Integrated Model"*
   - National Science Foundation (EPSCoR REI)
