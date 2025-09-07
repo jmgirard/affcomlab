@@ -10,3 +10,7 @@ toc: false
 :::
 
 ![](./img/showcase.svg){.hero}
+
+:::{.callout-note}
+**2025-09-07:** Many parts of the website have been redesigned. Take a look around!
+:::
