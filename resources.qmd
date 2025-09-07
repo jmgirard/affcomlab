@@ -14,6 +14,13 @@ toc: true
 
 ## Datasets
 
+- **Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset**<br />
+  A large-scale collection of over 4,000 hours of face-to-face interaction footage<br />
+  from over participants (n = 4000) in diverse contexts for social AI research.<br />
+  *Primary Article/Citation:* [Agrawal et al. (2025)](https://arxiv.org/abs/2506.22554)<br />
+  *Website:* <https://ai.meta.com/research/seamless-interaction/><br />
+  *Open Access:* <https://github.com/facebookresearch/seamless_interaction>
+
 - **DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis**<br />
   A curated collection of affective movie clips (n = 22), metadata about those clips, and<br />
   ratings of the emotional content of those movie clips from research participants (n = 83)<br />
@@ -40,52 +47,48 @@ toc: true
 
 ## Software
 
-### Maturing
-- **embedpdf** (2023)<br />
-  Extension for embedding PDF files in Quarto HTML documents<br />
-  *Source Code:* <https://github.com/jmgirard/embedpdf>
+### Statistics Software:
+- [circumplex][circumplex] - A stable R package for analyzing and visualizing circular data.
+- [mReliability][mreliability] - A stable (but approaching end-of-life) set of MATLAB functions for estimating inter-rater reliability.
+- [wcc][wcc] - An experimental R package for conducting windowed cross-correlation analyses.
+- [varde][varde] - An experimental R package for decomposing the variance in mixed effects models.
+- [agreement][agreement] - An experimental R package for estimating inter-rater reliability.
 
-- **lordicon** (2022)<br />
-  Extension for adding lordicon.com icons to Quarto HTML documents<br />
-  *Source Code:* <https://github.com/jmgirard/lordicon>
-  
-- **circumplex: Analysis and Visualization of Circumplex Data** (2017–2021)<br />
-  R functions and educational materials about circumplex data analysis/visualization<br />
-  *Documentation:* <https://circumplex.jmgirard.com><br />
-  *Source Code:* <http://github.com/jmgirard/circumplex>
+### Research Software:
+- [CARMA][carma] - A stable (but approaching end-of-life) software for collecting continuous media annotations.
+- [DARMA][darma] - A stable (but approaching end-of-life) software for collecting continuous two-dimensional media annotations.
+- [tidymedia][tidymedia] - An experimental R package for working with audio, video, and image files.
+- [openac][openac] - An experimental R package for automating common affective computing (and social signal processing) tasks.
+- [facs][facs] - An experimental R package for working with Facial Action Coding System (FACS) data.
+- [hitop][hitop] - An experimental R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
 
-- **mReliability: Inter-rater Reliability in MATLAB** (2015–2018)<br />
-  MATLAB functions and educational materials about inter-rater reliability<br />
-  *Documentation:* <https://mreliability.jmgirard.com><br />
-  *Source Code:* <http://github.com/jmgirard/mreliability>
+### Quarto Extensions
+- [lordicon][lordicon] - A stable Quarto extension for embedding animated [Lordicon](https://www.lordicon.com/icons) icons in HTML.
+- [honeypot][honeypot] - An experimental Quarto extension for detecting LLM cheating on HTML assignments.
+- [details][details] - A stable Quarto extension for embedding interactive details blocks in HTML documents.
+- [embedpdf][embedpdf] - A stable (but questioning) Quarto extension for embedding PDF files in HTML.
 
-- **DARMA: Dual Axis Rating and Media Annotation** (2014–2018)<br />
-  Software for collecting and reviewing 2D continuous ratings of media files<br />
-  *Documentation:* <https://darma.jmgirard.com><br />
-  *Source Code:* <http://github.com/jmgirard/darma>
-  
-- **CARMA: Continuous Affect Rating and Media Annotation** (2014–2018)<br />
-  Software for collecting and reviewing 1D continuous ratings of media files<br />
-  *Documentation:* <https://carma.jmgirard.com><br />
-  *Source Code:* <http://github.com/jmgirard/carma>
-  
-### Developing
-- **varde** (2022)<br />
-  R functions for decomposing variance in multilevel models<br />
-  *Source Code:* <https://github.com/affcomlab/varde>
-  
-- **wcc** (2022)<br />
-  R functions for windowed cross-correlation (synchrony) analyses<br />
-  *Source Code:* <https://github.com/jmgirard/wcc>
+### Docker Images:
+- [rstudio2u][rstudio2u] - A multiarchitecture (amd64/arm64) image combining rstudio and r2u
+- [rocker-bayes][rocker-bayes] - A multiarchitecture (amd64/arm64) image for Bayesian analysis in R
+- [wsl-whisper][wsl-whisper] - A WSL (amd64) image for AI transcription from R with CUDA-support
 
-- **profiles** (2022)<br />
-  R functions and RStudio add-ins for managing RStudio profiles<br />
-  *Source Code:* <https://github.com/jmgirard/profiles>
-
-- **tidymedia** (2021–2022)<br />
-  R functions for working with audio and video files in a tidy format<br />
-  *Source Code:* <https://github.com/jmgirard/tidymedia>
-
-- **agreement** (2018–2022)<br />
-  R functions for inter-rater reliability<br />
-  *Source Code:* <https://github.com/jmgirard/agreement>
+[circumplex]: https://circumplex.jmgirard.com/
+[mreliability]: https://mreliability.jmgirard.com
+[wcc]: https://github.com/jmgirard/wcc
+[varde]: https://github.com/affcomlab/varde
+[agreement]: https://github.com/jmgirard/agreement
+[carma]: https://carma.jmgirard.com
+[darma]: https://darma.jmgirard.com
+[tidymedia]: https://github.com/jmgirard/tidymedia
+[openac]: https://github.com/jmgirard/openac
+[facs]: https://github.com/jmgirard/facs
+[hitop]: https://github.com/jmgirard/hitop
+[lordicon]: https://github.com/jmgirard/lordicon
+[honeypot]: https://github.com/jmgirard/honeypot
+[details]: https://github.com/jmgirard/details
+[embedpdf]: https://github.com/jmgirard/embedpdf
+[rstudio2u]: https://github.com/jmgirard/rstudio2u
+[rocker-bayes]: https://github.com/jmgirard/rocker-bayes
+[wsl-whisper]: https://github.com/jmgirard/wsl-whisper
+[wsl-ollama]: https://github.com/jmgirard/wsl-ollama

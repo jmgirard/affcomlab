@@ -145,8 +145,10 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
   <li><a href="#datasets" id="toc-datasets" class="nav-link active" data-scroll-target="#datasets">Datasets</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a>
   <ul class="collapse">
-  <li><a href="#maturing" id="toc-maturing" class="nav-link" data-scroll-target="#maturing">Maturing</a></li>
-  <li><a href="#developing" id="toc-developing" class="nav-link" data-scroll-target="#developing">Developing</a></li>
+  <li><a href="#statistics-software" id="toc-statistics-software" class="nav-link" data-scroll-target="#statistics-software">Statistics Software:</a></li>
+  <li><a href="#research-software" id="toc-research-software" class="nav-link" data-scroll-target="#research-software">Research Software:</a></li>
+  <li><a href="#quarto-extensions" id="toc-quarto-extensions" class="nav-link" data-scroll-target="#quarto-extensions">Quarto Extensions</a></li>
+  <li><a href="#docker-images" id="toc-docker-images" class="nav-link" data-scroll-target="#docker-images">Docker Images:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -166,6 +168,7 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
 <ul>
+<li><p><strong>Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset</strong><br> A large-scale collection of over 4,000 hours of face-to-face interaction footage<br> from over participants (n = 4000) in diverse contexts for social AI research.<br> <em>Primary Article/Citation:</em> <a href="https://arxiv.org/abs/2506.22554">Agrawal et al.&nbsp;(2025)</a><br> <em>Website:</em> <a href="https://ai.meta.com/research/seamless-interaction/" class="uri">https://ai.meta.com/research/seamless-interaction/</a><br> <em>Open Access:</em> <a href="https://github.com/facebookresearch/seamless_interaction" class="uri">https://github.com/facebookresearch/seamless_interaction</a></p></li>
 <li><p><strong>DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis</strong><br> A curated collection of affective movie clips (n = 22), metadata about those clips, and<br> ratings of the emotional content of those movie clips from research participants (n = 83)<br> <em>Primary Article/Citation:</em> <a href="https://affcom.ku.edu/publications/proceedings/girard2023a.html">Girard, Tie, &amp; Liebenthal (2023)</a><br> <em>Website/Request Access:</em> <a href="https://dynamos.mgb.org" class="uri">https://dynamos.mgb.org</a></p></li>
 <li><p><strong>GFT: Group Formation Task Spontaneous Facial Expression Database</strong><br> A 2D video database of spontaneous behavior during unscripted social interactions<br> Complete with frame-level FACS annotations of facial behavior (n = 96)<br> <em>Primary Article/Citation:</em> <a href="https://affcom.ku.edu/publications/proceedings/girard2017b.html">Girard et al.&nbsp;(2017)</a><br> <em>Website/Request Access:</em> <a href="http://osf.io/7wcyz" class="uri">http://osf.io/7wcyz</a></p></li>
 <li><p><strong>MMSE/BP4D+: Multimodal Spontaneous Emotion Database</strong><br> An extension of BP4D that includes thermal and physiological data<br> Complete with frame-level FACS annotations of facial behavior (n = 140)<br> <em>Primary Article/Citation:</em> <a href="https://affcom.ku.edu/publications/proceedings/zhang2016.html">Zhang et al.&nbsp;(2016)</a><br> <em>Website/Request Access:</em> <a href="http://bit.ly/2yg39Cn" class="uri">http://bit.ly/2yg39Cn</a></p></li>
@@ -174,25 +177,42 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </section>
 <section id="software" class="level2">
 <h2 class="anchored" data-anchor-id="software">Software</h2>
-<section id="maturing" class="level3">
-<h3 class="anchored" data-anchor-id="maturing">Maturing</h3>
+<section id="statistics-software" class="level3">
+<h3 class="anchored" data-anchor-id="statistics-software">Statistics Software:</h3>
 <ul>
-<li><p><strong>embedpdf</strong> (2023)<br> Extension for embedding PDF files in Quarto HTML documents<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/embedpdf" class="uri">https://github.com/jmgirard/embedpdf</a></p></li>
-<li><p><strong>lordicon</strong> (2022)<br> Extension for adding lordicon.com icons to Quarto HTML documents<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/lordicon" class="uri">https://github.com/jmgirard/lordicon</a></p></li>
-<li><p><strong>circumplex: Analysis and Visualization of Circumplex Data</strong> (2017–2021)<br> R functions and educational materials about circumplex data analysis/visualization<br> <em>Documentation:</em> <a href="https://circumplex.jmgirard.com" class="uri">https://circumplex.jmgirard.com</a><br> <em>Source Code:</em> <a href="http://github.com/jmgirard/circumplex" class="uri">http://github.com/jmgirard/circumplex</a></p></li>
-<li><p><strong>mReliability: Inter-rater Reliability in MATLAB</strong> (2015–2018)<br> MATLAB functions and educational materials about inter-rater reliability<br> <em>Documentation:</em> <a href="https://mreliability.jmgirard.com" class="uri">https://mreliability.jmgirard.com</a><br> <em>Source Code:</em> <a href="http://github.com/jmgirard/mreliability" class="uri">http://github.com/jmgirard/mreliability</a></p></li>
-<li><p><strong>DARMA: Dual Axis Rating and Media Annotation</strong> (2014–2018)<br> Software for collecting and reviewing 2D continuous ratings of media files<br> <em>Documentation:</em> <a href="https://darma.jmgirard.com" class="uri">https://darma.jmgirard.com</a><br> <em>Source Code:</em> <a href="http://github.com/jmgirard/darma" class="uri">http://github.com/jmgirard/darma</a></p></li>
-<li><p><strong>CARMA: Continuous Affect Rating and Media Annotation</strong> (2014–2018)<br> Software for collecting and reviewing 1D continuous ratings of media files<br> <em>Documentation:</em> <a href="https://carma.jmgirard.com" class="uri">https://carma.jmgirard.com</a><br> <em>Source Code:</em> <a href="http://github.com/jmgirard/carma" class="uri">http://github.com/jmgirard/carma</a></p></li>
+<li><a href="https://circumplex.jmgirard.com/">circumplex</a> - A stable R package for analyzing and visualizing circular data.</li>
+<li><a href="https://mreliability.jmgirard.com">mReliability</a> - A stable (but approaching end-of-life) set of MATLAB functions for estimating inter-rater reliability.</li>
+<li><a href="https://github.com/jmgirard/wcc">wcc</a> - An experimental R package for conducting windowed cross-correlation analyses.</li>
+<li><a href="https://github.com/affcomlab/varde">varde</a> - An experimental R package for decomposing the variance in mixed effects models.</li>
+<li><a href="https://github.com/jmgirard/agreement">agreement</a> - An experimental R package for estimating inter-rater reliability.</li>
 </ul>
 </section>
-<section id="developing" class="level3">
-<h3 class="anchored" data-anchor-id="developing">Developing</h3>
+<section id="research-software" class="level3">
+<h3 class="anchored" data-anchor-id="research-software">Research Software:</h3>
 <ul>
-<li><p><strong>varde</strong> (2022)<br> R functions for decomposing variance in multilevel models<br> <em>Source Code:</em> <a href="https://github.com/affcomlab/varde" class="uri">https://github.com/affcomlab/varde</a></p></li>
-<li><p><strong>wcc</strong> (2022)<br> R functions for windowed cross-correlation (synchrony) analyses<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/wcc" class="uri">https://github.com/jmgirard/wcc</a></p></li>
-<li><p><strong>profiles</strong> (2022)<br> R functions and RStudio add-ins for managing RStudio profiles<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/profiles" class="uri">https://github.com/jmgirard/profiles</a></p></li>
-<li><p><strong>tidymedia</strong> (2021–2022)<br> R functions for working with audio and video files in a tidy format<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/tidymedia" class="uri">https://github.com/jmgirard/tidymedia</a></p></li>
-<li><p><strong>agreement</strong> (2018–2022)<br> R functions for inter-rater reliability<br> <em>Source Code:</em> <a href="https://github.com/jmgirard/agreement" class="uri">https://github.com/jmgirard/agreement</a></p></li>
+<li><a href="https://carma.jmgirard.com">CARMA</a> - A stable (but approaching end-of-life) software for collecting continuous media annotations.</li>
+<li><a href="https://darma.jmgirard.com">DARMA</a> - A stable (but approaching end-of-life) software for collecting continuous two-dimensional media annotations.</li>
+<li><a href="https://github.com/jmgirard/tidymedia">tidymedia</a> - An experimental R package for working with audio, video, and image files.</li>
+<li><a href="https://github.com/jmgirard/openac">openac</a> - An experimental R package for automating common affective computing (and social signal processing) tasks.</li>
+<li><a href="https://github.com/jmgirard/facs">facs</a> - An experimental R package for working with Facial Action Coding System (FACS) data.</li>
+<li><a href="https://github.com/jmgirard/hitop">hitop</a> - An experimental R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.</li>
+</ul>
+</section>
+<section id="quarto-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-extensions">Quarto Extensions</h3>
+<ul>
+<li><a href="https://github.com/jmgirard/lordicon">lordicon</a> - A stable Quarto extension for embedding animated <a href="https://www.lordicon.com/icons">Lordicon</a> icons in HTML.</li>
+<li><a href="https://github.com/jmgirard/honeypot">honeypot</a> - An experimental Quarto extension for detecting LLM cheating on HTML assignments.</li>
+<li><a href="https://github.com/jmgirard/details">details</a> - A stable Quarto extension for embedding interactive details blocks in HTML documents.</li>
+<li><a href="https://github.com/jmgirard/embedpdf">embedpdf</a> - A stable (but questioning) Quarto extension for embedding PDF files in HTML.</li>
+</ul>
+</section>
+<section id="docker-images" class="level3">
+<h3 class="anchored" data-anchor-id="docker-images">Docker Images:</h3>
+<ul>
+<li><a href="https://github.com/jmgirard/rstudio2u">rstudio2u</a> - A multiarchitecture (amd64/arm64) image combining rstudio and r2u</li>
+<li><a href="https://github.com/jmgirard/rocker-bayes">rocker-bayes</a> - A multiarchitecture (amd64/arm64) image for Bayesian analysis in R</li>
+<li><a href="https://github.com/jmgirard/wsl-whisper">wsl-whisper</a> - A WSL (amd64) image for AI transcription from R with CUDA-support</li>
 </ul>
 
 
