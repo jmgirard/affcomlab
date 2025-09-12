@@ -150,6 +150,9 @@ rows <- tibble(
     year_num = suppressWarnings(as.integer(str_extract(year, "\\d{4}"))),
     year_lbl = ifelse(is.na(year_num), "n.d.", as.character(year_num))
   ) |>
+  mutate(
+    primary = map_lgl(entry, ~ tolower(as.character(.x$primary %||% "false")) == "true")
+  ) |>
   arrange(desc(year_num), title)
 ```
 
@@ -224,6 +227,26 @@ section#bibliography.level1.unnumbered {
 .copy-toast {
   position: absolute; top: 6px; right: 70px; font-size: 0.8rem;
   background: #333; color: #fff; padding: 3px 7px; border-radius: 6px; display: none;
+}
+
+/* Lab-led star on Abstract link */
+.pub-actions .lab-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #ffb300;
+  user-select: none;
+}
+.pub-actions .lab-star[role="img"] {
+  cursor: default;
+}
+.pub-actions .lab-star .sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 ```
 
@@ -339,7 +362,7 @@ build_card <- function(
   key, entry, title, authors_card, year, venue,
   abstract, bibtex,
   preprint_url = NA_character_, materials_url = NA_character_,
-  doi_url = NA_character_, ...
+  doi_url = NA_character_, primary = FALSE, ...
 ) {
   has_preprint_key  <- !is.null(entry$preprint)  && length(entry$preprint)  > 0
   has_materials_key <- !is.null(entry$materials) && length(entry$materials) > 0
@@ -368,6 +391,16 @@ build_card <- function(
 
   actions <- tags$div(
     class = "pub-actions",
+    # Standalone star badge (only if primary)
+    if (isTRUE(primary)) tags$span(
+      class = "lab-star",
+      role  = "img",
+      title = "This project was led by the AffCom lab",
+      `aria-label` = "This project was led by the AffCom lab",
+      "★",
+      tags$span(class = "sr-only", " This project was led by the AffCom lab")
+    ),
+    # Action links
     tags$a("Abstract", href = "#", `data-action`="abstract", role="button"),
     tags$a("Citation", href = "#", `data-action`="citation", role="button"),
     tags$a("BibTeX",   href = "#", `data-action`="bib",      role="button"),
@@ -401,7 +434,7 @@ groups <- lapply(years, function(y) {
     select(
       key, entry, title, authors_card, year, venue,
       abstract, bibtex,
-      preprint_url, materials_url, doi_url
+      preprint_url, materials_url, doi_url, primary
     )
   cards <- pmap(subset_min, build_card)
 
