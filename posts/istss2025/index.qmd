@@ -1,0 +1,26 @@
+---
+title: "ISTSS 2025 Conference"
+description: "International Society for Traumatic Stress Studies"
+author: "Jeffrey Girard"
+date: "2025-09-18"
+image: conference.webp
+draft: false
+categories:
+  - announcement
+  - conference
+format:
+  html:
+    page-layout: full
+    toc: false
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: istss2025
+---
+
+Yuanyuan and I will be attending the [2025 ISTSS Conference](https://istss.org/annual-meeting-hub/) in Baltimore. Our presentations are below. See you there!
+
+- Yang, Y., Jun, D., Welch, B. M., Sprunger, J. G., \& Girard, J. M. (2025). *Computational Analysis of Multimodal Behavior in Telehealth Trauma Interviews.* Paper presented at the Annual Meeting of the International Society for Traumatic Stress Studies.
+
+![](Yang_ISTSS2025.pdf){width=100% height=500px}
+
