@@ -22,8 +22,8 @@ Yuanyuan and I will be attending the [2025 ISTSS Conference](https://istss.org/a
 
 - Yang, Y., Jun, D., Welch, B. M., Sprunger, J. G., \& Girard, J. M. (2025). *Computational Analysis of Multimodal Behavior in Telehealth Trauma Interviews.* Paper presented at the Annual Meeting of the International Society for Traumatic Stress Studies, Baltimore, MD.
 
-![](Yang_ISTSS2025.pdf){width=100% height=500px}
+![](Yang_ISTSS2025.pdf){width=100% height=600px}
 
 - Sprunger, J. G., Welch, B. M., Chard, K., \& Girard, J. M. (2025). *Predicting PTSD Treatment Response in Cognitive Processing Therapy Using Computerized Patient Behavior Analysis of Baseline Trauma Interviews.* Paper presented at the Annual Meeting of the International Society for Traumatic Stress Studies, Baltimore, MD.
 
-![](Sprunger_ISTSS2025.pdf){width=100% height=500px}
+![](Sprunger_ISTSS2025.pdf){width=100% height=600px}
