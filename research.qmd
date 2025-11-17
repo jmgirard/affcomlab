@@ -21,7 +21,7 @@ toc: true
     - Forbush (PI), Co-I: **Girard**
     - 04/2025 -- 03/2027
 
-- *"Building Healthy Eating and Self-Esteem Together for University Students"*
+- *"Building Healthy Eating and Self-Esteem Together for University Students (BEST-U): A Pilot Randomized Controlled Trial of an mHealth Intervention for Binge-Spectrum Disorders"*
     - R34, National Institutes of Health (NIMH)
     - Forbush, Christensen-Pacella (PIs), Co-I: **Girard**
     - 01/2025 -- 12/2027
