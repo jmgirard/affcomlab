@@ -1,0 +1,32 @@
+---
+title: "Tenure Talk"
+description: "Reflecting on 5 Years at KU"
+author: "Jeffrey Girard"
+date: "2025-11-17"
+image: reflection.webp
+draft: false
+categories:
+  - presentation
+format:
+  html:
+    page-layout: full
+    toc: false
+comments:
+  utterances: 
+    repo: jmgirard/affcomlab
+    label: tenure2025
+---
+
+In celebration of my promotion in August, I was invited to give a "tenure talk"
+to the department of psychology, reflecting on the last five years of my work as
+an assistant professor at the University of Kansas. In the slides below, I walk
+through my accomplishments, how my research framework has evolved over time, and
+provide two examples of my interdisciplinary work: one psychological project
+that was enhanced by my computational and quantitative background and one
+computational project that was enhanced by my psychological background.
+
+> Affective and Interpersonal Communication: Advancing an Interdisciplinary
+Program of Research
+
+![](Girard_TT_Slides.pdf){width=100% height=500px}
+
