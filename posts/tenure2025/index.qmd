@@ -28,5 +28,4 @@ computational project that was enhanced by my psychological background.
 > Affective and Interpersonal Communication: Advancing an Interdisciplinary
 Program of Research
 
-![](Girard_TT_Slides.pdf){width=100% height=500px}
-
+{{< pdf Girard_TT_Slides.pdf width=600 height=400 image=firstslide.png >}}
