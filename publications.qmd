@@ -147,14 +147,12 @@ rows <- tibble(
         str_glue("https://doi.org/{doi}"),
         if_else(nzchar(preprint_url %||% ""), preprint_url, url_fallback)
       )
-    ),
-    year_num = suppressWarnings(as.integer(str_extract(year, "\\d{4}"))),
-    year_lbl = ifelse(is.na(year_num), "n.d.", as.character(year_num))
+    )
   ) |>
   mutate(
     primary = map_lgl(entry, ~ tolower(as.character(.x$primary %||% "false")) == "true")
   ) |>
-  arrange(desc(year_num), title)
+  arrange(desc(year), title)
 ```
 
 ```{css}
@@ -406,12 +404,12 @@ build_card <- function(
 }
 
 years <- rows |>
-  distinct(year_lbl, year_num) |>
-  arrange(desc(year_num), desc(year_lbl)) |>
-  pull(year_lbl)
+  distinct(year) |>
+  arrange(desc(year)) |>
+  pull(year)
 
 groups <- lapply(years, function(y) {
-  subset <- rows |> filter(year_lbl == y)
+  subset <- rows |> filter(year == y)
 
   subset_min <- subset |>
     select(
@@ -423,7 +421,7 @@ groups <- lapply(years, function(y) {
 
   tags$div(
     class = "year-group",
-    tags$h2(class = "year-title anchored", id = paste0("y-", y), y),
+    tags$h2(class = "year-title anchored", id = paste0("y-", y), str_to_title(y)),
     tags$div(cards)
   )
 })
