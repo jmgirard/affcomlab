@@ -1,0 +1,59 @@
+---
+title: "Rebecca Wood"
+sortby: "Wood, Rebecca"
+subtitle: "PhD Student"
+image: wood_rebecca.webp
+toc: false
+resources: 
+  - "wood_cv.pdf"
+started: "Spring 2026"
+ended: "Current"
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: file-earmark-text
+      text: vitae
+      href: ./people/staff/wood_cv.pdf
+    - icon: mortarboard
+      text: scholar
+      href: https://scholar.google.com/citations?user=ne7rjD4AAAAJ
+    - icon: github
+      text: github
+      href: https://www.github.com/rebwood9
+---
+
+```{=html}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../people.html">People</a></li>
+    <li class="breadcrumb-item active">Graduate Students</li>
+    <li class="breadcrumb-item active" aria-current="page">{{< meta title >}}</li>
+  </ol>
+</nav>
+```
+
+:::{#person-profile}
+:::
+
+## Biography
+Rebecca Wood’s research interests broadly focus on the use of quantitative methods to study individual and group differences in psychological and behavioral outcomes. Her work is motivated by applied questions from clinical health psychology and is complemented by current work in behavioral economics using legacy customer purchasing data.
+
+
+She earned her B.A. in Psychology with a concentration in neuroscience from St. Olaf College. Through undergraduate research experiences in preclinical neuroscience laboratories lead by Dr. Shelly Dickenson and Dr. James Demas, Rebecca developed a foundation in preclinical behavioral neuroscience research. After graduating, she then worked in Dr. Samuel Barnes’s lab within the Markou Consortium for Neurobiology and Psychopharmacology at the University of California, San Diego, contributing to research on decision making and reinforcement learning. Rebecca later completed her M.A. in Clinical Psychology and M.S. in Quantitative Psychology at Ball State University, where she pursued interdisciplinary work spanning diet and mental health, institutional research, and communication and experimental pragmatics.
+
+
+Rebecca is currently a PhD student in the Brain, Behavior, and Quantitative Science (BBQ) program at the University of Kansas. She is also a graduate teaching assistant and the instructor of record for PSYC 210 (Statistics for Psychological Research) and holds a graduate student fellowship with the Center for Teaching Excellence. She additionally works as a research analyst intern with a local e-commerce company, where she develops reproducible data workflows for retail customer data.
+
+## Education
+
+- [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
+  PhD Student in Psychology (Brain, Behavior, and Quantitative Science) | 2024--Current
+  
+- [Ball State University]{.fw-bold} | Muncie, IN, USA<br />
+  MA in Clinical Psychology | 2023<br />
+  MS in Quantitative Psychology | 2023
+
+- [St. Olaf College]{.fw-bold} | Northfield, MN, USA<br />
+  BA in Psychology | 2017

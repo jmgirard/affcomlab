@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/girard_jeffrey.html",
+      "/people/staff/gray_kassandra.html",
+      "/people/staff/jun_daiil.html",
+      "/people/staff/simmons_aaron.html",
+      "/people/staff/wood_rebecca.html",
+      "/people/staff/yang_yuanyuan.html",
+      "/people/staff/yermol_dasha.html"
+    ]
+  },
+  {
     "listing": "/news.html",
     "items": [
       "/posts/tenure2025/index.html",
@@ -28,17 +40,6 @@
       "/posts/suicideR21/index.html",
       "/posts/recruitment2023/index.html",
       "/posts/dischargeR01/index.html"
-    ]
-  },
-  {
-    "listing": "/people.html",
-    "items": [
-      "/people/staff/girard_jeffrey.html",
-      "/people/staff/gray_kassandra.html",
-      "/people/staff/jun_daiil.html",
-      "/people/staff/simmons_aaron.html",
-      "/people/staff/yang_yuanyuan.html",
-      "/people/staff/yermol_dasha.html"
     ]
   }
 ]
