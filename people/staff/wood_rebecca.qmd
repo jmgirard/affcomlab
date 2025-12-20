@@ -49,11 +49,11 @@ Rebecca is currently a PhD student in the Brain, Behavior, and Quantitative Scie
 ## Education
 
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
-  PhD Student in Psychology (Brain, Behavior, and Quantitative Science) | 2024--Current
+  PhD Student in Psychology (BBQ) | 2024--Current
   
 - [Ball State University]{.fw-bold} | Muncie, IN, USA<br />
-  MA in Clinical Psychology | 2023<br />
-  MS in Quantitative Psychology | 2023
+  MA in Clinical Psychology | 2024<br />
+  MS in Quantitative Psychology | 2024
 
 - [St. Olaf College]{.fw-bold} | Northfield, MN, USA<br />
   BA in Psychology | 2017
