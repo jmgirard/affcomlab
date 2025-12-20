@@ -47,7 +47,7 @@ Dasha is currently a PhD Student in the Brain, Behavior, and Quantitative Scienc
 ## Education
 
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
-  PhD Student in Psychology (BBQ) | 2023–Current
+  PhD Student in Psychology (BBQ) | Current
 
 - [University of Wisconsin-Madison]{.fw-bold} | Madison, WI, USA<br />
   BS in Psychology | 2021
