@@ -249,7 +249,7 @@
     "href": "people.html#research-staff",
     "title": "AffCom Lab",
     "section": "Research Staff",
-    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nJeffrey Girard\n\n\nLab Director\n\n\n\n\n\n\n\n\n\n\n\n\nKassandra Gray\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDaiil Jun\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nAaron Simmons\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nRebecca Wood\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nYuanyuan Yang\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDasha Yermol\n\n\nPhD Student\n\n\n\n\n\nNo matching items"
+    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nJeffrey Girard\n\n\nLab Director\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people.html#research-assistants",
@@ -1237,5 +1237,145 @@
     "title": "AffCom Lab",
     "section": "Research Framework",
     "text": "Research Framework\n\n\nSubstantive Pillars\nThe substantive focus of our work is on how humans communicate important affective and interpersonal information to one another. The four pillars of this work are on structure, context, dynamics, and functionality. In studying structure, we investigate the production and perception of visual behaviors (e.g., facial expressions, gestures, and body motion), vocal behaviors (e.g., pitch, loudness, and timbre), and verbal behaviors (e.g., syntax, semantics, and discourse). In studying context, we investigate the influence of cultural, relational, and situational factors. In studying dynamics, we investigate change over time, regulation, and how processes and individuals influence one another. Finally, in studying functionality, we investigate how communication interfaces with health, clinical assessment, and treatment.\n\n\nMethodological Foundation\nSupporting these pillars is a wide foundation of interdisciplinary methodology. The three main aspects of this foundation are statistics, computing, and open science. The statistical aspects largely focus on Bayesian estimation, multilevel (mixed-effects) modeling, and measurement validation. The computational aspects largely focus on data science (data wrangling and visualization), behavior sensing (computer vision, signal processing, and natural language processing), and artificial intelligence (machine learning and large language models). Finally, the open science aspects largely focus on research software, research databases, and educational resources."
+  },
+  {
+    "objectID": "people.html#clinical-psychological-science-students",
+    "href": "people.html#clinical-psychological-science-students",
+    "title": "AffCom Lab",
+    "section": "Clinical Psychological Science Students",
+    "text": "Clinical Psychological Science Students\n\n\n\n\n\n\n\n\n\n\nKassandra Gray\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDaiil Jun\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nYuanyuan Yang\n\n\nPhD Student\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#brain-behavior-and-quantitative-science-students",
+    "href": "people.html#brain-behavior-and-quantitative-science-students",
+    "title": "AffCom Lab",
+    "section": "Brain, Behavior, and Quantitative Science Students",
+    "text": "Brain, Behavior, and Quantitative Science Students\n\n\n\n\n\n\n\n\n\n\nAaron Simmons\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nRebecca Wood\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDasha Yermol\n\n\nPhD Student\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/cps/jun_daiil.html",
+    "href": "people/cps/jun_daiil.html",
+    "title": "Daiil Jun",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Daiil Jun"
+  },
+  {
+    "objectID": "people/cps/jun_daiil.html#biography",
+    "href": "people/cps/jun_daiil.html#biography",
+    "title": "Daiil Jun",
+    "section": "Biography",
+    "text": "Biography\nDaiil Jun’s research interests include the heterogeneity of psychopathology, particularly the intersection between addictive behaviors and serious mental illness. He is especially interested in understanding transdiagnostic mechanisms of reward dysfunction that connect maladaptive eating, substance use, and serious mental illness. He is also an enthusiastic learner of advanced statistical methods and computational approaches.\nHe completed his Bachelor of Arts degree at Handong Global University in May 2020 and is currently a doctoral student in the Clinical Psychological Science program in the Department of Psychology at the University of Kansas. He serves as a graduate research assistant (GRA) for the Kansas Data Science Consortium. He is also a member of the Affective Communication and Computing Lab under Dr. Girard’s mentorship and works jointly with the Health Behavior and Technology Lab under Dr. Fazzino’s mentorship."
+  },
+  {
+    "objectID": "people/cps/jun_daiil.html#education",
+    "href": "people/cps/jun_daiil.html#education",
+    "title": "Daiil Jun",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (Clinical) | Current MS in Psychology (Clinical) | 2023\nHandong Global University | Pohang, South Korea BA in Counseling Psychology | 2020"
+  },
+  {
+    "objectID": "people/bbq/yermol_dasha.html",
+    "href": "people/bbq/yermol_dasha.html",
+    "title": "Dasha Yermol",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Dasha Yermol"
+  },
+  {
+    "objectID": "people/bbq/yermol_dasha.html#biography",
+    "href": "people/bbq/yermol_dasha.html#biography",
+    "title": "Dasha Yermol",
+    "section": "Biography",
+    "text": "Biography\nDasha Yermol studies how emotion perception is influenced by individual differences (e.g., mental health and personality), the functions of affective synchrony between interacting dyads, and differences in emotion expression due to social factors (e.g., context, social roles).\nDasha obtained her B.A. in psychology with comprehensive honors from the University of Wisconsin-Madison in 2021. After graduating from UW-Madison, she was a lab manager at a child development research lab for two years, studying how children learn language using eye-tracking methods.\nDasha is currently a PhD Student in the Brain, Behavior, and Quantitative Science (BBQ) program. She is also a graduate teaching assistant for undergraduate psychology courses. Outside of the lab, Dasha enjoys drinking great coffee, being outdoors (biking, swimming, hiking), and tending to her many houseplants."
+  },
+  {
+    "objectID": "people/bbq/yermol_dasha.html#education",
+    "href": "people/bbq/yermol_dasha.html#education",
+    "title": "Dasha Yermol",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (BBQ) | Current\nUniversity of Wisconsin-Madison | Madison, WI, USA BS in Psychology | 2021"
+  },
+  {
+    "objectID": "people/bbq/simmons_aaron.html",
+    "href": "people/bbq/simmons_aaron.html",
+    "title": "Aaron Simmons",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Aaron Simmons"
+  },
+  {
+    "objectID": "people/bbq/simmons_aaron.html#biography",
+    "href": "people/bbq/simmons_aaron.html#biography",
+    "title": "Aaron Simmons",
+    "section": "Biography",
+    "text": "Biography\nAaron Matthew Simmons’s main research interests include Bayesian statistics and modeling, latent variable modeling, scale development, and how new modeling frameworks in general can be applied and leveraged to study a wide range of cognitive and behavioral phenomena. Further interests include the use and development of neuroscientific methods, especially EEG/ERP and eye-tracking methods, to study cognition and behavior.\nHe completed his undergraduate Bachelor of Science degree at the University of California, Davis in 2015. After graduating, he spent many years working at the Center for Mind and Brain at UC Davis with Dr. Steven J. Luck. Currently, he is a student in the Brain, Behavior, and Quantitative Science (BBQ) program in the Department of Psychology at the University of Kansas, and a member of the Affective Communication and Computing lab under Dr. Jeffrey Girard. Personal interests include coffee, philosophy, chess, and BBQ (the kind you eat)."
+  },
+  {
+    "objectID": "people/bbq/simmons_aaron.html#education",
+    "href": "people/bbq/simmons_aaron.html#education",
+    "title": "Aaron Simmons",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (BBQ) | Current\nUniversity of California: Davis | Davis, CA, USA BS in Psychology (Mathematics Emphasis) | 2015"
+  },
+  {
+    "objectID": "people/bbq/wood_rebecca.html",
+    "href": "people/bbq/wood_rebecca.html",
+    "title": "Rebecca Wood",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Rebecca Wood"
+  },
+  {
+    "objectID": "people/bbq/wood_rebecca.html#biography",
+    "href": "people/bbq/wood_rebecca.html#biography",
+    "title": "Rebecca Wood",
+    "section": "Biography",
+    "text": "Biography\nRebecca Wood’s research interests broadly focus on the use of quantitative methods to study individual and group differences in psychological and behavioral outcomes. Her work is motivated by applied questions from clinical health psychology and is complemented by current work in behavioral economics using legacy customer purchasing data.\nShe earned her B.A. in Psychology with a concentration in neuroscience from St. Olaf College. Through undergraduate research experiences in preclinical neuroscience laboratories lead by Dr. Shelly Dickenson and Dr. James Demas, Rebecca developed a foundation in preclinical behavioral neuroscience research. After graduating, she then worked in Dr. Samuel Barnes’s lab within the Markou Consortium for Neurobiology and Psychopharmacology at the University of California, San Diego, contributing to research on decision making and reinforcement learning. Rebecca later completed her M.A. in Clinical Psychology and M.S. in Quantitative Psychology at Ball State University, where she pursued interdisciplinary work spanning diet and mental health, institutional research, and communication and experimental pragmatics.\nRebecca is currently a PhD student in the Brain, Behavior, and Quantitative Science (BBQ) program at the University of Kansas. She is also a graduate teaching assistant and the instructor of record for PSYC 210 (Statistics for Psychological Research) and holds a graduate student fellowship with the Center for Teaching Excellence. She additionally works as a research analyst intern with a local e-commerce company, where she develops reproducible data workflows for retail customer data."
+  },
+  {
+    "objectID": "people/bbq/wood_rebecca.html#education",
+    "href": "people/bbq/wood_rebecca.html#education",
+    "title": "Rebecca Wood",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (BBQ) | Current\nBall State University | Muncie, IN, USA MA in Clinical Psychology | 2024 MS in Quantitative Psychology | 2024\nSt. Olaf College | Northfield, MN, USA BA in Psychology | 2017"
+  },
+  {
+    "objectID": "people/cps/gray_kassandra.html",
+    "href": "people/cps/gray_kassandra.html",
+    "title": "Kassandra Gray",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Kassandra Gray"
+  },
+  {
+    "objectID": "people/cps/gray_kassandra.html#biography",
+    "href": "people/cps/gray_kassandra.html#biography",
+    "title": "Kassandra Gray",
+    "section": "Biography",
+    "text": "Biography\nKassandra Gray’s research interests include interpersonal interactions, emotional expression and communication, individual differences, personality, anxiety, and depression. She is interested in how emotional expression and communication manifest in the therapeutic relationship and the influential role of individual differences (e.g., personality, anxiety, and depression).\nShe completed her undergraduate Bachelor of Science degree at Southern Nazarene University in May 2022 and is currently a doctoral student in the Clinical Psychological Science program in the Department of Psychology at the University of Kansas. She is a graduate teaching assistant (GTA) for undergraduate psychology courses and is also a member of the Affective Communication and Computing lab."
+  },
+  {
+    "objectID": "people/cps/gray_kassandra.html#education",
+    "href": "people/cps/gray_kassandra.html#education",
+    "title": "Kassandra Gray",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (Clinical) | Current MS in Psychology (Clinical) | 2024\nSouthern Nazarene University | Bethany, OK, USA BS in Psychology | 2018–2022"
+  },
+  {
+    "objectID": "people/cps/yang_yuanyuan.html",
+    "href": "people/cps/yang_yuanyuan.html",
+    "title": "Yuanyuan Yang",
+    "section": "",
+    "text": "Home\n    People\n    Graduate Students\n    Yuanyuan Yang"
+  },
+  {
+    "objectID": "people/cps/yang_yuanyuan.html#biography",
+    "href": "people/cps/yang_yuanyuan.html#biography",
+    "title": "Yuanyuan Yang",
+    "section": "Biography",
+    "text": "Biography\nYuanyuan is interested in exploring the structure of psychopathology by exploring the connections between symptoms and verbal and non-verbal behaviors (e.g., language processing, vocal, facial recognition). Further, Yuanyuan hopes to leverage these insights to enhance the treatment efficacy and accessibility.\nYuanyuan obtained B.S. in Psychology and Applied Mathematics and Statistics, and M.A. in General Psychology at Stony Brook University. Currently, she is a first year PhD student in the Clinical Psychological Science program in the Department of Psychology at the University of Kansas. She is a graduate teaching assistant (GTA) for undergraduate psychology courses and is also a member of the Affective Communication and Computing lab.\nOutside of lab, she takes care of bunch of plants and two cats (Pepper&Ronny). She likes running, cooking, and playing the piano."
+  },
+  {
+    "objectID": "people/cps/yang_yuanyuan.html#education",
+    "href": "people/cps/yang_yuanyuan.html#education",
+    "title": "Yuanyuan Yang",
+    "section": "Education",
+    "text": "Education\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (Clinical) | Current MS in Psychology (Clinical) | 2025\nSUNY University at Stony Brook | Stony Brook, NY, USA MS in Psychology | 2023\nSUNY University at Stony Brook | Stony Brook, NY, USA BS in Psychology, Applied Mathematics & Statistics | 2021"
   }
 ]

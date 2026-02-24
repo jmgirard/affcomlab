@@ -12,6 +12,26 @@ listing:
     sort: sortby
     field-display-names: 
       started: "Started"
+  - id: cps-students
+    contents: "people/cps/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    fields: [image, title, subtitle]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: bbq-students
+    contents: "people/bbq/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    fields: [image, title, subtitle]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
 ---
 
 ```{=html}
@@ -29,6 +49,15 @@ listing:
 :::{#research-staff}
 :::
 
+## Clinical Psychological Science Students
+
+:::{#cps-students}
+:::
+
+## Brain, Behavior, and Quantitative Science Students
+
+:::{#bbq-students}
+:::
 
 ## Research Assistants
 
