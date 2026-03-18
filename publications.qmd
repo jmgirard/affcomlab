@@ -73,6 +73,9 @@ normalize_link <- function(x) {
   y <- as.character(x)
   y[is.na(y)] <- NA_character_
   y <- trimws(y)
+
+  y <- gsub("\\\\_", "_", y)
+  
   y[y == "" | tolower(y) == "na"] <- NA_character_
 
   ok <- !is.na(y)
