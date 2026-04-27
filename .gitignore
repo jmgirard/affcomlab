@@ -7,3 +7,4 @@
 /.quarto/
 /posts/whisper2024/ggml-base.bin
 **/*.quarto_ipynb
+.positai
