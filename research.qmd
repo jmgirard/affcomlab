@@ -16,6 +16,11 @@ toc: true
 
 ### Current Funding
 
+- *"Developing and Evaluating a Firefighter Self-Administered Neurostimulation Intervention for Traumatic Stress to Reduce Alcohol Use"*
+    - R34, National Institutes of Health (NIAAA)
+    - Sprunger (PI), Co-I: **Girard**
+    - 05/2026 -- 04/2029
+
 - *"Assessment of Eating Disorder and Comorbidity Risk and Resilience in Recent Military Enlistees"*
     - Department of Defense (DoD)
     - Forbush (PI), Co-I: **Girard**
