@@ -146,9 +146,9 @@ rows <- tibble(
   mutate(
     doi_url = normalize_link(
       if_else(
-        nzchar(doi %||% ""),
-        str_glue("https://doi.org/{doi}"),
-        if_else(nzchar(preprint_url %||% ""), preprint_url, url_fallback)
+        !is.na(nz_chr(doi)),
+        as.character(str_glue("https://doi.org/{doi}")),
+        if_else(!is.na(nz_chr(preprint_url)), preprint_url, url_fallback)
       )
     )
   ) |>
