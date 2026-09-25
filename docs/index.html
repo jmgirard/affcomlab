@@ -36,6 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-221fb94c3ec07aa7e68c2d5abc4fc18e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8e8e846d7ab5148aa2e39076224c526e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +75,36 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest-news .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest-news'] = new List('listing-latest-news', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K5TXS64QLN"></script>
 
 <script type="text/javascript">
@@ -83,6 +115,35 @@ gtag('js', new Date());
 gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -145,31 +206,112 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Affective Communication &amp; Computing Lab</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
+<section class="home-hero">
+  <div class="hero-text">
+    <p class="hero-title" role="heading" aria-level="1">Affective Communication &amp; Computing Lab</p>
+    <p>We are an interdisciplinary research group in the <a href="https://psych.ku.edu">Department of Psychology</a> at the <a href="https://ku.edu">University of Kansas</a>. We develop, validate, and apply computational methods to study emotion, interpersonal communication, and mental health.</p>
+    <a class="btn btn-light" href="research.html">Our research</a>
+    <a class="btn btn-outline-light" href="opportunities.html">Join the lab</a>
   </div>
-  
+  <div class="hero-art">
+    <img src="img/showcase.svg" alt="Two researchers working at a computer">
+  </div>
+</section>
 
+<h2 class="anchored">What We Study</h2>
 
-</header>
-
-
-<div class="lead">
-<p>We are an <span class="fw-bolder">interdisciplinary</span> research group based within the <a href="https://psych.ku.edu" class="text-primary text-decoration-none fw-bolder">Department of Psychology</a> at the <a href="https://ku.edu" class="text-primary text-decoration-none fw-bolder">University of Kansas</a>. We develop, validate, and apply <span class="fw-bolder">computational methods</span> to advance the study of <span class="fw-bolder">emotion</span>, <span class="fw-bolder">interpersonal communication</span>, and <span class="fw-bolder">mental health</span>.</p>
+<div class="theme-cards">
+  <a class="theme-card" href="research.html#substantive-pillars">
+    <i class="bi bi-emoji-smile" aria-hidden="true"></i>
+    <h3 class="anchored">Emotion</h3>
+    <p>How people express and perceive emotion in the face, voice, and language.</p>
+  </a>
+  <a class="theme-card accent" href="research.html#substantive-pillars">
+    <i class="bi bi-chat-dots" aria-hidden="true"></i>
+    <h3 class="anchored">Interpersonal Communication</h3>
+    <p>How partners influence one another over time during real conversations.</p>
+  </a>
+  <a class="theme-card navy" href="research.html#substantive-pillars">
+    <i class="bi bi-heart-pulse" aria-hidden="true"></i>
+    <h3 class="anchored">Mental Health</h3>
+    <p>How communication relates to clinical assessment, treatment, and outcomes.</p>
+  </a>
+  <a class="theme-card" href="research.html#methodological-foundation">
+    <i class="bi bi-cpu" aria-hidden="true"></i>
+    <h3 class="anchored">Computational Methods</h3>
+    <p>Behavior sensing, machine learning, large language models, and Bayesian statistics.</p>
+  </a>
 </div>
-<p><img src="./img/showcase.svg" class="hero img-fluid"></p>
+
+<h2 class="anchored">Latest News</h2>
+<div id="listing-latest-news" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1763359200000" data-listing-file-modified-sort="1764632154353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<a href="./posts/tenure2025/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/tenure2025/reflection.webp" class="thumbnail-image card-img" style="height: 160px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tenure Talk
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 17, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="YW5ub3VuY2VtZW50JTJDY29uZmVyZW5jZQ==" data-listing-date-sort="1758171600000" data-listing-file-modified-sort="1762967998732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
+<a href="./posts/istss2025/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/istss2025/conference.webp" class="thumbnail-image card-img" style="height: 160px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ISTSS 2025 Conference
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 18, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="dGVhY2hpbmclMkNkYXRhJTIwc2NpZW5jZQ==" data-listing-date-sort="1749445200000" data-listing-file-modified-sort="1762967998670" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="400">
+<a href="./posts/firacode/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/firacode/typeset.webp" class="thumbnail-image card-img" style="height: 160px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using Fira Code Ligatures in RStudio
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 9, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="section-more">
+<p><a href="./news.html">All news →</a></p>
+</div>
+
 
 
 
@@ -578,13 +720,26 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>© 2026 Jeffrey Girard</p>
+</div>   
     <div class="nav-footer-center">
-<p>Copyright 2026 © Jeffrey Girard</p>
+<p>Affective Communication &amp; Computing Lab<br>Fraser Hall 455, University of Kansas, Lawrence, KS</p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="./contact.html">
+      <i class="bi bi-envelope" role="img" aria-label="Contact">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jmgirard/affcomlab">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

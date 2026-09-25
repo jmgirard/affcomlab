@@ -1,12 +1,61 @@
 ---
 pagetitle: "AffCom Lab"
-title: "Affective Communication & Computing Lab"
-# page-layout: full
 toc: false
+listing:
+  id: latest-news
+  contents: "posts/**/index.qmd"
+  sort: "date desc"
+  type: grid
+  max-items: 3
+  grid-columns: 3
+  image-height: 160px
+  fields: [image, date, title]
 ---
 
-::: {.lead}
-  We are an [interdisciplinary]{.fw-bolder} research group based within the [Department of Psychology](https://psych.ku.edu){.text-primary .text-decoration-none .fw-bolder} at the [University of Kansas](https://ku.edu){.text-primary .text-decoration-none .fw-bolder}. We develop, validate, and apply [computational methods]{.fw-bolder} to advance the study of [emotion]{.fw-bolder}, [interpersonal communication]{.fw-bolder}, and [mental health]{.fw-bolder}.
+```{=html}
+<section class="home-hero">
+  <div class="hero-text">
+    <p class="hero-title" role="heading" aria-level="1">Affective Communication &amp; Computing Lab</p>
+    <p>We are an interdisciplinary research group in the <a href="https://psych.ku.edu">Department of Psychology</a> at the <a href="https://ku.edu">University of Kansas</a>. We develop, validate, and apply computational methods to study emotion, interpersonal communication, and mental health.</p>
+    <a class="btn btn-light" href="research.html">Our research</a>
+    <a class="btn btn-outline-light" href="opportunities.html">Join the lab</a>
+  </div>
+  <div class="hero-art">
+    <img src="img/showcase.svg" alt="Two researchers working at a computer">
+  </div>
+</section>
+
+<h2>What We Study</h2>
+
+<div class="theme-cards">
+  <a class="theme-card" href="research.html#substantive-pillars">
+    <i class="bi bi-emoji-smile" aria-hidden="true"></i>
+    <h3>Emotion</h3>
+    <p>How people express and perceive emotion in the face, voice, and language.</p>
+  </a>
+  <a class="theme-card accent" href="research.html#substantive-pillars">
+    <i class="bi bi-chat-dots" aria-hidden="true"></i>
+    <h3>Interpersonal Communication</h3>
+    <p>How partners influence one another over time during real conversations.</p>
+  </a>
+  <a class="theme-card navy" href="research.html#substantive-pillars">
+    <i class="bi bi-heart-pulse" aria-hidden="true"></i>
+    <h3>Mental Health</h3>
+    <p>How communication relates to clinical assessment, treatment, and outcomes.</p>
+  </a>
+  <a class="theme-card" href="research.html#methodological-foundation">
+    <i class="bi bi-cpu" aria-hidden="true"></i>
+    <h3>Computational Methods</h3>
+    <p>Behavior sensing, machine learning, large language models, and Bayesian statistics.</p>
+  </a>
+</div>
+
+<h2>Latest News</h2>
+```
+
+::: {#latest-news}
 :::
 
-![](./img/showcase.svg){.hero}
+::: {.section-more}
+[All news →](news.qmd)
+:::

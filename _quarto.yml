@@ -24,13 +24,22 @@ website:
         text: Opportunities
       - href: contact.qmd
         text: Contact
-  page-footer: "Copyright 2026 &copy; Jeffrey Girard"
+  page-footer:
+    left: "&copy; 2026 Jeffrey Girard"
+    center: "Affective Communication & Computing Lab<br>Fraser Hall 455, University of Kansas, Lawrence, KS"
+    right:
+      - icon: envelope
+        href: contact.html
+        aria-label: Contact
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/jmgirard/affcomlab
   google-analytics: "G-K5TXS64QLN"
   site-url: https://affcom.ku.edu
   repo-url: https://github.com/jmgirard/affcomlab
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, theme.scss]
     css: styles.css
     toc: true
