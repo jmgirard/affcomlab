@@ -170,6 +170,7 @@
   year = 2018,
   pages = {407--441},
   publisher = {Academic Press},
+  url = {https://shop.elsevier.com/books/multimodal-behavior-analysis-in-the-wild/alameda-pineda/978-0-12-814601-9},
   isbn = {978-0-12-814601-9},
   primary = {false}
 }
@@ -506,7 +507,7 @@
   keywords = {Bayesian data analysis,emotion expression,emotion perception,facial behavior,FACS,smiling}
 }
 
-@article{girard2022,
+@article{girard2022a,
   title = {Computational Analysis of Spoken Language in Acute Psychosis and Mania},
   author = {Girard, Jeffrey M. and Vail, Alexandria K. and Liebenthal, Einat and Brown, Katrina and Kilciksiz, Can Misel and Pennant, Luciana and Liebson, Elizabeth and {\"O}ng{\"u}r, Dost and Morency, Louis-Philippe and Baker, Justin T.},
   year = 2022,
@@ -525,7 +526,7 @@
   keywords = {Bipolar disorder,Humans,Language,Mania,Negative symptoms,Positive symptoms,Psychotic Disorders,Schizophrenia}
 }
 
-@inproceedings{girard2023,
+@inproceedings{girard2023a,
   title = {{{DynAMoS}}: The Dynamic Affective Movie Clip Database for Subjectivity Analysis},
   shorttitle = {{{DynAMoS}}},
   booktitle = {Proceedings of the 11th {{International Conference}} on {{Affective Computing}} and {{Intelligent Interaction}} ({{ACII}})},
@@ -561,7 +562,22 @@
   keywords = {Adolescent,Adult,Cognitive Behavioral Therapy,Facial Expression,Female,Humans,Interpersonal Psychotherapy,Male,Middle Aged,Professional-Patient Relations,Therapeutic Alliance,Treatment Outcome,Young Adult}
 }
 
-@article{girardinpress,
+@article{girard2026,
+  title = {Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language Models},
+  author = {Girard, Jeffrey M and Jun, Daiil and Ong, Desmond C and Liebenthal, Einat and Baker, Justin T},
+  year = 2026,
+  journal = {Affective Science},
+  volume = {7},
+  number = {2},
+  pages = {166--180},
+  doi = {10.1007/s42761-025-00352-7},
+  abstract = {Psychological research increasingly relies on computational methods to track emotion in naturalistic text. However, standard lexicon-based tools often miss semantic nuance, while powerful commercial Large Language Models (LLMs) raise privacy concerns for sensitive data. This study evaluates the efficacy of 24 open-weight LLMs (1B-120B parameters) for zero-shot sentiment analysis of spoken language, running entirely on local hardware. In this paradigm, models classify text relying solely on natural language instructions rather than labeled training examples. We compared model performance against three increasingly difficult baselines (naive, standard, and human) across transcripts from two datasets: 193 autobiographical narratives from community participants (N=49) and 292 longitudinal audio journals from psychiatric outpatients (N=64). Results demonstrate that open-weight models significantly outperform standard lexicon-based sentiment tools and frequently surpass individual human raters. Crucially, certain mid-sized models rival the performance of much larger systems, making state-of-the-art analysis accessible via consumer hardware. Additionally, we validate a fully automated privacy-preserving pipeline, finding that transcription errors from automatic speech recognition did not significantly degrade downstream sentiment accuracy. Despite these strengths, a multidimensional fairness audit revealed several demographic disparities: our best-performing models exhibited miscalibration in specific subgroups, lower sensitivity for female speakers in the community dataset, and lower predictive precision for Black speakers in the clinical dataset. Taken together, these findings demonstrate that recent open-weight LLMs can match or surpass human-level performance in sentiment analysis of naturalistic speech while running efficiently and securely on workstation hardware. These advances open opportunities for studying emotional dynamics in daily life and developing privacy-preserving clinical tools.},
+  materials = {https://osf.io/2f4ra},
+  preprint = {https://doi.org/10.31234/osf.io/n7vrc\_v3},
+  primary = {true}
+}
+
+@article{girard2026a,
   title = {Computational Analysis of Expressive Behavior in Clinical Assessment},
   author = {Girard, Jeffrey M and Yermol, Dasha A and Salah, Albert Ali and Cohn, Jeffrey F},
   year = 2026,
@@ -577,17 +593,27 @@
   primary = {true}
 }
 
-@article{girardinpressa,
-  title = {Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language Models},
-  author = {Girard, Jeffrey M and Jun, Daiil and Ong, Desmond C and Liebenthal, Einat and Baker, Justin T},
+@inproceedings{girard2026b,
+  title = {{{FriendBench}}: {{Benchmarking Dyadic Familiarity Inference}} in {{Humans}} and {{Multimodal Large Language Models}}},
+  booktitle = {Proceedings of the 2026 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing Workshops}}},
+  author = {Girard, Jeffrey M and Zheng, Jason Z and Vertino, Jacqueline R and D'Avirro, Antony and Peloquin, Benjamin},
   year = 2026,
-  journal = {Affective Science},
-  volume = {7},
-  pages = {166--180},
-  doi = {10.1007/s42761-025-00352-7},
-  abstract = {Psychological research increasingly relies on computational methods to track emotion in naturalistic text. However, standard lexicon-based tools often miss semantic nuance, while powerful commercial Large Language Models (LLMs) raise privacy concerns for sensitive data. This study evaluates the efficacy of 24 open-weight LLMs (1B-120B parameters) for zero-shot sentiment analysis of spoken language, running entirely on local hardware. In this paradigm, models classify text relying solely on natural language instructions rather than labeled training examples. We compared model performance against three increasingly difficult baselines (naive, standard, and human) across transcripts from two datasets: 193 autobiographical narratives from community participants (N=49) and 292 longitudinal audio journals from psychiatric outpatients (N=64). Results demonstrate that open-weight models significantly outperform standard lexicon-based sentiment tools and frequently surpass individual human raters. Crucially, certain mid-sized models rival the performance of much larger systems, making state-of-the-art analysis accessible via consumer hardware. Additionally, we validate a fully automated privacy-preserving pipeline, finding that transcription errors from automatic speech recognition did not significantly degrade downstream sentiment accuracy. Despite these strengths, a multidimensional fairness audit revealed several demographic disparities: our best-performing models exhibited miscalibration in specific subgroups, lower sensitivity for female speakers in the community dataset, and lower predictive precision for Black speakers in the clinical dataset. Taken together, these findings demonstrate that recent open-weight LLMs can match or surpass human-level performance in sentiment analysis of naturalistic speech while running efficiently and securely on workstation hardware. These advances open opportunities for studying emotional dynamics in daily life and developing privacy-preserving clinical tools.},
-  materials = {https://osf.io/2f4ra},
-  preprint = {https://doi.org/10.31234/osf.io/n7vrc\_v3},
+  publisher = {ACL},
+  address = {Budapest, Hungary},
+  abstract = {Reading a social situation often depends on behavior, not words alone. We introduce FriendBench, a benchmark for inferring whether two people are already familiar or are meeting as strangers, from a 20-second clip of a dyadic ice-breaker conversation. Every pair answers the same type of prompt, so only the manner of interaction can reveal the answer. Across text, audio, and video, we compare 26 models from seven companies against matched human panels over 96 balanced dyads. The best model and the human crowd are statistically indistinguishable on accuracy in every modality, but reach it differently: humans stay balanced across the two answers, while the strongest models favor "stranger." This is a difference in effective prior, not in discrimination. Richer channels help both unequally, and only humans gain from visible behavior on top of speech. We release the stimuli, human ratings, and model predictions.},
+  materials = {https://huggingface.co/datasets/fluid-concepts/friend-bench},
+  preprint = {https://arxiv.org/abs/2607.29602},
+  primary = {false}
+}
+
+@article{girardinpress,
+  title = {Evaluating Open-Weight Large Language Models for Structured Depression Assessment from Clinical Interviews},
+  author = {Girard, Jeffrey M and Kebe, Gaoussou Youssouf and Morency, Louis-Philippe and De La Torre, Fernando and Liebenthal, Einat and Baker, Justin T},
+  year = {in press},
+  journal = {Journal of Psychopathology and Clinical Science},
+  abstract = {The administration of semi-structured clinical interviews for depression assessment is resource-intensive and susceptible to rater drift. While large language models (LLMs) offer potential for automated quality assurance, reliance on proprietary models creates data privacy barriers incompatible with secure clinical workflows. This study evaluates a privacy-preserving pipeline using open-weight LLMs to perform item-level scoring of the Montgomery-Asberg Depression Rating Scale (MADRS) directly from interview transcripts. The sample included 541 video-recorded English-language interviews with 277 psychiatric inpatients diagnosed with diverse affective and psychotic disorders. Benchmarking 25 architectures, we found that an indirect scoring strategy, where models predict individual item scores that are subsequently summed, significantly outperformed direct total score prediction. This suggests that decomposing the assessment into intermediate reasoning steps improves performance. The best-performing models achieved "good" error rates and "excellent" correlations with trusted human labels, approaching established benchmarks for human inter-rater reliability. To determine the active ingredients of effective prompting, we conducted an ablation study. Results revealed that descriptive cues (scoring criteria) were the primary driver of performance, whereas few-shot examples provided negligible additional benefit, suggesting that zero-shot prompting is a viable, efficient strategy. However, error analysis identified a multimodal gap, where text-only models struggled more with items dependent on nonverbal behavior. We conclude that open-weight LLMs demonstrate strong potential to serve as secure "digital second opinions," representing a promising step toward augmenting clinical decision-making without compromising patient privacy.},
+  materials = {https://jmgirard.github.io/llm-depression-assessment/},
+  preprint = {https://osf.io/preprints/psyarxiv/63sw4\_v3},
   primary = {true}
 }
 
@@ -619,6 +645,23 @@
   preprint = {https://osf.io/erxy7/},
   primary = {false},
   keywords = {Adult,Female,grandiose narcissism,Humans,interpersonal circumplex,Interpersonal Relations,Male,narcissism,Narcissism,narcissistic admiration and rivalry,narcissistic personality disorder,Personality Disorders,Validation Studies as Topic,Young Adult}
+}
+
+@article{hoemanninpress,
+  title = {Infants' Facial Input from 6 to 17 Months Rarely Includes Hypothesized Expressive Emotion Prototypes},
+  author = {Hoemann, Katie and Girard, Jeffrey M. and Ogren, Marissa and Leotti, Lauren and Barrett, Lisa Feldman and Oakes, Lisa M. and LoBue, Vanessa},
+  year = {in press},
+  journal = {Communications Psychology},
+  publisher = {Nature Publishing Group},
+  issn = {2731-9121},
+  doi = {10.1038/s44271-026-00539-z},
+  urldate = {2026-09-25},
+  abstract = {The facial configurations that infants encounter in typical interactions with caregivers and family members form a basis for their understanding of emotion. Studies to date have described or quantified these natural exposures to facial information, but descriptions of the emotional content of that input are still needed. We accomplished this by leveraging an existing, longitudinal corpus of video-recordings of 6- to 17-month-old infants' interactions with close others. We found that infants were generally exposed to far more partial than full faces, and that exposure to full faces, while low, increased over the time periods observed. Exposure to facial configurations hypothesized to serve as expressive prototypes for categories of emotion (e.g., happiness, anger) was extremely rare. When hypothesized expressive prototypes did occur, it was often in unexpected contexts, suggesting that they did not necessarily serve as a cue to the presumed emotional meaning. Lastly, descriptive analyses of the facial movement data revealed that infants' input was dominated by a few, mostly simple facial configurations that did not correspond fully or uniquely to hypothesized category prototypes. These results extend evidence that emotions are expressed heterogeneously in daily life, such that infants must learn much more than one-to-one mappings between facial configurations and context/behavior to acquire expressive vocabularies for emotion.},
+  copyright = {2026 The Author(s)},
+  langid = {english},
+  materials = {https://katie-hoemann.github.io/SEEDLingS\_emotion/},
+  primary = {false},
+  keywords = {Development studies,Human behaviour}
 }
 
 @article{hopwood2020,
