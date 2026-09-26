@@ -16,44 +16,55 @@ toc: false
 
 We welcome students and researchers who want to combine psychology with computational and quantitative methods. Pick the path that fits you.
 
-::: {.opp-grid}
-
 ::: {.opp-card .opp-ug}
+::: {.opp-side}
 ### Undergraduate Students
 
-The lab is frequently home to undergraduate students from Psychology and Behavioral Neuroscience, and occasionally from other departments.
-
-Research assistants learn the scientific method and help collect and process research data. Many enroll in PSYC 480 for **credit hours**. Assistants attend weekly lab meetings and can expect a **letter of recommendation** describing their contributions (please give one month of notice). Advanced assistants are sometimes offered **co-authorship** on research products such as conference presentations.
-
-Honors students can design and complete an **honors thesis** under Dr. Girard's supervision during their senior year. These students typically apply for, and have often won, **research awards** from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and **present** their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium).
+Learn research by doing it, earn credit, and build toward a thesis.
 
 ```{=html}
 <div class="btns"><a class="primary" href="mailto:jmgirard@ku.edu">Apply to be a research assistant</a></div>
 ```
 :::
+::: {.opp-body}
+The lab is frequently home to undergraduate students from Psychology and Behavioral Neuroscience, and occasionally from other departments.
+
+Research assistants learn the scientific method and help collect and process research data. Many enroll in PSYC 480 for **credit hours**. Assistants attend weekly lab meetings and can expect a **letter of recommendation** describing their contributions (please give one month of notice). Advanced assistants are sometimes offered **co-authorship** on research products such as conference presentations.
+
+Honors students can design and complete an **honors thesis** under Dr. Girard's supervision during their senior year. These students typically apply for, and have often won, **research awards** from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and **present** their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium).
+:::
+:::
 
 ::: {.opp-card .opp-grad}
+::: {.opp-side}
 ### Prospective Graduate Students
 
-The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (**PhDs**) in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology. The department does not offer a terminal master's degree, and the CPS concentration focuses on adult rather than child psychopathology.
-
-Dr. Girard advises students in the **BBQ** and **CPS** concentrations and is an especially good match for students whose interests span both, such as CPS students interested in advanced methods or BBQ students interested in medical applications.
-
-Graduate students complete coursework in the department and conduct research in the lab, with many opportunities to contribute to ongoing projects. Information about each admissions cycle appears on the [News](news.qmd) page.
+Doctoral training in the BBQ and CPS concentrations.
 
 ```{=html}
 <div class="btns"><a class="primary" href="https://psychology.ku.edu/psychology-graduate-program">Learn about graduate admissions</a></div>
 ```
 :::
+::: {.opp-body}
+The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (**PhDs**) in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology. The department does not offer a terminal master's degree, and the CPS concentration focuses on adult rather than child psychopathology.
+
+Dr. Girard advises students in the **BBQ** and **CPS** concentrations and is an especially good match for students whose interests span both, such as CPS students interested in advanced methods or BBQ students interested in medical applications.
+
+Graduate students complete coursework in the department and conduct research in the lab, with many opportunities to contribute to ongoing projects. Information about each admissions cycle appears on the [News](news.qmd) page.
+:::
+:::
 
 ::: {.opp-card .opp-post}
+::: {.opp-side}
 ### Postdocs and Staff
 
-Postdoctoral fellowships and other staff positions open as funding permits. Openings are announced on the [News](news.qmd) page, and inquiries about upcoming positions are welcome by email.
+Positions open as funding permits.
 
 ```{=html}
 <div class="btns"><a href="mailto:jmgirard@ku.edu">Ask about openings</a></div>
 ```
 :::
-
+::: {.opp-body}
+Postdoctoral fellowships and other staff positions are announced on the [News](news.qmd) page as they become available. Inquiries about upcoming positions are welcome by email.
+:::
 :::
