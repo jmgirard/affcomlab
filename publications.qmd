@@ -446,3 +446,40 @@ groups <- lapply(years, function(y) {
 
 browsable(tags$div(groups))
 ```
+
+```{r}
+#| label: structured-data
+# JSON-LD (schema.org ScholarlyArticle for each paper) so search engines and crawlers get clean fields
+page_url <- "https://affcom.ku.edu/publications.html"
+drop_null <- function(x) x[!vapply(x, is.null, logical(1))]
+nz <- function(x) if (length(x) == 1 && !is.na(x) && nzchar(x)) x else NULL
+person <- function(a) {
+  given <- trimws(paste(as.character(a$given %||% ""), collapse = " "))
+  family <- trimws(paste(as.character(a$family %||% ""), collapse = " "))
+  drop_null(list(`@type` = "Person", name = trimws(paste(given, family)), givenName = nz(given), familyName = nz(family)))
+}
+article <- function(key, entry, title, year, venue, abstract, preprint_url, materials_url, doi, ...) {
+  bt <- tolower(as.character(entry$bibtype %||% ""))
+  same <- c(if (!is.null(nz(doi))) paste0("https://doi.org/", doi), nz(preprint_url))
+  drop_null(list(
+    `@type` = "ScholarlyArticle",
+    `@id` = paste0(page_url, "#", key),
+    url = paste0(page_url, "#", key),
+    headline = title,
+    author = lapply(entry$author, person),
+    datePublished = if (grepl("^[0-9]{4}$", year)) year else NULL,
+    isPartOf = if (nzchar(venue)) list(`@type` = if (bt == "article") "Periodical" else "CreativeWork", name = venue) else NULL,
+    identifier = if (!is.null(nz(doi))) list(`@type` = "PropertyValue", propertyID = "DOI", value = doi) else NULL,
+    sameAs = if (length(same)) as.list(same) else NULL,
+    abstract = nz(abstract),
+    subjectOf = if (!is.null(nz(materials_url))) list(`@type` = "Dataset", url = materials_url, name = paste("Materials for", title)) else NULL
+  ))
+}
+graph <- unname(pmap(rows |> select(key, entry, title, year, venue, abstract, preprint_url, materials_url, doi), article))   # unnamed, so it serialises as an array
+ld <- list(
+  `@context` = "https://schema.org",
+  `@graph` = c(list(list(`@type` = "CollectionPage", `@id` = page_url, url = page_url, name = "Publications",
+                         about = list(`@type` = "ResearchOrganization", name = "Affective Communication & Computing Lab", url = "https://affcom.ku.edu/"))), graph)
+)
+tags$script(type = "application/ld+json", HTML(jsonlite::toJSON(ld, auto_unbox = TRUE, pretty = FALSE)))
+```
