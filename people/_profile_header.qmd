@@ -15,9 +15,9 @@ links <- vapply(m$links %||% list(), function(l) sprintf(
 cat(sprintf(
 '<style>#title-block-header { display: none; }</style>
 
-<header class="profile-head"><img src="%s" alt=""><div class="profile-id"><h1>%s</h1><p class="role">%s%s</p><div class="plinks">%s</div></div></header>
+<header class="profile-head"><img src="%s" alt="Photo of %s"><div class="profile-id"><h1>%s</h1><p class="role">%s%s</p><div class="plinks">%s</div></div></header>
 ',
-  esc(m$image), esc(m$title), esc(role), if (nzchar(when)) paste0('<span class="when"> · ', esc(when), '</span>') else "",
+  esc(m$image), esc(m$title), esc(m$title), esc(role), if (nzchar(when)) paste0('<span class="when"> · ', esc(when), '</span>') else "",
   paste(links, collapse = "")
 ))
 ```

@@ -1,4 +1,5 @@
 ---
+description: "All publications by Dr. Jeffrey Girard and the AffCom Lab, organized by year, with abstracts, citations, BibTeX, preprints, and materials."
 pagetitle: "Publications"
 toc: false
 bibliography: publications.bib

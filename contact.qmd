@@ -1,4 +1,5 @@
 ---
+description: "Contact the AffCom Lab: email, office location in Fraser Hall at the University of Kansas, and directions for visitors."
 pagetitle: "Contact"
 toc: false
 email-obfuscation: javascript

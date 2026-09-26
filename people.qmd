@@ -1,4 +1,5 @@
 ---
+description: "Meet the AffCom Lab at the University of Kansas: director Jeffrey Girard, graduate students, research assistants, and alumni."
 pagetitle: "People"
 toc: false
 listing:

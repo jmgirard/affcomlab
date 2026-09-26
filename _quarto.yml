@@ -43,6 +43,12 @@ website:
         href: https://github.com/jmgirard/affcomlab
   google-analytics: "G-K5TXS64QLN"
   site-url: https://affcom.ku.edu
+  description: "The Affective Communication & Computing Lab at the University of Kansas develops, validates, and applies computational methods to study emotion, interpersonal communication, and mental health."
+  image: img/share.png
+  open-graph: true
+  twitter-card:
+    creator: "@jeffreymgirard"
+    card-style: summary_large_image
   repo-url: https://github.com/jmgirard/affcomlab
 
 format:

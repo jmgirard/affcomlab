@@ -1,4 +1,5 @@
 ---
+description: "Datasets, open courses, statistical and research software, Quarto extensions, and Docker images from the AffCom Lab."
 pagetitle: "Resources"
 toc: false
 ---

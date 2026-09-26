@@ -1,0 +1,17 @@
+---
+title: "Page not found"
+description: "That page does not exist on the AffCom Lab site."
+toc: false
+---
+
+The address you followed does not match a page on this site. The page may have moved when the site was reorganized.
+
+Try one of these instead:
+
+- [Home](/index.html), with an overview of the lab
+- [Research](/research.html), for our areas and funded projects
+- [Publications](/publications.html), for every paper with links
+- [People](/people.html), for the lab members
+- [Contact](/contact.html), if you were looking for us
+
+If you followed a link from another site, the search icon in the navigation bar finds pages by title and text.

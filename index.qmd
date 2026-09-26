@@ -1,4 +1,5 @@
 ---
+description: "The Affective Communication & Computing Lab at the University of Kansas develops, validates, and applies computational methods to study emotion, interpersonal communication, and mental health."
 pagetitle: "AffCom Lab"
 page-layout: full
 toc: false
@@ -26,5 +27,8 @@ toc: false
   </section>
   <p class="note">Each dot is one of our publications, placed by its main research area and ordered by year. A curved line connects a paper to another area it contributes to. Outlined dots are studies led by our lab. Hover over a dot to see the paper, or over an area name to see its papers. Click a dot to see the paper on our publications page.</p>
 </div>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ResearchOrganization","@id":"https://affcom.ku.edu/#org","name":"Affective Communication & Computing Lab","alternateName":"AffCom Lab","url":"https://affcom.ku.edu/","logo":"https://affcom.ku.edu/img/apple-touch-icon.png","description":"The Affective Communication & Computing Lab at the University of Kansas develops, validates, and applies computational methods to study emotion, interpersonal communication, and mental health.","parentOrganization":{"@type":"CollegeOrUniversity","name":"University of Kansas","url":"https://ku.edu/","department":{"@type":"Organization","name":"Department of Psychology","url":"https://psychology.ku.edu/"}},"address":{"@type":"PostalAddress","streetAddress":"Fraser Hall 455, 1415 Jayhawk Blvd","addressLocality":"Lawrence","addressRegion":"KS","postalCode":"66044","addressCountry":"US"},"founder":{"@type":"Person","name":"Jeffrey M. Girard","url":"https://affcom.ku.edu/people/staff/girard_jeffrey.html","jobTitle":"Associate Professor of Psychology","sameAs":["https://scholar.google.com/citations?user=N2UcZ84AAAAJ","https://github.com/jmgirard","https://twitter.com/jeffreymgirard"]},"sameAs":["https://github.com/jmgirard/affcomlab"],"subjectOf":{"@type":"CollectionPage","@id":"https://affcom.ku.edu/publications.html"}}
+</script>
 <script src="ring.js?v=2"></script>
 ```

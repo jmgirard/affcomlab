@@ -1,5 +1,5 @@
 <div class="people-grid">
 <% for (const item of items) { %>
-<div class="person-card"><div class="pc-photo"><img src="<%- item.image %>" alt=""></div><div class="pc-text"><div class="pc-name"><a href="<%- item.path %>"><%= item.title %></a></div><div class="pc-role"><%= item.subtitle %></div><% if (item.program) { %><div class="pc-prog"><%= item.program %></div><% } %><% if (item.started) { %><div class="pc-since">Since <%= item.started %></div><% } %></div></div>
+<div class="person-card"><div class="pc-photo"><img src="<%- item.image %>" alt="Photo of <%= item.title %>"></div><div class="pc-text"><div class="pc-name"><a href="<%- item.path %>"><%= item.title %></a></div><div class="pc-role"><%= item.subtitle %></div><% if (item.program) { %><div class="pc-prog"><%= item.program %></div><% } %><% if (item.started) { %><div class="pc-since">Since <%= item.started %></div><% } %></div></div>
 <% } %>
 </div>
