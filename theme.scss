@@ -91,13 +91,13 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 .quarto-grid-item.card .card-subtitle, .quarto-grid-item.card .listing-subtitle { color: $muted; }
 .quarto-grid-item.card .listing-categories .listing-category { border-color: $line; color: $muted; }
 
-.grant-list { display: grid; gap: 0.9rem; margin: 1rem 0 2rem; }
-.grant-card { padding: 1rem 1.2rem 0.8rem; border-left: 4px solid $col-mh; }
-.grant-card p { margin-bottom: 0.4rem; }
-.grant-card p:first-child { font-family: $headings-font-family; font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
-.grant-card .grant-meta { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-size: 0.95rem; color: $muted; }
-.grant-card .grant-meta .bi { color: $ink; margin-right: 0.3rem; }
-.grant-list.completed .grant-card { border-left-color: $line; }
+.grant-list { display: grid; gap: 1rem; margin: 1rem 0 2.2rem; }
+.grant-card { padding: 1.25rem 1.5rem 1.15rem; }
+.grant-card p { margin: 0; }
+.grant-card p:first-child { font-family: $headings-font-family; font-weight: 600; font-size: 1.12rem; line-height: 1.35; margin-bottom: 0.55rem; }
+.grant-card .grant-funder { font-size: 0.95rem; color: $ink; }
+.grant-card .grant-people { font-size: 0.92rem; color: $muted; }
+.grant-list.completed .grant-card { background: transparent; }
 
 .res-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
 .res-card { padding: 1.1rem 1.2rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
