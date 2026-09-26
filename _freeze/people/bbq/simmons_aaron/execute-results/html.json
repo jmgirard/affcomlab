@@ -1,0 +1,15 @@
+{
+  "hash": "e7fc1d83eb8a99158122acb63f3ff6ee",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Aaron Simmons\nsortby: Simmons, Aaron\nsubtitle: PhD Student\nprogram: Brain, Behavior, and Quantitative Science\nfamily: Simmons\nimage: simmons_aaron.webp\nstarted: Fall 2023\nended: Current\ntoc: false\n---\n\n```{=html}\n<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"../../index.html\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"../../people.html\">People</a></li>\n    <li class=\"breadcrumb-item active\">Graduate Students</li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">{{< meta title >}}</li>\n  </ol>\n</nav>\n```\n\n<style>#title-block-header { display: none; }</style>\n\n<header class=\"profile-head\"><img src=\"simmons_aaron.webp\" alt=\"Photo of Aaron Simmons\"><div class=\"profile-id\"><h1>Aaron Simmons</h1><p class=\"role\">PhD Student · Brain, Behavior, and Quantitative Science<span class=\"when\"> · since Fall 2023</span></p><div class=\"plinks\"></div></div></header>\n\n\n## Biography\nAaron Matthew Simmons’s main research interests include Bayesian statistics and modeling, latent variable modeling, scale development, and how new modeling frameworks in general can be applied and leveraged to study a wide range of cognitive and behavioral phenomena. Further interests include the use and development of neuroscientific methods, especially EEG/ERP and eye-tracking methods, to study cognition and behavior. \n\nHe completed his undergraduate Bachelor of Science degree at the University of California, Davis in 2015. After graduating, he spent many years working at the Center for Mind and Brain at UC Davis with Dr. Steven J. Luck. Currently, he is a student in the Brain, Behavior, and Quantitative Science (BBQ) program in the Department of Psychology at the University of Kansas, and a member of the Affective Communication and Computing lab under Dr. Jeffrey Girard. Personal interests include coffee, philosophy, chess, and BBQ (the kind you eat). \n\n## Education\n\n::: {.timeline}\n- [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />\n  PhD Student in Psychology (BBQ) | Current\n\n- [University of California: Davis]{.fw-bold} | Davis, CA, USA<br />\n  BS in Psychology (Mathematics Emphasis) | 2015\n:::\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

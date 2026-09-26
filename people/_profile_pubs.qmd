@@ -26,7 +26,7 @@ if (nzchar(fam)) {
     keep <- keep & vapply(seq_along(bib), function(i) { y <- yr(bib[[i]]); !is.na(y) && y >= cutoff }, logical(1))
   }
   first <- function(i) isTRUE(is_me(bib[[i]]$author[[1]]))   # with pubs_first: true, first-authored papers come before the rest
-  idx <- which(keep); idx <- idx[order(if (isTRUE(m$pubs_first)) -vapply(idx, first, logical(1)) else 0, -vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
+  idx <- which(keep); idx <- idx[order(if (isTRUE(m$pubs_first)) -vapply(idx, first, logical(1)) else numeric(length(idx)), -vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
   cap <- m$pubs_max %||% if (identical(m$pubs, "primary")) 8 else 100
   idx <- head(idx, cap)
   if (length(idx)) {
