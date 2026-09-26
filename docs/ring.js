@@ -120,8 +120,9 @@ function showTip(p) {   // paper card in the top-left corner, like the subarea c
 }
 
 function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixels (one layout read, no matrix inversion)
-  const r = svg.getBoundingClientRect(), k = W / r.width, px = (ev.clientX - r.left) * k, py = (ev.clientY - r.top) * k;
-  let best = null, bd = 16 * k;
+  const r = svg.getBoundingClientRect(), s = Math.min(r.width / W, r.height / H);   // the height cap letterboxes the drawing on wide boxes, so map through the centred scale
+  const px = (ev.clientX - r.left - (r.width - W * s) / 2) / s, py = (ev.clientY - r.top - (r.height - H * s) / 2) / s;
+  let best = null, bd = 16 / s;
   for (const key in dotXY) { const [x, y] = dotXY[key], d = Math.hypot(x - px, y - py); if (d < bd) { bd = d; best = key; } }
   return best;
 }
@@ -133,7 +134,8 @@ svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area sta
   else { svg.style.cursor = 'default'; }   // between targets the last hover stays; only leaving the ring hands focus back to the example question
   render();
 });
-svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; render(); });
+svg.addEventListener('pointerenter', () => stop());   // the example questions hold still while the pointer is over the ring
+svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; render(); start(); });
 svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) window.open(linkUrl(byKey[k]), '_blank', 'noopener'); });
 
 // ---------- rotating questions ----------
