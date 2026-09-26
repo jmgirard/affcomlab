@@ -139,7 +139,7 @@ svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.
 svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) window.open(linkUrl(byKey[k]), '_blank', 'noopener'); });
 
 // ---------- rotating questions ----------
-const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked');
+const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked'), xcap = document.getElementById('xcap'), xbtn = document.getElementById('expand');
 const qel = document.createElement('div'); qel.className = 'q'; qwrap.appendChild(qel);
 let qi = 0, timer = null, swap = null, qNum = 1;
 function showQ(i) {
@@ -148,6 +148,7 @@ function showQ(i) {
   swap = setTimeout(() => { qel.style.setProperty('--q-col', col); qel.innerHTML = '<span>' + html + '</span>'; qel.classList.add('show'); }, 380);
   asked.innerHTML = p ? `<span class="dot" style="background:${col}"></span>Asked in <a href="${esc(linkUrl(p))}" target="_blank" rel="noopener">${esc(p.title)}</a> (${esc(p.venue)}, ${esc(p.year)})` : '';
   document.getElementById('qn').innerHTML = 'Example<br>question'; const bd = document.getElementById('qbadge'); bd.textContent = i + 1; bd.style.background = col; qNum = i + 1;
+  xcap.innerHTML = `<span class="xbadge" style="background:${col}">${i + 1}</span><span class="xq" style="--q-col:${col}">${html}</span><span class="xasked">${asked.innerHTML}</span>`;   // caption for the expanded view
   hoverKey = key; render();
 }
 const go = d => { qi = (qi + d + QUESTIONS.length) % QUESTIONS.length; showQ(qi); };
@@ -158,4 +159,21 @@ document.getElementById('next').onclick = () => { go(1); auto = false; stop(); }
 document.getElementById('prev').onclick = () => { go(-1); auto = false; stop(); };
 start();
 if (QUESTIONS.length) showQ(0);
+
+// ---------- expanded view: the ring fills the window (true fullscreen where the browser allows it) ----------
+const expanded = () => ring.classList.contains('expanded');
+function setExpanded(on) {
+  ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
+  xbtn.innerHTML = on ? '&#x2715;' : '&#x2922;'; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
+  if (on && ring.requestFullscreen) ring.requestFullscreen().catch(() => {});
+  else if (!on && document.fullscreenElement === ring) document.exitFullscreen().catch(() => {});
+}
+xbtn.onclick = () => setExpanded(!expanded());
+document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && expanded()) setExpanded(false); });   // Esc in fullscreen leaves through the browser
+document.addEventListener('keydown', ev => {
+  if (!expanded()) return;
+  if (ev.key === 'Escape') setExpanded(false);
+  else if (ev.key === 'ArrowRight') { go(1); auto = false; stop(); }
+  else if (ev.key === 'ArrowLeft') { go(-1); auto = false; stop(); }
+});
 })();

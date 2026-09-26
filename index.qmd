@@ -14,7 +14,7 @@ toc: false
       <p class="director">Directed by <a href="people/staff/girard_jeffrey.html">Dr. Jeffrey Girard</a>, Associate Professor of Psychology</p>
       <div class="btns"><a class="primary" href="research.html">Our research</a><a href="opportunities.html">Join the lab</a></div>
     </div>
-    <div class="ring" id="ring" data-src="data/ring.json"><div class="tip" id="tip"></div><div class="stip" id="stip"></div></div>
+    <div class="ring" id="ring" data-src="data/ring.json"><div class="tip" id="tip"></div><div class="stip" id="stip"></div><button class="expand" id="expand" type="button" aria-label="Expand the figure" title="Expand">&#x2922;</button><div class="xcap" id="xcap"></div></div>
   </section>
   <section class="qband">
     <div class="qlabel"><span class="badge" id="qbadge">1</span><span class="of" id="qn"></span></div>
