@@ -239,6 +239,10 @@ rows <- tibble(
 ```
 
 ```{=html}
+<style>
+  /* the appendix reference list stays in the markup for the Citation toggles and for crawlers, but the cards above already show every paper */
+  #quarto-appendix { display: none; }
+</style>
 <script>
 (function() {
   function getCard(el) {
