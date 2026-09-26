@@ -1,7 +1,6 @@
 ---
 pagetitle: "Alumni"
 toc: false
-page-layout: full
 ---
 
 ```{=html}
@@ -14,13 +13,25 @@ page-layout: full
 </nav>
 ```
 
-
 ## Alumni
+
+Former members of the lab, by role, with the terms they were with us.
 
 ```{r alumni}
 #| echo: false
-
-library(reactable)
-alumni <- read.csv("alumni.csv")
-reactable(alumni, pagination = FALSE)
+#| results: asis
+al <- read.csv("alumni.csv", check.names = FALSE)
+term <- function(x) { m <- regmatches(x, regexec("^(\\d{4})[a-c] \\((\\w+)\\)$", x)); vapply(m, function(v) if (length(v) == 3) paste(v[3], v[2]) else x, character(1)) }
+al$name <- sub("^(.*), (.*)$", "\\2 \\1", al$Name)
+al$from <- term(al$Started); al$to <- term(al$Ended)
+al$span <- ifelse(al$from == al$to, al$from, paste(al$from, "–", al$to))
+al$endkey <- paste0(substr(al$Ended, 1, 4), substr(al$Ended, 5, 5))
+groups <- c("Postdoctoral Fellow" = "Postdoctoral Fellows", "MS Student" = "Master's Students",
+            "Honors Research Assistant" = "Honors Research Assistants", "Research Assistant" = "Research Assistants")
+for (g in names(groups)) {
+  rows <- al[al$Role == g, ]; if (!nrow(rows)) next
+  rows <- rows[order(rows$endkey, rows$name, decreasing = c(TRUE, FALSE), method = "radix"), ]
+  cat(sprintf('\n\n### %s <span class="count">%d</span>\n\n<ul class="alumni-list">%s</ul>\n', groups[[g]], nrow(rows),
+      paste0('<li><span class="name">', rows$name, '</span><span class="years">', rows$span, '</span></li>', collapse = "")))
+}
 ```

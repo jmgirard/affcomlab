@@ -55,8 +55,8 @@ He is now an Associate Professor in the department of Psychology at the Universi
   Associate Professor of Psychology | 2025–Current<br />
   Assistant Professor of Psychology | 2020–2025<br />
   Wright Faculty Scholar | 2020–2025<br />
-  Director of the [BBQ Doctoral Program](https://psychology.ku.edu/bbq) | 2022–Current <br />
-  Co-Director of the [Kansas Data Science Consortium](https://data.ku.edu) | 2023-Current
+  Director of the [BBQ Doctoral Program](https://psychology.ku.edu/bbq) | 2022–2026<br />
+  Co-Director of the [Kansas Data Science Consortium](https://data.ku.edu) | 2023–2026
 
 - **Carnegie Mellon University** | Pittsburgh, PA, USA<br />
   Postdoctoral Researcher, School of Computer Science | 2018–2020
@@ -65,6 +65,19 @@ He is now an Associate Professor in the department of Psychology at the Universi
   Clinical Intern, Department of Psychiatry | 2017–2018
 :::
 
+
+## Business
+
+::: {.timeline}
+- **Girard Consulting LLC** <a href="https://www.jmgirard.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Founder | Measurement and evaluation consulting
+
+- **SMaRT Workshops LLC** <a href="https://smart-workshops.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Co-Founder | Online workshops in statistics, methods, and research training
+
+- **Fluid Concepts Research** <a href="https://fluidconcepts.ai" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Principal Scientist | A data lab focused on Human–AI interaction
+:::
 
 ## Journal Editing
 
@@ -76,7 +89,7 @@ He is now an Associate Professor in the department of Psychology at the Universi
 - **IEEE Transactions on Affective Computing** <a href="https://www.computer.org/csdl/journal/ta" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Associate Editor | 2022–2025
 - **Collabra Psychology** <a href="https://online.ucpress.edu/collabra" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
-  Associate Editor | 2021–Current
+  Associate Editor | 2021–2026
 - **Clinical Psychological Science** <a href="https://journals.sagepub.com/home/cpx" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Consulting Editor | 2021–Current
 - **Psychological Assessment** <a href="https://www.apa.org/pubs/journals/pas" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />

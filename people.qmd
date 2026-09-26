@@ -2,36 +2,16 @@
 pagetitle: "People"
 toc: false
 listing:
-  - id: research-staff
+  - id: director
     contents: "people/staff/*.qmd"
-    type: grid
-    image-height: 225px
-    grid-columns: 3
-    fields: [image, title, subtitle]
-    grid-item-align: center
+    template: people/_card.ejs
     sort: sortby
-    field-display-names: 
-      started: "Started"
-  - id: cps-students
-    contents: "people/cps/*.qmd"
-    type: grid
-    image-height: 225px
-    grid-columns: 3
-    fields: [image, title, subtitle]
-    grid-item-align: center
+  - id: students
+    contents:
+      - "people/cps/*.qmd"
+      - "people/bbq/*.qmd"
+    template: people/_card.ejs
     sort: sortby
-    field-display-names: 
-      started: "Started"
-  - id: bbq-students
-    contents: "people/bbq/*.qmd"
-    type: grid
-    image-height: 225px
-    grid-columns: 3
-    fields: [image, title, subtitle]
-    grid-item-align: center
-    sort: sortby
-    field-display-names: 
-      started: "Started"
 ---
 
 ```{=html}
@@ -43,33 +23,40 @@ listing:
 </nav>
 ```
 
+## People
 
-## Research Staff
+A small group with a wide reach: psychologists, statisticians, and computer scientists working on one set of questions. Click a person for their profile and publications.
 
-:::{#research-staff}
+### Lab Director
+
+::: {.director}
+:::{#director}
+:::
 :::
 
-## Clinical Psychological Science Students
+### Graduate Students
 
-:::{#cps-students}
+Students join the lab through the Clinical Psychological Science (CPS) and Brain, Behavior, and Quantitative Science (BBQ) doctoral programs.
+
+:::{#students}
 :::
 
-## Brain, Behavior, and Quantitative Science Students
-
-:::{#bbq-students}
-:::
-
-## Research Assistants
+### Research Assistants
 
 ```{r assistants}
 #| echo: false
 #| results: asis
-
-library(reactable)
 assistants <- read.csv("people/assistants.csv")
-if (nrow(assistants) > 0) reactable(assistants) else cat("The lab is not currently hosting research assistants. See [Opportunities](opportunities.qmd) to apply.")
+if (nrow(assistants) > 0) {
+  cat('<ul class="ra-list">', paste0('<li><span class="name">', sub("^(.*), (.*)$", "\\2 \\1", assistants$Name), '</span><span class="meta">', assistants$Role, " · since ", sub("^\\d{4}[a-c] \\((\\w+)\\)$", "\\1", assistants$Started), " ", substr(assistants$Started, 1, 4), '</span></li>', collapse = ""), '</ul>', sep = "")
+} else cat('<p class="ra-none">The lab is not currently hosting research assistants. See <a href="opportunities.html">Opportunities</a> to apply.</p>')
 ```
 
-## Alumni
+### Alumni
 
-Click to view a list of [former research staff and assistants](people/alumni.qmd).
+```{r alumni-count}
+#| echo: false
+#| results: asis
+al <- read.csv("people/alumni.csv")
+cat(sprintf('<p>%d people have been part of the lab since 2020, from honors students to a postdoctoral fellow. <a class="alumni-link" href="people/alumni.html">See all alumni &rarr;</a></p>', nrow(al)))
+```

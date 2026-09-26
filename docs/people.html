@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f69e4e6c6bb1e41d6da6178a27e1c5d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-36326383fbcb4d30c789169ac4ff877c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,20 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-research-staff .list');
+    const listingTargetEl = window.document.querySelector('#listing-director .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-execute','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-sortby','listing-subtitle','listing-program','listing-family','listing-image','listing-started','listing-toc','listing-resources','listing-pubs','listing-links','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-execute","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-sortby","listing-subtitle","listing-program","listing-family","listing-image","listing-started","listing-toc","listing-resources","listing-pubs","listing-links","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-research-staff'] = new List('listing-research-staff', options);
+    window['quarto-listings']['listing-director'] = new List('listing-director', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -106,48 +106,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-cps-students .list');
+    const listingTargetEl = window.document.querySelector('#listing-students .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-execute','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-sortby','listing-subtitle','listing-program','listing-family','listing-image','listing-started','listing-ended','listing-toc','listing-resources','listing-links','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-execute","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-sortby","listing-subtitle","listing-program","listing-family","listing-image","listing-started","listing-ended","listing-toc","listing-resources","listing-links","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-cps-students'] = new List('listing-cps-students', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-bbq-students .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-bbq-students'] = new List('listing-bbq-students', options);
+    window['quarto-listings']['listing-students'] = new List('listing-students', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -271,152 +243,176 @@ window.Quarto = {
     <li class="breadcrumb-item active" aria-current="page">People</li>
   </ol>
 </nav>
-<section id="research-staff" class="level2">
-<h2 class="anchored" data-anchor-id="research-staff">Research Staff</h2>
-<div id="listing-research-staff" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1790390060548" data-listing-reading-time-sort="3" data-listing-word-count-sort="495">
-<a href="./people/staff/girard_jeffrey.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/staff/girard_jeffrey.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jeffrey Girard
-</h5>
-<div class="card-subtitle listing-subtitle">
+<section id="people" class="level2">
+<h2 class="anchored" data-anchor-id="people">People</h2>
+<p>A small group with a wide reach: psychologists, statisticians, and computer scientists working on one set of questions. Click a person for their profile and publications.</p>
+<section id="lab-director" class="level3">
+<h3 class="anchored" data-anchor-id="lab-director">Lab Director</h3>
+<div class="director">
+<div id="listing-director" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/staff/girard_jeffrey.jpg" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/staff/girard_jeffrey.html">Jeffrey Girard</a>
+</div>
+<div class="pc-role">
 Lab Director
 </div>
+<div class="pc-prog">
+Associate Professor of Psychology
 </div>
-</div></a>
+<div class="pc-since">
+Since Fall 2020
+</div>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</section>
+<section id="graduate-students" class="level3">
+<h3 class="anchored" data-anchor-id="graduate-students">Graduate Students</h3>
+<p>Students join the lab through the Clinical Psychological Science (CPS) and Brain, Behavior, and Quantitative Science (BBQ) doctoral programs.</p>
+<div id="listing-students" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/cps/gray_kassandra.jpg" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/cps/gray_kassandra.html">Kassandra Gray</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Clinical Psychological Science
+</div>
+<div class="pc-since">
+Since Fall 2022
+</div>
+</div>
+</div>
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/cps/jun_daiil.webp" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/cps/jun_daiil.html">Daiil Jun</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Clinical Psychological Science
+</div>
+<div class="pc-since">
+Since Spring 2024
+</div>
+</div>
+</div>
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/bbq/simmons_aaron.webp" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/bbq/simmons_aaron.html">Aaron Simmons</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Brain, Behavior, and Quantitative Science
+</div>
+<div class="pc-since">
+Since Fall 2023
+</div>
+</div>
+</div>
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/bbq/wood_rebecca.webp" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/bbq/wood_rebecca.html">Rebecca Wood</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Brain, Behavior, and Quantitative Science
+</div>
+<div class="pc-since">
+Since Spring 2026
+</div>
+</div>
+</div>
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/cps/yang_yuanyuan.webp" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/cps/yang_yuanyuan.html">Yuanyuan Yang</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Clinical Psychological Science
+</div>
+<div class="pc-since">
+Since Fall 2023
+</div>
+</div>
+</div>
+<div class="person-card">
+<div class="pc-photo">
+<img src="./people/bbq/yermol_dasha.png" alt="">
+</div>
+<div class="pc-text">
+<div class="pc-name">
+<a href="./people/bbq/yermol_dasha.html">Dasha Yermol</a>
+</div>
+<div class="pc-role">
+PhD Student
+</div>
+<div class="pc-prog">
+Brain, Behavior, and Quantitative Science
+</div>
+<div class="pc-since">
+Since Fall 2023
+</div>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="clinical-psychological-science-students" class="level2">
-<h2 class="anchored" data-anchor-id="clinical-psychological-science-students">Clinical Psychological Science Students</h2>
-<div id="listing-cps-students" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1790390060546" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
-<a href="./people/cps/gray_kassandra.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/cps/gray_kassandra.jpg" class="thumbnail-image card-img" style="height: 225px;">
+<section id="research-assistants" class="level3">
+<h3 class="anchored" data-anchor-id="research-assistants">Research Assistants</h3>
+<p class="ra-none">
+The lab is not currently hosting research assistants. See <a href="opportunities.html">Opportunities</a> to apply.
 </p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kassandra Gray
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1790390060547" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
-<a href="./people/cps/jun_daiil.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/cps/jun_daiil.webp" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daiil Jun
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1790390060548" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-<a href="./people/cps/yang_yuanyuan.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/cps/yang_yuanyuan.webp" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Yuanyuan Yang
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
 </section>
-<section id="brain-behavior-and-quantitative-science-students" class="level2">
-<h2 class="anchored" data-anchor-id="brain-behavior-and-quantitative-science-students">Brain, Behavior, and Quantitative Science Students</h2>
-<div id="listing-bbq-students" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1790390060544" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<a href="./people/bbq/simmons_aaron.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/bbq/simmons_aaron.webp" class="thumbnail-image card-img" style="height: 225px;">
+<section id="alumni" class="level3">
+<h3 class="anchored" data-anchor-id="alumni">Alumni</h3>
+<p>
+31 people have been part of the lab since 2020, from honors students to a postdoctoral fellow. <a class="alumni-link" href="people/alumni.html">See all alumni →</a>
 </p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Aaron Simmons
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1790390060545" data-listing-reading-time-sort="2" data-listing-word-count-sort="327">
-<a href="./people/bbq/wood_rebecca.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/bbq/wood_rebecca.webp" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Rebecca Wood
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1790390060545" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
-<a href="./people/bbq/yermol_dasha.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/bbq/yermol_dasha.png" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dasha Yermol
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="research-assistants" class="level2">
-<h2 class="anchored" data-anchor-id="research-assistants">Research Assistants</h2>
-<p>The lab is not currently hosting research assistants. See <a href="./opportunities.html">Opportunities</a> to apply.</p>
-</section>
-<section id="alumni" class="level2">
-<h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
-<p>Click to view a list of <a href="./people/alumni.html">former research staff and assistants</a>.</p>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
