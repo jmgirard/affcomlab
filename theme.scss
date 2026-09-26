@@ -250,29 +250,36 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .stip .desc { font-size: 0.85rem; color: #3d3833; line-height: 1.3; display: block; }
 .home .stip .n { font-size: 0.78rem; color: $muted; display: block; margin-top: 4px; }
 // expand control and the expanded (full-window) view of the ring
-.home .expand { position: absolute; top: 0; right: 0; z-index: 3; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 1.5px solid $line; background: #fff; color: $muted; cursor: pointer; font: inherit; font-size: 1rem; line-height: 1; transition: border-color 0.2s, color 0.2s; }
-.home .expand svg { display: block; }
-.home .expand:hover, .home .expand:focus-visible { border-color: $ink; color: $ink; }
-.home .xcap { display: none; }
+// round icon buttons: expand and close on the ring, previous and next under the question, one look and one motion
+.home .expand, .home .arrows button, .home .xnav button { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 1.5px solid $line; background: #fff; color: $ink; cursor: pointer; font: inherit; line-height: 1; transition: border-color 0.2s, background-color 0.2s, color 0.2s, transform 0.15s ease; }
+.home .expand svg, .home .arrows button svg, .home .xnav button svg { display: block; }
+.home .expand:hover, .home .expand:focus-visible, .home .arrows button:hover, .home .arrows button:focus-visible, .home .xnav button:hover, .home .xnav button:focus-visible { border-color: $ink; background: $ink; color: #fff; transform: scale(1.06); }
+.home .expand:active, .home .arrows button:active, .home .xnav button:active { transform: scale(0.98); }
+.home .expand { position: absolute; top: 0; right: 0; z-index: 3; }
+.home .xnav { display: none; }
 body.ring-expanded { overflow: hidden; }
 body.ring-expanded #quarto-header { visibility: hidden; }   // the main column has opacity below 1, so the fixed navbar would otherwise sit above the overlay
 .home .ring.expanded { position: fixed; inset: 0; z-index: 2000; background: $paper; padding: 16px 24px 14px; display: flex; flex-direction: column; }
 .home .ring.expanded > svg { flex: 1 1 0; min-height: 0; height: auto; max-height: none; margin: 0; }
 .home .ring.expanded .expand { top: 16px; right: 20px; }
-.home .ring.expanded .xcap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 12px; padding: 10px 44px 0; font-family: $headings-font-family; font-weight: 500; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.01em; text-align: center; }
+.home .ring.expanded .xnav { display: flex; align-items: center; gap: 16px; padding: 10px 0 0; }
+.home .ring.expanded .xnav button { flex: 0 0 auto; }
+.home .ring.expanded .xcap { flex: 1 1 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 12px; font-family: $headings-font-family; font-weight: 500; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.01em; text-align: center; }
 .home .xcap .xbadge { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; color: #fff; font-weight: 600; font-size: 0.85rem; align-self: center; }
 .home .xcap .xq em { font-style: italic; color: var(--q-col, #{$ink}); }
 .home .xcap .xasked { width: 100%; font-family: $font-family-sans-serif; font-size: 0.88rem; color: $muted; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home .xcap .xasked a { color: $ink; text-decoration: none; border-bottom: 1px solid $line; }
 .home .xcap .xasked .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
 // the expanded box is always wide enough for the corner cards, whatever the phone's width says
-.home .ring.expanded .tip, .home .ring.expanded .stip { top: 16px; bottom: auto; left: 24px; width: 250px; display: block; padding: 8px 10px 8px 0; }
-.home .ring.expanded .tip .title { -webkit-line-clamp: 3; margin: 3px 0 4px; }
-.home .ring.expanded .tip .go { display: block; }
-.home .ring.expanded .stip .sub { margin: 2px 0 4px; }
-.home .ring.expanded .stip .desc { white-space: normal; }
-.home .ring.expanded .stip .n { margin-top: 4px; }
-@media (max-width: 600px) { .home .ring.expanded .xcap { font-size: 1.05rem; padding: 8px 0 0; } .home .ring.expanded { padding: 12px 12px 10px; } .home .ring.expanded .tip, .home .ring.expanded .stip { left: 12px; top: 12px; } .home .ring.expanded .expand { top: 12px; right: 12px; } }
+.home .ring.expanded .tip, .home .ring.expanded .stip { top: 16px; bottom: auto; left: 24px; width: min(360px, 100vw - 84px); display: block; padding: 10px 12px 10px 0; border-top-width: 4px; }
+.home .ring.expanded .tip .area, .home .ring.expanded .stip .area { font-size: 0.8rem; }
+.home .ring.expanded .tip .title { font-size: 1.25rem; -webkit-line-clamp: 5; margin: 5px 0 6px; }
+.home .ring.expanded .tip .meta { font-size: 0.92rem; white-space: normal; }
+.home .ring.expanded .tip .go { display: block; font-size: 0.85rem; margin-top: 6px; }
+.home .ring.expanded .stip .sub { font-size: 1.45rem; margin: 4px 0 6px; }
+.home .ring.expanded .stip .desc { font-size: 0.98rem; white-space: normal; }
+.home .ring.expanded .stip .n { font-size: 0.85rem; margin-top: 6px; }
+@media (max-width: 600px) { .home .ring.expanded .xcap { font-size: 1.05rem; } .home .ring.expanded .xnav { gap: 10px; padding-top: 8px; } .home .ring.expanded { padding: 12px 12px 10px; } .home .ring.expanded .tip, .home .ring.expanded .stip { left: 12px; top: 12px; } .home .ring.expanded .expand { top: 12px; right: 12px; } }
 // narrow ring box: the cards move to a band below the figure instead of the top-left corner, so they never cover the arcs or labels
 @container (max-width: 620px) {
   .home .ring > svg { margin-bottom: max(0px, calc(76px - 10.5cqw)); }   // the card is about 70px tall; the figure's own blank bottom margin shrinks with the box, so the extra space grows
@@ -298,9 +305,6 @@ body.ring-expanded #quarto-header { visibility: hidden; }   // the main column h
 .home .asked a { color: $ink; text-decoration: none; border-bottom: 1px solid $line; }
 .home .asked .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
 .home .arrows { display: flex; align-items: center; gap: 6px; }
-.home .arrows button { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 1.5px 0 0; border-radius: 50%; border: 1.5px solid $line; background: #fff; color: $ink; cursor: pointer; font: inherit; font-size: 1.05rem; line-height: 1; transition: border-color 0.2s, background-color 0.2s, color 0.2s, transform 0.15s ease; }
-.home .arrows button:hover, .home .arrows button:focus-visible { border-color: $ink; background: $ink; color: #fff; transform: scale(1.06); }
-.home .arrows button:active { transform: scale(0.98); }
 .home .note { color: $muted; font-size: 0.95rem; margin: 10px 0 40px; }
 @media (max-width: 1100px) { .home .q-wrap { height: 4.6rem; } }
 @media (max-width: 860px) {

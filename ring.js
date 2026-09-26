@@ -155,13 +155,13 @@ const go = d => { qi = (qi + d + QUESTIONS.length) % QUESTIONS.length; showQ(qi)
 let auto = !reduced && QUESTIONS.length > 1;
 const start = () => { if (auto && !timer) timer = setInterval(() => go(1), 6000); }, stop = () => { clearInterval(timer); timer = null; };
 document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());   // no work while the tab is hidden
-document.getElementById('next').onclick = () => { go(1); auto = false; stop(); };
-document.getElementById('prev').onclick = () => { go(-1); auto = false; stop(); };
+const step = d => { go(d); auto = false; stop(); };   // a manual step ends the automatic rotation
+for (const [id, d] of [['next', 1], ['prev', -1], ['xnext', 1], ['xprev', -1]]) document.getElementById(id).onclick = () => step(d);
 start();
 if (QUESTIONS.length) showQ(0);
 
 // ---------- expanded view: the ring fills the window (true fullscreen where the browser allows it) ----------
-const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
+const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
 const expanded = () => ring.classList.contains('expanded');
 function setExpanded(on) {
   ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
@@ -174,7 +174,7 @@ document.addEventListener('fullscreenchange', () => { if (!document.fullscreenEl
 document.addEventListener('keydown', ev => {
   if (!expanded()) return;
   if (ev.key === 'Escape') setExpanded(false);
-  else if (ev.key === 'ArrowRight') { go(1); auto = false; stop(); }
-  else if (ev.key === 'ArrowLeft') { go(-1); auto = false; stop(); }
+  else if (ev.key === 'ArrowRight') step(1);
+  else if (ev.key === 'ArrowLeft') step(-1);
 });
 })();
