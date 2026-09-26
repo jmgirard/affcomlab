@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-085dd1c92a4cc1012bd89b7f95984c34.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c0223a4239792b995eef3c4f76aed5e1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -357,6 +357,13 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
     });
   }, false);
 })();
+
+// a link to a paper card lands under the fixed navbar; re-scroll once fonts have loaded, since the layout above shifts as they arrive
+(function () {
+  const jump = () => { const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el && el.classList.contains('pub-card')) el.scrollIntoView({ block: 'start' }); };
+  window.addEventListener('load', () => { jump(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => setTimeout(jump, 50)); });
+  window.addEventListener('hashchange', jump);
+})();
 </script>
 <div class="cell">
 <div class="cell-output-display">
@@ -364,7 +371,7 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 <div class="year-group">
 <h2 class="year-title anchored" id="y-in press">In Press</h2>
 <div>
-<div class="pub-card" data-key="girardinpressb">
+<div class="pub-card" id="girardinpressb" data-key="girardinpressb">
 <div class="pub-title">
 <a href="https://doi.org/10.31234/osf.io/jeuyk_v1" target="_blank" rel="noopener">Building Open Science into Graduate Training in Clinical Psychology</a>
 </div>
@@ -401,7 +408,7 @@ Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girardinpress">
+<div class="pub-card" id="girardinpress" data-key="girardinpress">
 <div class="pub-title">
 <a href="https://osf.io/preprints/psyarxiv/63sw4_v3" target="_blank" rel="noopener">Evaluating Open-Weight Large Language Models for Structured Depression Assessment from Clinical Interviews</a>
 </div>
@@ -437,7 +444,7 @@ Girard, Kebe, Morency, De La Torre, Liebenthal &amp; Baker
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="hoemanninpress">
+<div class="pub-card" id="hoemanninpress" data-key="hoemanninpress">
 <div class="pub-title">
 <a href="https://doi.org/10.1038/s44271-026-00539-z" target="_blank" rel="noopener">Infants' Facial Input from 6 to 17 Months Rarely Includes Hypothesized Expressive Emotion Prototypes</a>
 </div>
@@ -477,7 +484,7 @@ Hoemann, Girard, Ogren, Leotti, Barrett, Oakes &amp; LoBue
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2026">2026</h2>
 <div>
-<div class="pub-card" data-key="girard2026a">
+<div class="pub-card" id="girard2026a" data-key="girard2026a">
 <div class="pub-title">
 <a href="https://doi.org/10.1146/annurev-clinpsy-081423-024140" target="_blank" rel="noopener">Computational Analysis of Expressive Behavior in Clinical Assessment</a>
 </div>
@@ -516,7 +523,7 @@ Girard, Yermol, Salah &amp; Cohn
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="campbell2026">
+<div class="pub-card" id="campbell2026" data-key="campbell2026">
 <div class="pub-title">
 <a href="https://doi.org/10.1177/10949968251360683" target="_blank" rel="noopener">EXPRESS: How Influencers Grow: An Empirical Study and Future Research Agenda</a>
 </div>
@@ -551,7 +558,7 @@ Campbell, Girard, McDuff &amp; Rosengren
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="bottera2026">
+<div class="pub-card" id="bottera2026" data-key="bottera2026">
 <div class="pub-title">
 <a href="https://doi.org/10.1002/erv.70067" target="_blank" rel="noopener">Examining the Role of Insomnia in Maintaining Binge Eating and Restricting in United States Veterans</a>
 </div>
@@ -585,7 +592,7 @@ Bottera, Thomeczek, Rasheed, Christensen Pacella, Girard, Chen, Oehlert, Wendler
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2026b">
+<div class="pub-card" id="girard2026b" data-key="girard2026b">
 <div class="pub-title">
 <a href="https://arxiv.org/abs/2607.29602" target="_blank" rel="noopener">FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models</a>
 </div>
@@ -619,7 +626,7 @@ Girard, Zheng, Vertino, D'Avirro &amp; Peloquin
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="edershile2026">
+<div class="pub-card" id="edershile2026" data-key="edershile2026">
 <div class="pub-title">
 <a href="https://doi.org/10.1177/10731911251356150" target="_blank" rel="noopener">Narcissism from Every Angle: An Interpersonal Analysis of Narcissism in Young Adults</a>
 </div>
@@ -654,7 +661,7 @@ Edershile, Girard, Woods, Williams, Simms &amp; Wright
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2026">
+<div class="pub-card" id="girard2026" data-key="girard2026">
 <div class="pub-title">
 <a href="https://doi.org/10.1007/s42761-025-00352-7" target="_blank" rel="noopener">Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language Models</a>
 </div>
@@ -699,7 +706,7 @@ Girard, Jun, Ong, Liebenthal &amp; Baker
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2025">2025</h2>
 <div>
-<div class="pub-card" data-key="caumiant2025">
+<div class="pub-card" id="caumiant2025" data-key="caumiant2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/adb0001053" target="_blank" rel="noopener">Alcohol and Emotion: Analyzing Convergence between Facially Expressed and Self-Reported Indices of Emotion under Alcohol Intoxication</a>
 </div>
@@ -733,7 +740,7 @@ Caumiant, Kang, Girard &amp; Fairbairn
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="rinconcaicedo2025">
+<div class="pub-card" id="rinconcaicedo2025" data-key="rinconcaicedo2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/lat0000266" target="_blank" rel="noopener">Depressive Symptoms among Hispanic Americans: Investigating the Interplay of Acculturation and Demographics</a>
 </div>
@@ -767,7 +774,7 @@ Rincon Caicedo, Girard, Punt, Giovanetti &amp; Ilardi
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2025">
+<div class="pub-card" id="girard2025" data-key="girard2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/ccp0000980" target="_blank" rel="noopener">Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression Therapy</a>
 </div>
@@ -807,7 +814,7 @@ Girard, Yermol, Bylsma, Cohn, Fournier, Morency &amp; Swartz
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="aafjes-vandoorn2025">
+<div class="pub-card" id="aafjes-vandoorn2025" data-key="aafjes-vandoorn2025">
 <div class="pub-title">
 <a href="https://doi.org/10/g824tc" target="_blank" rel="noopener">From Intuition to Innovation: Empirical Illustrations of Multimodal Measurement in Psychotherapy Research</a>
 </div>
@@ -845,7 +852,7 @@ Aafjes-van Doorn &amp; Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="setiawan2025">
+<div class="pub-card" id="setiawan2025" data-key="setiawan2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1371/journal.pdig.0001022" target="_blank" rel="noopener">Individualized Machine-Learning-Based Clinical Assessment Recommendation System</a>
 </div>
@@ -880,7 +887,7 @@ Setiawan, Wiranto, Girard, Watts &amp; Ashourvan
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="agrawal2025">
+<div class="pub-card" id="agrawal2025" data-key="agrawal2025">
 <div class="pub-title">
 <a href="https://doi.org/10.48550/arXiv.2506.22554" target="_blank" rel="noopener">Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset</a>
 </div>
@@ -913,7 +920,7 @@ Agrawal, Akinyemi, Alvero, Behrooz, Buffalini, Carlucci, Chen, Chen, Chen, Cheng
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="creswell2025">
+<div class="pub-card" id="creswell2025" data-key="creswell2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1177/21677026251333784" target="_blank" rel="noopener">The Effects of Alcohol in Groups of Heavy-Drinking Young Adults: A Multimodal Investigation of Alcohol Responses in a Laboratory Social Setting</a>
 </div>
@@ -948,7 +955,7 @@ Creswell, Wright, Sayette, Girard, Lyons &amp; Smyth
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="jun2025">
+<div class="pub-card" id="jun2025" data-key="jun2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.eatbeh.2025.101983" target="_blank" rel="noopener">The Role of Hyper-Palatable Foods in Energy Intake Measured Using Mobile Food Photography Methodology</a>
 </div>
@@ -982,7 +989,7 @@ Jun, Girard, Martin &amp; Fazzino
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="chung2025">
+<div class="pub-card" id="chung2025" data-key="chung2025">
 <div class="pub-title">
 <a href="https://doi.org/10/g8pwmn" target="_blank" rel="noopener">Transdiagnostic Modeling of Clinician-Rated Symptoms in Affective and Nonaffective Psychotic Disorders</a>
 </div>
@@ -1023,7 +1030,7 @@ Chung, Girard, Ravichandran, Öngür, Cohen &amp; Baker
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="adaryukov2025">
+<div class="pub-card" id="adaryukov2025" data-key="adaryukov2025">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/dec0000251" target="_blank" rel="noopener">Worth the Weight: An Examination of Unstructured and Structured Data in Graduate Admissions</a>
 </div>
@@ -1064,7 +1071,7 @@ Adaryukov, Biernat, Girard, Villicana &amp; Pleskac
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2024">2024</h2>
 <div>
-<div class="pub-card" data-key="butler2024">
+<div class="pub-card" id="butler2024" data-key="butler2024">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.brat.2024.104577" target="_blank" rel="noopener">Are Within- and between-Session Changes in Distress Associated with Treatment Outcomes? Findings from Two Clinical Trials of Exposure for Eating Disorders</a>
 </div>
@@ -1098,7 +1105,7 @@ Butler, Christian, Girard, Vanzhula &amp; Levinson
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="sprunger2024">
+<div class="pub-card" id="sprunger2024" data-key="sprunger2024">
 <div class="pub-title">
 <a href="https://doi.org/10.1002/jts.23023" target="_blank" rel="noopener">Associations between Transdiagnostic Traits of Psychopathology and Hybrid Posttraumatic Stress Disorder Factors in a Trauma-Exposed Community Sample</a>
 </div>
@@ -1138,7 +1145,7 @@ Sprunger, Girard &amp; Chard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="kebe2024">
+<div class="pub-card" id="kebe2024" data-key="kebe2024">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/3652988.3673917" target="_blank" rel="noopener">GeSTICS: A Multimodal Corpus for Studying Gesture Synthesis in Two-Party Interactions with Contextualized Speech</a>
 </div>
@@ -1174,7 +1181,7 @@ Kebe, Birlikci, Boudin, Ishii, Girard &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="baber2024">
+<div class="pub-card" id="baber2024" data-key="baber2024">
 <div class="pub-title">
 <a href="https://doi.org/10.1093/sleep/zsae210" target="_blank" rel="noopener">It's the Sentiment That Counts: Comparing Sentiment Analysis Tools for Estimating Affective Valence in Dream Reports</a>
 </div>
@@ -1209,7 +1216,7 @@ Baber, Hamilton, Girard, Cohen, Gratton, Ellis &amp; Hemmer
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="linsalata2024">
+<div class="pub-card" id="linsalata2024" data-key="linsalata2024">
 <div class="pub-title">
 <a href="https://doi.org/10.3390/ijerph21111390" target="_blank" rel="noopener">Sources of Environmental Reinforcement and Engagement in Health Risk Behaviors among a General Population Sample of US Adults</a>
 </div>
@@ -1250,7 +1257,7 @@ L'Insalata, Girard &amp; Fazzino
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2023">2023</h2>
 <div>
-<div class="pub-card" data-key="girard2023a">
+<div class="pub-card" id="girard2023a" data-key="girard2023a">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/ACII59096.2023.10388135" target="_blank" rel="noopener">DynAMoS: The Dynamic Affective Movie Clip Database for Subjectivity Analysis</a>
 </div>
@@ -1290,7 +1297,7 @@ Girard, Tie &amp; Liebenthal
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="kim2023">
+<div class="pub-card" id="kim2023" data-key="kim2023">
 <div class="pub-title">
 <a href="https://doi.org/10.3389/fpsyg.2023.1221081" target="_blank" rel="noopener">Human and Machine Recognition of Dynamic and Static Facial Expressions: Prototypicality, Ambiguity, and Complexity</a>
 </div>
@@ -1323,7 +1330,7 @@ Kim, Küster, Girard &amp; Krumhuber
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="swartz2023">
+<div class="pub-card" id="swartz2023" data-key="swartz2023">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.jad.2023.04.092" target="_blank" rel="noopener">Randomized Trial of Brief Interpersonal Psychotherapy and Cognitive Behavioral Therapy for Depression Delivered Both In-Person and by Telehealth</a>
 </div>
@@ -1356,7 +1363,7 @@ Swartz, Bylsma, Fournier, Girard, Spotts, Cohn &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="vail2023">
+<div class="pub-card" id="vail2023" data-key="vail2023">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/3577190.3614118" target="_blank" rel="noopener">Representation Learning for Interpersonal and Multimodal Behavior Dynamics: A Multiview Extension of Latent Change Score Models</a>
 </div>
@@ -1397,7 +1404,7 @@ Vail, Girard, Bylsma, Fournier, Swartz, Cohn &amp; Morency
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2022">2022</h2>
 <div>
-<div class="pub-card" data-key="girard2022a">
+<div class="pub-card" id="girard2022a" data-key="girard2022a">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.schres.2021.06.040" target="_blank" rel="noopener">Computational Analysis of Spoken Language in Acute Psychosis and Mania</a>
 </div>
@@ -1436,7 +1443,7 @@ Girard, Vail, Liebenthal, Brown, Kilciksiz, Pennant, Liebson, Öngür, Morency &
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="vail2022">
+<div class="pub-card" id="vail2022" data-key="vail2022">
 <div class="pub-title">
 <a href="https://doi.org/10/gt3bwj" target="_blank" rel="noopener">Toward Causal Understanding of Therapist-Client Relationships: A Study of Language Modality and Social Entrainment</a>
 </div>
@@ -1469,7 +1476,7 @@ Vail, Girard, Bylsma, Cohn, Fournier, Swartz &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="vanoest2022">
+<div class="pub-card" id="vanoest2022" data-key="vanoest2022">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/met0000412" target="_blank" rel="noopener">Weighting Schemes and Incomplete Data: A Generalized Bayesian Framework for Chance-Corrected Interrater Agreement</a>
 </div>
@@ -1510,7 +1517,7 @@ van Oest &amp; Girard
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2021">2021</h2>
 <div>
-<div class="pub-card" data-key="sewall2021">
+<div class="pub-card" id="sewall2021" data-key="sewall2021">
 <div class="pub-title">
 <a href="https://doi.org/10.1111/jcpp.13343" target="_blank" rel="noopener">A Bayesian Multilevel Analysis of the Longitudinal Associations between Relationship Quality and Suicidal Ideation and Attempts among Youth with Bipolar Disorder</a>
 </div>
@@ -1546,7 +1553,7 @@ Sewall, Girard, Merranko, Hafeman, Goldstein, Strober, Hower, Weinstock, Yen, Ry
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="vail2021">
+<div class="pub-card" id="vail2021" data-key="vail2021">
 <div class="pub-title">
 <a href="https://doi.org/10/gpfjrn" target="_blank" rel="noopener">Goals, Tasks, and Bonds: Toward the Computational Assessment of Therapist versus Client Perception of Working Alliance</a>
 </div>
@@ -1578,7 +1585,7 @@ Vail, Girard, Bylsma, Cohn, Fournier, Swartz &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="bowdring2021">
+<div class="pub-card" id="bowdring2021" data-key="bowdring2021">
 <div class="pub-title">
 <a href="https://doi.org/10.1007/s10919-020-00350-2" target="_blank" rel="noopener">In the Eye of the Beholder: A Comprehensive Analysis of Stimulus Type, Perceiver, and Target in Physical Attractiveness Perceptions</a>
 </div>
@@ -1615,7 +1622,7 @@ Bowdring, Sayette, Girard &amp; Woods
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2021">
+<div class="pub-card" id="girard2021" data-key="girard2021">
 <div class="pub-title">
 <a href="https://doi.org/10.1007/s42761-020-00030-w" target="_blank" rel="noopener">Reconsidering the Duchenne Smile: Formalizing and Testing Hypotheses about Eye Constriction and Positive Emotion</a>
 </div>
@@ -1656,7 +1663,7 @@ Girard, Cohn, Yin &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="wolfert2021">
+<div class="pub-card" id="wolfert2021" data-key="wolfert2021">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/3462244.3479889" target="_blank" rel="noopener">To Rate or Not to Rate: Investigating Evaluation Methods for Generated Co-Speech Gestures</a>
 </div>
@@ -1697,7 +1704,7 @@ Wolfert, Girard, Kucherenko &amp; Belpaeme
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2020">2020</h2>
 <div>
-<div class="pub-card" data-key="lin2020a">
+<div class="pub-card" id="lin2020a" data-key="lin2020a">
 <div class="pub-title">
 <a href="https://ceur-ws.org/Vol-2614/AffCon20_session1_context.pdf" target="_blank" rel="noopener">Context-Dependent Models for Predicting and Characterizing Facial Expressiveness</a>
 </div>
@@ -1733,7 +1740,7 @@ Lin, Girard &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="muszynski2020">
+<div class="pub-card" id="muszynski2020" data-key="muszynski2020">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/3382507.3418859" target="_blank" rel="noopener">Depression Severity Assessment for Adolescents at High Risk of Mental Disorders</a>
 </div>
@@ -1768,7 +1775,7 @@ Muszynski, Zelazny, Girard &amp; Morency
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="hopwood2020">
+<div class="pub-card" id="hopwood2020" data-key="hopwood2020">
 <div class="pub-title">
 <a href="https://doi.org/10.1177/1073191118798916" target="_blank" rel="noopener">Properties of the Continuous Assessment of Interpersonal Dynamics across Sex, Level of Familiarity, and Interpersonal Conflict</a>
 </div>
@@ -1803,7 +1810,7 @@ Hopwood, Harrison, Amole, Girard, Wright, Thomas, Sadler, Ansell, Chaplin, Morey
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="lin2020">
+<div class="pub-card" id="lin2020" data-key="lin2020">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/3382507.3418887" target="_blank" rel="noopener">Toward Multimodal Modeling of Emotional Expressiveness</a>
 </div>
@@ -1844,7 +1851,7 @@ Lin, Girard, Sayette &amp; Morency
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2019">2019</h2>
 <div>
-<div class="pub-card" data-key="gerber2019">
+<div class="pub-card" id="gerber2019" data-key="gerber2019">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.brat.2019.103477" target="_blank" rel="noopener">Alexithymia -- Not Autism -- Is Associated with Frequency of Social Interactions in Adults</a>
 </div>
@@ -1877,7 +1884,7 @@ Gerber, Girard, Scott &amp; Lerner
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="mcduff2019">
+<div class="pub-card" id="mcduff2019" data-key="mcduff2019">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/acii.2019.8925503" target="_blank" rel="noopener">Democratizing Psychological Insights from Analysis of Nonverbal Behavior</a>
 </div>
@@ -1913,7 +1920,7 @@ McDuff &amp; Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="grove2019">
+<div class="pub-card" id="grove2019" data-key="grove2019">
 <div class="pub-title">
 <a href="https://doi.org/10.1521/pedi_2019_33_374" target="_blank" rel="noopener">Narcissistic Admiration and Rivalry: An Interpersonal Approach to Construct Validation</a>
 </div>
@@ -1949,7 +1956,7 @@ Grove, Smith, Girard &amp; Wright
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2019">
+<div class="pub-card" id="girard2019" data-key="girard2019">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/acii.2019.8925535" target="_blank" rel="noopener">Reconsidering the Duchenne Smile: Indicator of Positive Emotion or Artifact of Smile Intensity?</a>
 </div>
@@ -1990,7 +1997,7 @@ Girard, Shandar, Liu, Cohn, Yin &amp; Morency
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2018">2018</h2>
 <div>
-<div class="pub-card" data-key="cohn2018">
+<div class="pub-card" id="cohn2018" data-key="cohn2018">
 <div class="pub-title">
 <a href="https://shop.elsevier.com/books/multimodal-behavior-analysis-in-the-wild/alameda-pineda/978-0-12-814601-9" target="_blank" rel="noopener">Affective Facial Computing: Generalizability across Domains</a>
 </div>
@@ -2024,7 +2031,7 @@ Cohn, Ertugrul, Chu, Girard &amp; Hammal
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2018">
+<div class="pub-card" id="girard2018" data-key="girard2018">
 <div class="pub-title">
 <a href="https://doi.org/10.3758/s13428-017-0915-5" target="_blank" rel="noopener">DARMA: Software for Dual Axis Rating and Media Annotation</a>
 </div>
@@ -2060,7 +2067,7 @@ Girard &amp; Wright
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="pacella2018">
+<div class="pub-card" id="pacella2018" data-key="pacella2018">
 <div class="pub-title">
 <a href="https://doi.org/10.1111/acem.13406" target="_blank" rel="noopener">The Association between Daily Posttraumatic Stress Symptoms and Pain over the First 14 Days after Injury: An Experience Sampling Study</a>
 </div>
@@ -2099,7 +2106,7 @@ Pacella, Girard, Wright, Suffoletto &amp; Callaway
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2017">2017</h2>
 <div>
-<div class="pub-card" data-key="shepherd2017">
+<div class="pub-card" id="shepherd2017" data-key="shepherd2017">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.adolescence.2017.09.006" target="_blank" rel="noopener">Comparison of Comprehensive and Abstinence-Only Sexuality Education in Young African American Adolescents</a>
 </div>
@@ -2132,7 +2139,7 @@ Shepherd, Sly &amp; Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="valstar2017">
+<div class="pub-card" id="valstar2017" data-key="valstar2017">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2017.107" target="_blank" rel="noopener">FERA 2017 - Addressing Head Pose in the Third Facial Expression Recognition and Analysis Challenge</a>
 </div>
@@ -2166,7 +2173,7 @@ Valstar, Sanchez-Lozano, Cohn, Jeni, Girard, Zhang, Yin &amp; Pantic
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2017a">
+<div class="pub-card" id="girard2017a" data-key="girard2017a">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2017.135" target="_blank" rel="noopener">Historical Heterogeneity Predicts Smiling: Evidence from Large-Scale Observational Analyses</a>
 </div>
@@ -2202,7 +2209,7 @@ Girard &amp; McDuff
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2017">
+<div class="pub-card" id="girard2017" data-key="girard2017">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.comppsych.2017.06.014" target="_blank" rel="noopener">Interpersonal Problems across Levels of the Psychopathology Hierarchy</a>
 </div>
@@ -2237,7 +2244,7 @@ Girard, Wright, Beeney, Lazarus, Scott, Stepp &amp; Pilkonis
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="mcduff2017">
+<div class="pub-card" id="mcduff2017" data-key="mcduff2017">
 <div class="pub-title">
 <a href="https://doi.org/10/f92t52" target="_blank" rel="noopener">Large-Scale Observational Evidence of Cross-Cultural Differences in Facial Behavior</a>
 </div>
@@ -2273,7 +2280,7 @@ McDuff, Girard &amp; El Kaliouby
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="ross2017">
+<div class="pub-card" id="ross2017" data-key="ross2017">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/pas0000338" target="_blank" rel="noopener">Momentary Patterns of Covariation between Specific Affects and Interpersonal Behavior: Linking Relationship Science and Personality Assessment</a>
 </div>
@@ -2307,7 +2314,7 @@ Ross, Girard, Wright, Beeney, Scott, Hallquist, Lazarus, Stepp &amp; Pilkonis
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2017c">
+<div class="pub-card" id="girard2017c" data-key="girard2017c">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2017.151" target="_blank" rel="noopener">Open-Source Software for Continuous Measurement and Media Annotation</a>
 </div>
@@ -2340,7 +2347,7 @@ Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2017b">
+<div class="pub-card" id="girard2017b" data-key="girard2017b">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2017.144" target="_blank" rel="noopener">Sayette Group Formation Task (GFT) Spontaneous Facial Expression Database</a>
 </div>
@@ -2381,7 +2388,7 @@ Girard, Chu, Jeni, Cohn, De La Torre &amp; Sayette
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2016">2016</h2>
 <div>
-<div class="pub-card" data-key="girard2016a">
+<div class="pub-card" id="girard2016a" data-key="girard2016a">
 <div class="pub-title">
 <a href="https://doi.org/10.1177/1073191116635807" target="_blank" rel="noopener">A Primer on Observational Measurement</a>
 </div>
@@ -2417,7 +2424,7 @@ Girard &amp; Cohn
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="zhang2016">
+<div class="pub-card" id="zhang2016" data-key="zhang2016">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/cvpr.2016.374" target="_blank" rel="noopener">Multimodal Spontaneous Emotion Corpus for Human Behavior Analysis</a>
 </div>
@@ -2456,7 +2463,7 @@ Zhang, Girard, Wu, Zhang, Liu, Ciftci, Canavan, Reale, Horowitz, Yang, Cohn, Ji 
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2015">2015</h2>
 <div>
-<div class="pub-card" data-key="girard2015c">
+<div class="pub-card" id="girard2015c" data-key="girard2015c">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.copsyc.2014.12.010" target="_blank" rel="noopener">Automated Audiovisual Depression Analysis</a>
 </div>
@@ -2490,7 +2497,7 @@ Girard &amp; Cohn
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2015b">
+<div class="pub-card" id="girard2015b" data-key="girard2015b">
 <div class="pub-title">
 <a href="https://doi.org/10/f7tkjg" target="_blank" rel="noopener">Estimating Smile Intensity: A Better Way</a>
 </div>
@@ -2523,7 +2530,7 @@ Girard, Cohn &amp; De la Torre
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="valstar2015">
+<div class="pub-card" id="valstar2015" data-key="valstar2015">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2015.7284874" target="_blank" rel="noopener">FERA 2015 - Second Facial Expression Recognition and Analysis Challenge</a>
 </div>
@@ -2557,7 +2564,7 @@ Valstar, Almaev, Girard, McKeown, Mehu, Yin, Pantic &amp; Cohn
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2015d">
+<div class="pub-card" id="girard2015d" data-key="girard2015d">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2015.7163106" target="_blank" rel="noopener">How Much Training Data for Facial Action Unit Detection?</a>
 </div>
@@ -2592,7 +2599,7 @@ Girard, Cohn, Jeni, Lucey &amp; De la Torre
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="jeni2015">
+<div class="pub-card" id="jeni2015" data-key="jeni2015">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2015.7163165" target="_blank" rel="noopener">Real-Time Dense 3D Face Alignment from 2D Video with Automatic Facial Action Unit Coding</a>
 </div>
@@ -2623,7 +2630,7 @@ Jeni, Girard, Cohn &amp; Kanade
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="fairbairn2015">
+<div class="pub-card" id="fairbairn2015" data-key="fairbairn2015">
 <div class="pub-title">
 <a href="https://doi.org/10.1037/pha0000021" target="_blank" rel="noopener">Speech Volume Indexes Sex Differences in the Social-Emotional Effects of Alcohol</a>
 </div>
@@ -2657,7 +2664,7 @@ Fairbairn, Sayette, Amole, Dimoff, Cohn &amp; Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2015a">
+<div class="pub-card" id="girard2015a" data-key="girard2015a">
 <div class="pub-title">
 <a href="https://doi.org/10.3758/s13428-014-0536-1" target="_blank" rel="noopener">Spontaneous Facial Expression in Unscripted Social Interactions Can Be Measured Automatically</a>
 </div>
@@ -2698,7 +2705,7 @@ Girard, Cohn, Jeni, Sayette &amp; De la Torre
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2014">2014</h2>
 <div>
-<div class="pub-card" data-key="zhang2014">
+<div class="pub-card" id="zhang2014" data-key="zhang2014">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.imavis.2014.06.002" target="_blank" rel="noopener">BP4D-spontaneous: A High-Resolution Spontaneous 3D Dynamic Facial Expression Database</a>
 </div>
@@ -2732,7 +2739,7 @@ Zhang, Yin, Cohn, Canavan, Reale, Horowitz, Liu &amp; Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2014c">
+<div class="pub-card" id="girard2014c" data-key="girard2014c">
 <div class="pub-title">
 <a href="https://doi.org/10.5334/jors.ar" target="_blank" rel="noopener">CARMA: Software for Continuous Affect Rating and Media Annotation</a>
 </div>
@@ -2768,7 +2775,7 @@ Girard
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2014a">
+<div class="pub-card" id="girard2014a" data-key="girard2014a">
 <div class="pub-title">
 <a href="https://doi.org/10.1016/j.imavis.2013.12.007" target="_blank" rel="noopener">Nonverbal Social Withdrawal in Depression: Evidence from Manual and Automatic Analyses</a>
 </div>
@@ -2802,7 +2809,7 @@ Girard, Cohn, Mahoor, Mavadati, Hammal &amp; Rosenwald
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2014b">
+<div class="pub-card" id="girard2014b" data-key="girard2014b">
 <div class="pub-title">
 <a href="https://doi.org/10.1145/2663204.2667575" target="_blank" rel="noopener">Perceptions of Interpersonal Behavior Are Influenced by Gender, Facial Expression Intensity, and Head Pose</a>
 </div>
@@ -2839,7 +2846,7 @@ Girard
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2013">2013</h2>
 <div>
-<div class="pub-card" data-key="jeni2013">
+<div class="pub-card" id="jeni2013" data-key="jeni2013">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2013.6553808" target="_blank" rel="noopener">Continuous AU Intensity Estimation Using Localized, Sparse Facial Feature Space</a>
 </div>
@@ -2873,7 +2880,7 @@ Jeni, Girard, Cohn &amp; De la Torre
 }</div>
 </div>
 </div>
-<div class="pub-card" data-key="girard2013">
+<div class="pub-card" id="girard2013" data-key="girard2013">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/fg.2013.6553748" target="_blank" rel="noopener">Social Risk and Depression: Evidence from Manual and Automatic Facial Expression Analysis</a>
 </div>
@@ -2912,7 +2919,7 @@ Girard, Cohn, Mahoor, Mavadati &amp; Rosenwald
 <div class="year-group">
 <h2 class="year-title anchored" id="y-2011">2011</h2>
 <div>
-<div class="pub-card" data-key="girard2011">
+<div class="pub-card" id="girard2011" data-key="girard2011">
 <div class="pub-title">
 <a href="https://doi.org/10.1109/iccvw.2011.6130519" target="_blank" rel="noopener">Criteria and Metrics for Thresholded AU Detection</a>
 </div>

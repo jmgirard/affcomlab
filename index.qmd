@@ -24,7 +24,7 @@ toc: false
     </div>
     <div class="arrows"><button id="prev" type="button" aria-label="Previous question"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4"/></svg></button><button id="next" type="button" aria-label="Next question"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button></div>
   </section>
-  <p class="note">Each dot is one of our publications, placed by its main research area and ordered by year. A curved line connects a paper to another area it contributes to. Outlined dots are studies led by our lab. Hover over a dot to see the paper, or over an area name to see its papers. Click a dot to read the paper.</p>
+  <p class="note">Each dot is one of our publications, placed by its main research area and ordered by year. A curved line connects a paper to another area it contributes to. Outlined dots are studies led by our lab. Hover over a dot to see the paper, or over an area name to see its papers. Click a dot to see the paper on our publications page.</p>
 </div>
 <script src="ring.js?v=2"></script>
 ```

@@ -340,6 +340,13 @@ rows <- tibble(
     });
   }, false);
 })();
+
+// a link to a paper card lands under the fixed navbar; re-scroll once fonts have loaded, since the layout above shifts as they arrive
+(function () {
+  const jump = () => { const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el && el.classList.contains('pub-card')) el.scrollIntoView({ block: 'start' }); };
+  window.addEventListener('load', () => { jump(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => setTimeout(jump, 50)); });
+  window.addEventListener('hashchange', jump);
+})();
 </script>
 ```
 
@@ -407,7 +414,7 @@ build_card <- function(
     tags$div(class = "content")
   )
 
-  tags$div(class = "pub-card", `data-key` = key, ttl_node, meta, actions, toggle_panel, payloads)
+  tags$div(class = "pub-card", id = key, `data-key` = key, ttl_node, meta, actions, toggle_panel, payloads)   # id lets the homepage ring link straight to a paper
 }
 
 years <- rows |>

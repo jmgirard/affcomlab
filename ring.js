@@ -12,7 +12,7 @@ const colOf = s => TAX[subArea[s]].col;
 const yr = p => p.year === 'in press' ? 2026.5 : +p.year;
 const N = data.nodes.map(p => ({ ...p, y: yr(p), s1: p.subs[0], s2: p.subs[1] || null }));
 const byKey = Object.fromEntries(N.map(p => [p.key, p]));
-const linkUrl = p => p.doi ? 'https://doi.org/' + p.doi : p.preprint || p.url || ('publications.html#' + p.key);
+const linkUrl = p => 'publications.html#' + p.key;   // the paper's card on the publications page, which carries the publisher, preprint, and materials links
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 // ---------- geometry ----------
@@ -115,7 +115,7 @@ function render() {   // an active hover always wins; the question highlight onl
 function showTip(p) {   // paper card in the top-left corner, like the subarea card, so it never covers the ring
   if (tip.dataset.key === p.key) return; tip.dataset.key = p.key;
   const col = colOf(p.s1);
-  tip.innerHTML = `<span class="area" style="color:${col}">${esc(TAX[subArea[p.s1]].subs[p.s1])}</span><span class="title">${esc(p.title)}</span><span class="meta">${esc(p.venue)} · ${esc(p.year)}${p.primary ? ' · led by our lab' : ''}</span><span class="go">Click to read ${p.doi ? 'at the publisher' : p.preprint ? 'the preprint' : 'the paper'} ↗</span>`;
+  tip.innerHTML = `<span class="area" style="color:${col}">${esc(TAX[subArea[p.s1]].subs[p.s1])}</span><span class="title">${esc(p.title)}</span><span class="meta">${esc(p.venue)} · ${esc(p.year)}${p.primary ? ' · led by our lab' : ''}</span><span class="go">Click to see this paper on our publications page →</span>`;
   tip.style.borderTopColor = col; tip.style.opacity = 1;
 }
 
@@ -136,7 +136,7 @@ svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area sta
 });
 svg.addEventListener('pointerenter', () => stop());   // the example questions hold still while the pointer is over the ring
 svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; render(); start(); });
-svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) window.open(linkUrl(byKey[k]), '_blank', 'noopener'); });
+svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) location.href = linkUrl(byKey[k]); });
 
 // ---------- rotating questions ----------
 const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked'), xcap = document.getElementById('xcap'), xbtn = document.getElementById('expand');
@@ -146,7 +146,7 @@ function showQ(i) {
   const [html, key] = QUESTIONS[i], p = byKey[key], col = p ? colOf(p.s1) : '#1c1a17';
   clearTimeout(swap); qel.classList.remove('show');
   swap = setTimeout(() => { qel.style.setProperty('--q-col', col); qel.innerHTML = '<span>' + html + '</span>'; qel.classList.add('show'); }, 380);
-  asked.innerHTML = p ? `<span class="dot" style="background:${col}"></span>Asked in <a href="${esc(linkUrl(p))}" target="_blank" rel="noopener">${esc(p.title)}</a> (${esc(p.venue)}, ${esc(p.year)})` : '';
+  asked.innerHTML = p ? `<span class="dot" style="background:${col}"></span>Asked in <a href="${esc(linkUrl(p))}">${esc(p.title)}</a> (${esc(p.venue)}, ${esc(p.year)})` : '';
   document.getElementById('qn').innerHTML = 'Example<br>question'; const bd = document.getElementById('qbadge'); bd.textContent = i + 1; bd.style.background = col; qNum = i + 1;
   xcap.innerHTML = `<span class="xbadge" style="background:${col}">${i + 1}</span><span class="xq" style="--q-col:${col}">${html}</span><span class="xasked">${asked.innerHTML}</span>`;   // caption for the expanded view
   hoverKey = key; render();
