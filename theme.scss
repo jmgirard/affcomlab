@@ -225,7 +225,7 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .sub-label { font-size: 11px; font-weight: 600; letter-spacing: 0.01em; fill: #4a4540; }
 .home .sub-label.hot { fill: $ink; }
 .home .dot { cursor: pointer; }
-.home .chord { fill: none; stroke-width: 1.3; opacity: 0.38; transition: opacity 0.2s, stroke-width 0.2s; }
+.home .chord { fill: none; stroke-width: 1.3; opacity: 0.38; }
 .home .chord.hot { opacity: 0.95; stroke-width: 2.4; }
 .home .dim .chord:not(.hot) { opacity: 0.06; }
 .home .dim .dot:not(.hot) { opacity: 0.25; }
@@ -233,18 +233,18 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .soft .dot:not(.hot) { opacity: 0.55; }
 .home .soft .dot.hot .halo { animation: ring-pulse 2.4s ease-in-out infinite; }
 @keyframes ring-pulse { 0%, 100% { opacity: 0.18; transform: scale(1.3); } 50% { opacity: 0.4; transform: scale(1.9); } }
-.home .halo { transform-box: fill-box; transform-origin: center; transition: opacity 0.25s; }
+.home .halo { transform-box: fill-box; transform-origin: center; }
 .home .dot.hot .halo { opacity: 0.25; }
 .home .flag { pointer-events: none; }
-.home .dot, .home .chord { transition: opacity 0.2s; }
+.home .dot, .home .chord { transition: opacity 0.08s; }   // short enough to feel immediate under the pointer
 .home .hit { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) { .home .soft .dot.hot .halo { animation: none; opacity: 0.35; } }
-.home .tip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
+.home .tip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.08s; }
 .home .tip .area { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; display: block; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home .tip .title { font-family: $headings-font-family; font-weight: 600; font-size: 1rem; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 3px 0 4px; }
 .home .tip .meta { font-size: 0.82rem; color: #3d3833; line-height: 1.3; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home .tip .go { font-size: 0.76rem; color: $muted; display: block; margin-top: 4px; }
-.home .stip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; background: transparent; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
+.home .stip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; background: transparent; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.08s; }
 .home .stip .area { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
 .home .stip .sub { font-family: $headings-font-family; font-weight: 600; font-size: 1.15rem; line-height: 1.15; display: block; margin: 2px 0 4px; }
 .home .stip .desc { font-size: 0.85rem; color: #3d3833; line-height: 1.3; display: block; }

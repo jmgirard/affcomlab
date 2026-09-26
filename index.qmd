@@ -26,5 +26,5 @@ toc: false
   </section>
   <p class="note">Each dot is one of our publications, placed by its main research area and ordered by year. A curved line connects a paper to another area it contributes to. Outlined dots are studies led by our lab. Hover over a dot to see the paper, or over an area name to see its papers. Click a dot to read the paper.</p>
 </div>
-<script src="ring.js"></script>
+<script src="ring.js?v=2"></script>
 ```

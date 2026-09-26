@@ -119,10 +119,10 @@ function showTip(p) {   // paper card in the top-left corner, like the subarea c
   tip.style.borderTopColor = col; tip.style.opacity = 1;
 }
 
-function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixels (one layout read, no matrix inversion)
-  const r = svg.getBoundingClientRect(), s = Math.min(r.width / W, r.height / H);   // the height cap letterboxes the drawing on wide boxes, so map through the centred scale
-  const px = (ev.clientX - r.left - (r.width - W * s) / 2) / s, py = (ev.clientY - r.top - (r.height - H * s) / 2) / s;
-  let best = null, bd = 16 / s;
+function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixels; the browser's own screen matrix handles letterboxing, zoom, and any transform
+  const m = svg.getScreenCTM(); if (!m) return null;
+  const pt = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(m.inverse()), px = pt.x, py = pt.y;
+  let best = null, bd = 16 / m.a;
   for (const key in dotXY) { const [x, y] = dotXY[key], d = Math.hypot(x - px, y - py); if (d < bd) { bd = d; best = key; } }
   return best;
 }
