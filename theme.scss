@@ -39,6 +39,8 @@ $enable-rounded: true;
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 // ---------- base ----------
+p, li, .lede, .opp-body, .res-card, .grant-card { text-wrap: pretty; }   // avoid a lone word on the last line
+h1, h2, h3, .opp-side > p { text-wrap: balance; }
 a { text-decoration-color: $line; text-underline-offset: 3px; transition: text-decoration-color 0.2s; }
 a:hover { text-decoration-color: $ink; }
 h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }

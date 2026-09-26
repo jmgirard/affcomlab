@@ -27,11 +27,11 @@ Learn research by doing it, earn credit, and build toward a thesis.
 ```
 :::
 ::: {.opp-body}
-The lab is frequently home to undergraduate students from Psychology and Behavioral Neuroscience, and occasionally from other departments.
+Undergraduates from Psychology, Behavioral Neuroscience, and other departments join the lab as research assistants. They learn the scientific method by helping to collect and process data, attend weekly lab meetings, and can enroll in PSYC 480 for credit.
 
-Research assistants learn the scientific method and help collect and process research data. Many enroll in PSYC 480 for **credit hours**. Assistants attend weekly lab meetings and can expect a **letter of recommendation** describing their contributions (please give one month of notice). Advanced assistants are sometimes offered **co-authorship** on research products such as conference presentations.
+Assistants can expect a letter of recommendation describing their contributions (please allow one month), and advanced assistants are sometimes offered co-authorship on conference presentations.
 
-Honors students can design and complete an **honors thesis** under Dr. Girard's supervision during their senior year. These students typically apply for, and have often won, **research awards** from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and **present** their work at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium).
+Honors students may complete a senior thesis under Dr. Girard's supervision; many have won awards from the [Center for Undergraduate Research](https://ugresearch.ku.edu/) and presented at the [Undergraduate Research Symposium](https://ugresearch.ku.edu/student/share/symposium).
 :::
 :::
 
@@ -46,11 +46,11 @@ Doctoral training in the BBQ and CPS concentrations.
 ```
 :::
 ::: {.opp-body}
-The [KU Psychology Department](https://psychology.ku.edu/psychology-graduate-program) grants doctoral degrees (**PhDs**) in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology. The department does not offer a terminal master's degree, and the CPS concentration focuses on adult rather than child psychopathology.
+[KU Psychology](https://psychology.ku.edu/psychology-graduate-program) grants PhDs in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology. There is no terminal master's degree, and CPS focuses on adult psychopathology.
 
-Dr. Girard advises students in the **BBQ** and **CPS** concentrations and is an especially good match for students whose interests span both, such as CPS students interested in advanced methods or BBQ students interested in medical applications.
+Dr. Girard advises students in BBQ and CPS and is a strong match for students whose interests span both, such as clinical students drawn to advanced methods or quantitative students drawn to medical applications.
 
-Graduate students complete coursework in the department and conduct research in the lab, with many opportunities to contribute to ongoing projects. Information about each admissions cycle appears on the [News](news.qmd) page.
+Students take coursework in the department, do research in the lab, and contribute to ongoing projects; each admissions cycle is announced on the [News](news.qmd) page.
 :::
 :::
 
@@ -65,6 +65,6 @@ Positions open as funding permits.
 ```
 :::
 ::: {.opp-body}
-Postdoctoral fellowships and other staff positions are announced on the [News](news.qmd) page as they become available. Inquiries about upcoming positions are welcome by email.
+Postdoctoral and staff positions are announced on the [News](news.qmd) page as they open. Questions about upcoming positions are welcome by email.
 :::
 :::
