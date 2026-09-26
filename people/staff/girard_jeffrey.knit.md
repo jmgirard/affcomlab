@@ -39,7 +39,10 @@ links:
 </nav>
 ```
 
-{{< include /people/_profile_header.qmd >}}
+<style>#title-block-header { display: none; }</style>
+
+<header class="profile-head"><img src="girard_jeffrey.jpg" alt=""><div class="profile-id"><h1>Jeffrey Girard</h1><p class="role">Lab Director · Associate Professor of Psychology<span class="when"> · since Fall 2020</span></p><div class="plinks"><a class="plink" href="https://www.jmgirard.com" target="_blank" rel="noopener"><i class="bi bi-link"></i>website</a><a class="plink" href="girard_cv.pdf"><i class="bi bi-file-earmark-text"></i>vitae</a><a class="plink" href="https://scholar.google.com/citations?user=N2UcZ84AAAAJ" target="_blank" rel="noopener"><i class="bi bi-mortarboard"></i>scholar</a><a class="plink" href="https://www.github.com/jmgirard" target="_blank" rel="noopener"><i class="bi bi-github"></i>github</a><a class="plink" href="https://www.twitter.com/jeffreymgirard" target="_blank" rel="noopener"><i class="bi bi-twitter"></i>twitter</a></div></div></header>
+
 
 ## Biography
 Dr. Jeffrey Girard studies how emotions are expressed through verbal and nonverbal behavior, as well as how interpersonal communication is influenced by individual differences (e.g., personality and mental health) and social factors (e.g., culture and context). This work is deeply interdisciplinary and draws insights and tools from various areas of social science, computer science, statistics, and medicine.
@@ -78,7 +81,12 @@ He is now an Associate Professor in the department of Psychology at the Universi
   Principal Scientist | A data lab focused on Human–AI interaction
 :::
 
-{{< include /people/_profile_pubs.qmd >}}
+
+## Selected Publications
+
+<ul class="mini-pubs"><li><span class="star" title="Led by our lab">★</span><a href="https://osf.io/preprints/psyarxiv/63sw4_v3" target="_blank" rel="noopener">Evaluating Open-Weight Large Language Models for Structured Depression Assessment from Clinical Interviews</a><span class="meta">Girard, Kebe, Morency, De La Torre, Liebenthal &amp; Baker · Journal of Psychopathology and Clinical Science · in press</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10.31234/osf.io/jeuyk_v1" target="_blank" rel="noopener">Building Open Science into Graduate Training in Clinical Psychology</a><span class="meta">Girard · Clinical Psychological Science · in press</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10.1007/s42761-025-00352-7" target="_blank" rel="noopener">Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language Models</a><span class="meta">Girard, Jun, Ong, Liebenthal &amp; Baker · Affective Science · 2026</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10.1146/annurev-clinpsy-081423-024140" target="_blank" rel="noopener">Computational Analysis of Expressive Behavior in Clinical Assessment</a><span class="meta">Girard, Yermol, Salah &amp; Cohn · Annual Review of Clinical Psychology · 2026</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10/g824tc" target="_blank" rel="noopener">From Intuition to Innovation: Empirical Illustrations of Multimodal Measurement in Psychotherapy Research</a><span class="meta">Aafjes-van Doorn &amp; Girard · Psychotherapy Research · 2025</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10/g8pwmn" target="_blank" rel="noopener">Transdiagnostic Modeling of Clinician-Rated Symptoms in Affective and Nonaffective Psychotic Disorders</a><span class="meta">Chung, Girard, Ravichandran, Öngür, Cohen &amp; Baker · Journal of Psychopathology and Clinical Science · 2025</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10.1037/ccp0000980" target="_blank" rel="noopener">Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression Therapy</a><span class="meta">Girard, Yermol, Bylsma, Cohn, Fournier, … &amp; Swartz · Journal of Consulting and Clinical Psychology · 2025</span></li><li><span class="star" title="Led by our lab">★</span><a href="https://doi.org/10.1002/jts.23023" target="_blank" rel="noopener">Associations between Transdiagnostic Traits of Psychopathology and Hybrid Posttraumatic Stress Disorder Factors in a Trauma-Exposed Community Sample</a><span class="meta">Sprunger, Girard &amp; Chard · Journal of Traumatic Stress · 2024</span></li></ul>
+<p class="mini-pubs-more"><a href="../../publications.html">See all lab publications</a></p>
+
 
 ## Education
 
@@ -109,4 +117,5 @@ He is now an Associate Professor in the department of Psychology at the Universi
 - **Psychological Assessment** <a href="https://www.apa.org/pubs/journals/pas" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Consulting Editor | 2020–2022
 :::
+
 

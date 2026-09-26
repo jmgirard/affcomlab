@@ -41,15 +41,17 @@ Students join the lab through the Clinical Psychological Science (CPS) and Brain
 :::{#students}
 :::
 
-### Research Assistants
-
 ```{r assistants}
 #| echo: false
 #| results: asis
 assistants <- read.csv("people/assistants.csv")
-if (nrow(assistants) > 0) {
-  cat('<ul class="ra-list">', paste0('<li><span class="name">', sub("^(.*), (.*)$", "\\2 \\1", assistants$Name), '</span><span class="meta">', assistants$Role, " · since ", sub("^\\d{4}[a-c] \\((\\w+)\\)$", "\\1", assistants$Started), " ", substr(assistants$Started, 1, 4), '</span></li>', collapse = ""), '</ul>', sep = "")
-} else cat('<p class="ra-none">The lab is not currently hosting research assistants. See <a href="opportunities.html">Opportunities</a> to apply.</p>')
+if (nrow(assistants) > 0) {   # the section appears only when the lab has research assistants
+  cat('
+
+### Research Assistants
+
+<ul class="ra-list">', paste0('<li><span class="name">', sub("^(.*), (.*)$", "\\2 \\1", assistants$Name), '</span><span class="meta">', assistants$Role, " · since ", sub("^\\d{4}[a-c] \\((\\w+)\\)$", "\\1", assistants$Started), " ", substr(assistants$Started, 1, 4), '</span></li>', collapse = ""), '</ul>', sep = "")
+}
 ```
 
 ### Alumni
@@ -58,5 +60,6 @@ if (nrow(assistants) > 0) {
 #| echo: false
 #| results: asis
 al <- read.csv("people/alumni.csv")
-cat(sprintf('<p>%d people have been part of the lab since 2020, from honors students to a postdoctoral fellow. <a class="alumni-link" href="people/alumni.html">See all alumni &rarr;</a></p>', nrow(al)))
+cat(sprintf('<p>%d people have been part of the lab since 2020, from honors students to a postdoctoral fellow.</p>
+<p><a class="alumni-link" href="people/alumni.html">See all alumni &rarr;</a></p>', nrow(al)))
 ```
