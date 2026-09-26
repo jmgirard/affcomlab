@@ -18,6 +18,7 @@ toc: false
 
 ::: {.res-card}
 ### [Seamless Interaction](https://ai.meta.com/research/seamless-interaction/)
+
 Over 4,000 hours of face-to-face interaction footage from more than 4,000 participants in diverse contexts, built for social AI research.
 
 [Paper](https://arxiv.org/abs/2506.22554) [Open access](https://github.com/facebookresearch/seamless_interaction)
@@ -25,6 +26,7 @@ Over 4,000 hours of face-to-face interaction footage from more than 4,000 partic
 
 ::: {.res-card}
 ### [DynAMoS](https://dynamos.mgb.org)
+
 Dynamic affective movie clips (22 clips) with metadata and ratings of their emotional content from 83 participants, built for subjectivity analysis.
 
 [Paper](https://affcom.ku.edu/publications/proceedings/girard2023a.html) [Request access](https://dynamos.mgb.org)
@@ -32,6 +34,7 @@ Dynamic affective movie clips (22 clips) with metadata and ratings of their emot
 
 ::: {.res-card}
 ### [GFT](http://osf.io/7wcyz)
+
 Group Formation Task database: 2D video of spontaneous behavior during unscripted social interactions, with frame-level FACS annotations (96 participants).
 
 [Paper](https://affcom.ku.edu/publications/proceedings/girard2017b.html) [Request access](http://osf.io/7wcyz)
@@ -39,6 +42,7 @@ Group Formation Task database: 2D video of spontaneous behavior during unscripte
 
 ::: {.res-card}
 ### [MMSE / BP4D+](http://bit.ly/2yg39Cn)
+
 Multimodal Spontaneous Emotion database: an extension of BP4D with thermal and physiological data and frame-level FACS annotations (140 participants).
 
 [Paper](https://affcom.ku.edu/publications/proceedings/zhang2016.html) [Request access](http://bit.ly/2yg39Cn)
@@ -46,6 +50,7 @@ Multimodal Spontaneous Emotion database: an extension of BP4D with thermal and p
 
 ::: {.res-card}
 ### [BP4D](http://bit.ly/2yg39Cn)
+
 Binghamton-Pittsburgh 4D Spontaneous Emotion database: 3D video of spontaneous behavior during emotion elicitation, with frame-level FACS annotations (41 participants).
 
 [Paper](https://affcom.ku.edu/publications/articles/girard2014c.html) [Request access](http://bit.ly/2yg39Cn)
@@ -53,38 +58,72 @@ Binghamton-Pittsburgh 4D Spontaneous Emotion database: 3D video of spontaneous b
 
 :::
 
-## Statistics Software
+## Statistics and Measurement
 
 ::: {.res-grid}
 
 ::: {.res-card}
 [Stable]{.res-tag .stable}
+
 ### [circumplex](https://circumplex.jmgirard.com/)
-R package for analyzing and visualizing circular data.
-:::
 
-::: {.res-card}
-[Stable, nearing end of life]{.res-tag .legacy}
-### [mReliability](https://mreliability.jmgirard.com)
-MATLAB functions for estimating inter-rater reliability.
+R package for the analysis and visualization of circumplex data.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
-### [wcc](https://github.com/jmgirard/wcc)
-R package for windowed cross-correlation analyses.
+
+### [intraclass](https://jmgirard.github.io/intraclass/)
+
+R package for modern intraclass correlation coefficients via generalizability theory and mixed-model variance components.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
+
+### [agreement](https://github.com/jmgirard/agreement)
+
+R package for the tidy calculation of inter-rater reliability.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
 ### [varde](https://github.com/affcomlab/varde)
+
 R package for decomposing the variance in mixed effects models.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
-### [agreement](https://github.com/jmgirard/agreement)
-R package for estimating inter-rater reliability.
+
+### [ackwards](https://jmgirard.github.io/ackwards/)
+
+R functions for hierarchical factor structure development.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
+### [bsync](https://jmgirard.github.io/bsync/)
+
+R package for behavioral synchrony analysis.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
+### [hitop](https://jmgirard.github.io/hitop/)
+
+R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
+:::
+
+::: {.res-card}
+[Legacy]{.res-tag .legacy}
+
+### [mReliability](https://mreliability.jmgirard.com)
+
+MATLAB functions for computing inter-observer reliability.
 :::
 
 :::
@@ -94,39 +133,67 @@ R package for estimating inter-rater reliability.
 ::: {.res-grid}
 
 ::: {.res-card}
-[Stable, nearing end of life]{.res-tag .legacy}
+[Stable]{.res-tag .stable}
+
 ### [CARMA](https://carma.jmgirard.com)
-Software for collecting continuous media annotations.
+
+Software for continuous affect rating and media annotation.
 :::
 
 ::: {.res-card}
-[Stable, nearing end of life]{.res-tag .legacy}
+[In development]{.res-tag .experimental}
+
+### [carma2](https://github.com/jmgirard/carma2)
+
+An updated, web-based version of CARMA.
+:::
+
+::: {.res-card}
+[Stable]{.res-tag .stable}
+
 ### [DARMA](https://darma.jmgirard.com)
-Software for collecting continuous two-dimensional media annotations.
+
+Software for dual axis rating and media annotation.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
-### [tidymedia](https://github.com/jmgirard/tidymedia)
-R package for working with audio, video, and image files.
+
+### [HiTOP Builder](https://jmgirard.github.io/hitop-builder/)
+
+Build a HiTOP-SR module in the browser and download it as a Word, Qualtrics, or REDCap instrument.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
+
+### [tidymedia](https://jmgirard.github.io/tidymedia/)
+
+R package for working with image, audio, and video files.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
 ### [openac](https://github.com/jmgirard/openac)
-R package for automating common affective computing and social signal processing tasks.
+
+R package for open affective computing tools and social signal processing tasks.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
+
 ### [facs](https://github.com/jmgirard/facs)
+
 R package for working with Facial Action Coding System (FACS) data.
 :::
 
 ::: {.res-card}
 [Experimental]{.res-tag .experimental}
-### [hitop](https://github.com/jmgirard/hitop)
-R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
+
+### [rlmstudio](https://jmgirard.github.io/rlmstudio/)
+
+R package for running local language models through LM Studio.
 :::
 
 :::
@@ -137,26 +204,26 @@ R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data
 
 ::: {.res-card}
 [Stable]{.res-tag .stable}
-### [lordicon](https://github.com/jmgirard/lordicon)
-Embed animated [Lordicon](https://www.lordicon.com/icons) icons in HTML documents.
-:::
 
-::: {.res-card}
-[Experimental]{.res-tag .experimental}
-### [honeypot](https://github.com/jmgirard/honeypot)
-Detect LLM cheating on HTML assignments.
+### [embedpdf](https://jmgirard.github.io/embedpdf/example.html)
+
+Embed PDF files in HTML formats.
 :::
 
 ::: {.res-card}
 [Stable]{.res-tag .stable}
-### [details](https://github.com/jmgirard/details)
-Embed interactive details blocks in HTML documents.
+
+### [lordicon](https://jmgirard.github.io/lordicon/)
+
+Use animated [Lordicon](https://www.lordicon.com/icons) icons in Quarto HTML.
 :::
 
 ::: {.res-card}
-[Stable, under review]{.res-tag .stable}
-### [embedpdf](https://github.com/jmgirard/embedpdf)
-Embed PDF files in HTML documents.
+[Experimental]{.res-tag .experimental}
+
+### [quarto-index](https://jmgirard.github.io/quarto-index/)
+
+Add indexes to Quarto book formats.
 :::
 
 :::
@@ -166,18 +233,33 @@ Embed PDF files in HTML documents.
 ::: {.res-grid}
 
 ::: {.res-card}
-### [rstudio2u](https://github.com/jmgirard/rstudio2u)
-Multi-architecture (amd64/arm64) image combining RStudio and r2u.
+### [rstudio2u](https://hub.docker.com/r/jmgirard/rstudio2u)
+
+Multi-architecture (amd64/arm64) image adding RStudio to r2u.
 :::
 
 ::: {.res-card}
-### [rocker-bayes](https://github.com/jmgirard/rocker-bayes)
+### [rocker-bayes](https://hub.docker.com/r/jmgirard/rocker-bayes)
+
 Multi-architecture (amd64/arm64) image for Bayesian analysis in R.
 :::
 
 ::: {.res-card}
+### [r2u-ssh](https://hub.docker.com/r/jmgirard/r2u-ssh)
+
+r2u with SSH access, for remote and cluster workflows.
+:::
+
+::: {.res-card}
 ### [wsl-whisper](https://github.com/jmgirard/wsl-whisper)
-WSL (amd64) image for AI transcription from R with CUDA support.
+
+WSL (amd64) image for automatic speech recognition from R with CUDA support.
+:::
+
+::: {.res-card}
+### [wsl-ollama](https://github.com/jmgirard/wsl-ollama)
+
+WSL (amd64) image for running local language models with Ollama.
 :::
 
 :::
