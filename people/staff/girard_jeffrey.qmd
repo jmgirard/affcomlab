@@ -49,7 +49,7 @@ He completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (non
 
 He is now an Associate Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and is a co-founder of [SMaRT Workshops](https://www.smart-workshops.com), which offers numerous methodological training workshops to faculty and students. He is also the developer and maintainer of numerous open-source research software packages (see [Resources](../../resources.qmd)).
 
-## Experience
+## Academic Experience
 
 ::: {.timeline}
 - **University of Kansas** | Lawrence, KS, USA<br />
@@ -66,7 +66,7 @@ He is now an Associate Professor in the department of Psychology at the Universi
   Clinical Intern, Department of Psychiatry | 2017–2018
 :::
 
-## Business
+## Industry Experience
 
 ::: {.timeline}
 - **Girard Consulting LLC** <a href="https://www.jmgirard.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
@@ -77,6 +77,9 @@ He is now an Associate Professor in the department of Psychology at the Universi
 
 - **Fluid Concepts Research** <a href="https://fluidconcepts.ai" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Principal Scientist | A data lab focused on Human–AI interaction
+
+- **Meta FAIR** <a href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+  Academic Consultant | 2024–2026
 :::
 
 ## Education
