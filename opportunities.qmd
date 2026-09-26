@@ -23,7 +23,7 @@ We welcome students and researchers who want to combine psychology with computat
 Learn research by doing it, earn credit, and build toward a thesis.
 
 ```{=html}
-<div class="btns"><a class="primary" href="mailto:jmgirard@ku.edu">Apply to be a research assistant</a></div>
+<div class="btns"><a class="primary" href="mailto:jmgirard@ku.edu">Apply now</a></div>
 ```
 :::
 ::: {.opp-body}
@@ -42,7 +42,7 @@ Honors students can design and complete an **honors thesis** under Dr. Girard's 
 Doctoral training in the BBQ and CPS concentrations.
 
 ```{=html}
-<div class="btns"><a class="primary" href="https://psychology.ku.edu/psychology-graduate-program">Learn about graduate admissions</a></div>
+<div class="btns"><a class="primary" href="https://psychology.ku.edu/psychology-graduate-program">Learn more</a></div>
 ```
 :::
 ::: {.opp-body}
