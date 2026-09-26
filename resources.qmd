@@ -25,11 +25,19 @@ Over 4,000 hours of face-to-face interaction footage from more than 4,000 partic
 :::
 
 ::: {.res-card}
+### [FriendBench](https://huggingface.co/datasets/fluid-concepts/friend-bench)
+
+A benchmark for inferring whether two people are friends or strangers from 20-second clips of dyadic conversation: 96 balanced dyads with human ratings and predictions from 26 multimodal models.
+
+[Paper](https://arxiv.org/abs/2607.29602) [Open access](https://huggingface.co/datasets/fluid-concepts/friend-bench)
+:::
+
+::: {.res-card}
 ### [DynAMoS](https://dynamos.mgb.org)
 
 Dynamic affective movie clips (22 clips) with metadata and ratings of their emotional content from 83 participants, built for subjectivity analysis.
 
-[Paper](https://affcom.ku.edu/publications/proceedings/girard2023a.html) [Request access](https://dynamos.mgb.org)
+[Paper](https://doi.org/10.1109/ACII59096.2023.10388135) [Request access](https://dynamos.mgb.org)
 :::
 
 ::: {.res-card}
@@ -37,7 +45,7 @@ Dynamic affective movie clips (22 clips) with metadata and ratings of their emot
 
 Group Formation Task database: 2D video of spontaneous behavior during unscripted social interactions, with frame-level FACS annotations (96 participants).
 
-[Paper](https://affcom.ku.edu/publications/proceedings/girard2017b.html) [Request access](http://osf.io/7wcyz)
+[Paper](https://doi.org/10.1109/fg.2017.144) [Request access](http://osf.io/7wcyz)
 :::
 
 ::: {.res-card}
@@ -45,7 +53,7 @@ Group Formation Task database: 2D video of spontaneous behavior during unscripte
 
 Multimodal Spontaneous Emotion database: an extension of BP4D with thermal and physiological data and frame-level FACS annotations (140 participants).
 
-[Paper](https://affcom.ku.edu/publications/proceedings/zhang2016.html) [Request access](http://bit.ly/2yg39Cn)
+[Paper](https://doi.org/10.1109/cvpr.2016.374) [Request access](http://bit.ly/2yg39Cn)
 :::
 
 ::: {.res-card}
@@ -53,7 +61,7 @@ Multimodal Spontaneous Emotion database: an extension of BP4D with thermal and p
 
 Binghamton-Pittsburgh 4D Spontaneous Emotion database: 3D video of spontaneous behavior during emotion elicitation, with frame-level FACS annotations (41 participants).
 
-[Paper](https://affcom.ku.edu/publications/articles/girard2014c.html) [Request access](http://bit.ly/2yg39Cn)
+[Paper](https://doi.org/10.1016/j.imavis.2014.06.002) [Request access](http://bit.ly/2yg39Cn)
 :::
 
 :::
