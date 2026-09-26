@@ -63,10 +63,11 @@ listing:
 
 ```{r assistants}
 #| echo: false
+#| results: asis
 
 library(reactable)
 assistants <- read.csv("people/assistants.csv")
-reactable(assistants)
+if (nrow(assistants) > 0) reactable(assistants) else cat("The lab is not currently hosting research assistants. See [Opportunities](opportunities.qmd) to apply.")
 ```
 
 ## Alumni
