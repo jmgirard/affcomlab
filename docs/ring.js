@@ -161,10 +161,11 @@ start();
 if (QUESTIONS.length) showQ(0);
 
 // ---------- expanded view: the ring fills the window (true fullscreen where the browser allows it) ----------
+const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
 const expanded = () => ring.classList.contains('expanded');
 function setExpanded(on) {
   ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
-  xbtn.innerHTML = on ? '&#x2715;' : '&#x2922;'; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
+  xbtn.innerHTML = on ? ICON_CLOSE : ICON_EXPAND; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
   if (on && ring.requestFullscreen) ring.requestFullscreen().catch(() => {});
   else if (!on && document.fullscreenElement === ring) document.exitFullscreen().catch(() => {});
 }
