@@ -168,6 +168,7 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .lede a, .home .director a { color: $ink; text-decoration: underline; text-decoration-color: $line; text-underline-offset: 3px; }
 .home .lede a:hover, .home .director a:hover { text-decoration-color: $ink; }
 .home .director { font-size: 0.95rem; color: $muted; margin: 0 0 22px; }
+.home .btns { display: flex; flex-wrap: wrap; gap: 14px; }
 .home .ring { position: relative; }
 .home .ring svg { display: block; width: 100%; height: auto; max-height: 560px; margin: 0 auto; }
 .home .ring text { font-family: $font-family-sans-serif; }
