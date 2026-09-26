@@ -20,7 +20,11 @@ execute:
 </nav>
 ```
 
-This page lists all papers published by Dr. Girard, organized by year of publication. Click a paper’s *title* to visit the publisher page and access the official version. Use *Abstract* to reveal the summary, *Citation* for the APA 7th-edition reference, and *BibTeX* to view the BibTeX entry. Clicking the link a second time will close the display again. *Preprint* links to a free author version (not the final typeset copy), and *Materials* leads to an open repository with data, code, and other open-science resources. <span style="font-size:0.9rem; opacity:0.8; margin-bottom:0.5rem;">★ = Work led or co-led by our lab (established in 2020)</span>
+## Publications
+
+All papers published by Dr. Girard, organized by year. Click a paper's *title* to visit the publisher page. *Abstract*, *Citation*, and *BibTeX* reveal the summary, the APA reference, and the BibTeX entry (click again to close). *Preprint* links to a free author version and *Materials* to an open repository with data and code.
+
+[★ marks work led or co-led by our lab.]{style="font-size:0.9rem; color:#6d675f;"}
 
 
 ```{r setup}
