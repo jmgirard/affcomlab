@@ -70,13 +70,13 @@ He is now an Associate Professor in the department of Psychology at the Universi
 
 ::: {.timeline}
 - **Girard Consulting LLC** <a href="https://www.jmgirard.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
-  Founder | Measurement and evaluation consulting
+  Founder | 2023–Current
 
 - **SMaRT Workshops LLC** <a href="https://smart-workshops.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
-  Co-Founder | Online workshops in statistics, methods, and research training
+  Co-Founder | 2023–Current
 
 - **Fluid Concepts Research** <a href="https://fluidconcepts.ai" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
-  Principal Scientist | A data lab focused on Human–AI interaction
+  Principal Scientist | 2026–Current
 
 - **Meta FAIR** <a href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Academic Consultant | 2024–2026
