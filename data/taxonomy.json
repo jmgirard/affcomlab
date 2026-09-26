@@ -1,0 +1,54 @@
+{
+ "comm": {
+  "name": "Communicative Behavior",
+  "col": "#d9613b",
+  "subs": {
+   "verb": "Verbal Behavior",
+   "nonv": "Nonverbal Behavior"
+  }
+ },
+ "mh": {
+  "name": "Mental Health",
+  "col": "#17a398",
+  "subs": {
+   "struct": "Clinical Assessment",
+   "mech": "Clinical Mechanisms"
+  }
+ },
+ "ip": {
+  "name": "Interpersonal Psychology",
+  "col": "#8a4fa8",
+  "subs": {
+   "dyn": "Interpersonal Dynamics",
+   "perc": "Social Perception"
+  }
+ },
+ "meth": {
+  "name": "Research Methodology",
+  "col": "#c99a2e",
+  "subs": {
+   "meas": "Research Practice",
+   "bayes": "Statistical Modeling"
+  }
+ },
+ "cs": {
+  "name": "Computer Science",
+  "col": "#3b6fd6",
+  "subs": {
+   "ai": "Artificial Intelligence",
+   "open": "Open Resources"
+  }
+ },
+ "desc": {
+  "verb": "sentiment, lexicon, syntax, and discourse in spoken and written language",
+  "nonv": "facial expression, vocal behavior, gesture, and body motion",
+  "struct": "symptom measurement and diagnostic structure (HiTOP)",
+  "mech": "treatment process, outcomes, and health behavior",
+  "dyn": "synchrony, dyads, and the interpersonal circumplex",
+  "perc": "how people read faces, voices, and each other",
+  "meas": "measurement, reliability, tutorials, and commentary",
+  "bayes": "Bayesian and multilevel models, applications, and simulations",
+  "ai": "machine learning, language models, and evaluation",
+  "open": "software, datasets, and challenges"
+ }
+}

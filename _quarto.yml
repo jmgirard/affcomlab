@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "ring.js"
+    - "data/ring.json"
 
 execute:
     freeze: auto
@@ -8,7 +11,8 @@ execute:
 website:
   title: "AffCom Lab"
   navbar:
-    background: primary
+    background: "#faf7f2"
+    foreground: "#1c1a17"
     right:
       - href: news.qmd
         text: News
@@ -41,5 +45,4 @@ website:
 format:
   html:
     theme: [cosmo, theme.scss]
-    css: styles.css
     toc: true

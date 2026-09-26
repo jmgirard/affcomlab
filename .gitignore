@@ -8,3 +8,7 @@
 /posts/whisper2024/ggml-base.bin
 **/*.quarto_ipynb
 .positai
+
+# local mockups and editor config
+/_mockups/
+/.claude/

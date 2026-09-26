@@ -1,6 +1,6 @@
 ---
 pagetitle: "Resources"
-toc: true
+toc: false
 ---
 
 ```{=html}
@@ -14,81 +14,170 @@ toc: true
 
 ## Datasets
 
-- **Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset**<br />
-  A large-scale collection of over 4,000 hours of face-to-face interaction footage<br />
-  from over participants (n = 4000) in diverse contexts for social AI research.<br />
-  *Primary Article/Citation:* [Agrawal et al. (2025)](https://arxiv.org/abs/2506.22554)<br />
-  *Website:* <https://ai.meta.com/research/seamless-interaction/><br />
-  *Open Access:* <https://github.com/facebookresearch/seamless_interaction>
+::: {.res-grid}
 
-- **DynAMoS: Dynamic Affective Movie Clip Database for Subjectivity Analysis**<br />
-  A curated collection of affective movie clips (n = 22), metadata about those clips, and<br />
-  ratings of the emotional content of those movie clips from research participants (n = 83)<br />
-  *Primary Article/Citation:* [Girard, Tie, & Liebenthal (2023)](https://affcom.ku.edu/publications/proceedings/girard2023a.html)<br />
-  *Website/Request Access:* <https://dynamos.mgb.org>
+::: {.res-card}
+### [Seamless Interaction](https://ai.meta.com/research/seamless-interaction/)
+Over 4,000 hours of face-to-face interaction footage from more than 4,000 participants in diverse contexts, built for social AI research.
 
-- **GFT: Group Formation Task Spontaneous Facial Expression Database**<br />
-  A 2D video database of spontaneous behavior during unscripted social interactions<br />
-  Complete with frame-level FACS annotations of facial behavior (n = 96)<br />
-  *Primary Article/Citation:* [Girard et al. (2017)](https://affcom.ku.edu/publications/proceedings/girard2017b.html)<br />
-  *Website/Request Access:* <http://osf.io/7wcyz>
-  
-- **MMSE/BP4D+: Multimodal Spontaneous Emotion Database**<br />
-  An extension of BP4D that includes thermal and physiological data<br />
-  Complete with frame-level FACS annotations of facial behavior (n = 140)<br />
-  *Primary Article/Citation:* [Zhang et al. (2016)](https://affcom.ku.edu/publications/proceedings/zhang2016.html)<br />
-  *Website/Request Access:* <http://bit.ly/2yg39Cn>
+[Paper](https://arxiv.org/abs/2506.22554) [Open access](https://github.com/facebookresearch/seamless_interaction)
+:::
 
-- **BP4D: Binghamton-Pittsburgh 4D Spontaneous Emotion Database**<br />
-  A 3D video database of spontaneous behavior during emotion elicitation<br />
-  Complete with frame-level FACS annotations of facial behavior (n = 41)<br />
-  *Primary Article/Citation:* [Zhang et al. (2014)](https://affcom.ku.edu/publications/articles/girard2014c.html)<br />
-  *Website/Request Access:* <http://bit.ly/2yg39Cn>
+::: {.res-card}
+### [DynAMoS](https://dynamos.mgb.org)
+Dynamic affective movie clips (22 clips) with metadata and ratings of their emotional content from 83 participants, built for subjectivity analysis.
 
-## Software
+[Paper](https://affcom.ku.edu/publications/proceedings/girard2023a.html) [Request access](https://dynamos.mgb.org)
+:::
 
-### Statistics Software:
-- [circumplex][circumplex] - A stable R package for analyzing and visualizing circular data.
-- [mReliability][mreliability] - A stable (but approaching end-of-life) set of MATLAB functions for estimating inter-rater reliability.
-- [wcc][wcc] - An experimental R package for conducting windowed cross-correlation analyses.
-- [varde][varde] - An experimental R package for decomposing the variance in mixed effects models.
-- [agreement][agreement] - An experimental R package for estimating inter-rater reliability.
+::: {.res-card}
+### [GFT](http://osf.io/7wcyz)
+Group Formation Task database: 2D video of spontaneous behavior during unscripted social interactions, with frame-level FACS annotations (96 participants).
 
-### Research Software:
-- [CARMA][carma] - A stable (but approaching end-of-life) software for collecting continuous media annotations.
-- [DARMA][darma] - A stable (but approaching end-of-life) software for collecting continuous two-dimensional media annotations.
-- [tidymedia][tidymedia] - An experimental R package for working with audio, video, and image files.
-- [openac][openac] - An experimental R package for automating common affective computing (and social signal processing) tasks.
-- [facs][facs] - An experimental R package for working with Facial Action Coding System (FACS) data.
-- [hitop][hitop] - An experimental R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
+[Paper](https://affcom.ku.edu/publications/proceedings/girard2017b.html) [Request access](http://osf.io/7wcyz)
+:::
 
-### Quarto Extensions
-- [lordicon][lordicon] - A stable Quarto extension for embedding animated [Lordicon](https://www.lordicon.com/icons) icons in HTML.
-- [honeypot][honeypot] - An experimental Quarto extension for detecting LLM cheating on HTML assignments.
-- [details][details] - A stable Quarto extension for embedding interactive details blocks in HTML documents.
-- [embedpdf][embedpdf] - A stable (but questioning) Quarto extension for embedding PDF files in HTML.
+::: {.res-card}
+### [MMSE / BP4D+](http://bit.ly/2yg39Cn)
+Multimodal Spontaneous Emotion database: an extension of BP4D with thermal and physiological data and frame-level FACS annotations (140 participants).
 
-### Docker Images:
-- [rstudio2u][rstudio2u] - A multiarchitecture (amd64/arm64) image combining rstudio and r2u
-- [rocker-bayes][rocker-bayes] - A multiarchitecture (amd64/arm64) image for Bayesian analysis in R
-- [wsl-whisper][wsl-whisper] - A WSL (amd64) image for AI transcription from R with CUDA-support
+[Paper](https://affcom.ku.edu/publications/proceedings/zhang2016.html) [Request access](http://bit.ly/2yg39Cn)
+:::
 
-[circumplex]: https://circumplex.jmgirard.com/
-[mreliability]: https://mreliability.jmgirard.com
-[wcc]: https://github.com/jmgirard/wcc
-[varde]: https://github.com/affcomlab/varde
-[agreement]: https://github.com/jmgirard/agreement
-[carma]: https://carma.jmgirard.com
-[darma]: https://darma.jmgirard.com
-[tidymedia]: https://github.com/jmgirard/tidymedia
-[openac]: https://github.com/jmgirard/openac
-[facs]: https://github.com/jmgirard/facs
-[hitop]: https://github.com/jmgirard/hitop
-[lordicon]: https://github.com/jmgirard/lordicon
-[honeypot]: https://github.com/jmgirard/honeypot
-[details]: https://github.com/jmgirard/details
-[embedpdf]: https://github.com/jmgirard/embedpdf
-[rstudio2u]: https://github.com/jmgirard/rstudio2u
-[rocker-bayes]: https://github.com/jmgirard/rocker-bayes
-[wsl-whisper]: https://github.com/jmgirard/wsl-whisper
-[wsl-ollama]: https://github.com/jmgirard/wsl-ollama
+::: {.res-card}
+### [BP4D](http://bit.ly/2yg39Cn)
+Binghamton-Pittsburgh 4D Spontaneous Emotion database: 3D video of spontaneous behavior during emotion elicitation, with frame-level FACS annotations (41 participants).
+
+[Paper](https://affcom.ku.edu/publications/articles/girard2014c.html) [Request access](http://bit.ly/2yg39Cn)
+:::
+
+:::
+
+## Statistics Software
+
+::: {.res-grid}
+
+::: {.res-card}
+[Stable]{.res-tag .stable}
+### [circumplex](https://circumplex.jmgirard.com/)
+R package for analyzing and visualizing circular data.
+:::
+
+::: {.res-card}
+[Stable, nearing end of life]{.res-tag .legacy}
+### [mReliability](https://mreliability.jmgirard.com)
+MATLAB functions for estimating inter-rater reliability.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [wcc](https://github.com/jmgirard/wcc)
+R package for windowed cross-correlation analyses.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [varde](https://github.com/affcomlab/varde)
+R package for decomposing the variance in mixed effects models.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [agreement](https://github.com/jmgirard/agreement)
+R package for estimating inter-rater reliability.
+:::
+
+:::
+
+## Research Software
+
+::: {.res-grid}
+
+::: {.res-card}
+[Stable, nearing end of life]{.res-tag .legacy}
+### [CARMA](https://carma.jmgirard.com)
+Software for collecting continuous media annotations.
+:::
+
+::: {.res-card}
+[Stable, nearing end of life]{.res-tag .legacy}
+### [DARMA](https://darma.jmgirard.com)
+Software for collecting continuous two-dimensional media annotations.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [tidymedia](https://github.com/jmgirard/tidymedia)
+R package for working with audio, video, and image files.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [openac](https://github.com/jmgirard/openac)
+R package for automating common affective computing and social signal processing tasks.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [facs](https://github.com/jmgirard/facs)
+R package for working with Facial Action Coding System (FACS) data.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [hitop](https://github.com/jmgirard/hitop)
+R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
+:::
+
+:::
+
+## Quarto Extensions
+
+::: {.res-grid}
+
+::: {.res-card}
+[Stable]{.res-tag .stable}
+### [lordicon](https://github.com/jmgirard/lordicon)
+Embed animated [Lordicon](https://www.lordicon.com/icons) icons in HTML documents.
+:::
+
+::: {.res-card}
+[Experimental]{.res-tag .experimental}
+### [honeypot](https://github.com/jmgirard/honeypot)
+Detect LLM cheating on HTML assignments.
+:::
+
+::: {.res-card}
+[Stable]{.res-tag .stable}
+### [details](https://github.com/jmgirard/details)
+Embed interactive details blocks in HTML documents.
+:::
+
+::: {.res-card}
+[Stable, under review]{.res-tag .stable}
+### [embedpdf](https://github.com/jmgirard/embedpdf)
+Embed PDF files in HTML documents.
+:::
+
+:::
+
+## Docker Images
+
+::: {.res-grid}
+
+::: {.res-card}
+### [rstudio2u](https://github.com/jmgirard/rstudio2u)
+Multi-architecture (amd64/arm64) image combining RStudio and r2u.
+:::
+
+::: {.res-card}
+### [rocker-bayes](https://github.com/jmgirard/rocker-bayes)
+Multi-architecture (amd64/arm64) image for Bayesian analysis in R.
+:::
+
+::: {.res-card}
+### [wsl-whisper](https://github.com/jmgirard/wsl-whisper)
+WSL (amd64) image for AI transcription from R with CUDA support.
+:::
+
+:::

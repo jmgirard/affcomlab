@@ -1,61 +1,30 @@
 ---
 pagetitle: "AffCom Lab"
+page-layout: full
 toc: false
-listing:
-  id: latest-news
-  contents: "posts/**/index.qmd"
-  sort: "date desc"
-  type: grid
-  max-items: 3
-  grid-columns: 3
-  image-height: 160px
-  fields: [image, date, title]
 ---
 
 ```{=html}
-<section class="home-hero">
-  <div class="hero-text">
-    <p class="hero-title" role="heading" aria-level="1">Affective Communication &amp; Computing Lab</p>
-    <p>We are an interdisciplinary research group in the <a href="https://psych.ku.edu">Department of Psychology</a> at the <a href="https://ku.edu">University of Kansas</a>. We develop, validate, and apply computational methods to study emotion, interpersonal communication, and mental health.</p>
-    <a class="btn btn-light" href="research.html">Our research</a>
-    <a class="btn btn-outline-light" href="opportunities.html">Join the lab</a>
-  </div>
-  <div class="hero-art">
-    <img src="img/showcase.svg" alt="Two researchers working at a computer">
-  </div>
-</section>
-
-<h2>What We Study</h2>
-
-<div class="theme-cards">
-  <a class="theme-card" href="research.html#substantive-pillars">
-    <i class="bi bi-emoji-smile" aria-hidden="true"></i>
-    <h3>Emotion</h3>
-    <p>How people express and perceive emotion in the face, voice, and language.</p>
-  </a>
-  <a class="theme-card accent" href="research.html#substantive-pillars">
-    <i class="bi bi-chat-dots" aria-hidden="true"></i>
-    <h3>Interpersonal Communication</h3>
-    <p>How partners influence one another over time during real conversations.</p>
-  </a>
-  <a class="theme-card navy" href="research.html#substantive-pillars">
-    <i class="bi bi-heart-pulse" aria-hidden="true"></i>
-    <h3>Mental Health</h3>
-    <p>How communication relates to clinical assessment, treatment, and outcomes.</p>
-  </a>
-  <a class="theme-card" href="research.html#methodological-foundation">
-    <i class="bi bi-cpu" aria-hidden="true"></i>
-    <h3>Computational Methods</h3>
-    <p>Behavior sensing, machine learning, large language models, and Bayesian statistics.</p>
-  </a>
+<div class="home">
+  <section class="hero">
+    <div class="text">
+      <div class="eyebrow">Department of Psychology · University of Kansas</div>
+      <h1 class="name">Affective<br>Communication <span class="amp">&amp;</span><br>Computing Lab</h1>
+      <p class="lede">We are an interdisciplinary research group that develops, validates, and applies computational methods to study emotion, interpersonal communication, and mental health.</p>
+      <p class="director">Directed by <a href="people/staff/girard_jeffrey.html">Dr. Jeffrey Girard</a>, Associate Professor of Psychology</p>
+      <div class="btns"><a class="primary" href="research.html">Our research</a><a href="opportunities.html">Join the lab</a></div>
+    </div>
+    <div class="ring" id="ring" data-src="data/ring.json"><div class="tip" id="tip"></div><div class="stip" id="stip"></div></div>
+  </section>
+  <section class="qband">
+    <div class="qlabel"><span class="badge" id="qbadge">1</span><span class="of" id="qn"></span></div>
+    <div class="qmain">
+      <div class="q-wrap" id="qwrap"></div>
+      <div class="asked"><div class="txt" id="asked"></div></div>
+    </div>
+    <div class="arrows"><button id="prev" aria-label="Previous question">&larr;</button><button id="next" aria-label="Next question">&rarr;</button></div>
+  </section>
+  <p class="note">Each dot is one of our publications, placed by its main research area and ordered by year. A curved line connects a paper to another area it contributes to. Outlined dots are studies led by our lab. Hover over a dot to see the paper, or over an area name to see its papers. Click a dot to read the paper.</p>
 </div>
-
-<h2>Latest News</h2>
+<script src="ring.js"></script>
 ```
-
-::: {#latest-news}
-:::
-
-::: {.section-more}
-[All news →](news.qmd)
-:::
