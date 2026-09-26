@@ -20,7 +20,8 @@ if (nzchar(fam)) {
   yr <- function(e) { y <- strip(e$year); if (y == "in press") 9999 else suppressWarnings(as.numeric(y)) }
   keep <- vapply(seq_along(bib), function(i) any(vapply(bib[[i]]$author, is_me, logical(1))), logical(1))
   if (identical(m$pubs, "primary")) keep <- keep & vapply(seq_along(bib), function(i) identical(tolower(strip(bib[[i]]$primary)), "true"), logical(1))
-  idx <- which(keep); idx <- idx[order(-vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
+  first <- function(i) isTRUE(is_me(bib[[i]]$author[[1]]))   # with pubs_first: true, first-authored papers come before the rest
+  idx <- which(keep); idx <- idx[order(if (isTRUE(m$pubs_first)) -vapply(idx, first, logical(1)) else 0, -vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
   cap <- m$pubs_max %||% if (identical(m$pubs, "primary")) 8 else 100
   idx <- head(idx, cap)
   if (length(idx)) {
