@@ -92,12 +92,17 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 .quarto-grid-item.card .listing-categories .listing-category { border-color: $line; color: $muted; }
 
 .grant-list { display: grid; gap: 1rem; margin: 1rem 0 2.2rem; }
-.grant-card { padding: 1.25rem 1.5rem 1.15rem; }
+.grant-card { padding: 1.2rem 1.5rem 1.1rem; position: relative; }
 .grant-card p { margin: 0; }
-.grant-card p:first-child { font-family: $headings-font-family; font-weight: 600; font-size: 1.12rem; line-height: 1.35; margin-bottom: 0.55rem; }
-.grant-card .grant-funder { font-size: 0.95rem; color: $ink; }
-.grant-card .grant-people { font-size: 0.92rem; color: $muted; }
+.grant-card p:first-child { font-family: $headings-font-family; font-weight: 600; font-size: 1.12rem; line-height: 1.4; margin-bottom: 0.6rem; }
+.grant-tag { display: inline-block; font-family: $font-family-sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: $ink; border: 1.5px solid $ink; border-radius: 999px; padding: 0.1rem 0.55rem; margin-right: 0.45rem; vertical-align: 0.2em; }
+.grant-line { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.grant-funder { font-size: 0.95rem; color: $ink; }
+.grant-when { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.05em; color: $muted; white-space: nowrap; }
+.grant-people { display: block; font-size: 0.92rem; color: $muted; margin-top: 0.15rem; }
+.grant-list:not(.completed) .grant-card::before { content: ""; position: absolute; left: 0; top: 1.35rem; bottom: 1.35rem; width: 3px; border-radius: 2px; background: $col-mh; }
 .grant-list.completed .grant-card { background: transparent; }
+.grant-list.completed .grant-tag { color: $muted; border-color: $line; }
 
 .res-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
 .res-card { padding: 1.1rem 1.2rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; }

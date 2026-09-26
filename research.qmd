@@ -18,27 +18,27 @@ toc: true
 
 ::: {.grant-list}
 ::: {.grant-card}
-Developing and Evaluating a Firefighter Self-Administered Neurostimulation Intervention for Traumatic Stress to Reduce Alcohol Use
+[R34]{.grant-tag} Developing and Evaluating a Firefighter Self-Administered Neurostimulation Intervention for Traumatic Stress to Reduce Alcohol Use
 
-[R34, National Institutes of Health (NIAAA)]{.grant-funder}<br>[Sprunger (PI), Co-I: **Girard** · 05/2026 -- 04/2029]{.grant-people}
+[[National Institutes of Health (NIAAA)]{.grant-funder} [05/2026 -- 04/2029]{.grant-when}]{.grant-line}[Sprunger (PI), Co-I: **Girard**]{.grant-people}
 :::
 
 ::: {.grant-card}
-Assessment of Eating Disorder and Comorbidity Risk and Resilience in Recent Military Enlistees
+[DoD]{.grant-tag} Assessment of Eating Disorder and Comorbidity Risk and Resilience in Recent Military Enlistees
 
-[Department of Defense (DoD)]{.grant-funder}<br>[Forbush (PI), Co-I: **Girard** · 04/2025 -- 03/2027]{.grant-people}
+[[Department of Defense]{.grant-funder} [04/2025 -- 03/2027]{.grant-when}]{.grant-line}[Forbush (PI), Co-I: **Girard**]{.grant-people}
 :::
 
 ::: {.grant-card}
-Building Healthy Eating and Self-Esteem Together for University Students (BEST-U): A Pilot Randomized Controlled Trial of an mHealth Intervention for Binge-Spectrum Disorders
+[R34]{.grant-tag} Building Healthy Eating and Self-Esteem Together for University Students (BEST-U): A Pilot Randomized Controlled Trial of an mHealth Intervention for Binge-Spectrum Disorders
 
-[R34, National Institutes of Health (NIMH)]{.grant-funder}<br>[Forbush, Christensen-Pacella (PIs), Co-I: **Girard** · 01/2025 -- 12/2027]{.grant-people}
+[[National Institutes of Health (NIMH)]{.grant-funder} [01/2025 -- 12/2027]{.grant-when}]{.grant-line}[Forbush, Christensen-Pacella (PIs), Co-I: **Girard**]{.grant-people}
 :::
 
 ::: {.grant-card}
-COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stress
+[P20]{.grant-tag} COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stress
 
-[P20, National Institutes of Health (COBRE)]{.grant-funder}<br>[**Girard** (PI) · 01/2025 -- 12/2026]{.grant-people}
+[[National Institutes of Health (COBRE)]{.grant-funder} [01/2025 -- 12/2026]{.grant-when}]{.grant-line}[**Girard** (PI)]{.grant-people}
 :::
 
 :::
@@ -47,39 +47,39 @@ COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stres
 
 ::: {.grant-list .completed}
 ::: {.grant-card}
-Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning
+[R01]{.grant-tag} Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning
 
-[R01, National Institutes of Health (NIMH)]{.grant-funder}<br>[Baker (PI), Co-Is: **Girard**, Morency · 04/2021 -- 02/2025]{.grant-people}
+[[National Institutes of Health (NIMH)]{.grant-funder} [04/2021 -- 02/2025]{.grant-when}]{.grant-line}[Baker (PI), Co-Is: **Girard**, Morency]{.grant-people}
 :::
 
 ::: {.grant-card}
-Kansas Data Science Training Pathways | An Integrated Model
+[NSF]{.grant-tag} Kansas Data Science Training Pathways | An Integrated Model
 
-[National Science Foundation (EPSCoR REI)]{.grant-funder}<br>[**Girard** (PI) · 01/2024 -- 12/2024]{.grant-people}
+[[National Science Foundation (EPSCoR REI)]{.grant-funder} [01/2024 -- 12/2024]{.grant-when}]{.grant-line}[**Girard** (PI)]{.grant-people}
 :::
 
 ::: {.grant-card}
-Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices
+[Google]{.grant-tag} Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices
 
-[Googler-Initiated Grant, Google LLC]{.grant-funder}<br>[**Girard** (PI) · 11/2022]{.grant-people}
+[[Googler-Initiated Grant]{.grant-funder} [11/2022]{.grant-when}]{.grant-line}[**Girard** (PI)]{.grant-people}
 :::
 
 ::: {.grant-card}
-Multimodal Dynamics of Parent-Child Interactions and Suicide Risk
+[R21]{.grant-tag} Multimodal Dynamics of Parent-Child Interactions and Suicide Risk
 
-[R21, National Institutes of Health (NIMH)]{.grant-funder}<br>[Burke (PI), Co-Is: **Girard**, Li, Morency · 09/2022 -- 07/2023]{.grant-people}
+[[National Institutes of Health (NIMH)]{.grant-funder} [09/2022 -- 07/2023]{.grant-when}]{.grant-line}[Burke (PI), Co-Is: **Girard**, Li, Morency]{.grant-people}
 :::
 
 ::: {.grant-card}
-Towards Automated Multimodal Behavioral Screening for Depression
+[PHDA]{.grant-tag} Towards Automated Multimodal Behavioral Screening for Depression
 
-[Pittsburgh Health Data Alliance (CMLH)]{.grant-funder}<br>[Morency (PI), Co-I: **Girard** · 03/2019 -- 02/2021]{.grant-people}
+[[Pittsburgh Health Data Alliance (CMLH)]{.grant-funder} [03/2019 -- 02/2021]{.grant-when}]{.grant-line}[Morency (PI), Co-I: **Girard**]{.grant-people}
 :::
 
 ::: {.grant-card}
-Dyadic Behavior Informatics for Psychotherapy Process and Outcome
+[NSF]{.grant-tag} Dyadic Behavior Informatics for Psychotherapy Process and Outcome
 
-[National Science Foundation (IIS, SCH)]{.grant-funder}<br>[Cohn, Morency, Swartz (PIs), Co-Is: Bylsma, Fournier, **Girard** · 09/2020 -- 08/2022]{.grant-people}
+[[National Science Foundation (IIS, SCH)]{.grant-funder} [09/2020 -- 08/2022]{.grant-when}]{.grant-line}[Cohn, Morency, Swartz (PIs), Co-Is: Bylsma, Fournier, **Girard**]{.grant-people}
 :::
 
 :::
