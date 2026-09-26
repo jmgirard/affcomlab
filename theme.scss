@@ -140,6 +140,7 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 
 // ---------- publications page ----------
 .pub-card { border-color: $line !important; border-radius: 14px !important; }
+.pub-title { font-family: $headings-font-family !important; font-weight: 600 !important; font-size: 1.1rem !important; line-height: 1.3; }
 .pub-title a { color: $ink; }
 .pub-meta { color: $muted !important; }
 .pub-actions a { color: $ink !important; border-bottom-color: $line !important; }
