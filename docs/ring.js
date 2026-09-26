@@ -81,7 +81,6 @@ function showSubTip(sub) {   // horizontal card in the corner of the box nearest
   const n = cntAny[sub], main = cnt[sub];
   stip.innerHTML = `<span class="area" style="color:${TAX[a].col}">${esc(TAX[a].name)}</span><span class="sub">${esc(TAX[a].subs[sub])}</span><span class="desc">${esc(TAX.desc[sub] || '')}</span><span class="n">${n} paper${n === 1 ? '' : 's'}${n > main ? ` (${main} as main area)` : ''}</span>`;
   stip.style.borderTopColor = TAX[a].col;
-  stip.style.left = '0'; stip.style.top = '4px';   // always the top-left corner, clear of the circle
   stip.style.opacity = 1;
 }
 const dotXY = Object.fromEntries(N.map(p => [p.key, P(R - 16, pos[p.key])]));
@@ -127,11 +126,11 @@ function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixe
   return best;
 }
 
-svg.addEventListener('pointermove', ev => {
+svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area stays highlighted until another is reached or the pointer leaves the ring
   const k = nearestDot(ev), h = ev.target.closest('.hit');
   if (k) { showTip(byKey[k]); stip.style.opacity = 0; hovDot = k; hovSub = null; svg.style.cursor = 'pointer'; }
   else if (h) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovSub !== h.dataset.sub) showSubTip(h.dataset.sub); hovDot = null; hovSub = h.dataset.sub; svg.style.cursor = 'default'; }
-  else { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; svg.style.cursor = 'default'; }
+  else { svg.style.cursor = 'default'; }   // between targets the last hover stays; only leaving the ring hands focus back to the example question
   render();
 });
 svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; render(); });

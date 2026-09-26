@@ -218,7 +218,7 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .lede a:hover, .home .director a:hover { text-decoration-color: $ink; }
 .home .director { font-size: 0.95rem; color: $muted; margin: 0 0 22px; }
 .home .btns { display: flex; flex-wrap: wrap; gap: 14px; }
-.home .ring { position: relative; }
+.home .ring { position: relative; container-type: inline-size; }
 .home .ring svg { display: block; width: 100%; height: auto; max-height: 560px; margin: 0 auto; }
 .home .ring text { font-family: $font-family-sans-serif; }
 .home .area-label { font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; }
@@ -239,16 +239,27 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .dot, .home .chord { transition: opacity 0.2s; }
 .home .hit { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) { .home .soft .dot.hot .halo { animation: none; opacity: 0.35; } }
-.home .tip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 215px; padding: 8px 10px 8px 0; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
+.home .tip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
 .home .tip .area { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; display: block; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home .tip .title { font-family: $headings-font-family; font-weight: 600; font-size: 1rem; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 3px 0 4px; }
 .home .tip .meta { font-size: 0.82rem; color: #3d3833; line-height: 1.3; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home .tip .go { font-size: 0.76rem; color: $muted; display: block; margin-top: 4px; }
-.home .stip { position: absolute; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; background: transparent; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
+.home .stip { position: absolute; left: 0; top: 4px; pointer-events: none; z-index: 2; width: 200px; padding: 8px 10px 8px 0; background: transparent; border-top: 3px solid $ink; opacity: 0; transition: opacity 0.15s; }
 .home .stip .area { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
 .home .stip .sub { font-family: $headings-font-family; font-weight: 600; font-size: 1.15rem; line-height: 1.15; display: block; margin: 2px 0 4px; }
 .home .stip .desc { font-size: 0.85rem; color: #3d3833; line-height: 1.3; display: block; }
 .home .stip .n { font-size: 0.78rem; color: $muted; display: block; margin-top: 4px; }
+// narrow ring box: the cards move to a band below the figure instead of the top-left corner, so they never cover the arcs or labels
+@container (max-width: 620px) {
+  .home .ring svg { margin-bottom: max(0px, calc(76px - 10.5cqw)); }   // the card is about 70px tall; the figure's own blank bottom margin shrinks with the box, so the extra space grows
+  .home .tip, .home .stip { top: auto; bottom: 0; width: 100%; padding: 5px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }
+  .home .tip .title, .home .stip .sub { width: 100%; order: -1; margin: 0 0 2px; }
+  .home .tip .title { -webkit-line-clamp: 2; }
+  .home .tip .meta, .home .stip .desc { flex: 1 1 0; min-width: 0; }
+  .home .stip .desc { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .home .tip .go { display: none; }
+  .home .stip .n { margin-top: 0; }
+}
 .home .qband { display: grid; grid-template-columns: 120px 1fr auto; gap: 24px; align-items: center; margin: 8px 0 12px; padding: 20px 0; border-top: 1px solid $line; border-bottom: 1px solid $line; }
 .home .qmain { min-width: 0; }
 .home .qlabel { display: flex; align-items: center; gap: 10px; }

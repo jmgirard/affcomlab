@@ -280,39 +280,11 @@
     "text": "Home\n    People"
   },
   {
-    "objectID": "people.html#research-staff",
-    "href": "people.html#research-staff",
+    "objectID": "people.html#people",
+    "href": "people.html#people",
     "title": "AffCom Lab",
-    "section": "Research Staff",
-    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nJeffrey Girard\n\n\nLab Director\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html#clinical-psychological-science-students",
-    "href": "people.html#clinical-psychological-science-students",
-    "title": "AffCom Lab",
-    "section": "Clinical Psychological Science Students",
-    "text": "Clinical Psychological Science Students\n\n\n\n\n\n\n\n\n\n\nKassandra Gray\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDaiil Jun\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nYuanyuan Yang\n\n\nPhD Student\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html#brain-behavior-and-quantitative-science-students",
-    "href": "people.html#brain-behavior-and-quantitative-science-students",
-    "title": "AffCom Lab",
-    "section": "Brain, Behavior, and Quantitative Science Students",
-    "text": "Brain, Behavior, and Quantitative Science Students\n\n\n\n\n\n\n\n\n\n\nAaron Simmons\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nRebecca Wood\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\nDasha Yermol\n\n\nPhD Student\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html#research-assistants",
-    "href": "people.html#research-assistants",
-    "title": "AffCom Lab",
-    "section": "Research Assistants",
-    "text": "Research Assistants\nThe lab is not currently hosting research assistants. See Opportunities to apply."
-  },
-  {
-    "objectID": "people.html#alumni",
-    "href": "people.html#alumni",
-    "title": "AffCom Lab",
-    "section": "Alumni",
-    "text": "Alumni\nClick to view a list of former research staff and assistants."
+    "section": "People",
+    "text": "People\nA small group with a wide reach: psychologists, statisticians, and computer scientists working on one set of questions. Click a person for their profile and publications.\n\nLab Director\n\n\n\n\n\n\n\n\n\nJeffrey Girard\n\n\nLab Director\n\n\nAssociate Professor of Psychology\n\n\nSince Fall 2020\n\n\n\n\nNo matching items\n\n\n\n\nGraduate Students\nStudents join the lab through the Clinical Psychological Science (CPS) and Brain, Behavior, and Quantitative Science (BBQ) doctoral programs.\n\n\n\n\n\n\n\n\nKassandra Gray\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Fall 2022\n\n\n\n\n\n\n\n\n\nDaiil Jun\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Spring 2024\n\n\n\n\n\n\n\n\n\nAaron Simmons\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Fall 2023\n\n\n\n\n\n\n\n\n\nRebecca Wood\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Spring 2026\n\n\n\n\n\n\n\n\n\nYuanyuan Yang\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Fall 2023\n\n\n\n\n\n\n\n\n\nDasha Yermol\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Fall 2023\n\n\n\n\nNo matching items\n\n\n\nAlumni\n\n31 people have been part of the lab since 2020, from honors students to a postdoctoral fellow.\n\n\nSee all alumni →"
   },
   {
     "objectID": "people/cps/yang_yuanyuan.html",
@@ -497,6 +469,13 @@
     "text": "Education\n\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (BBQ) | Current\nUniversity of Wisconsin-Madison | Madison, WI, USA BS in Psychology | 2021"
   },
   {
+    "objectID": "people/bbq/yermol_dasha.html#publications-with-the-lab",
+    "href": "people/bbq/yermol_dasha.html#publications-with-the-lab",
+    "title": "Dasha Yermol",
+    "section": "Publications with the Lab",
+    "text": "Publications with the Lab\n\n\n★Computational Analysis of Expressive Behavior in Clinical AssessmentGirard, Yermol, Salah & Cohn · Annual Review of Clinical Psychology · 2026\n\n\n★Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression TherapyGirard, Yermol, Bylsma, Cohn, Fournier, … & Swartz · Journal of Consulting and Clinical Psychology · 2025\n\n\n\nSee all lab publications"
+  },
+  {
     "objectID": "people/cps/jun_daiil.html",
     "href": "people/cps/jun_daiil.html",
     "title": "Daiil Jun",
@@ -518,6 +497,13 @@
     "text": "Education\n\n\nUniversity of Kansas | Lawrence, KS, USA PhD Student in Psychology (Clinical) | Current MS in Psychology (Clinical) | 2023\nHandong Global University | Pohang, South Korea BA in Counseling Psychology | 2020"
   },
   {
+    "objectID": "people/cps/jun_daiil.html#publications-with-the-lab",
+    "href": "people/cps/jun_daiil.html#publications-with-the-lab",
+    "title": "Daiil Jun",
+    "section": "Publications with the Lab",
+    "text": "Publications with the Lab\n\n\n★Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language ModelsGirard, Jun, Ong, Liebenthal & Baker · Affective Science · 2026\n\n\nThe Role of Hyper-Palatable Foods in Energy Intake Measured Using Mobile Food Photography MethodologyJun, Girard, Martin & Fazzino · Eating Behaviors · 2025\n\n\n\nSee all lab publications"
+  },
+  {
     "objectID": "people/staff/girard_jeffrey.html",
     "href": "people/staff/girard_jeffrey.html",
     "title": "Jeffrey Girard",
@@ -532,18 +518,18 @@
     "text": "Biography\nDr. Jeffrey Girard studies how emotions are expressed through verbal and nonverbal behavior, as well as how interpersonal communication is influenced by individual differences (e.g., personality and mental health) and social factors (e.g., culture and context). This work is deeply interdisciplinary and draws insights and tools from various areas of social science, computer science, statistics, and medicine.\nHe completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (nonverbal behavior, machine learning, depression) and Dr. Aidan Wright (interpersonal functioning, statistics, personality). He then completed his predoctoral clinical internship at the University of Mississippi Medical Center (inpatient psychiatry, trauma treatment, neuropsychology) and a two-year postdoctoral research fellowship at Carnegie Mellon University under the mentorship of Dr. Louis-Philippe Morency (verbal behavior, machine learning, computer science).\nHe is now an Associate Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and is a co-founder of SMaRT Workshops, which offers numerous methodological training workshops to faculty and students. He is also the developer and maintainer of numerous open-source research software packages (see Resources)."
   },
   {
-    "objectID": "people/staff/girard_jeffrey.html#experience",
-    "href": "people/staff/girard_jeffrey.html#experience",
+    "objectID": "people/staff/girard_jeffrey.html#academic-experience",
+    "href": "people/staff/girard_jeffrey.html#academic-experience",
     "title": "Jeffrey Girard",
-    "section": "Experience",
-    "text": "Experience\n\n\nUniversity of Kansas | Lawrence, KS, USA Associate Professor of Psychology | 2025–Current Assistant Professor of Psychology | 2020–2025 Wright Faculty Scholar | 2020–2025 Director of the BBQ Doctoral Program | 2022–2026 Co-Director of the Kansas Data Science Consortium | 2023–2026\nCarnegie Mellon University | Pittsburgh, PA, USA Postdoctoral Researcher, School of Computer Science | 2018–2020\nUniversity of Mississippi Medical Center | Jackson, MS, USA Clinical Intern, Department of Psychiatry | 2017–2018"
+    "section": "Academic Experience",
+    "text": "Academic Experience\n\n\nUniversity of Kansas | Lawrence, KS, USA Associate Professor of Psychology | 2025–Current Assistant Professor of Psychology | 2020–2025 Wright Faculty Scholar | 2020–2025 Director of the BBQ Doctoral Program | 2022–2026 Co-Director of the Kansas Data Science Consortium | 2023–2026\nCarnegie Mellon University | Pittsburgh, PA, USA Postdoctoral Researcher, School of Computer Science | 2018–2020\nUniversity of Mississippi Medical Center | Jackson, MS, USA Clinical Intern, Department of Psychiatry | 2017–2018"
   },
   {
-    "objectID": "people/staff/girard_jeffrey.html#journal-editing",
-    "href": "people/staff/girard_jeffrey.html#journal-editing",
+    "objectID": "people/staff/girard_jeffrey.html#industry-experience",
+    "href": "people/staff/girard_jeffrey.html#industry-experience",
     "title": "Jeffrey Girard",
-    "section": "Journal Editing",
-    "text": "Journal Editing\n\n\nNPP Digital Psychiatry and Neuroscience  Consulting Editor | 2023–Current\nJournal of Psychopathology and Clinical Science  Consulting Editor | 2023–Current\nIEEE Transactions on Affective Computing  Associate Editor | 2022–2025\nCollabra Psychology  Associate Editor | 2021–2026\nClinical Psychological Science  Consulting Editor | 2021–Current\nPsychological Assessment  Consulting Editor | 2020–2022"
+    "section": "Industry Experience",
+    "text": "Industry Experience\n\n\nGirard Consulting LLC  Founder | 2023–Current\nSMaRT Workshops LLC  Co-Founder | 2023–Current\nFluid Concepts Research  Principal Scientist | 2026–Current\nMeta Fundamental AI Research (FAIR)  Academic Consultant | 2024–2026"
   },
   {
     "objectID": "people/staff/girard_jeffrey.html#education",
@@ -551,6 +537,13 @@
     "title": "Jeffrey Girard",
     "section": "Education",
     "text": "Education\n\n\nUniversity of Pittsburgh | Pittsburgh, PA, USA PhD in Psychology (Clinical) | 2013–2018\nUniversity of Pittsburgh | Pittsburgh, PA, USA MS in Psychology (Clinical) | 2010–2013\nUniversity of Washington | Seattle, WA, USA BA in Psychology & Philosophy (Honors) | 2005–2008"
+  },
+  {
+    "objectID": "people/staff/girard_jeffrey.html#selected-publications",
+    "href": "people/staff/girard_jeffrey.html#selected-publications",
+    "title": "Jeffrey Girard",
+    "section": "Selected Publications",
+    "text": "Selected Publications\n\n\n★Evaluating Open-Weight Large Language Models for Structured Depression Assessment from Clinical InterviewsGirard, Kebe, Morency, De La Torre, Liebenthal & Baker · Journal of Psychopathology and Clinical Science · in press\n\n\n★Building Open Science into Graduate Training in Clinical PsychologyGirard · Clinical Psychological Science · in press\n\n\n★Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language ModelsGirard, Jun, Ong, Liebenthal & Baker · Affective Science · 2026\n\n\n★Computational Analysis of Expressive Behavior in Clinical AssessmentGirard, Yermol, Salah & Cohn · Annual Review of Clinical Psychology · 2026\n\n\n★Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression TherapyGirard, Yermol, Bylsma, Cohn, Fournier, … & Swartz · Journal of Consulting and Clinical Psychology · 2025\n\n\n★From Intuition to Innovation: Empirical Illustrations of Multimodal Measurement in Psychotherapy ResearchAafjes-van Doorn & Girard · Psychotherapy Research · 2025\n\n\n★Transdiagnostic Modeling of Clinician-Rated Symptoms in Affective and Nonaffective Psychotic DisordersChung, Girard, Ravichandran, Öngür, Cohen & Baker · Journal of Psychopathology and Clinical Science · 2025\n\n\n\nSee all lab publications"
   },
   {
     "objectID": "posts/acii2024/index.html",
@@ -1272,68 +1265,5 @@
     "title": "AffCom Lab",
     "section": "Research Funding",
     "text": "Research Funding\n\nCurrent Funding\n\n\nR34 Developing and Evaluating a Firefighter Self-Administered Neurostimulation Intervention for Traumatic Stress to Reduce Alcohol Use\nNational Institutes of Health (NIAAA) 05/2026 – 04/2029Sprunger (PI), Co-I: Girard\n\n\nDoD Assessment of Eating Disorder and Comorbidity Risk and Resilience in Recent Military Enlistees\nDepartment of Defense 04/2025 – 03/2027Forbush (PI), Co-I: Girard\n\n\nR34 Building Healthy Eating and Self-Esteem Together for University Students (BEST-U): A Pilot Randomized Controlled Trial of an mHealth Intervention for Binge-Spectrum Disorders\nNational Institutes of Health (NIMH) 01/2025 – 12/2027Forbush, Christensen-Pacella (PIs), Co-I: Girard\n\n\nP20 COBRE Computational Assessment of Communicative Behaviors in Posttraumatic Stress\nNational Institutes of Health (COBRE) 01/2025 – 12/2026Girard (PI)\n\n\n\n\nCompleted Funding\n\n\nR01 Context-Adaptive Multimodal Informatics for Psychiatric Discharge Planning\nNational Institutes of Health (NIMH) 04/2021 – 02/2025Baker (PI), Co-Is: Girard, Morency\n\n\nNSF Kansas Data Science Training Pathways | An Integrated Model\nNational Science Foundation (EPSCoR REI) 01/2024 – 12/2024Girard (PI)\n\n\nGoogle Novel Scalable Mental Health Screening Procedures on Ubiquitous Sensing Devices\nGoogler-Initiated Grant 11/2022Girard (PI)\n\n\nR21 Multimodal Dynamics of Parent-Child Interactions and Suicide Risk\nNational Institutes of Health (NIMH) 09/2022 – 07/2023Burke (PI), Co-Is: Girard, Li, Morency\n\n\nPHDA Towards Automated Multimodal Behavioral Screening for Depression\nPittsburgh Health Data Alliance (CMLH) 03/2019 – 02/2021Morency (PI), Co-I: Girard\n\n\nNSF Dyadic Behavior Informatics for Psychotherapy Process and Outcome\nNational Science Foundation (IIS, SCH) 09/2020 – 08/2022Cohn, Morency, Swartz (PIs), Co-Is: Bylsma, Fournier, Girard"
-  },
-  {
-    "objectID": "people/cps/jun_daiil.html#publications-with-the-lab",
-    "href": "people/cps/jun_daiil.html#publications-with-the-lab",
-    "title": "Daiil Jun",
-    "section": "Publications with the Lab",
-    "text": "Publications with the Lab\n\n\n★Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language ModelsGirard, Jun, Ong, Liebenthal & Baker · Affective Science · 2026\n\n\nThe Role of Hyper-Palatable Foods in Energy Intake Measured Using Mobile Food Photography MethodologyJun, Girard, Martin & Fazzino · Eating Behaviors · 2025\n\n\n\nSee all lab publications"
-  },
-  {
-    "objectID": "people/staff/girard_jeffrey.html#selected-publications",
-    "href": "people/staff/girard_jeffrey.html#selected-publications",
-    "title": "Jeffrey Girard",
-    "section": "Selected Publications",
-    "text": "Selected Publications\n\n\n★Evaluating Open-Weight Large Language Models for Structured Depression Assessment from Clinical InterviewsGirard, Kebe, Morency, De La Torre, Liebenthal & Baker · Journal of Psychopathology and Clinical Science · in press\n\n\n★Building Open Science into Graduate Training in Clinical PsychologyGirard · Clinical Psychological Science · in press\n\n\n★Sentiment Analysis of Naturalistic Speech Using Open-Weight Large Language ModelsGirard, Jun, Ong, Liebenthal & Baker · Affective Science · 2026\n\n\n★Computational Analysis of Expressive Behavior in Clinical AssessmentGirard, Yermol, Salah & Cohn · Annual Review of Clinical Psychology · 2026\n\n\n★Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression TherapyGirard, Yermol, Bylsma, Cohn, Fournier, … & Swartz · Journal of Consulting and Clinical Psychology · 2025\n\n\n★From Intuition to Innovation: Empirical Illustrations of Multimodal Measurement in Psychotherapy ResearchAafjes-van Doorn & Girard · Psychotherapy Research · 2025\n\n\n★Transdiagnostic Modeling of Clinician-Rated Symptoms in Affective and Nonaffective Psychotic DisordersChung, Girard, Ravichandran, Öngür, Cohen & Baker · Journal of Psychopathology and Clinical Science · 2025\n\n\n\nSee all lab publications"
-  },
-  {
-    "objectID": "people/cps/yang_yuanyuan.html#publications-with-the-lab",
-    "href": "people/cps/yang_yuanyuan.html#publications-with-the-lab",
-    "title": "Yuanyuan Yang",
-    "section": "Publications with the Lab",
-    "text": "Publications with the Lab\n\n\nSeamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale DatasetAgrawal, Akinyemi, Alvero, Behrooz, Buffalini, … & Zollhoefer · arXiv:2506.22554 [cs.CV] · 2025\n\n\nMultimodal Spontaneous Emotion Corpus for Human Behavior AnalysisZhang, Girard, Wu, Zhang, Liu, … & Yin · Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) · 2016\n\n\n\nSee all lab publications"
-  },
-  {
-    "objectID": "people/bbq/wood_rebecca.html#publications-with-the-lab",
-    "href": "people/bbq/wood_rebecca.html#publications-with-the-lab",
-    "title": "Rebecca Wood",
-    "section": "Publications with the Lab",
-    "text": "Publications with the Lab\n\n\nSeamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale DatasetAgrawal, Akinyemi, Alvero, Behrooz, Buffalini, … & Zollhoefer · arXiv:2506.22554 [cs.CV] · 2025\n\n\n\nSee all lab publications"
-  },
-  {
-    "objectID": "people/bbq/yermol_dasha.html#publications-with-the-lab",
-    "href": "people/bbq/yermol_dasha.html#publications-with-the-lab",
-    "title": "Dasha Yermol",
-    "section": "Publications with the Lab",
-    "text": "Publications with the Lab\n\n\n★Computational Analysis of Expressive Behavior in Clinical AssessmentGirard, Yermol, Salah & Cohn · Annual Review of Clinical Psychology · 2026\n\n\n★Dynamic and Dyadic Relationships between Facial Behavior, Working Alliance, and Treatment Outcomes during Depression TherapyGirard, Yermol, Bylsma, Cohn, Fournier, … & Swartz · Journal of Consulting and Clinical Psychology · 2025\n\n\n\nSee all lab publications"
-  },
-  {
-    "objectID": "people.html#people",
-    "href": "people.html#people",
-    "title": "AffCom Lab",
-    "section": "People",
-    "text": "People\nA small group with a wide reach: psychologists, statisticians, and computer scientists working on one set of questions. Click a person for their profile and publications.\n\nLab Director\n\n\n\n\n\n\n\n\n\nJeffrey Girard\n\n\nLab Director\n\n\nAssociate Professor of Psychology\n\n\nSince Fall 2020\n\n\n\n\nNo matching items\n\n\n\n\nGraduate Students\nStudents join the lab through the Clinical Psychological Science (CPS) and Brain, Behavior, and Quantitative Science (BBQ) doctoral programs.\n\n\n\n\n\n\n\n\nKassandra Gray\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Fall 2022\n\n\n\n\n\n\n\n\n\nDaiil Jun\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Spring 2024\n\n\n\n\n\n\n\n\n\nAaron Simmons\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Fall 2023\n\n\n\n\n\n\n\n\n\nRebecca Wood\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Spring 2026\n\n\n\n\n\n\n\n\n\nYuanyuan Yang\n\n\nPhD Student\n\n\nClinical Psychological Science\n\n\nSince Fall 2023\n\n\n\n\n\n\n\n\n\nDasha Yermol\n\n\nPhD Student\n\n\nBrain, Behavior, and Quantitative Science\n\n\nSince Fall 2023\n\n\n\n\nNo matching items\n\n\n\nAlumni\n\n31 people have been part of the lab since 2020, from honors students to a postdoctoral fellow.\n\n\nSee all alumni →"
-  },
-  {
-    "objectID": "people/staff/girard_jeffrey.html#business",
-    "href": "people/staff/girard_jeffrey.html#business",
-    "title": "Jeffrey Girard",
-    "section": "Business",
-    "text": "Business\n\n\nGirard Consulting LLC  Founder | Measurement and evaluation consulting\nSMaRT Workshops LLC  Co-Founder | Online workshops in statistics, methods, and research training\nFluid Concepts Research  Principal Scientist | A data lab focused on Human–AI interaction"
-  },
-  {
-    "objectID": "people/staff/girard_jeffrey.html#academic-experience",
-    "href": "people/staff/girard_jeffrey.html#academic-experience",
-    "title": "Jeffrey Girard",
-    "section": "Academic Experience",
-    "text": "Academic Experience\n\n\nUniversity of Kansas | Lawrence, KS, USA Associate Professor of Psychology | 2025–Current Assistant Professor of Psychology | 2020–2025 Wright Faculty Scholar | 2020–2025 Director of the BBQ Doctoral Program | 2022–2026 Co-Director of the Kansas Data Science Consortium | 2023–2026\nCarnegie Mellon University | Pittsburgh, PA, USA Postdoctoral Researcher, School of Computer Science | 2018–2020\nUniversity of Mississippi Medical Center | Jackson, MS, USA Clinical Intern, Department of Psychiatry | 2017–2018"
-  },
-  {
-    "objectID": "people/staff/girard_jeffrey.html#industry-experience",
-    "href": "people/staff/girard_jeffrey.html#industry-experience",
-    "title": "Jeffrey Girard",
-    "section": "Industry Experience",
-    "text": "Industry Experience\n\n\nGirard Consulting LLC  Founder | 2023–Current\nSMaRT Workshops LLC  Co-Founder | 2023–Current\nFluid Concepts Research  Principal Scientist | 2026–Current\nMeta Fundamental AI Research (FAIR)  Academic Consultant | 2024–2026"
   }
 ]
