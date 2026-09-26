@@ -12,3 +12,6 @@
 # local mockups and editor config
 /_mockups/
 /.claude/
+
+# execute results that quarto render writes next to the people pages
+/people_files/
