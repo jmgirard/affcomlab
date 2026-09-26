@@ -78,7 +78,7 @@ He is now an Associate Professor in the department of Psychology at the Universi
 - **Fluid Concepts Research** <a href="https://fluidconcepts.ai" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Principal Scientist | 2026–Current
 
-- **Meta FAIR** <a href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
+- **Meta Fundamental AI Research (FAIR)** <a href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right ms-1"></i></a><br />
   Academic Consultant | 2024–2026
 :::
 
