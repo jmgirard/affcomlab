@@ -36,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../img/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -45,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c0223a4239792b995eef3c4f76aed5e1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-7265de282f7deab86f3e7686e6ae6e45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,6 +83,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 </script>
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
 
 
 </head>
@@ -93,6 +96,10 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo.svg" alt="AffCom Lab ring mark" class="navbar-logo light-content">
+    <img src="../img/logo.svg" alt="AffCom Lab ring mark" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">AffCom Lab</span>
     </a>
@@ -180,6 +187,19 @@ gtag('config', 'G-K5TXS64QLN', { 'anonymize_ip': true});
 
 
 </main> <!-- /main -->
+<script>
+// Replace the navbar logo image with the svg itself so its arcs can animate on hover (see theme.scss).
+(async () => {
+  const img = document.querySelector('.navbar-brand-logo img.navbar-logo:not(.dark-content)');
+  if (!img) return;
+  try {
+    const txt = await (await fetch(img.getAttribute('src'))).text();
+    const svg = new DOMParser().parseFromString(txt, 'image/svg+xml').documentElement;
+    svg.setAttribute('class', img.className); svg.setAttribute('aria-label', img.alt); svg.removeAttribute('width'); svg.removeAttribute('height');
+    img.replaceWith(svg);
+  } catch (e) { /* keep the image */ }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

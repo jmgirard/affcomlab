@@ -1,0 +1,13 @@
+<script>
+// Replace the navbar logo image with the svg itself so its arcs can animate on hover (see theme.scss).
+(async () => {
+  const img = document.querySelector('.navbar-brand-logo img.navbar-logo:not(.dark-content)');
+  if (!img) return;
+  try {
+    const txt = await (await fetch(img.getAttribute('src'))).text();
+    const svg = new DOMParser().parseFromString(txt, 'image/svg+xml').documentElement;
+    svg.setAttribute('class', img.className); svg.setAttribute('aria-label', img.alt); svg.removeAttribute('width'); svg.removeAttribute('height');
+    img.replaceWith(svg);
+  } catch (e) { /* keep the image */ }
+})();
+</script>

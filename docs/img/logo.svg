@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="AffCom Lab">
+  <defs>
+    <linearGradient id="j0" gradientUnits="userSpaceOnUse" x1="23.79" y1="9.45" x2="50.91" y2="17.22"><stop offset="0" stop-color="#8a6888"/><stop offset="0.5" stop-color="#d9613b"/><stop offset="1" stop-color="#78826a"/></linearGradient>
+    <linearGradient id="j1" gradientUnits="userSpaceOnUse" x1="50.91" y1="17.22" x2="51.90" y2="45.42"><stop offset="0" stop-color="#78826a"/><stop offset="0.5" stop-color="#17a398"/><stop offset="1" stop-color="#5079a0"/></linearGradient>
+    <linearGradient id="j2" gradientUnits="userSpaceOnUse" x1="51.90" y1="45.42" x2="25.38" y2="55.07"><stop offset="0" stop-color="#5079a0"/><stop offset="0.5" stop-color="#8a4fa8"/><stop offset="1" stop-color="#aa746b"/></linearGradient>
+    <linearGradient id="j3" gradientUnits="userSpaceOnUse" x1="25.38" y1="55.07" x2="8.01" y2="32.84"><stop offset="0" stop-color="#aa746b"/><stop offset="0.5" stop-color="#c99a2e"/><stop offset="1" stop-color="#828482"/></linearGradient>
+    <linearGradient id="j4" gradientUnits="userSpaceOnUse" x1="8.01" y1="32.84" x2="23.79" y2="9.45"><stop offset="0" stop-color="#828482"/><stop offset="0.5" stop-color="#3b6fd6"/><stop offset="1" stop-color="#8a6888"/></linearGradient>
+  </defs>
+  <g class="arcs" fill="none" stroke-width="9">
+    <path d="M25.79 8.82A24 24 0 0 1 49.55 15.63" stroke="#d9613b"/>
+    <path d="M52.13 18.93A24 24 0 0 1 52.99 43.64" stroke="#17a398"/>
+    <path d="M50.65 47.10A24 24 0 0 1 27.42 55.56" stroke="#8a4fa8"/>
+    <path d="M23.40 54.41A24 24 0 0 1 8.18 34.92" stroke="#c99a2e"/>
+    <path d="M8.03 30.74A24 24 0 0 1 21.86 10.25" stroke="#3b6fd6"/>
+  </g>
+  <g class="whole" fill="none" stroke-width="9" opacity="0">
+    <path d="M23.56 9.53A24 24 0 0 1 51.07 17.42" stroke="url(#j0)"/>
+    <path d="M50.76 17.03A24 24 0 0 1 51.76 45.63" stroke="url(#j1)"/>
+    <path d="M52.04 45.21A24 24 0 0 1 25.14 55.00" stroke="url(#j2)"/>
+    <path d="M25.63 55.14A24 24 0 0 1 8.01 32.59" stroke="url(#j3)"/>
+    <path d="M8.02 33.09A24 24 0 0 1 24.03 9.36" stroke="url(#j4)"/>
+  </g>
+</svg>

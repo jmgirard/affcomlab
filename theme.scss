@@ -54,7 +54,13 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 // ---------- navbar ----------
 .navbar { border-bottom: 1px solid $line; padding-top: 0.8rem; padding-bottom: 0.8rem; }
 .navbar-brand .navbar-title { font-family: $headings-font-family; font-weight: 600; font-size: 1.25rem; transition: letter-spacing 0.3s ease; }
-.navbar-brand:hover .navbar-title { letter-spacing: 0.02em; }
+.navbar-brand-container:hover .navbar-title { letter-spacing: 0.02em; }   // quarto splits the brand into a logo link and a title link, so hover on the container
+.navbar-brand-logo { position: relative; }
+.navbar-brand .navbar-logo { max-height: 21px; width: 21px; height: 21px; margin-right: 6px; }   // the ring mark
+// on hover the gaps close and the colours flow into one another: five separate pieces become one blended ring (the logo is inlined as svg by _navbar-logo.html so its two layers can crossfade)
+.navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: opacity 0.4s ease; }
+.navbar-brand-container:hover .navbar-brand-logo svg .arcs { opacity: 0; }
+.navbar-brand-container:hover .navbar-brand-logo svg .whole { opacity: 1; }
 .navbar .navbar-nav .nav-link {
   font-weight: 600; font-size: 0.95rem; color: $ink; padding-bottom: 0.2rem;
   background: linear-gradient($ink, $ink) no-repeat left 0.35rem bottom 0.15rem / 0 1.5px;
@@ -81,7 +87,7 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 }
 .btns a:active, .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 6px rgba($ink, 0.12); }
 .btns a:not(.primary):hover { background: $ink; border-color: $ink; }
-@media (prefers-reduced-motion: reduce) { .btns a, .btn-primary, .navbar .navbar-nav .nav-link { transition: none; } .btns a:hover, .btn-primary:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .btns a, .btn-primary, .navbar .navbar-nav .nav-link { transition: none; } .navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: none; } .btns a:hover, .btn-primary:hover { transform: none; } }
 
 // ---------- cards (people, news, grants, resources) ----------
 .quarto-grid-item.card, .grant-card, .res-card {
