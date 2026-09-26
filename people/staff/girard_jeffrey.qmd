@@ -11,6 +11,8 @@ resources:
 - girard_cv.pdf
 pubs: primary
 pubs_first: true
+pubs_recent: 1
+pubs_max: 12
 links:
 - icon: link
   text: website

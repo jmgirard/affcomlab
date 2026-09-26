@@ -4,7 +4,8 @@
 #| warning: false
 #| message: false
 # Publications pulled from publications.bib for this person (matched on the `family` front-matter field),
-# newest first. With `pubs: primary`, only lab-led papers are listed, capped at `pubs_max` (default 8).
+# newest first. With `pubs: primary`, only lab-led papers are listed, capped at `pubs_max` (default 8);
+# `pubs_first: true` ranks first-authored papers first; `pubs_recent: N` keeps only in-press papers and the last N+1 years.
 m <- rmarkdown::metadata
 fam <- tolower(m$family %||% "")
 giv <- tolower(m$given %||% strsplit(trimws(m$title), " ")[[1]][1])   # given name: `given` field, else the first word of the title
@@ -20,6 +21,10 @@ if (nzchar(fam)) {
   yr <- function(e) { y <- strip(e$year); if (y == "in press") 9999 else suppressWarnings(as.numeric(y)) }
   keep <- vapply(seq_along(bib), function(i) any(vapply(bib[[i]]$author, is_me, logical(1))), logical(1))
   if (identical(m$pubs, "primary")) keep <- keep & vapply(seq_along(bib), function(i) identical(tolower(strip(bib[[i]]$primary)), "true"), logical(1))
+  if (!is.null(m$pubs_recent)) {   # pubs_recent: N keeps in-press papers and those from the last N+1 calendar years
+    cutoff <- as.numeric(format(Sys.Date(), "%Y")) - as.numeric(m$pubs_recent)
+    keep <- keep & vapply(seq_along(bib), function(i) { y <- yr(bib[[i]]); !is.na(y) && y >= cutoff }, logical(1))
+  }
   first <- function(i) isTRUE(is_me(bib[[i]]$author[[1]]))   # with pubs_first: true, first-authored papers come before the rest
   idx <- which(keep); idx <- idx[order(if (isTRUE(m$pubs_first)) -vapply(idx, first, logical(1)) else 0, -vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
   cap <- m$pubs_max %||% if (identical(m$pubs, "primary")) 8 else 100
