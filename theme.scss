@@ -136,7 +136,7 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 .opp-side .btns a { display: inline-block; padding: 9px 18px; border-radius: 999px; font-weight: 600; font-size: 0.98rem; border: 1.5px solid $ink; color: $ink; background: transparent; text-decoration: none; transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.2s, color 0.2s; }
 .opp-side .btns a.primary { background: $ink; color: #fff; }
 .opp-side .btns a:hover { transform: translateY(-1.5px); box-shadow: 0 6px 14px rgba($ink, 0.14); background: #2e2b27; border-color: #2e2b27; color: #fff; }
-@media (min-width: 820px) { .opp-card { grid-template-columns: 270px 1fr; } .opp-side { position: sticky; top: 1rem; align-self: start; } }
+@media (min-width: 820px) { .opp-card { grid-template-columns: 270px 1fr; } .opp-side { align-self: start; } }
 
 // ---------- publications page ----------
 .pub-card { border-color: $line !important; border-radius: 14px !important; }
