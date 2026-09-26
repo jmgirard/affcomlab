@@ -120,7 +120,9 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 .res-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: $muted; }
 .res-tag.stable { color: $col-mh; }
 .res-tag.experimental { color: $col-meth; }
-.res-tag.legacy { color: $muted; }
+.res-tag.legacy, .res-tag.archived { color: $muted; }
+.res-card:has(.res-tag.archived) { background: transparent; }
+.res-card:has(.res-tag.archived) h3 a { color: $muted; }
 
 // ---------- opportunities ----------
 .opp-grid { display: grid; grid-template-columns: 1fr; gap: 1.2rem; margin: 1.2rem 0 2.5rem; }
