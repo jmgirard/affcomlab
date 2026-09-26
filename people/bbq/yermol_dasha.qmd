@@ -1,26 +1,25 @@
 ---
-title: "Dasha Yermol"
-sortby: "Yermol, Dasha"
-subtitle: "PhD Student"
+title: Dasha Yermol
+sortby: Yermol, Dasha
+subtitle: PhD Student
+program: Brain, Behavior, and Quantitative Science
+family: Yermol
 image: yermol_dasha.png
+started: Fall 2023
+ended: Current
 toc: false
-started: "Fall 2023"
-ended: "Current"
-resources: 
-  - "yermol_cv.pdf"
-about:
-  id: person-profile
-  template: jolla
-  links:
-    - icon: file-earmark-text
-      text: vitae
-      href: ./people/staff/yermol_cv.pdf
-    - icon: mortarboard
-      text: scholar
-      href: https://scholar.google.com/citations?user=cuD2HvkAAAAJ
-    - icon: github
-      text: github
-      href: https://github.com/dayermol
+resources:
+- yermol_cv.pdf
+links:
+- icon: file-earmark-text
+  text: vitae
+  href: yermol_cv.pdf
+- icon: mortarboard
+  text: scholar
+  href: https://scholar.google.com/citations?user=cuD2HvkAAAAJ
+- icon: github
+  text: github
+  href: https://github.com/dayermol
 ---
 
 ```{=html}
@@ -34,8 +33,7 @@ about:
 </nav>
 ```
 
-:::{#person-profile}
-:::
+{{< include /people/_profile_header.qmd >}}
 
 ## Biography
 Dasha Yermol studies how emotion perception is influenced by individual differences (e.g., mental health and personality), the functions of affective synchrony between interacting dyads, and differences in emotion expression due to social factors (e.g., context, social roles).
@@ -46,8 +44,13 @@ Dasha is currently a PhD Student in the Brain, Behavior, and Quantitative Scienc
 
 ## Education
 
+::: {.timeline}
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
   PhD Student in Psychology (BBQ) | Current
 
 - [University of Wisconsin-Madison]{.fw-bold} | Madison, WI, USA<br />
   BS in Psychology | 2021
+:::
+
+
+{{< include /people/_profile_pubs.qmd >}}

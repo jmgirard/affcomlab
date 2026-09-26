@@ -1,14 +1,13 @@
 ---
-title: "Yuanyuan Yang"
-sortby: "Yang, Yuanyuan"
-subtitle: "PhD Student"
+title: Yuanyuan Yang
+sortby: Yang, Yuanyuan
+subtitle: PhD Student
+program: Clinical Psychological Science
+family: Yang
 image: yang_yuanyuan.webp
+started: Fall 2023
+ended: Current
 toc: false
-started: "Fall 2023"
-ended: "Current"
-about:
-  id: person-profile
-  template: jolla
 ---
 
 ```{=html}
@@ -22,8 +21,7 @@ about:
 </nav>
 ```
 
-:::{#person-profile}
-:::
+{{< include /people/_profile_header.qmd >}}
 
 ## Biography
 Yuanyuan is interested in exploring the structure of psychopathology by exploring the connections between symptoms and verbal and non-verbal behaviors (e.g., language processing, vocal, facial recognition). Further, Yuanyuan hopes to leverage these insights to enhance the treatment efficacy and accessibility.
@@ -35,6 +33,7 @@ Outside of lab, she takes care of bunch of plants and two cats (Pepper&Ronny). S
 
 ## Education
 
+::: {.timeline}
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
   PhD Student in Psychology (Clinical) | Current<br />
   MS in Psychology (Clinical) | 2025
@@ -44,3 +43,7 @@ Outside of lab, she takes care of bunch of plants and two cats (Pepper&Ronny). S
 
 - [SUNY University at Stony Brook]{.fw-bold} | Stony Brook, NY, USA<br />
   BS in Psychology, Applied Mathematics \& Statistics | 2021
+:::
+
+
+{{< include /people/_profile_pubs.qmd >}}

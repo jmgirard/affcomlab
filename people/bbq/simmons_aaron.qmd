@@ -1,14 +1,13 @@
 ---
-title: "Aaron Simmons"
-sortby: "Simmons, Aaron"
-subtitle: "PhD Student"
+title: Aaron Simmons
+sortby: Simmons, Aaron
+subtitle: PhD Student
+program: Brain, Behavior, and Quantitative Science
+family: Simmons
 image: simmons_aaron.webp
+started: Fall 2023
+ended: Current
 toc: false
-started: "Fall 2023"
-ended: "Current"
-about:
-  id: person-profile
-  template: jolla
 ---
 
 ```{=html}
@@ -22,8 +21,7 @@ about:
 </nav>
 ```
 
-:::{#person-profile}
-:::
+{{< include /people/_profile_header.qmd >}}
 
 ## Biography
 Aaron Matthew Simmons’s main research interests include Bayesian statistics and modeling, latent variable modeling, scale development, and how new modeling frameworks in general can be applied and leveraged to study a wide range of cognitive and behavioral phenomena. Further interests include the use and development of neuroscientific methods, especially EEG/ERP and eye-tracking methods, to study cognition and behavior. 
@@ -32,8 +30,13 @@ He completed his undergraduate Bachelor of Science degree at the University of C
 
 ## Education
 
+::: {.timeline}
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
   PhD Student in Psychology (BBQ) | Current
 
 - [University of California: Davis]{.fw-bold} | Davis, CA, USA<br />
   BS in Psychology (Mathematics Emphasis) | 2015
+:::
+
+
+{{< include /people/_profile_pubs.qmd >}}

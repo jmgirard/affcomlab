@@ -1,0 +1,38 @@
+```{r profile-pubs}
+#| echo: false
+#| results: asis
+#| warning: false
+#| message: false
+# Publications pulled from publications.bib for this person (matched on the `family` front-matter field),
+# newest first. With `pubs: primary`, only lab-led papers are listed, capped at `pubs_max` (default 8).
+m <- rmarkdown::metadata
+fam <- tolower(m$family %||% "")
+if (nzchar(fam)) {
+  suppressPackageStartupMessages(library(RefManageR))
+  bib <- ReadBib("../../publications.bib", check = FALSE)
+  strip <- function(x) if (is.null(x) || !length(x)) "" else gsub("[{}]", "", as.character(x[[1]]))
+  fams <- function(e) tolower(vapply(e$author, function(a) paste(a$family, collapse = " "), character(1)))
+  yr <- function(e) { y <- strip(e$year); if (y == "in press") 9999 else suppressWarnings(as.numeric(y)) }
+  keep <- vapply(seq_along(bib), function(i) fam %in% fams(bib[[i]]), logical(1))
+  if (identical(m$pubs, "primary")) keep <- keep & vapply(seq_along(bib), function(i) identical(tolower(strip(bib[[i]]$primary)), "true"), logical(1))
+  idx <- which(keep); idx <- idx[order(-vapply(idx, function(i) yr(bib[[i]]), numeric(1)))]
+  cap <- m$pubs_max %||% if (identical(m$pubs, "primary")) 8 else 100
+  idx <- head(idx, cap)
+  if (length(idx)) {
+    esc <- htmltools::htmlEscape
+    items <- vapply(idx, function(i) {
+      e <- bib[[i]]
+      title <- strip(e$title); venue <- strip(e$journal %||% e$booktitle %||% e$publisher); year <- strip(e$year)
+      doi <- strip(e$doi); pre <- gsub("\\\\_", "_", strip(e$preprint)); url <- strip(e$url)
+      link <- if (nzchar(doi)) paste0("https://doi.org/", doi) else if (nzchar(pre)) pre else url
+      au <- vapply(e$author, function(a) paste(a$family, collapse = " "), character(1))
+      au <- if (length(au) > 6) paste0(paste(au[1:5], collapse = ", "), ", … & ", au[length(au)]) else if (length(au) > 1) paste0(paste(au[-length(au)], collapse = ", "), " & ", au[length(au)]) else au
+      star <- if (identical(tolower(strip(e$primary)), "true")) '<span class="star" title="Led by our lab">★</span>' else ""
+      t <- if (nzchar(link)) sprintf('<a href="%s" target="_blank" rel="noopener">%s</a>', esc(link), esc(title)) else esc(title)
+      sprintf('<li>%s%s<span class="meta">%s · %s · %s</span></li>', star, t, esc(au), esc(venue), esc(year))
+    }, character(1))
+    heading <- if (identical(m$pubs, "primary")) "Selected Publications" else "Publications with the Lab"
+    cat(sprintf('\n\n## %s\n\n<ul class="mini-pubs">%s</ul>\n<p class="mini-pubs-more"><a href="../../publications.html">See all lab publications</a></p>\n', heading, paste(items, collapse = "")))
+  }
+}
+```

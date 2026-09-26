@@ -1,0 +1,23 @@
+```{r profile-header}
+#| echo: false
+#| results: asis
+# Profile header built from front matter: photo, name, role line, and link pills.
+m <- rmarkdown::metadata
+esc <- function(x) htmltools::htmlEscape(as.character(x))
+role <- paste(Filter(nzchar, c(m$subtitle %||% "", m$program %||% "")), collapse = " · ")
+when <- if (!is.null(m$started)) {
+  if (is.null(m$ended) || identical(m$ended, "Current")) paste("since", m$started) else paste(m$started, "to", m$ended)
+} else ""
+links <- vapply(m$links %||% list(), function(l) sprintf(
+  '<a class="plink" href="%s"%s><i class="bi bi-%s"></i>%s</a>',
+  esc(l$href), if (grepl("^https?://", l$href)) ' target="_blank" rel="noopener"' else "", esc(l$icon), esc(l$text)
+), character(1))
+cat(sprintf(
+'<style>#title-block-header { display: none; }</style>
+
+<header class="profile-head"><img src="%s" alt=""><div class="profile-id"><h1>%s</h1><p class="role">%s%s</p><div class="plinks">%s</div></div></header>
+',
+  esc(m$image), esc(m$title), esc(role), if (nzchar(when)) paste0('<span class="when"> · ', esc(when), '</span>') else "",
+  paste(links, collapse = "")
+))
+```

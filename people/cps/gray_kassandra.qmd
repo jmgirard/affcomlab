@@ -1,20 +1,19 @@
 ---
-title: "Kassandra Gray"
-sortby: "Gray, Kassandra"
-subtitle: "PhD Student"
+title: Kassandra Gray
+sortby: Gray, Kassandra
+subtitle: PhD Student
+program: Clinical Psychological Science
+family: Gray
 image: gray_kassandra.jpg
+started: Fall 2022
+ended: Current
 toc: false
-resources: 
-  - "gray_cv.pdf"
-started: "Fall 2022"
-ended: "Current"
-about:
-  id: person-profile
-  template: jolla
-  links:
-    - icon: file-earmark-text
-      text: vitae
-      href: ./people/staff/gray_cv.pdf
+resources:
+- gray_cv.pdf
+links:
+- icon: file-earmark-text
+  text: vitae
+  href: gray_cv.pdf
 ---
 
 ```{=html}
@@ -28,8 +27,7 @@ about:
 </nav>
 ```
 
-:::{#person-profile}
-:::
+{{< include /people/_profile_header.qmd >}}
 
 ## Biography
 Kassandra Gray's research interests include interpersonal interactions, emotional expression and communication, individual differences, personality, anxiety, and depression. She is interested in how emotional expression and communication manifest in the therapeutic relationship and the influential role of individual differences (e.g., personality, anxiety, and depression).   
@@ -38,9 +36,14 @@ She completed her undergraduate Bachelor of Science degree at Southern Nazarene 
 
 ## Education
 
+::: {.timeline}
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
   PhD Student in Psychology (Clinical) | Current<br />
   MS in Psychology (Clinical) | 2024
 
 - [Southern Nazarene University]{.fw-bold} | Bethany, OK, USA<br />
   BS in Psychology | 2018–2022
+:::
+
+
+{{< include /people/_profile_pubs.qmd >}}

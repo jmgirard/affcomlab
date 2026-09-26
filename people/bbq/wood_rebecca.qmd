@@ -1,26 +1,25 @@
 ---
-title: "Rebecca Wood"
-sortby: "Wood, Rebecca"
-subtitle: "PhD Student"
+title: Rebecca Wood
+sortby: Wood, Rebecca
+subtitle: PhD Student
+program: Brain, Behavior, and Quantitative Science
+family: Wood
 image: wood_rebecca.webp
+started: Spring 2026
+ended: Current
 toc: false
-resources: 
-  - "wood_cv.pdf"
-started: "Spring 2026"
-ended: "Current"
-about:
-  id: person-profile
-  template: jolla
-  links:
-    - icon: file-earmark-text
-      text: vitae
-      href: ./people/staff/wood_cv.pdf
-    - icon: mortarboard
-      text: scholar
-      href: https://scholar.google.com/citations?user=ne7rjD4AAAAJ
-    - icon: github
-      text: github
-      href: https://www.github.com/rebwood9
+resources:
+- wood_cv.pdf
+links:
+- icon: file-earmark-text
+  text: vitae
+  href: wood_cv.pdf
+- icon: mortarboard
+  text: scholar
+  href: https://scholar.google.com/citations?user=ne7rjD4AAAAJ
+- icon: github
+  text: github
+  href: https://www.github.com/rebwood9
 ---
 
 ```{=html}
@@ -34,8 +33,7 @@ about:
 </nav>
 ```
 
-:::{#person-profile}
-:::
+{{< include /people/_profile_header.qmd >}}
 
 ## Biography
 Rebecca Wood’s research interests broadly focus on the use of quantitative methods to study individual and group differences in psychological and behavioral outcomes. Her work is motivated by applied questions from clinical health psychology and is complemented by current work in behavioral economics using legacy customer purchasing data.
@@ -48,6 +46,7 @@ Rebecca is currently a PhD student in the Brain, Behavior, and Quantitative Scie
 
 ## Education
 
+::: {.timeline}
 - [University of Kansas]{.fw-bold} | Lawrence, KS, USA<br />
   PhD Student in Psychology (BBQ) | Current
   
@@ -57,3 +56,7 @@ Rebecca is currently a PhD student in the Brain, Behavior, and Quantitative Scie
 
 - [St. Olaf College]{.fw-bold} | Northfield, MN, USA<br />
   BA in Psychology | 2017
+:::
+
+
+{{< include /people/_profile_pubs.qmd >}}
