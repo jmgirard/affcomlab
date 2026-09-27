@@ -7,11 +7,11 @@
     <linearGradient id="j4" gradientUnits="userSpaceOnUse" x1="8.01" y1="32.84" x2="23.79" y2="9.45"><stop offset="0" stop-color="#828482"/><stop offset="0.5" stop-color="#3b6fd6"/><stop offset="1" stop-color="#8a6888"/></linearGradient>
   </defs>
   <g class="arcs" fill="none" stroke-width="9">
-    <path d="M25.79 8.82A24 24 0 0 1 49.55 15.63" stroke="#d9613b"/>
-    <path d="M52.13 18.93A24 24 0 0 1 52.99 43.64" stroke="#17a398"/>
-    <path d="M50.65 47.10A24 24 0 0 1 27.42 55.56" stroke="#8a4fa8"/>
-    <path d="M23.40 54.41A24 24 0 0 1 8.18 34.92" stroke="#c99a2e"/>
-    <path d="M8.03 30.74A24 24 0 0 1 21.86 10.25" stroke="#3b6fd6"/>
+    <path d="M23.79 9.45A24 24 0 0 1 50.91 17.22" stroke="#d9613b" pathLength="100" stroke-dasharray="77.78 100" stroke-dashoffset="-11.11"/>
+    <path d="M50.91 17.22A24 24 0 0 1 51.90 45.42" stroke="#17a398" pathLength="100" stroke-dasharray="77.78 100" stroke-dashoffset="-11.11"/>
+    <path d="M51.90 45.42A24 24 0 0 1 25.38 55.07" stroke="#8a4fa8" pathLength="100" stroke-dasharray="77.78 100" stroke-dashoffset="-11.11"/>
+    <path d="M25.38 55.07A24 24 0 0 1 8.01 32.84" stroke="#c99a2e" pathLength="100" stroke-dasharray="77.78 100" stroke-dashoffset="-11.11"/>
+    <path d="M8.01 32.84A24 24 0 0 1 23.79 9.45" stroke="#3b6fd6" pathLength="100" stroke-dasharray="77.78 100" stroke-dashoffset="-11.11"/>
   </g>
   <g class="whole" fill="none" stroke-width="9" opacity="0">
     <path d="M23.56 9.53A24 24 0 0 1 51.07 17.42" stroke="url(#j0)"/>

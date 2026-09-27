@@ -53,12 +53,15 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 
 // ---------- navbar ----------
 .navbar { border-bottom: 1px solid $line; padding-top: 0.8rem; padding-bottom: 0.8rem; }
-.navbar-brand .navbar-title { font-family: $headings-font-family; font-weight: 600; font-size: 1.25rem; transition: letter-spacing 0.3s ease; }
-.navbar-brand-container:hover .navbar-title { letter-spacing: 0.02em; }   // quarto splits the brand into a logo link and a title link, so hover on the container
+.navbar-brand .navbar-title { font-family: $headings-font-family; font-weight: 600; font-size: 1.25rem; }
 .navbar-brand-logo { position: relative; }
 .navbar-brand .navbar-logo { max-height: 21px; width: 21px; height: 21px; margin-right: 6px; }   // the ring mark
-// on hover the gaps close and the colours flow into one another: five separate pieces become one blended ring (the logo is inlined as svg by _navbar-logo.html so its two layers can crossfade)
-.navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: opacity 0.4s ease; }
+// on hover the arcs grow from both ends until they meet, the seams blend into one colour flow, and the mark scales up a little; the logo is inlined as svg by _navbar-logo.html so the arcs can move (quarto splits the brand into a logo link and a title link, so hover on the container)
+.navbar-brand-logo svg { overflow: visible; transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.navbar-brand-logo svg .arcs path { transition: stroke-dasharray 0.4s ease-in-out, stroke-dashoffset 0.4s ease-in-out; }
+.navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: opacity 0.3s ease 0.2s; }
+.navbar-brand-container:hover .navbar-brand-logo svg { transform: scale(1.18); }
+.navbar-brand-container:hover .navbar-brand-logo svg .arcs path { stroke-dasharray: 100 100; stroke-dashoffset: 0; }
 .navbar-brand-container:hover .navbar-brand-logo svg .arcs { opacity: 0; }
 .navbar-brand-container:hover .navbar-brand-logo svg .whole { opacity: 1; }
 .navbar .navbar-nav .nav-link {
@@ -87,7 +90,7 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 }
 .btns a:active, .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 6px rgba($ink, 0.12); }
 .btns a:not(.primary):hover { background: $ink; border-color: $ink; }
-@media (prefers-reduced-motion: reduce) { .btns a, .btn-primary, .navbar .navbar-nav .nav-link { transition: none; } .navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: none; } .btns a:hover, .btn-primary:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .btns a, .btn-primary, .navbar .navbar-nav .nav-link { transition: none; } .navbar-brand-logo svg, .navbar-brand-logo svg .arcs path, .navbar-brand-logo svg .arcs, .navbar-brand-logo svg .whole { transition: none; } .navbar-brand-container:hover .navbar-brand-logo svg { transform: none; } .btns a:hover, .btn-primary:hover { transform: none; } }
 
 // ---------- cards (people, news, grants, resources) ----------
 .quarto-grid-item.card, .grant-card, .res-card {
