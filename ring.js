@@ -104,20 +104,21 @@ function drawFlag() {   // the current question's dot grows into a numbered badg
 
 
 // ---------- interaction ----------
-let hoverKey = null, hovDot = null, hovSub = null, hovArea = null;   // question paper, hovered paper, hovered subarea, hovered area
+let hoverKey = null, hovDot = null, hovSub = null, hovArea = null, pin = null;   // question paper, hovered paper, hovered subarea, hovered area, pinned label ({ sub } or { area })
 const expanded = () => ring.classList.contains('expanded');   // the expanded view shows the whole structure: no example highlight, all chords at half strength
 const hotEls = [...svg.querySelectorAll('.chord, .dot')].map(el => ({ el, key: el.dataset.key, subs: el.dataset.subs.split(' ') }));
 const subEls = [...svg.querySelectorAll('.sub-label')], areaEls = [...svg.querySelectorAll('.area-label')];
 let lastState = '';
 function render() {   // an active hover always wins; the question highlight only applies when nothing is hovered
-  const x = expanded(), state = `${hovDot}|${hovSub}|${hovArea}|${hoverKey}|${qNum}|${x}`; if (state === lastState) return; lastState = state;
+  const x = expanded(), state = `${hovDot}|${hovSub}|${hovArea}|${hoverKey}|${qNum}|${x}|${pin && (pin.sub || pin.area)}`; if (state === lastState) return; lastState = state;
   const any = hovDot || hovSub || hovArea, k = hovDot || (hovSub || hovArea || x ? null : hoverKey);
   const subs = hovSub ? [hovSub] : hovArea ? Object.keys(TAX[hovArea].subs) : [];   // a hovered area lights both of its subareas
   svg.classList.toggle('dim', !!any);
   svg.classList.toggle('soft', !any && !!hoverKey && !x);
   for (const h of hotEls) h.el.classList.toggle('hot', h.key === k || h.subs.some(s => subs.includes(s)));
   for (const el of subEls) el.classList.toggle('hot', subs.includes(el.dataset.sub));
-  for (const el of areaEls) el.classList.toggle('hot', el.dataset.area === hovArea);
+  for (const el of areaEls) { el.classList.toggle('hot', el.dataset.area === hovArea); el.classList.toggle('pinned', !!pin && pin.area === el.dataset.area); }
+  for (const el of subEls) el.classList.toggle('pinned', !!pin && pin.sub === el.dataset.sub);   // the underline marks the pinned label
   drawFlag();
 }
 
@@ -157,7 +158,6 @@ svg.addEventListener('pointerenter', () => stop());   // the example questions h
 svg.addEventListener('pointerleave', () => { clearHover(); render(); start(); });
 // a click on a label pins its highlight and card, so the pointer can wander (and so touch screens, which never hover, get the same view);
 // clicking the same label again, the background, or pressing Escape releases it
-let pin = null;   // { sub } or { area }
 function clearHover() {   // back to the pinned label if there is one, else to nothing
   tip.style.opacity = 0; tip.dataset.key = ''; hovDot = null;
   if (pin && pin.sub) { hovSub = pin.sub; hovArea = null; showSubTip(pin.sub); }
