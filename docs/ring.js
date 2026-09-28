@@ -128,6 +128,11 @@ function showTip(p) {   // paper card in the top-left corner, like the subarea c
   tip.style.borderTopColor = col; tip.style.opacity = 1;
 }
 
+function distPx(ev, key) {   // screen distance from the pointer to one dot
+  const m = svg.getScreenCTM(); if (!m) return Infinity;
+  const [x, y] = dotXY[key], p = new DOMPoint(x, y).matrixTransform(m);
+  return Math.hypot(p.x - ev.clientX, p.y - ev.clientY);
+}
 function nearestDot(ev, reach = 16) {   // nearest dot to the pointer within `reach` screen pixels; the browser's own screen matrix handles letterboxing, zoom, and any transform
   const m = svg.getScreenCTM(); if (!m) return null;
   const pt = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(m.inverse()), px = pt.x, py = pt.y;
@@ -143,7 +148,7 @@ svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area sta
   else if (al) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovArea !== al.dataset.area) showAreaTip(al.dataset.area); hovDot = null; hovSub = null; hovArea = al.dataset.area; svg.style.cursor = 'default'; }
   else {   // a label lets go as soon as the pointer leaves it; a dot holds on while the pointer is still near it, so neighbours do not flicker, and lets go beyond 40px
     svg.style.cursor = 'default';
-    const release = hovSub || hovArea || (hovDot && nearestDot(ev, 40) !== hovDot);
+    const release = hovSub || hovArea || (hovDot && distPx(ev, hovDot) > 40);
     if (release) { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; }
   }
   render();
