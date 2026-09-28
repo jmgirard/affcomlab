@@ -128,10 +128,10 @@ function showTip(p) {   // paper card in the top-left corner, like the subarea c
   tip.style.borderTopColor = col; tip.style.opacity = 1;
 }
 
-function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixels; the browser's own screen matrix handles letterboxing, zoom, and any transform
+function nearestDot(ev, reach = 16) {   // nearest dot to the pointer within `reach` screen pixels; the browser's own screen matrix handles letterboxing, zoom, and any transform
   const m = svg.getScreenCTM(); if (!m) return null;
   const pt = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(m.inverse()), px = pt.x, py = pt.y;
-  let best = null, bd = 16 / m.a;
+  let best = null, bd = reach / m.a;
   for (const key in dotXY) { const [x, y] = dotXY[key], d = Math.hypot(x - px, y - py); if (d < bd) { bd = d; best = key; } }
   return best;
 }
@@ -141,7 +141,11 @@ svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area sta
   if (k) { showTip(byKey[k]); stip.style.opacity = 0; hovDot = k; hovSub = null; hovArea = null; svg.style.cursor = 'pointer'; }
   else if (h) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovSub !== h.dataset.sub) showSubTip(h.dataset.sub); hovDot = null; hovSub = h.dataset.sub; hovArea = null; svg.style.cursor = 'default'; }
   else if (al) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovArea !== al.dataset.area) showAreaTip(al.dataset.area); hovDot = null; hovSub = null; hovArea = al.dataset.area; svg.style.cursor = 'default'; }
-  else { svg.style.cursor = 'default'; }   // between targets the last hover stays; only leaving the ring hands focus back to the example question
+  else {   // a label lets go as soon as the pointer leaves it; a dot holds on while the pointer is still near it, so neighbours do not flicker, and lets go beyond 40px
+    svg.style.cursor = 'default';
+    const release = hovSub || hovArea || (hovDot && nearestDot(ev, 40) !== hovDot);
+    if (release) { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; }
+  }
   render();
 });
 svg.addEventListener('pointerenter', () => stop());   // the example questions hold still while the pointer is over the ring
