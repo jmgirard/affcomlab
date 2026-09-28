@@ -149,13 +149,29 @@ svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area sta
   else {   // a label lets go as soon as the pointer leaves it; a dot holds on while the pointer is still near it, so neighbours do not flicker, and lets go beyond 40px
     svg.style.cursor = 'default';
     const release = hovSub || hovArea || (hovDot && distPx(ev, hovDot) > 40);
-    if (release) { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; }
+    if (release) clearHover();
   }
   render();
 });
 svg.addEventListener('pointerenter', () => stop());   // the example questions hold still while the pointer is over the ring
-svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; render(); start(); });
-svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) location.href = linkUrl(byKey[k]); });
+svg.addEventListener('pointerleave', () => { clearHover(); render(); start(); });
+// a click on a label pins its highlight and card, so the pointer can wander (and so touch screens, which never hover, get the same view);
+// clicking the same label again, the background, or pressing Escape releases it
+let pin = null;   // { sub } or { area }
+function clearHover() {   // back to the pinned label if there is one, else to nothing
+  tip.style.opacity = 0; tip.dataset.key = ''; hovDot = null;
+  if (pin && pin.sub) { hovSub = pin.sub; hovArea = null; showSubTip(pin.sub); }
+  else if (pin && pin.area) { hovArea = pin.area; hovSub = null; showAreaTip(pin.area); }
+  else { stip.style.opacity = 0; hovSub = null; hovArea = null; }
+}
+function setPin(next) { pin = next; clearHover(); render(); }
+svg.addEventListener('click', ev => {
+  const k = nearestDot(ev); if (k) { location.href = linkUrl(byKey[k]); return; }
+  const h = ev.target.closest('.hit'), al = ev.target.closest('.area-label');
+  if (h) setPin(pin && pin.sub === h.dataset.sub ? null : { sub: h.dataset.sub });
+  else if (al) setPin(pin && pin.area === al.dataset.area ? null : { area: al.dataset.area });
+  else if (pin) setPin(null);
+});
 
 // ---------- rotating questions ----------
 const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked'), xbtn = document.getElementById('expand');
@@ -182,7 +198,7 @@ if (QUESTIONS.length) showQ(0);
 const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
 function setExpanded(on) {
   ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
-  if (on) stop(); else { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; start(); }   // closing clears any hover so the example highlight returns at once
+  if (on) stop(); else { clearHover(); start(); }   // closing clears any hover so the example highlight (or the pinned label) returns at once
   render();
   xbtn.innerHTML = on ? ICON_CLOSE : ICON_EXPAND; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
   if (on && ring.requestFullscreen) ring.requestFullscreen().catch(() => {});
@@ -191,6 +207,7 @@ function setExpanded(on) {
 xbtn.onclick = () => setExpanded(!expanded());
 document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && expanded()) setExpanded(false); });   // Esc in fullscreen leaves through the browser
 document.addEventListener('keydown', ev => {
+  if (ev.key === 'Escape' && pin) { setPin(null); return; }
   if (!expanded()) return;
   if (ev.key === 'Escape') setExpanded(false);
 });
