@@ -88,7 +88,7 @@ const gFlag = S('g', { class: 'flag' }, svg);
 const flagC = S('circle', { r: 12, stroke: '#faf7f2', 'stroke-width': 2 }, gFlag);
 const flagT = S('text', { 'text-anchor': 'middle', 'dominant-baseline': 'middle', fill: '#fff', style: 'font-family: Fraunces, serif; font-weight: 600; font-size: 12.5px' }, gFlag);
 function drawFlag() {   // the current question's dot grows into a numbered badge
-  const p = byKey[hoverKey], on = p && !hovDot && !hovSub;
+  const p = byKey[hoverKey], on = p && !hovDot && !hovSub && !expanded();
   gFlag.style.display = on ? '' : 'none'; if (!on) return;
   const [bx, by] = dotXY[p.key];
   flagC.setAttribute('cx', bx); flagC.setAttribute('cy', by); flagC.setAttribute('fill', colOf(p.s1));
@@ -99,14 +99,15 @@ function drawFlag() {   // the current question's dot grows into a numbered badg
 
 // ---------- interaction ----------
 let hoverKey = null, hovDot = null, hovSub = null;   // question paper, hovered paper, hovered subarea
+const expanded = () => ring.classList.contains('expanded');   // the expanded view shows the whole structure: no example highlight, all chords at half strength
 const hotEls = [...svg.querySelectorAll('.chord, .dot')].map(el => ({ el, key: el.dataset.key, subs: el.dataset.subs.split(' ') }));
 const subEls = [...svg.querySelectorAll('.sub-label')];
 let lastState = '';
 function render() {   // an active hover always wins; the question highlight only applies when nothing is hovered
-  const state = `${hovDot}|${hovSub}|${hoverKey}|${qNum}`; if (state === lastState) return; lastState = state;
-  const k = hovDot || (hovSub ? null : hoverKey), sub = hovSub;
+  const x = expanded(), state = `${hovDot}|${hovSub}|${hoverKey}|${qNum}|${x}`; if (state === lastState) return; lastState = state;
+  const k = hovDot || (hovSub || x ? null : hoverKey), sub = hovSub;
   svg.classList.toggle('dim', !!(hovDot || hovSub));
-  svg.classList.toggle('soft', !hovDot && !hovSub && !!hoverKey);
+  svg.classList.toggle('soft', !hovDot && !hovSub && !!hoverKey && !x);
   for (const h of hotEls) h.el.classList.toggle('hot', h.key === k || (sub !== null && h.subs.includes(sub)));
   for (const el of subEls) el.classList.toggle('hot', el.dataset.sub === sub);
   drawFlag();
@@ -139,7 +140,7 @@ svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.
 svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) location.href = linkUrl(byKey[k]); });
 
 // ---------- rotating questions ----------
-const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked'), xcap = document.getElementById('xcap'), xbtn = document.getElementById('expand');
+const qwrap = document.getElementById('qwrap'), asked = document.getElementById('asked'), xbtn = document.getElementById('expand');
 const qel = document.createElement('div'); qel.className = 'q'; qwrap.appendChild(qel);
 let qi = 0, timer = null, swap = null, qNum = 1;
 function showQ(i) {
@@ -148,23 +149,22 @@ function showQ(i) {
   swap = setTimeout(() => { qel.style.setProperty('--q-col', col); qel.innerHTML = '<span>' + html + '</span>'; qel.classList.add('show'); }, 380);
   asked.innerHTML = p ? `<span class="dot" style="background:${col}"></span>Asked in <a href="${esc(linkUrl(p))}">${esc(p.title)}</a> (${esc(p.venue)}, ${esc(p.year)})` : '';
   document.getElementById('qn').innerHTML = 'Example<br>question'; const bd = document.getElementById('qbadge'); bd.textContent = i + 1; bd.style.background = col; qNum = i + 1;
-  xcap.innerHTML = `<span class="xbadge" style="background:${col}">${i + 1}</span><span class="xq" style="--q-col:${col}">${html}</span><span class="xasked">${asked.innerHTML}</span>`;   // caption for the expanded view
   hoverKey = key; render();
 }
 const go = d => { qi = (qi + d + QUESTIONS.length) % QUESTIONS.length; showQ(qi); };
 let auto = !reduced && QUESTIONS.length > 1;
-const start = () => { if (auto && !timer) timer = setInterval(() => go(1), 6000); }, stop = () => { clearInterval(timer); timer = null; };
+const start = () => { if (auto && !timer && !expanded()) timer = setInterval(() => go(1), 6000); }, stop = () => { clearInterval(timer); timer = null; };   // the rotation also holds while the ring is expanded
 document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());   // no work while the tab is hidden
 const step = d => { go(d); auto = false; stop(); };   // a manual step ends the automatic rotation
-for (const [id, d] of [['next', 1], ['prev', -1], ['xnext', 1], ['xprev', -1]]) document.getElementById(id).onclick = () => step(d);
+for (const [id, d] of [['next', 1], ['prev', -1]]) document.getElementById(id).onclick = () => step(d);
 start();
 if (QUESTIONS.length) showQ(0);
 
 // ---------- expanded view: the ring fills the window (true fullscreen where the browser allows it) ----------
 const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
-const expanded = () => ring.classList.contains('expanded');
 function setExpanded(on) {
   ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
+  if (on) stop(); else start(); render();
   xbtn.innerHTML = on ? ICON_CLOSE : ICON_EXPAND; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
   if (on && ring.requestFullscreen) ring.requestFullscreen().catch(() => {});
   else if (!on && document.fullscreenElement === ring) document.exitFullscreen().catch(() => {});
@@ -174,7 +174,5 @@ document.addEventListener('fullscreenchange', () => { if (!document.fullscreenEl
 document.addEventListener('keydown', ev => {
   if (!expanded()) return;
   if (ev.key === 'Escape') setExpanded(false);
-  else if (ev.key === 'ArrowRight') step(1);
-  else if (ev.key === 'ArrowLeft') step(-1);
 });
 })();
