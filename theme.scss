@@ -150,6 +150,8 @@ h1, h2, h3, .h1, .h2, .h3 { letter-spacing: -0.01em; }
 @media (min-width: 820px) { .opp-card { grid-template-columns: 270px 1fr; } .opp-side { align-self: start; } }
 
 // ---------- publications page ----------
+// research framework figure (inline svg from scripts/build_framework.py)
+svg.framework { display: block; width: 100%; height: auto; max-width: 1000px; margin: 0.5rem auto 2rem; }
 .pub-card { border-color: $line !important; border-radius: 14px !important; scroll-margin-top: 96px; }   // clears the fixed navbar when a link lands on a card
 .pub-card:target { border-color: $ink !important; animation: pub-arrive 2.5s ease-out; }
 @keyframes pub-arrive { 0% { background-color: $paper-2; box-shadow: 0 0 0 4px rgba(28, 26, 23, 0.12); } 100% { background-color: transparent; box-shadow: 0 0 0 4px rgba(28, 26, 23, 0); } }

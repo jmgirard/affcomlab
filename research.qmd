@@ -15,15 +15,15 @@ toc: false
 
 ## Research Framework
 
-![](./img/framework.png){fig-alt="Diagram of the lab research framework linking behavior, measurement, and mental health"}
+{{< include _framework.qmd >}}
 
-### Substantive Pillars
+### Substantive Areas
 
-The substantive focus of our work is on how humans communicate important affective and interpersonal information to one another. The four pillars of this work are on structure, context, dynamics, and functionality. In studying **structure**, we investigate the production and perception of visual behaviors (e.g., facial expressions, gestures, and body motion), vocal behaviors (e.g., pitch, loudness, and timbre), and verbal behaviors (e.g., syntax, semantics, and discourse). In studying **context**, we investigate the influence of cultural, relational, and situational factors. In studying **dynamics**, we investigate change over time, regulation, and how processes and individuals influence one another. Finally, in studying **functionality**, we investigate how communication interfaces with health, clinical assessment, and treatment.
+Our substantive work asks how people communicate emotion and relate to one another, and what this means for mental health. It spans three areas. In studying **communicative behavior**, we investigate verbal behavior (syntax, semantics, and discourse) and nonverbal behavior (facial expression, vocal behavior, and gesture and body motion). In studying **social interaction**, we investigate interpersonal dynamics (change over time, regulation, and how people influence one another) and social perception (how people read one another, and how cultural, relational, and situational context shapes what they see). In studying **mental health**, we investigate clinical assessment (symptoms, diagnosis, and flourishing) and clinical mechanisms (treatment process, outcomes, and health behavior).
 
 ### Methodological Foundation
 
-Supporting these pillars is a wide foundation of interdisciplinary methodology. The three main aspects of this foundation are statistics, computing, and open science. The **statistical** aspects largely focus on Bayesian estimation, multilevel (mixed-effects) modeling, and measurement validation. The **computational** aspects largely focus on data science (data wrangling and visualization), behavior sensing (computer vision, signal processing, and natural language processing), and artificial intelligence (machine learning and large language models). Finally, the **open science** aspects largely focus on research software, research databases, and educational resources.
+Supporting these areas is a wide foundation of interdisciplinary methods. **Research methodology** covers statistical modeling (Bayesian estimation, multilevel modeling, and simulation) and research practice (measure validation, reproducibility, and tutorials). **Computational tools** cover artificial intelligence (behavior sensing through computer vision, signal processing, and natural language processing; machine learning; and large language models) and open resources (research software, research databases, and education resources).
 
 ## Research Funding
 

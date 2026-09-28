@@ -1,0 +1,106 @@
+```{=html}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 716" class="framework" role="img" aria-label="Research framework drawn as a temple: a pediment with the title, six columns for the six subareas grouped under three substantive areas, and two foundation steps for research methodology and computational tools">
+<style>
+  .framework .eyebrow { font: 600 12px "Source Sans 3", sans-serif; letter-spacing: .12em; }
+  .framework .title { font: 500 30px Fraunces, Georgia, serif; letter-spacing: -.01em; }
+  .framework .area { font: 700 12.5px "Source Sans 3", sans-serif; letter-spacing: .1em; }
+  .framework .sub { font: 600 16.5px Fraunces, Georgia, serif; }
+  .framework .sub2 { font: 600 16px Fraunces, Georgia, serif; }
+  .framework .topic, .framework .topic2 { font: 400 14px "Source Sans 3", sans-serif; }
+</style>
+<path d="M150 26 H850 L960 126 H40 Z" fill="#eae4d9" stroke="#d9d1c4"/>
+<path d="M184.4 51.8A24.8 24.8 0 0 1 206.7 58.2" stroke="#d9613b" stroke-width="9.3" fill="none"/>
+<path d="M210.9 63.6A24.8 24.8 0 0 1 211.7 86.8" stroke="#17a398" stroke-width="9.3" fill="none"/>
+<path d="M207.9 92.6A24.8 24.8 0 0 1 186.1 100.5" stroke="#8a4fa8" stroke-width="9.3" fill="none"/>
+<path d="M179.4 98.6A24.8 24.8 0 0 1 165.1 80.3" stroke="#c99a2e" stroke-width="9.3" fill="none"/>
+<path d="M164.9 73.4A24.8 24.8 0 0 1 177.9 54.1" stroke="#3b6fd6" stroke-width="9.3" fill="none"/>
+<text x="246.5" y="63.0" class="eyebrow" text-anchor="start" fill="#6d675f">RESEARCH FRAMEWORK</text>
+<text x="246.5" y="97.0" class="title" text-anchor="start" fill="#1c1a17">Affective and Interpersonal Communication</text>
+<rect x="50" y="140" width="292" height="30" fill="#d9613b"/>
+<text x="196.0" y="160.0" class="area" text-anchor="middle" fill="#fff">COMMUNICATIVE BEHAVIOR</text>
+<rect x="50" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="50" y="184" width="140" height="7" fill="#d9613b"/>
+<rect x="50" y="467" width="140" height="7" fill="#d9613b"/>
+<text x="120.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Verbal</text>
+<text x="120.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Behavior</text>
+<line x1="68" y1="262" x2="172" y2="262" stroke="#e2dbd0"/>
+<text x="120.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Syntax</text>
+<line x1="94" y1="328" x2="146" y2="328" stroke="#e2dbd0"/>
+<text x="120.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Semantics</text>
+<line x1="94" y1="390" x2="146" y2="390" stroke="#e2dbd0"/>
+<text x="120.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Discourse</text>
+<rect x="202" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="202" y="184" width="140" height="7" fill="#d9613b"/>
+<rect x="202" y="467" width="140" height="7" fill="#d9613b"/>
+<text x="272.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Nonverbal</text>
+<text x="272.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Behavior</text>
+<line x1="220" y1="262" x2="324" y2="262" stroke="#e2dbd0"/>
+<text x="272.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Facial expression</text>
+<line x1="246" y1="328" x2="298" y2="328" stroke="#e2dbd0"/>
+<text x="272.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Vocal behavior</text>
+<line x1="246" y1="390" x2="298" y2="390" stroke="#e2dbd0"/>
+<text x="272.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Gesture and motion</text>
+<rect x="354" y="140" width="292" height="30" fill="#8a4fa8"/>
+<text x="500.0" y="160.0" class="area" text-anchor="middle" fill="#fff">SOCIAL INTERACTION</text>
+<rect x="354" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="354" y="184" width="140" height="7" fill="#8a4fa8"/>
+<rect x="354" y="467" width="140" height="7" fill="#8a4fa8"/>
+<text x="424.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Interpersonal</text>
+<text x="424.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Dynamics</text>
+<line x1="372" y1="262" x2="476" y2="262" stroke="#e2dbd0"/>
+<text x="424.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Change</text>
+<line x1="398" y1="328" x2="450" y2="328" stroke="#e2dbd0"/>
+<text x="424.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Regulation</text>
+<line x1="398" y1="390" x2="450" y2="390" stroke="#e2dbd0"/>
+<text x="424.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Influence</text>
+<rect x="506" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="506" y="184" width="140" height="7" fill="#8a4fa8"/>
+<rect x="506" y="467" width="140" height="7" fill="#8a4fa8"/>
+<text x="576.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Social</text>
+<text x="576.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Perception</text>
+<line x1="524" y1="262" x2="628" y2="262" stroke="#e2dbd0"/>
+<text x="576.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Cultural context</text>
+<line x1="550" y1="328" x2="602" y2="328" stroke="#e2dbd0"/>
+<text x="576.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Relational context</text>
+<line x1="550" y1="390" x2="602" y2="390" stroke="#e2dbd0"/>
+<text x="576.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Situational context</text>
+<rect x="658" y="140" width="292" height="30" fill="#17a398"/>
+<text x="804.0" y="160.0" class="area" text-anchor="middle" fill="#fff">MENTAL HEALTH</text>
+<rect x="658" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="658" y="184" width="140" height="7" fill="#17a398"/>
+<rect x="658" y="467" width="140" height="7" fill="#17a398"/>
+<text x="728.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Clinical</text>
+<text x="728.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Assessment</text>
+<line x1="676" y1="262" x2="780" y2="262" stroke="#e2dbd0"/>
+<text x="728.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Symptoms</text>
+<line x1="702" y1="328" x2="754" y2="328" stroke="#e2dbd0"/>
+<text x="728.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Diagnosis</text>
+<line x1="702" y1="390" x2="754" y2="390" stroke="#e2dbd0"/>
+<text x="728.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Flourishing</text>
+<rect x="810" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>
+<rect x="810" y="184" width="140" height="7" fill="#17a398"/>
+<rect x="810" y="467" width="140" height="7" fill="#17a398"/>
+<text x="880.0" y="220.0" class="sub" text-anchor="middle" fill="#1c1a17">Clinical</text>
+<text x="880.0" y="241.0" class="sub" text-anchor="middle" fill="#1c1a17">Mechanisms</text>
+<line x1="828" y1="262" x2="932" y2="262" stroke="#e2dbd0"/>
+<text x="880.0" y="302.0" class="topic" text-anchor="middle" fill="#3d3833">Treatment process</text>
+<line x1="854" y1="328" x2="906" y2="328" stroke="#e2dbd0"/>
+<text x="880.0" y="364.0" class="topic" text-anchor="middle" fill="#3d3833">Outcomes</text>
+<line x1="854" y1="390" x2="906" y2="390" stroke="#e2dbd0"/>
+<text x="880.0" y="426.0" class="topic" text-anchor="middle" fill="#3d3833">Health behavior</text>
+<rect x="40" y="492" width="920" height="96" fill="#eae4d9" stroke="#e2dbd0"/>
+<rect x="40" y="492" width="8" height="96" fill="#c99a2e"/>
+<text x="68.0" y="520.0" class="area" text-anchor="start" fill="#c99a2e">RESEARCH METHODOLOGY</text>
+<text x="68.0" y="548.0" class="sub2" text-anchor="start" fill="#1c1a17">Statistical Modeling</text>
+<text x="68.0" y="572.0" class="topic2" text-anchor="start" fill="#3d3833">Bayesian estimation  ·  Multilevel modeling  ·  Simulation</text>
+<text x="510.0" y="548.0" class="sub2" text-anchor="start" fill="#1c1a17">Research Practice</text>
+<text x="510.0" y="572.0" class="topic2" text-anchor="start" fill="#3d3833">Measure validation  ·  Reproducibility  ·  Tutorials</text>
+<rect x="20" y="600" width="960" height="96" fill="#eae4d9" stroke="#e2dbd0"/>
+<rect x="20" y="600" width="8" height="96" fill="#3b6fd6"/>
+<text x="48.0" y="628.0" class="area" text-anchor="start" fill="#3b6fd6">COMPUTATIONAL TOOLS</text>
+<text x="48.0" y="656.0" class="sub2" text-anchor="start" fill="#1c1a17">Artificial Intelligence</text>
+<text x="48.0" y="680.0" class="topic2" text-anchor="start" fill="#3d3833">Behavior sensing  ·  Machine learning  ·  Language models</text>
+<text x="510.0" y="656.0" class="sub2" text-anchor="start" fill="#1c1a17">Open Resources</text>
+<text x="510.0" y="680.0" class="topic2" text-anchor="start" fill="#3d3833">Research software  ·  Research databases  ·  Education resources</text>
+</svg>
+```
