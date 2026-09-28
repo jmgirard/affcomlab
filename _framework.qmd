@@ -9,13 +9,13 @@
   .framework .topic, .framework .topic2 { font: 400 14px "Source Sans 3", sans-serif; }
 </style>
 <path d="M150 26 H850 L960 126 H40 Z" fill="#eae4d9" stroke="#d9d1c4"/>
-<path d="M184.4 51.8A24.8 24.8 0 0 1 206.7 58.2" stroke="#d9613b" stroke-width="9.3" fill="none"/>
-<path d="M210.9 63.6A24.8 24.8 0 0 1 211.7 86.8" stroke="#17a398" stroke-width="9.3" fill="none"/>
-<path d="M207.9 92.6A24.8 24.8 0 0 1 186.1 100.5" stroke="#8a4fa8" stroke-width="9.3" fill="none"/>
-<path d="M179.4 98.6A24.8 24.8 0 0 1 165.1 80.3" stroke="#c99a2e" stroke-width="9.3" fill="none"/>
-<path d="M164.9 73.4A24.8 24.8 0 0 1 177.9 54.1" stroke="#3b6fd6" stroke-width="9.3" fill="none"/>
-<text x="246.5" y="63.0" class="eyebrow" text-anchor="start" fill="#6d675f">RESEARCH FRAMEWORK</text>
-<text x="246.5" y="97.0" class="title" text-anchor="start" fill="#1c1a17">Affective and Interpersonal Communication</text>
+<path d="M179.4 51.8A24.8 24.8 0 0 1 201.7 58.2" stroke="#d9613b" stroke-width="9.3" fill="none"/>
+<path d="M205.9 63.6A24.8 24.8 0 0 1 206.7 86.8" stroke="#17a398" stroke-width="9.3" fill="none"/>
+<path d="M202.9 92.6A24.8 24.8 0 0 1 181.1 100.5" stroke="#8a4fa8" stroke-width="9.3" fill="none"/>
+<path d="M174.4 98.6A24.8 24.8 0 0 1 160.1 80.3" stroke="#c99a2e" stroke-width="9.3" fill="none"/>
+<path d="M159.9 73.4A24.8 24.8 0 0 1 172.9 54.1" stroke="#3b6fd6" stroke-width="9.3" fill="none"/>
+<text x="241.5" y="63.0" class="eyebrow" text-anchor="start" fill="#6d675f">WHAT WE STUDY</text>
+<text x="241.5" y="97.0" class="title" text-anchor="start" fill="#1c1a17">Affective and Interpersonal Communication</text>
 <rect x="50" y="140" width="292" height="30" fill="#d9613b"/>
 <text x="196.0" y="160.0" class="area" text-anchor="middle" fill="#fff">COMMUNICATIVE BEHAVIOR</text>
 <rect x="50" y="184" width="140" height="290" fill="#fff" stroke="#e2dbd0"/>

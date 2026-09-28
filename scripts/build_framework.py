@@ -35,12 +35,12 @@ def mark(cx, cy, size):   # the ring mark, same geometry as img/favicon.svg
         out.append(f'<path d="M{x0:.1f} {y0:.1f}A{r:.1f} {r:.1f} 0 0 1 {x1:.1f} {y1:.1f}" stroke="{C[a]}" stroke-width="{sw:.1f}" fill="none"/>')
 
 
-# pediment, with the mark and the title centred as one block (the title measures about 597 units wide at 30px)
+# pediment, with the mark and the title centred as one block (the title measures 607 units wide at 30px in Fraunces)
 out.append(f'<path d="M150 26 H850 L960 126 H40 Z" fill="{STONE}" stroke="#d9d1c4"/>')
-title_w = 597; mark_w = 66; gap = 24
+title_w = 607; mark_w = 66; gap = 24
 bx = 500 - (mark_w + gap + title_w) / 2
 mark(bx + mark_w / 2, 76, mark_w)
-T(bx + mark_w + gap, 63, 'RESEARCH FRAMEWORK', 'eyebrow', 'start', MUTED)
+T(bx + mark_w + gap, 63, 'WHAT WE STUDY', 'eyebrow', 'start', MUTED)
 T(bx + mark_w + gap, 97, 'Affective and Interpersonal Communication', 'title', 'start')
 
 # entablature: one bar per substantive area, spanning its two columns; then the columns themselves
