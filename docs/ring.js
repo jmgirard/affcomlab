@@ -93,6 +93,12 @@ const dotXY = Object.fromEntries(N.map(p => [p.key, P(R - 16, pos[p.key])]));
 const gFlag = S('g', { class: 'flag' }, svg);
 const flagC = S('circle', { r: 12, stroke: '#faf7f2', 'stroke-width': 2 }, gFlag);
 const flagT = S('text', { 'text-anchor': 'middle', 'dominant-baseline': 'middle', fill: '#fff', style: 'font-family: Fraunces, serif; font-weight: 600; font-size: 12.5px' }, gFlag);
+const gPin = S('g', { class: 'pinring' }, svg);
+const pinGap = S('circle', { r: 11, fill: 'none', stroke: '#faf7f2', 'stroke-width': 5 }, gPin), pinRing = S('circle', { r: 11, fill: 'none', 'stroke-width': 2 }, gPin);
+function drawPinRing() {   // a pinned paper wears a ring in its own colour, set off by a paper gap: unlike the thin dark lab-led outline or the filled example badge
+  const p = pin && pin.key && byKey[pin.key]; gPin.style.display = p ? '' : 'none'; if (!p) return;
+  const [bx, by] = dotXY[p.key]; for (const c of [pinGap, pinRing]) { c.setAttribute('cx', bx); c.setAttribute('cy', by); } pinRing.setAttribute('stroke', colOf(p.s1));
+}
 function drawFlag() {   // the current question's dot grows into a numbered badge
   const p = byKey[hoverKey], on = p && !hovDot && !hovSub && !hovArea && !expanded();
   gFlag.style.display = on ? '' : 'none'; if (!on) return;
@@ -110,7 +116,7 @@ const hotEls = [...svg.querySelectorAll('.chord, .dot')].map(el => ({ el, key: e
 const subEls = [...svg.querySelectorAll('.sub-label')], areaEls = [...svg.querySelectorAll('.area-label')];
 let lastState = '';
 function render() {   // an active hover always wins; the question highlight only applies when nothing is hovered
-  const x = expanded(), state = `${hovDot}|${hovSub}|${hovArea}|${hoverKey}|${qNum}|${x}|${pin && (pin.sub || pin.area)}`; if (state === lastState) return; lastState = state;
+  const x = expanded(), state = `${hovDot}|${hovSub}|${hovArea}|${hoverKey}|${qNum}|${x}|${pin && (pin.key || pin.sub || pin.area)}`; if (state === lastState) return; lastState = state;
   const any = hovDot || hovSub || hovArea, k = hovDot || (hovSub || hovArea || x ? null : hoverKey);
   const subs = hovSub ? [hovSub] : hovArea ? Object.keys(TAX[hovArea].subs) : [];   // a hovered area lights both of its subareas
   svg.classList.toggle('dim', !!any);
@@ -119,13 +125,14 @@ function render() {   // an active hover always wins; the question highlight onl
   for (const el of subEls) el.classList.toggle('hot', subs.includes(el.dataset.sub));
   for (const el of areaEls) { el.classList.toggle('hot', el.dataset.area === hovArea); el.classList.toggle('pinned', !!pin && pin.area === el.dataset.area); }
   for (const el of subEls) el.classList.toggle('pinned', !!pin && pin.sub === el.dataset.sub);   // the underline marks the pinned label
-  drawFlag();
+  drawFlag(); drawPinRing();
+  tip.classList.toggle('pinned', !!(pin && pin.key) && hovDot === pin.key);   // the pinned paper's card takes clicks and links to the paper
 }
 
 function showTip(p) {   // paper card in the top-left corner, like the subarea card, so it never covers the ring
   if (tip.dataset.key === p.key) return; tip.dataset.key = p.key;
   const col = colOf(p.s1);
-  tip.innerHTML = `<span class="area" style="color:${col}">${esc(TAX[subArea[p.s1]].subs[p.s1])}</span><span class="title">${esc(p.title)}</span><span class="meta">${esc(p.venue)} · ${esc(p.year)}${p.primary ? ' · led by our lab' : ''}</span><span class="go">Click to see this paper on our publications page →</span>`;
+  tip.innerHTML = `<span class="area" style="color:${col}">${esc(TAX[subArea[p.s1]].subs[p.s1])}</span><span class="title">${esc(p.title)}</span><span class="meta">${esc(p.venue)} · ${esc(p.year)}${p.primary ? ' · led by our lab' : ''}</span><a class="go" href="${esc(linkUrl(p))}">See this paper on our publications page <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>`;
   tip.style.borderTopColor = col; tip.style.opacity = 1;
 }
 
@@ -158,15 +165,17 @@ svg.addEventListener('pointerenter', () => stop());   // the example questions h
 svg.addEventListener('pointerleave', () => { clearHover(); render(); start(); });
 // a click on a label pins its highlight and card, so the pointer can wander (and so touch screens, which never hover, get the same view);
 // clicking the same label again, the background, or pressing Escape releases it
-function clearHover() {   // back to the pinned label if there is one, else to nothing
+function clearHover() {   // back to the pinned paper or label if there is one, else to nothing
   tip.style.opacity = 0; tip.dataset.key = ''; hovDot = null;
-  if (pin && pin.sub) { hovSub = pin.sub; hovArea = null; showSubTip(pin.sub); }
+  if (pin && pin.key) { hovDot = pin.key; hovSub = null; hovArea = null; stip.style.opacity = 0; showTip(byKey[pin.key]); }
+  else if (pin && pin.sub) { hovSub = pin.sub; hovArea = null; showSubTip(pin.sub); }
   else if (pin && pin.area) { hovArea = pin.area; hovSub = null; showAreaTip(pin.area); }
   else { stip.style.opacity = 0; hovSub = null; hovArea = null; }
 }
 function setPin(next) { pin = next; clearHover(); render(); }
+tip.addEventListener('click', ev => { if (!tip.classList.contains('pinned')) return; if (!ev.target.closest('a')) location.href = tip.querySelector('a.go').href; });   // anywhere on the pinned card opens the paper
 svg.addEventListener('click', ev => {
-  const k = nearestDot(ev); if (k) { location.href = linkUrl(byKey[k]); return; }
+  const k = nearestDot(ev); if (k) { setPin(pin && pin.key === k ? null : { key: k }); return; }   // a click pins the paper; its card carries the link
   const h = ev.target.closest('.hit'), al = ev.target.closest('.area-label');
   if (h) setPin(pin && pin.sub === h.dataset.sub ? null : { sub: h.dataset.sub });
   else if (al) setPin(pin && pin.area === al.dataset.area ? null : { area: al.dataset.area });
