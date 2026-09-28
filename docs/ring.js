@@ -59,7 +59,7 @@ for (const a of AREAS) {
   const [st, en] = areaArc[a], mid = (st + en) / 2, c = Math.cos(mid); let [lx, ly] = P(R + 64, mid);
   const anchor = c > 0.35 ? 'start' : c < -0.35 ? 'end' : 'middle', tw = TAX[a].name.length * 7.4;   // keep the label inside the drawing box
   if (anchor === 'start') lx = Math.min(lx, W - tw - 4); if (anchor === 'end') lx = Math.max(lx, tw + 4); if (anchor === 'middle') lx = Math.min(W - tw / 2 - 4, Math.max(tw / 2 + 4, lx));
-  const t = S('text', { class: 'area-label', x: lx, y: ly + 4, fill: TAX[a].col, 'text-anchor': anchor }, gLabels); t.textContent = TAX[a].name;
+  const t = S('text', { class: 'area-label', 'data-area': a, x: lx, y: ly + 4, fill: TAX[a].col, 'text-anchor': anchor }, gLabels); t.textContent = TAX[a].name;
 }
 // chords with a colour gradient from the main area to the linked area
 for (const l of links) { const p = l.p, [x1, y1] = P(R - 16, pos[p.key]), [x2, y2] = P(R - 8, tgt[l.id]);
@@ -83,12 +83,18 @@ function showSubTip(sub) {   // horizontal card in the corner of the box nearest
   stip.style.borderTopColor = TAX[a].col;
   stip.style.opacity = 1;
 }
+function showAreaTip(a) {   // area card: the two subareas and the paper count across both
+  const ss = Object.keys(TAX[a].subs), n = N.filter(p => p.subs.some(s => ss.includes(s))).length, main = N.filter(p => ss.includes(p.s1)).length;
+  stip.innerHTML = `<span class="area" style="color:${TAX[a].col}">Research area</span><span class="sub">${esc(TAX[a].name)}</span><span class="desc">${ss.map(s => esc(TAX[a].subs[s])).join(' and ')}</span><span class="n">${n} paper${n === 1 ? '' : 's'}${n > main ? ` (${main} as main area)` : ''}</span>`;
+  stip.style.borderTopColor = TAX[a].col;
+  stip.style.opacity = 1;
+}
 const dotXY = Object.fromEntries(N.map(p => [p.key, P(R - 16, pos[p.key])]));
 const gFlag = S('g', { class: 'flag' }, svg);
 const flagC = S('circle', { r: 12, stroke: '#faf7f2', 'stroke-width': 2 }, gFlag);
 const flagT = S('text', { 'text-anchor': 'middle', 'dominant-baseline': 'middle', fill: '#fff', style: 'font-family: Fraunces, serif; font-weight: 600; font-size: 12.5px' }, gFlag);
 function drawFlag() {   // the current question's dot grows into a numbered badge
-  const p = byKey[hoverKey], on = p && !hovDot && !hovSub && !expanded();
+  const p = byKey[hoverKey], on = p && !hovDot && !hovSub && !hovArea && !expanded();
   gFlag.style.display = on ? '' : 'none'; if (!on) return;
   const [bx, by] = dotXY[p.key];
   flagC.setAttribute('cx', bx); flagC.setAttribute('cy', by); flagC.setAttribute('fill', colOf(p.s1));
@@ -98,18 +104,20 @@ function drawFlag() {   // the current question's dot grows into a numbered badg
 
 
 // ---------- interaction ----------
-let hoverKey = null, hovDot = null, hovSub = null;   // question paper, hovered paper, hovered subarea
+let hoverKey = null, hovDot = null, hovSub = null, hovArea = null;   // question paper, hovered paper, hovered subarea, hovered area
 const expanded = () => ring.classList.contains('expanded');   // the expanded view shows the whole structure: no example highlight, all chords at half strength
 const hotEls = [...svg.querySelectorAll('.chord, .dot')].map(el => ({ el, key: el.dataset.key, subs: el.dataset.subs.split(' ') }));
-const subEls = [...svg.querySelectorAll('.sub-label')];
+const subEls = [...svg.querySelectorAll('.sub-label')], areaEls = [...svg.querySelectorAll('.area-label')];
 let lastState = '';
 function render() {   // an active hover always wins; the question highlight only applies when nothing is hovered
-  const x = expanded(), state = `${hovDot}|${hovSub}|${hoverKey}|${qNum}|${x}`; if (state === lastState) return; lastState = state;
-  const k = hovDot || (hovSub || x ? null : hoverKey), sub = hovSub;
-  svg.classList.toggle('dim', !!(hovDot || hovSub));
-  svg.classList.toggle('soft', !hovDot && !hovSub && !!hoverKey && !x);
-  for (const h of hotEls) h.el.classList.toggle('hot', h.key === k || (sub !== null && h.subs.includes(sub)));
-  for (const el of subEls) el.classList.toggle('hot', el.dataset.sub === sub);
+  const x = expanded(), state = `${hovDot}|${hovSub}|${hovArea}|${hoverKey}|${qNum}|${x}`; if (state === lastState) return; lastState = state;
+  const any = hovDot || hovSub || hovArea, k = hovDot || (hovSub || hovArea || x ? null : hoverKey);
+  const subs = hovSub ? [hovSub] : hovArea ? Object.keys(TAX[hovArea].subs) : [];   // a hovered area lights both of its subareas
+  svg.classList.toggle('dim', !!any);
+  svg.classList.toggle('soft', !any && !!hoverKey && !x);
+  for (const h of hotEls) h.el.classList.toggle('hot', h.key === k || h.subs.some(s => subs.includes(s)));
+  for (const el of subEls) el.classList.toggle('hot', subs.includes(el.dataset.sub));
+  for (const el of areaEls) el.classList.toggle('hot', el.dataset.area === hovArea);
   drawFlag();
 }
 
@@ -129,14 +137,15 @@ function nearestDot(ev) {   // nearest dot to the pointer, within 16 screen pixe
 }
 
 svg.addEventListener('pointermove', ev => {   // sticky hover: a dot or area stays highlighted until another is reached or the pointer leaves the ring
-  const k = nearestDot(ev), h = ev.target.closest('.hit');
-  if (k) { showTip(byKey[k]); stip.style.opacity = 0; hovDot = k; hovSub = null; svg.style.cursor = 'pointer'; }
-  else if (h) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovSub !== h.dataset.sub) showSubTip(h.dataset.sub); hovDot = null; hovSub = h.dataset.sub; svg.style.cursor = 'default'; }
+  const k = nearestDot(ev), h = ev.target.closest('.hit'), al = ev.target.closest('.area-label');
+  if (k) { showTip(byKey[k]); stip.style.opacity = 0; hovDot = k; hovSub = null; hovArea = null; svg.style.cursor = 'pointer'; }
+  else if (h) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovSub !== h.dataset.sub) showSubTip(h.dataset.sub); hovDot = null; hovSub = h.dataset.sub; hovArea = null; svg.style.cursor = 'default'; }
+  else if (al) { tip.style.opacity = 0; tip.dataset.key = ''; if (hovArea !== al.dataset.area) showAreaTip(al.dataset.area); hovDot = null; hovSub = null; hovArea = al.dataset.area; svg.style.cursor = 'default'; }
   else { svg.style.cursor = 'default'; }   // between targets the last hover stays; only leaving the ring hands focus back to the example question
   render();
 });
 svg.addEventListener('pointerenter', () => stop());   // the example questions hold still while the pointer is over the ring
-svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; render(); start(); });
+svg.addEventListener('pointerleave', () => { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; render(); start(); });
 svg.addEventListener('click', ev => { const k = nearestDot(ev); if (k) location.href = linkUrl(byKey[k]); });
 
 // ---------- rotating questions ----------
@@ -164,7 +173,7 @@ if (QUESTIONS.length) showQ(0);
 const ICON_EXPAND = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>', ICON_CLOSE = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>';   // inline icons centre exactly; text glyphs sit on the baseline
 function setExpanded(on) {
   ring.classList.toggle('expanded', on); document.body.classList.toggle('ring-expanded', on);
-  if (on) stop(); else { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; start(); }   // closing clears any hover so the example highlight returns at once
+  if (on) stop(); else { tip.style.opacity = 0; tip.dataset.key = ''; stip.style.opacity = 0; hovDot = null; hovSub = null; hovArea = null; start(); }   // closing clears any hover so the example highlight returns at once
   render();
   xbtn.innerHTML = on ? ICON_CLOSE : ICON_EXPAND; xbtn.title = on ? 'Close (Esc)' : 'Expand'; xbtn.setAttribute('aria-label', on ? 'Close the expanded figure' : 'Expand the figure');
   if (on && ring.requestFullscreen) ring.requestFullscreen().catch(() => {});

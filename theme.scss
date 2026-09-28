@@ -234,7 +234,8 @@ iframe.slide-deck { border: 1px solid $line; border-radius: 10px; width: 100%; h
 .home .ring { position: relative; container-type: inline-size; }
 .home .ring > svg { display: block; width: 100%; height: auto; max-height: 560px; margin: 0 auto; }   // direct child only: the expand button holds its own small svg icon
 .home .ring text { font-family: $font-family-sans-serif; }
-.home .area-label { font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; }
+.home .area-label { font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; pointer-events: bounding-box; cursor: default; }   // hovering an area name lights both of its arcs
+.home .area-label.hot { text-decoration: underline; text-underline-offset: 3px; }
 .home .sub-label { font-size: 11px; font-weight: 600; letter-spacing: 0.01em; fill: #4a4540; }
 .home .sub-label.hot { fill: $ink; }
 .home .dot { cursor: pointer; }
