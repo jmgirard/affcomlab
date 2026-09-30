@@ -1,0 +1,22 @@
+---
+title: "A New Look for the Lab Website"
+description: "A redesigned site with a map of our publications"
+author: "Jeffrey Girard"
+date: "2026-09-30"
+image: share.png
+draft: false
+categories:
+  - announcement
+---
+
+The lab website has a new design. The structure is the same, with pages for our research, people, publications, resources, and opportunities, but each page was rebuilt with a warmer palette, new type, and a few things we could not do before.
+
+The homepage now opens with a map of our publications. Each dot is one of our papers, placed on the arc of its main research area and ordered by year. Curved lines connect a paper to the other areas it contributes to, and outlined dots mark studies led by our lab. Hover over a dot to see the paper, hover over an area name to see its papers, and click either one to keep it lit. The expand button in the corner opens the map at full size. A rotating set of example questions under the map shows the kinds of things our papers ask.
+
+The [research page](../../research.html) has a redrawn framework figure. It keeps the shape of the old one, with substantive areas resting on a methodological foundation, but it now uses the same five areas and ten subareas as the map, so the two figures describe the lab in one vocabulary.
+
+The [publications page](../../publications.html) lists every paper as a card with its abstract, citation, and BibTeX, plus links to the publisher, a preprint, and materials when they exist. Each card has its own address, so a link from the homepage map lands on the paper it points to.
+
+The five arcs of the map also became the lab's mark. It sits in the navigation bar and in the browser tab, and hovering over it in the navigation bar closes the gaps between the arcs.
+
+If you find something broken or hard to read, please [let us know](../../contact.html).
