@@ -25,7 +25,7 @@
     "href": "resources.html#statistics-software",
     "title": "AffCom Lab",
     "section": "Statistics Software",
-    "text": "Statistics Software\n\n\nStable\n\nackwards\nR package for hierarchical structure (bass-ackwards) analysis.\n\n\n\nStable\n\ncircumplex\nR package for analyzing and visualizing circular data.\n\n\n\nStable\n\nintraclass\nR package for calculating intraclass correlations (ICCs).\n\n\n\nExperimental\n\nbsync\nR package for conducting behavioral synchrony analyses.\n\n\n\nExperimental\n\nnestedtune\nR package for nested cross-validation in tidymodels."
+    "text": "Statistics Software\n\n\nStable\n\nackwards\nR package for hierarchical structure (bass-ackwards) analysis.\n\n\n\nStable\n\ncircumplex\nR package for analyzing and visualizing circular data.\n\n\n\nStable\n\neasystats\nEcosystem of R packages for statistical modeling, visualization, and reporting.\n\n\n\nStable\n\nintraclass\nR package for calculating intraclass correlations (ICCs).\n\n\n\nExperimental\n\nbsync\nR package for conducting behavioral synchrony analyses.\n\n\n\nExperimental\n\nnestedtune\nR package for nested cross-validation in tidymodels."
   },
   {
     "objectID": "resources.html#research-software",
