@@ -1,0 +1,17 @@
+---
+title: "Sabbatical at Fluid Concepts Research"
+description: "Jeffrey Girard is on sabbatical for the 2026–2027 academic year"
+author: "Jeffrey Girard"
+date: "2026-10-16"
+image: office.webp
+draft: false
+categories:
+  - announcement
+  - recruitment
+---
+
+I am on sabbatical for the Fall 2026 and Spring 2027 semesters. During this time, I am gaining industry experience as Principal Scientist at [Fluid Concepts Research](https://fluidconcepts.ai).
+
+I will not be recruiting new graduate students during this admissions cycle. If you are thinking about applying to work with me in a future cycle, please watch this page for announcements.
+
+*Photo by [Austin Distel](https://unsplash.com/@austindistel) on [Unsplash](https://unsplash.com/photos/wawEfYdpkag).*
