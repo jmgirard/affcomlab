@@ -1279,5 +1279,82 @@
     "title": "AffCom Lab",
     "section": "Join the Lab",
     "text": "Join the Lab\nWe welcome students and researchers who want to combine psychology with computational and quantitative methods. Pick the path that fits you.\n\n\nUndergraduate Students\nLearn research by doing it, earn credit, and build toward a thesis.\nApply now\n\n\nUndergraduates from Psychology, Behavioral Neuroscience, and other departments join the lab as research assistants. They learn the scientific method by helping to collect and process data, attend weekly lab meetings, and can enroll in PSYC 480 for credit.\nAssistants can expect a letter of recommendation describing their contributions (please allow one month), and advanced assistants sometimes earn co-authorship on conference presentations.\nHonors students may complete a senior thesis under Dr. Girard’s supervision; many have won awards from the Center for Undergraduate Research and presented at the Undergraduate Research Symposium.\n\n\n\n\nProspective Graduate Students\nDoctoral training in the BBQ and CPS concentrations.\nLearn more\n\n\nKU Psychology grants PhDs in three concentrations: Brain, Behavior, and Quantitative Science (BBQ); Clinical Psychological Science (CPS); and Social Psychology. There is no terminal master’s degree, and CPS focuses on adult psychopathology.\nDr. Girard advises students in BBQ and CPS and is a strong match for students whose interests span both, such as clinical students drawn to advanced methods or quantitative students drawn to medical applications.\nStudents take coursework in the department, do research in the lab, and contribute to ongoing projects; each admissions cycle is announced on the News page.\n\n\n\n\nPostdocs and Staff\nPositions open as funding permits.\nAsk about openings\n\n\nPostdoctoral and staff positions are announced on the News page as they open. Questions about upcoming positions are welcome by email."
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#types-of-emotion-ratings",
+    "href": "posts/dynamos/Presentation.html#types-of-emotion-ratings",
+    "title": "AffCom Lab",
+    "section": "Types of Emotion Ratings",
+    "text": "Types of Emotion Ratings\n\nWho is providing the measure of emotion?\n\nSelf-reports of participants’ own emotion\nObserver-perceptions of others’ emotion\n\nHow is emotion being represented?\n\nDiscrete choices of emotion categories (e.g, happy, angry)\nContinuous scores on emotion dimensions (e.g., valence)\n\nHow often are the emotions reported?\n\nHolistic ratings collected once after each stimulus\nDynamic ratings collected repeatedly during each stimulus"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
+    "href": "posts/dynamos/Presentation.html#ambiguity-and-subjectivity",
+    "title": "AffCom Lab",
+    "section": "Ambiguity and Subjectivity",
+    "text": "Ambiguity and Subjectivity\n\nEmotion ratings will inevitably vary between raters…\nWe usually treat such variability as a nuisance to “fix”\nBut we can gain a lot by embracing these differences: studying their sources and building them into our models\nAmbiguity: variability across different observers’ perceptions of the emotion in a given stimulus (see Sethu et al., 2019)\nSubjectivity: variability across different subjects’ self-reports of the emotion they experienced from a given stimulus"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#dynamos-database-1",
+    "href": "posts/dynamos/Presentation.html#dynamos-database-1",
+    "title": "AffCom Lab",
+    "section": "DynAMoS Database",
+    "text": "DynAMoS Database\n\nParticipants\n\nHealthy community members from Rally with MGB\n83 participants (67% female, 18–59 years old)\n43 White, 22 Asian, 12 Black, 5 Other; 11 Hispanic/Latino\n\nProcedure\n\nWatch 22 affective movie clips (2.2–7.1 minutes each)\nDynamic self-reported emotional valence (CARMA)\nHolistic self-reported positive/negative affect (S-PANAS)"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#emotional-ratings",
+    "href": "posts/dynamos/Presentation.html#emotional-ratings",
+    "title": "AffCom Lab",
+    "section": "Emotional Ratings",
+    "text": "Emotional Ratings\n\n\nDynamic\n–4 (negative) to +4 (positive) Rated at 30 Hz, binned to 1 Hz \n\nHolistic\nEach rated 0 (very slightly or not at all) to 4 (extremely):\nPositive Affectalert, determined, enthusiastic, excited, inspired\nNegative Affectafraid, distressed, nervous, upset, scared\n\n\nhttps://carma.jmgirard.com"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#quantifying-subjectivity",
+    "href": "posts/dynamos/Presentation.html#quantifying-subjectivity",
+    "title": "AffCom Lab",
+    "section": "Quantifying Subjectivity",
+    "text": "Quantifying Subjectivity\n\n\nEstimates from a Bayesian G study (github.com/jmgirard/varde)"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
+    "href": "posts/dynamos/Presentation.html#visualizing-many-time-series-is-hard",
+    "title": "AffCom Lab",
+    "section": "Visualizing many time series is hard…",
+    "text": "Visualizing many time series is hard…\n\n\nEach blue line is one participant’s time series"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
+    "href": "posts/dynamos/Presentation.html#introducing-the-chromodoris-plot",
+    "title": "AffCom Lab",
+    "section": "Introducing the Chromodoris plot",
+    "text": "Introducing the Chromodoris plot\n\n\nBlack = Mean, Yellow = 50%, Green = 70%, Purple = 90%"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#database-uses",
+    "href": "posts/dynamos/Presentation.html#database-uses",
+    "title": "AffCom Lab",
+    "section": "Database Uses",
+    "text": "Database Uses\n\nEmotion elicitation video set with normative data\nAffective content analysis with average ratings\nSubjectivity analysis to predict rating distributions\nSubjectivity analysis to explain degree of subjectivity\nPersonalized modeling of affective reactions"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#future-directions",
+    "href": "posts/dynamos/Presentation.html#future-directions",
+    "title": "AffCom Lab",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nAdd more movie clips and participants\nAdd more dynamic and holistic rating dimensions\nAdd data from sensors (e.g., physiological and eye tracking)\nCollect information about participants’ personality\nCollect similar data in clinical/medical populations"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#acknowledgements",
+    "href": "posts/dynamos/Presentation.html#acknowledgements",
+    "title": "AffCom Lab",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nCo-authors\n\nJeffrey Girard (University of Kansas)\nYanmei Tie (Brigham & Women’s Hospital, HMS)\nEinat Liebenthal (McLean Hospital, HMS)\n\nFunding\n\nAlexandra Golby (Brigham & Women’s Hospital, HMS)\n\nAssistance\n\nColin Gavin, Laura Rigolo, Abby Recko, Ben Phan"
+  },
+  {
+    "objectID": "posts/dynamos/Presentation.html#questions",
+    "href": "posts/dynamos/Presentation.html#questions",
+    "title": "AffCom Lab",
+    "section": "Questions?",
+    "text": "Questions?\n\nhttps://dynamos.mgb.org"
   }
 ]

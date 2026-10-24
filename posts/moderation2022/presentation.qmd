@@ -6,7 +6,6 @@ format:
     slide-number: true
     show-slide-number: all
     preview-links: auto
-    embed-resources: true
     standalone: true
     progress: true
     history: true

@@ -3,7 +3,6 @@ format:
   revealjs:
     css: styles.css
     slide-number: "c/t"
-    embed-resources: true
     overview: true
     progress: true
     mouse-wheel: false
@@ -104,7 +103,6 @@ Estimates from a Bayesian G study ([github.com/jmgirard/varde](https://github.co
 ```{r}
 #| echo: false
 #| message: false
-#| cache: true
 
 library(tidyverse)
 df <- read_rds("valence_tidy.rds")
@@ -170,7 +168,6 @@ Each blue line is one participant's time series
 #| message: false
 #| echo: false
 #| warning: false
-#| cache: true
 
   require("Hmisc")
   df2 |> 
