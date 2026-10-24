@@ -138,11 +138,19 @@ R package for nested cross-validation in tidymodels.
 ::: {.res-grid}
 
 ::: {.res-card}
-[Experimental]{.res-tag .experimental}
+[Stable]{.res-tag .stable}
 
 ### [tidymedia](https://github.com/jmgirard/tidymedia)
 
 R package for working with audio, video, and image files.
+:::
+
+::: {.res-card}
+[Stable]{.res-tag .stable}
+
+### [rlmstudio](https://github.com/jmgirard/rlmstudio)
+
+R package for accessing and controlling local AI models using LM Studio.
 :::
 
 ::: {.res-card}
@@ -167,14 +175,6 @@ R package for working with Facial Action Coding System (FACS) data.
 ### [hitop](https://github.com/jmgirard/hitop)
 
 R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data.
-:::
-
-::: {.res-card}
-[Experimental]{.res-tag .experimental}
-
-### [rlmstudio](https://github.com/jmgirard/rlmstudio)
-
-R package for accessing and controlling local AI models using LM Studio.
 :::
 
 ::: {.res-card}

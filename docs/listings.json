@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/girard_jeffrey.html",
+      "/people/cps/gray_kassandra.html",
+      "/people/cps/jun_daiil.html",
+      "/people/bbq/simmons_aaron.html",
+      "/people/bbq/wood_rebecca.html",
+      "/people/cps/yang_yuanyuan.html",
+      "/people/bbq/yermol_dasha.html"
+    ]
+  },
+  {
     "listing": "/news.html",
     "items": [
       "/posts/sabbatical2026/index.html",
@@ -30,18 +42,6 @@
       "/posts/suicideR21/index.html",
       "/posts/recruitment2023/index.html",
       "/posts/dischargeR01/index.html"
-    ]
-  },
-  {
-    "listing": "/people.html",
-    "items": [
-      "/people/staff/girard_jeffrey.html",
-      "/people/cps/gray_kassandra.html",
-      "/people/cps/jun_daiil.html",
-      "/people/bbq/simmons_aaron.html",
-      "/people/bbq/wood_rebecca.html",
-      "/people/cps/yang_yuanyuan.html",
-      "/people/bbq/yermol_dasha.html"
     ]
   }
 ]
