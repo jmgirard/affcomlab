@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  post-render:
+    - node scripts/check_slides.mjs
   resources:
     - "ring.js"
     - "data/ring.json"
