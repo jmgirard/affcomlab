@@ -125,6 +125,8 @@ The {easystats} package adds statistics functions
 
 ::: {.table-small}
 ```{r}
+#| echo: false
+
 set.seed(2022)
 n <- 200
 data_2x2 <- 
@@ -206,7 +208,7 @@ print_md(mp1, caption = "Model Summary", footer = "")
 
 em1 <- estimate_means(
   model = model1, 
-  at = c("condition", "gender")
+  by = c("condition", "gender")
 )
 print(em1)
 ```
@@ -218,7 +220,7 @@ print(em1)
 
 em1 <- estimate_means(
   model = model1, 
-  at = c("condition", "gender")
+  by = c("condition", "gender")
 )
 print_md(em1)
 ```
@@ -230,7 +232,7 @@ print_md(em1)
 #| echo: true
 #| eval: false
 
-plot(em1)
+plot(em1, show_data = TRUE, join_dots = TRUE)
 ```
 
 ::: {.fragment}
@@ -241,9 +243,11 @@ plot(em1)
 set.seed(2022)
 em1 |> 
   visualisation_recipe(
-    jitter = list(size = 2.5, alpha = 1/3), 
+    show_data = TRUE,
+    join_dots = TRUE,
+    point = list(size = 2.5, alpha = 1/3), 
     line = list(linewidth = 1.5),
-    pointrange = list(linewidth = 1.5, fatten = 7)
+    pointrange = list(linewidth = 1.5)
   ) |> 
   plot() +
   scale_y_continuous(limits = c(2.5, 8)) +
@@ -261,7 +265,8 @@ em1 |>
 ec1a <- estimate_contrasts(
   model = model1,
   contrast = "condition",
-  at = "gender"
+  by = "gender",
+  p_adjust = "holm"
 )
 print(ec1a)
 ```
@@ -274,7 +279,8 @@ print(ec1a)
 ec1a <- estimate_contrasts(
   model = model1,
   contrast = "condition",
-  at = "gender"
+  by = "gender",
+  p_adjust = "holm"
 )
 print_md(ec1a, footer = "Marginal contrasts estimated at condition, p-value adjustment method: Holm (1979)")
 ```
@@ -289,7 +295,8 @@ print_md(ec1a, footer = "Marginal contrasts estimated at condition, p-value adju
 ec1b <- estimate_contrasts(
   model = model1,
   contrast = "gender",
-  at = "condition"
+  by = "condition",
+  p_adjust = "holm"
 )
 print(ec1b)
 ```
@@ -302,7 +309,8 @@ print(ec1b)
 ec1b <- estimate_contrasts(
   model = model1,
   contrast = "gender",
-  at = "condition"
+  by = "condition",
+  p_adjust = "holm"
 )
 print_md(ec1b, footer = "Marginal contrasts estimated at gender, p-value adjustment method: Holm (1979)")
 ```
@@ -318,11 +326,13 @@ print_md(ec1b, footer = "Marginal contrasts estimated at gender, p-value adjustm
 
 ::: {.table-small}
 ```{r}
+#| echo: false
+
 set.seed(2022)
 n <- 200
 data_3x2 <- 
   tibble(
-    group = factor(
+    condition = factor(
       sample(0:2, size = n, replace = TRUE), 
       levels = 0:2, 
       labels = c("control", "placebo", "treatment")
@@ -332,12 +342,12 @@ data_3x2 <-
       levels = 0:1,
       labels = c("woman", "man")
     ),
-    x1 = as.integer(group == "placebo"),
-    x2 = as.integer(group == "treatment"),
+    x1 = as.integer(condition == "placebo"),
+    x2 = as.integer(condition == "treatment"),
     x3 = as.integer(gender == "woman"),
     symptoms = 5 - 1.5*x1 - 1.5*x2 - 0.1*x1*x3 - 1.0*x2*x3 + rnorm(n = n, sd = 0.5)
   ) |> 
-  select(symptoms, group, gender) |> 
+  select(symptoms, condition, gender) |> 
   mutate(patient = row_number(), .before = 1)
 data_3x2 |> 
   head(100) |> 
@@ -356,7 +366,7 @@ data_3x2 |>
 #| message: false
 
 model2 <- aov(
-  formula = symptoms ~ group * gender,
+  formula = symptoms ~ condition * gender,
   data = data_3x2
 )
 ```
@@ -397,7 +407,7 @@ print_md(mp2, caption = "Model Summary", footer = "")
 #| echo: true
 #| eval: false
 
-em2 <- estimate_means(model2, at = c("group", "gender"))
+em2 <- estimate_means(model2, by = c("condition", "gender"))
 print(em2)
 ```
 
@@ -408,7 +418,7 @@ print(em2)
 
 em2 <- estimate_means(
   model = model2, 
-  at = c("group", "gender")
+  by = c("condition", "gender")
 )
 print_md(em2)
 ```
@@ -420,7 +430,7 @@ print_md(em2)
 #| echo: true
 #| eval: false
 
-plot(em2)
+plot(em2, show_data = TRUE, join_dots = TRUE)
 ```
 
 ::: {.fragment}
@@ -431,9 +441,11 @@ plot(em2)
 set.seed(2022)
 em2 |> 
   visualisation_recipe(
-    jitter = list(size = 2.5, alpha = 1/3), 
+    show_data = TRUE,
+    join_dots = TRUE,
+    point = list(size = 2.5, alpha = 1/3), 
     line = list(linewidth = 1.5),
-    pointrange = list(linewidth = 1.5, fatten = 7)
+    pointrange = list(linewidth = 1.5)
   ) |> 
   plot() +
   scale_y_continuous(limits = c(1, 6)) +
@@ -448,7 +460,8 @@ em2 |>
 #| echo: true
 #| eval: false
 
-ec2a <- estimate_contrasts(model2, contrast = "group", at = "gender")
+ec2a <- estimate_contrasts(model2, contrast = "condition",
+                           by = "gender", p_adjust = "holm")
 print(ec2a)
 ```
 
@@ -459,10 +472,11 @@ print(ec2a)
 
 ec2a <- estimate_contrasts(
   model = model2,
-  contrast = "group",
-  at = "gender"
+  contrast = "condition",
+  by = "gender",
+  p_adjust = "holm"
 )
-print_md(ec2a, footer = "Marginal contrasts estimated at group, p-value adjustment method: Holm (1979)")
+print_md(ec2a, footer = "Marginal contrasts estimated at condition, p-value adjustment method: Holm (1979)")
 ```
 :::
 
@@ -472,7 +486,8 @@ print_md(ec2a, footer = "Marginal contrasts estimated at group, p-value adjustme
 #| echo: true
 #| eval: false
 
-ec2b <- estimate_contrasts(model2, contrast = "gender", at = "group")
+ec2b <- estimate_contrasts(model2, contrast = "gender",
+                           by = "condition", p_adjust = "holm")
 print(ec2b)
 ```
 
@@ -484,7 +499,8 @@ print(ec2b)
 ec2b <- estimate_contrasts(
   model = model2,
   contrast = "gender",
-  at = "group"
+  by = "condition",
+  p_adjust = "holm"
 )
 print_md(ec2b, footer = "Marginal contrasts estimated at gender, p-value adjustment method: Holm (1979)")
 ```
@@ -579,9 +595,9 @@ Estimate and plot (the same) marginal means
 #| echo: true
 #| eval: false
 
-em1b <- estimate_means(model1b, at = c("condition", "gender"))
+em1b <- estimate_means(model1b, by = c("condition", "gender"))
 print(em1b)
-plot(em1b)
+plot(em1b, show_data = TRUE, join_dots = TRUE)
 ```
 :::
 
@@ -592,8 +608,10 @@ Estimate and test (the same) contrasts
 #| echo: true
 #| eval: false
 
-estimate_contrasts(model1b, contrast = "condition", at = "gender")
-estimate_contrasts(model1b, contrast = "gender", at = "condition")
+estimate_contrasts(model1b, contrast = "condition", by = "gender",
+                   p_adjust = "holm")
+estimate_contrasts(model1b, contrast = "gender", by = "condition",
+                   p_adjust = "holm")
 ```
 :::
 
@@ -607,6 +625,8 @@ estimate_contrasts(model1b, contrast = "gender", at = "condition")
 
 ::: {.table-small}
 ```{r}
+#| echo: false
+
 set.seed(2022)
 n <- 300
 data_2xC <- 
@@ -672,7 +692,7 @@ print_md(mp3, caption = "Model Summary")
 #| echo: true
 #| eval: false
 
-plot(estimate_relation(model3))
+plot(estimate_relation(model3), show_data = TRUE)
 ```
 
 ::: {.fragment}
@@ -684,6 +704,7 @@ set.seed(2022)
 model3 |> 
   estimate_relation(preserve_range = FALSE) |> 
   visualisation_recipe(
+    show_data = TRUE,
     point = list(size = 2.5, alpha = 1/3),
     line = list(linewidth = 1.5)
   ) |> 
@@ -704,7 +725,7 @@ We can use `estimate_slopes()` to get these "simple slopes"
 #| echo: true
 #| eval: false
 
-es3 <- estimate_slopes(model3, trend = "duration", at = "exercise")
+es3 <- estimate_slopes(model3, trend = "duration", by = "exercise")
 print(es3)
 ```
 :::
@@ -714,7 +735,7 @@ print(es3)
 #| echo: false
 #| eval: true
 
-es3 <- estimate_slopes(model3, trend = "duration", at = "exercise")
+es3 <- estimate_slopes(model3, trend = "duration", by = "exercise")
 print_md(es3)
 ```
 :::
@@ -736,7 +757,7 @@ plot(es3)
 es3 |> 
   visualisation_recipe(
     line = list(linewidth = 1.5),
-    pointrange = list(linewidth = 1.5, fatten = 7)
+    pointrange = list(linewidth = 1.5)
   ) |> 
   plot() +
   theme_bw(base_size = 22) + 
@@ -753,9 +774,10 @@ es3 |>
 ec3 <- estimate_contrasts(
   model = model3, 
   contrast = "exercise", 
-  at = "duration = c(1, 2, 3)"
+  by = "duration = c(1, 2, 3)",
+  p_adjust = "holm"
 )
-print(es3b)
+print(ec3)
 ```
 
 ::: {.pt1 .fragment .table-small .tc}
@@ -766,7 +788,8 @@ print(es3b)
 ec3 <- estimate_contrasts(
   model = model3, 
   contrast = "exercise", 
-  at = "duration = c(1, 2, 3)"
+  by = "duration = c(1, 2, 3)",
+  p_adjust = "holm"
 )
 print_md(ec3, footer = "Marginal contrasts estimated at exercise, p-value adjustment method: Holm (1979)")
 ```
@@ -782,6 +805,8 @@ print_md(ec3, footer = "Marginal contrasts estimated at exercise, p-value adjust
 
 ::: {.table-small}
 ```{r}
+#| echo: false
+
 set.seed(2022)
 n <- 300
 data_CxC <- 
@@ -840,7 +865,7 @@ print_md(mp4, caption = "Model Summary")
 #| echo: true
 #| eval: false
 
-plot(estimate_relation(model4))
+plot(estimate_relation(model4), show_data = TRUE)
 ```
 
 ::: {.fragment}
@@ -852,10 +877,12 @@ set.seed(2022)
 model4 |> 
   estimate_relation(preserve_range = FALSE) |> 
   visualisation_recipe(
+    show_data = TRUE,
     point = list(size = 2.5, alpha = 1/3),
     line = list(linewidth = 1.5)
   ) |> 
   plot() +
+  guides(fill = "none") +
   theme_bw(base_size = 22) + 
   theme(plot.title = element_text(size = 22))
 ```
@@ -870,7 +897,7 @@ model4 |>
 estimate_slopes(
   model = model4, 
   trend = "aa_anxiety",
-  at = "aa_avoidance = c(-3, -1.5, 0, 1.5, 3)",
+  by = "aa_avoidance = c(-3, -1.5, 0, 1.5, 3)",
 )
 ```
 
@@ -879,7 +906,7 @@ estimate_slopes(
 #| echo: false
 #| eval: true
 
-es4 <- estimate_slopes(model4, trend = "aa_anxiety", at = "aa_avoidance = c(-3, -1.5, 0, 1.5, 3)")
+es4 <- estimate_slopes(model4, trend = "aa_anxiety", by = "aa_avoidance = c(-3, -1.5, 0, 1.5, 3)")
 print_md(es4)
 ```
 :::
@@ -890,7 +917,7 @@ print_md(es4)
 #| echo: true
 #| eval: false
 es4a <- estimate_slopes(model4, trend = "aa_anxiety", 
-                        at = "aa_avoidance", length = 1000)
+                        by = "aa_avoidance", length = 1000)
 plot(es4a)
 ```
 
@@ -898,8 +925,9 @@ plot(es4a)
 ```{r}
 #| echo: false
 #| eval: true
-#| 
-es4a <- estimate_slopes(model4, trend = "aa_anxiety", at = "aa_avoidance", 
+#| fig-height: 4.5
+
+es4a <- estimate_slopes(model4, trend = "aa_anxiety", by = "aa_avoidance", 
                        length = 1000)
 es4a |> 
   visualisation_recipe(line = list(linewidth = 1.5)) |> 
@@ -918,7 +946,7 @@ es4a |>
 estimate_slopes(
   model = model4, 
   trend = "aa_avoidance",
-  at = "aa_anxiety = c(-3, -1.5, 0, 1.5, 3)"
+  by = "aa_anxiety = c(-3, -1.5, 0, 1.5, 3)"
 )
 ```
 
@@ -927,7 +955,7 @@ estimate_slopes(
 #| echo: false
 #| eval: true
 
-es4c <- estimate_slopes(model4, trend = "aa_avoidance", at = "aa_anxiety = c(-3, -1.5, 0, 1.5, 3)")
+es4c <- estimate_slopes(model4, trend = "aa_avoidance", by = "aa_anxiety = c(-3, -1.5, 0, 1.5, 3)")
 print_md(es4c)
 ```
 :::
@@ -938,7 +966,7 @@ print_md(es4c)
 #| echo: true
 #| eval: false
 es4b <- estimate_slopes(model4, trend = "aa_avoidance", 
-                        at = "aa_anxiety", length = 1000)
+                        by = "aa_anxiety", length = 1000)
 plot(es4b)
 ```
 
@@ -946,9 +974,10 @@ plot(es4b)
 ```{r}
 #| echo: false
 #| eval: true
-#| 
+#| fig-height: 4.5
+
 es4b <- estimate_slopes(model4, trend = "aa_avoidance", 
-                        at = "aa_anxiety", length = 1000)
+                        by = "aa_anxiety", length = 1000)
 es4b |> 
   visualisation_recipe(line = list(linewidth = 1.5)) |> 
   plot() +
