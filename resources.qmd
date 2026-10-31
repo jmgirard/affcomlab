@@ -178,6 +178,14 @@ R package for working with Hierarchical Taxonomy of Psychopathology (HiTOP) data
 :::
 
 ::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
+### [zotero-plugin-index](https://jmgirard.github.io/zotero-plugin-index)
+
+Community index of Zotero 7+ plugins with tracked version compatibility.
+:::
+
+::: {.res-card}
 [Archived]{.res-tag .archived}
 
 ### [CARMA](https://carma.jmgirard.com)

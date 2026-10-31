@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://affcom.ku.edu/resources.html</loc>
-    <lastmod>2026-10-31T18:40:16.185Z</lastmod>
+    <lastmod>2026-10-31T18:42:40.575Z</lastmod>
   </url>
   <url>
     <loc>https://affcom.ku.edu/people/staff/girard_jeffrey.html</loc>
@@ -93,16 +93,20 @@
     <lastmod>2026-10-24T16:25:27.982Z</lastmod>
   </url>
   <url>
-    <loc>https://affcom.ku.edu/contact.html</loc>
-    <lastmod>2026-10-10T17:27:10.912Z</lastmod>
+    <loc>https://affcom.ku.edu/posts/sabbatical2026/index.html</loc>
+    <lastmod>2026-10-16T07:42:00.643Z</lastmod>
   </url>
   <url>
     <loc>https://affcom.ku.edu/research.html</loc>
     <lastmod>2026-10-10T17:27:11.283Z</lastmod>
   </url>
   <url>
-    <loc>https://affcom.ku.edu/posts/sabbatical2026/index.html</loc>
-    <lastmod>2026-10-16T07:42:00.643Z</lastmod>
+    <loc>https://affcom.ku.edu/contact.html</loc>
+    <lastmod>2026-10-10T17:27:10.912Z</lastmod>
+  </url>
+  <url>
+    <loc>https://affcom.ku.edu/posts/dynamos/Presentation.html</loc>
+    <lastmod>2026-10-24T16:25:27.980Z</lastmod>
   </url>
   <url>
     <loc>https://affcom.ku.edu/posts/istss2025/index.html</loc>
@@ -191,9 +195,5 @@
   <url>
     <loc>https://affcom.ku.edu/opportunities.html</loc>
     <lastmod>2026-10-10T17:27:11.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://affcom.ku.edu/posts/dynamos/Presentation.html</loc>
-    <lastmod>2026-10-24T16:25:27.980Z</lastmod>
   </url>
 </urlset>
