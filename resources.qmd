@@ -224,6 +224,14 @@ Create indexes in Quarto books.
 :::
 
 ::: {.res-card}
+[Experimental]{.res-tag .experimental}
+
+### [wrapped](https://github.com/jmgirard/wrapped)
+
+Wrap text around figures and tables in HTML, PDF, and Word.
+:::
+
+::: {.res-card}
 [Archived]{.res-tag .archived}
 
 ### [honeypot](https://github.com/jmgirard/honeypot)

@@ -39,7 +39,7 @@
     "href": "resources.html#quarto-extensions",
     "title": "AffCom Lab",
     "section": "Quarto Extensions",
-    "text": "Quarto Extensions\n\n\nStable\n\nlordicon\nEmbed animated Lordicon icons in HTML.\n\n\n\nStable\n\nembedpdf\nEmbed PDF files in HTML.\n\n\n\nExperimental\n\nquarto-index\nCreate indexes in Quarto books.\n\n\n\nArchived\n\nhoneypot\nDetect LLM cheating on HTML assignments.\n\n\n\nArchived\n\ndetails\nEmbed interactive details blocks in HTML documents."
+    "text": "Quarto Extensions\n\n\nStable\n\nlordicon\nEmbed animated Lordicon icons in HTML.\n\n\n\nStable\n\nembedpdf\nEmbed PDF files in HTML.\n\n\n\nExperimental\n\nquarto-index\nCreate indexes in Quarto books.\n\n\n\nExperimental\n\nwrapped\nWrap text around figures and tables in HTML, PDF, and Word.\n\n\n\nArchived\n\nhoneypot\nDetect LLM cheating on HTML assignments.\n\n\n\nArchived\n\ndetails\nEmbed interactive details blocks in HTML documents."
   },
   {
     "objectID": "resources.html#docker-images",
