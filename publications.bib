@@ -738,6 +738,19 @@
   keywords = {audiovisual dataset,co-speech gestures,dyadic interaction,Multimodal communication,nonverbal behavior,social context,sports interviews,virtual agents}
 }
 
+@article{kebe2026,
+  title = {{{LlaMADRS}}: {{Evaluating}} Open-Source {{LLMs}} on Real Clinical Interviews—{{To}} Reason or Not to Reason?},
+  shorttitle = {{{LlaMADRS}}},
+  author = {Kebe, Gaoussou Youssouf and Girard, Jeffrey M. and Liebenthal, Einat and Baker, Justin and {De la Torre}, Fernando and Morency, Louis-Philippe},
+  year = 2026,
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {14},
+  pages = {1589--1604},
+  doi = {10.1162/tacl.a.741},
+  abstract = {Large language models (LLMs) excel on many NLP benchmarks, but their behavior on real-world, semi-structured prediction remains underexplored. We present LLAMADRS, a benchmark for structured clinical assessment from dialogue built on the CAMI corpus of psychiatric interviews, comprising 5,804 expert annotations across 541 sessions. We evaluate 25 open-source models (standard and reasoning-augmented; 0.6B--400B parameters) and generate over 400,000 predictions. Our results demonstrate that strong open-source LLMs achieve item-level accuracy with residual error below clinically substantial thresholds. Additionally, an Item-then-Sum (ITS) strategy, assessing symptoms individually through discrete LLM calls before synthesizing final scores, significantly reduces error relative to Direct Total Score (DTS) prediction across most model architectures and scales, despite reasoning models attempting similar decomposition in the reasoning traces of their DTS predictions. In fact, we find that performance gains attributed to ``reasoning'' depend fundamentally on prompt design: standard models equipped with structured task definitions and examples match reasoning-augmented counterparts. Among the latter, longer reasoning traces correlate with reduced error; while higher model scale does across both architectures. Our results clarify when and why reasoning helps and offer actionable guidance for deploying LLMs in semi-structured clinical assessment.},
+  primary = {false}
+}
+
 @article{kim2023,
   title = {Human and Machine Recognition of Dynamic and Static Facial Expressions: Prototypicality, Ambiguity, and Complexity},
   shorttitle = {Human and Machine Recognition of Dynamic and Static Facial Expressions},
